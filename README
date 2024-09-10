@@ -1,10 +1,3 @@
-Za push:
-zip -r Assets.zip $(find . -name Assets*.swift)
-mv Assets.zip Assets
-rm $(find . -name Assets*.swift)
-git mv README TODO
-git add Assets
-
 Ako neko traži na primer "Zagor", treba da može da nađe prvi strip Zagora.  Ovo može ako na primer promenim naslov svakog prvog stripa tako da dodam ime.
 
 Kada stigne do poslednje strane, da automatski pokaže title bar tako da može da se izabere sledeći strip bez double-tap.
