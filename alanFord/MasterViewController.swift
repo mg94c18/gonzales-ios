@@ -218,10 +218,7 @@ class MasterViewController: UITableViewController {
         } else {
             episodeId = episodeMatches[indexPath.row]
         }
-        // string->int->string ne radi jer neke epizode imaju a/b sufiks
-        // valjda neće svaki put da kreira taj regex, a ako to uradi, valjda je dovoljno brzo jer su brojevi mali
-        let number = Assets.numbers[episodeId] == "000" ? "0" : Assets.numbers[episodeId].replacingOccurrences(of: "^0+", with: "", options: .regularExpression)
-        var title = "\(number). \(Assets.titles[episodeId])"
+        var title = "\(episodeId + 1). \(Assets.titles[episodeId])"
         let progress = AppDelegate.episodeDownloader.progress(forEpisode: episodeId)
         if progress != -1 {
             title += " (\(progress)%)"
