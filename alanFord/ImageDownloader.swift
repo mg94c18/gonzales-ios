@@ -14,7 +14,7 @@ protocol ImageDownloaderDelegate {
     func httpConnectionFailed(sender: ImageDownloader, statusCode: Int?)
     func cantSaveFile(sender: ImageDownloader)
     func invalidImageData(sender: ImageDownloader)
-    func dataSuccess(sender: ImageDownloader, image: UIImage)
+    func dataSuccess(sender: ImageDownloader, id: Int)
     func storageSuccess(sender: ImageDownloader)
 }
 
@@ -53,11 +53,11 @@ class ImageDownloader {
                 self.delegate.httpConnectionFailed(sender: self, statusCode: httpResponse.statusCode)
                 return
             }
-            guard let data = data, let image = UIImage(data: data) else {
+            guard let data = data else {
                 self.delegate.invalidImageData(sender: self)
                 return
             }
-            self.delegate.dataSuccess(sender: self, image: image)
+            self.delegate.dataSuccess(sender: self, id: self.id)
             let tmpFile = self.fileName + self.tmpSuffix
             DispatchQueue.global(qos: .utility).async {
                 guard !self.fileName.isEmpty && FileManager.default.createFile(atPath: tmpFile, contents: data) else {

@@ -24,20 +24,24 @@ extension OnePageController: ImageDownloaderDelegate {
         handleError()
     }
     
-    func dataSuccess(sender: ImageDownloader, image: UIImage) {
-        //updateView(with: image)
+    func dataSuccess(sender: ImageDownloader, id: Int) {
+        // TODO: update-ovati da se zapamti da je taj mp3 skinut
+        // TODO: ako fajl ne valja, obrisati (videti stari FileManager.default.removeItem koji sam pomerio)
+        DispatchQueue.main.async {
+            self.activityIndicator.hidesWhenStopped = true
+            self.activityIndicator.stopAnimating()
+        }
     }
     
     func storageSuccess(sender: ImageDownloader) {
     }
-    
 }
 
 class OnePageController : UIViewController {
-    var page: (Int, String) = (-1, "") {
+    var page: (Int, [String]) = (-1, [""]) {
         didSet {
-            fileNameSuffix = OnePageController.lastChunk(from: page.1, startingWith: "/")
-            preload()
+            fileNameSuffix = OnePageController.lastChunk(from: page.1[0], startingWith: "/")
+            htmlContent = OnePageController.createHtml(tekst: page.1, prevod: [], removeGroupings: false, author: "author", a3byka: false, inLandscape: false, searchedWord: "")
         }
     }
 
@@ -46,7 +50,6 @@ class OnePageController : UIViewController {
     var htmlContent: String?
     var downloadDir: URL?
     var fileNameSuffix: String = ""
-    var didLoad: Bool = false // možda je ovo isto kao isViewLoaded a možda i nije, pa za svaki slučaj
 
     static func lastChunk(from s: String, startingWith c: Character) -> String {
         guard let pos = s.lastIndex(of: c) else {
@@ -61,26 +64,24 @@ class OnePageController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if page.0 == -1 {
+            activityIndicator.hidesWhenStopped = false
             activityIndicator.stopAnimating()
             return
         }
-        didLoad = true
         if let htmlContent = htmlContent {
-            self.webView.loadHTMLString(htmlContent, baseURL: nil)
-            self.activityIndicator.stopAnimating()
+            webView.loadHTMLString(htmlContent, baseURL: nil)
         }
+        postLoad()
     }
     
     func handleError() {
         DispatchQueue.main.async {
-            if self.didLoad {
-                self.activityIndicator.hidesWhenStopped = false
-                self.activityIndicator.stopAnimating()
-            }
+            self.activityIndicator.hidesWhenStopped = false
+            self.activityIndicator.stopAnimating()
         }
     }
 
-    func preload() {
+    func postLoad() {
         if page.0 == -1 {
             return
         }
@@ -91,38 +92,49 @@ class OnePageController : UIViewController {
             startDownloading("")
             return
         }
-
         let file = cacheDir.path + fileNameSuffix
         if !FileManager.default.fileExists(atPath: file) {
+            activityIndicator.startAnimating()
             startDownloading(file)
             return
         }
-        DispatchQueue.global(qos: .userInitiated).async {
-            if let image = UIImage(contentsOfFile: file) {
-                self.updateView(with: image)
-            } else {
-                // Should never happen
-                self.startDownloading(file)
-                try? FileManager.default.removeItem(atPath: file)
-            }
-        }
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.stopAnimating()
     }
     
     func startDownloading(_ file: String) {
-        let downloader = ImageDownloader(id: page.0, url: page.1, fileName: file, delegate: self, tmpSuffix: ".tmp.ui")
+        let downloader = ImageDownloader(id: page.0, url: page.1[0], fileName: file, delegate: self, tmpSuffix: ".tmp.ui")
         task = downloader.createTask()
         task!.resume()
     }
 
-    func updateView(with image: UIImage) {
-        DispatchQueue.main.async {
-            if self.didLoad {
-                self.webView.loadHTMLString("<html><head><title>Test</title></head><body><h1>Test</h1></body></html>", baseURL: nil)
-                self.activityIndicator.stopAnimating()
-            } else {
-                //self.image = image
+    // ../Gonzales/app/src/main/java/org/mg94c18/gonzales/PageAdapter.java
+    // private static String createHtml
+    static func createHtml(tekst: [String], prevod: [String], removeGroupings: Bool, author: String, a3byka: Bool, inLandscape: Bool, searchedWord: String) -> String {
+        var builder = "<html><head><meta http-equiv=\"content-type\" value=\"UTF-8\"><title></title></head><body>"
+        if inLandscape && !prevod.isEmpty {
+            // TODO: uskoro
+        } else {
+            builder += "<p>\(author)<br>"
+            if tekst.count > 1 && !tekst[1].isEmpty {
+                builder += tekst[1]
             }
+            builder += "<br>"
+            builder += "</p><p>"
+            for i in stride(from: 2, to: tekst.count, by: 1) {
+                builder += applyFilters(line: tekst[i], hints: false, a3byka: a3byka, removeGroupings: true, searchedWord: searchedWord)
+                builder += "<br>"
+            }
+            builder += "</p>"
         }
+        builder += "</body></head></html>"
+        return builder
+    }
+
+    // ../Gonzales/app/src/main/java/org/mg94c18/gonzales/PageAdapter.java
+    // private static String applyFilters
+    static func applyFilters(line: String, hints: Bool, a3byka: Bool, removeGroupings: Bool, searchedWord: String) -> String {
+        return line
     }
 
     func cancel() {

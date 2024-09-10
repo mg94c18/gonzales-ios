@@ -60,7 +60,7 @@ class DetailViewController: UIViewController {
         if initialPageIndex >= pages.count {
             initialPageIndex = 0
         }
-        firstController.page = (initialPageIndex, pages[initialPageIndex])
+        firstController.page = (initialPageIndex, pages)
 
         // TODO: treba da ima samo jedan child, tako da ne "add"
         self.addChildViewController(firstController)

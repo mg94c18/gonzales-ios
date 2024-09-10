@@ -41,7 +41,23 @@ class Assets {
         let index = flavorIndex(forEpisode: episode)
         let number = numbers[episode]
         let bucketSuffix = sectionInfo[index.0].2
-        return ["https://mg94c18\(bucketSuffix).fra1.digitaloceanspaces.com/\(number).mp3"]
+        var ret: [String] = []
+        
+        // for f in $(cat ../Gonzales/app/src/dijaspora/assets/numbers); do for p in "" ".bukvalno" ".finalno"; do cp ../Gonzales/app/src/dijaspora/assets/${f}${p} alanFord/Tekstovi/${f}${p}.txt; done; done
+        if let path = Bundle.main.path(forResource: number, ofType: "txt") {
+            do {
+                let data = try String(contentsOfFile: path, encoding: .utf8)
+                ret += data.components(separatedBy: .newlines)
+            } catch {
+                // TODO: Log.wtf
+            }
+        }
+        
+        if ret.isEmpty {
+            ret = ["https://mg94c18\(bucketSuffix).fra1.digitaloceanspaces.com/\(number).mp3"]
+        }
+        
+        return ret
     }
     
     static var averageEpisodeSizeMB = 67

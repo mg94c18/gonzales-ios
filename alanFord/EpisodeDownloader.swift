@@ -32,7 +32,7 @@ extension EpisodeDownloader: ImageDownloaderDelegate {
         handleError(forEpisode: sender.id)
     }
     
-    func dataSuccess(sender: ImageDownloader, image: UIImage) {
+    func dataSuccess(sender: ImageDownloader, id: Int) {
     }
     
     func storageSuccess(sender: ImageDownloader) {
@@ -93,17 +93,7 @@ class EpisodeDownloader {
     }()
     
     static func getOrCreateDownloadDir(episode: Int) -> URL? {
-        guard let cacheDir = EpisodeDownloader.cacheDir else {
-            return nil
-        }
-        let prefix = Assets.sectionInfo[Assets.indexPath(forEpisode: episode).section].0
-        let myDir = cacheDir.appendingPathComponent(prefix + Assets.numbers[episode], isDirectory: true)
-        if !FileManager.default.fileExists(atPath: myDir.path) {
-            guard let _ = try? FileManager.default.createDirectory(at: myDir, withIntermediateDirectories: true) else {
-                return nil
-            }
-        }
-        return myDir
+        return EpisodeDownloader.cacheDir
     }
 
     let idleTimerCheck: Int = 30
