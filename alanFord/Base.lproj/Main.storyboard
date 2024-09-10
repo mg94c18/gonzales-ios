@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,7 +13,7 @@
             <objects>
                 <navigationController id="RMx-3f-FxP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -26,7 +27,7 @@
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="MasterDetailTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="alanFord" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uM3-P4-e35"/>
                         <viewControllerLayoutGuide type="bottom" id="df5-np-TcK"/>
@@ -36,10 +37,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1k5-gh-PgS">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1k5-gh-PgS" firstAttribute="top" secondItem="uM3-P4-e35" secondAttribute="bottom" id="CbP-Kx-G1n"/>
                             <constraint firstItem="1k5-gh-PgS" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="HMq-SQ-lLY"/>
@@ -74,29 +75,28 @@
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="MasterDetailTest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="alanFord" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Arm-wq-HPj" style="IBUITableViewCellStyleDefault" id="WCw-Qf-5nD">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="47.5"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="47.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="47.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="386" height="47.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="highlightedColor" systemColor="systemBackgroundColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
                                 </connections>
@@ -127,7 +127,7 @@
             <objects>
                 <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -141,7 +141,7 @@
         <!--One Page Controller-->
         <scene sceneID="3Kh-81-cnF">
             <objects>
-                <viewController storyboardIdentifier="OnePageController" id="6yu-Ik-G4q" customClass="OnePageController" customModule="MasterDetailTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnePageController" id="6yu-Ik-G4q" customClass="OnePageController" customModule="alanFord" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8D8-Lh-gIA"/>
                         <viewControllerLayoutGuide type="bottom" id="JNV-8u-dwI"/>
@@ -150,25 +150,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-sp-Sof">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                             <activityIndicatorView contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bEH-5Y-DOp">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LBN-eS-Dii">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="bEH-5Y-DOp" firstAttribute="centerX" secondItem="LBN-eS-Dii" secondAttribute="centerX" id="Imy-d5-8U2"/>
-                            <constraint firstAttribute="bottom" secondItem="LBN-eS-Dii" secondAttribute="bottom" id="KWG-I0-jos"/>
-                            <constraint firstItem="bEH-5Y-DOp" firstAttribute="centerY" secondItem="LBN-eS-Dii" secondAttribute="centerY" id="McN-vR-pRo"/>
-                            <constraint firstItem="LBN-eS-Dii" firstAttribute="leading" secondItem="U8d-Cz-Jmk" secondAttribute="leading" id="hUQ-5V-YfX"/>
-                            <constraint firstItem="LBN-eS-Dii" firstAttribute="top" secondItem="U8d-Cz-Jmk" secondAttribute="top" id="x3y-kQ-m2X"/>
-                            <constraint firstAttribute="trailing" secondItem="LBN-eS-Dii" secondAttribute="trailing" id="zfT-Vm-qEw"/>
+                            <constraint firstItem="bEH-5Y-DOp" firstAttribute="centerX" secondItem="rSx-sp-Sof" secondAttribute="centerX" id="7nR-x8-EsC"/>
+                            <constraint firstAttribute="bottom" secondItem="rSx-sp-Sof" secondAttribute="bottom" id="RGL-nA-5ml"/>
+                            <constraint firstItem="bEH-5Y-DOp" firstAttribute="centerY" secondItem="rSx-sp-Sof" secondAttribute="centerY" id="bEn-dm-fWh"/>
+                            <constraint firstItem="rSx-sp-Sof" firstAttribute="top" secondItem="U8d-Cz-Jmk" secondAttribute="top" id="cAN-B8-UNC"/>
+                            <constraint firstItem="rSx-sp-Sof" firstAttribute="leading" secondItem="U8d-Cz-Jmk" secondAttribute="leading" id="kcn-Hq-frY"/>
+                            <constraint firstAttribute="trailing" secondItem="rSx-sp-Sof" secondAttribute="trailing" id="waX-50-jm6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="bEH-5Y-DOp" id="Cua-qM-mIb"/>
-                        <outlet property="imageView" destination="LBN-eS-Dii" id="ryJ-6w-Y9Y"/>
+                        <outlet property="webView" destination="rSx-sp-Sof" id="eFf-Ld-Yv6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isi-lA-48G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -179,4 +180,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

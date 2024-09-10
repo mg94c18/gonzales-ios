@@ -25,7 +25,7 @@ extension OnePageController: ImageDownloaderDelegate {
     }
     
     func dataSuccess(sender: ImageDownloader, image: UIImage) {
-        updateView(with: image)
+        //updateView(with: image)
     }
     
     func storageSuccess(sender: ImageDownloader) {
@@ -43,7 +43,7 @@ class OnePageController : UIViewController {
 
     static var lastLoadedIndex: Int = -1
     var task: URLSessionDataTask?
-    var image: UIImage?
+    var htmlContent: String?
     var downloadDir: URL?
     var fileNameSuffix: String = ""
     var didLoad: Bool = false // možda je ovo isto kao isViewLoaded a možda i nije, pa za svaki slučaj
@@ -56,7 +56,7 @@ class OnePageController : UIViewController {
     }
 
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +65,8 @@ class OnePageController : UIViewController {
             return
         }
         didLoad = true
-        if let image = image {
-            self.imageView.image = image
+        if let htmlContent = htmlContent {
+            self.webView.loadHTMLString(htmlContent, baseURL: nil)
             self.activityIndicator.stopAnimating()
         }
     }
@@ -117,10 +117,10 @@ class OnePageController : UIViewController {
     func updateView(with image: UIImage) {
         DispatchQueue.main.async {
             if self.didLoad {
-                self.imageView.image = image
+                self.webView.loadHTMLString("<html><head><title>Test</title></head><body><h1>Test</h1></body></html>", baseURL: nil)
                 self.activityIndicator.stopAnimating()
             } else {
-                self.image = image
+                //self.image = image
             }
         }
     }
