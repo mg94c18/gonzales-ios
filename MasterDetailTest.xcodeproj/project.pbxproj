@@ -25,6 +25,123 @@
 		7C2FE71828C958C100E24C1F /* AssetsMN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2FE71728C958C100E24C1F /* AssetsMN.swift */; };
 		7C9DA5C9288C849F0019D7DD /* OnePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA5C8288C849F0019D7DD /* OnePageController.swift */; };
 		7C9DCF4D28A4BAEA00EC6F9D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */; };
+		7C9E0AFC2C90ACE40010199C /* abvgd.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A862C90ACE40010199C /* abvgd.bukvalno.txt */; };
+		7C9E0AFD2C90ACE40010199C /* abvgd.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A872C90ACE40010199C /* abvgd.finalno.txt */; };
+		7C9E0AFE2C90ACE40010199C /* abvgd.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A882C90ACE40010199C /* abvgd.txt */; };
+		7C9E0AFF2C90ACE40010199C /* ajasam2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A892C90ACE40010199C /* ajasam2.bukvalno.txt */; };
+		7C9E0B002C90ACE40010199C /* ajasam2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A8A2C90ACE40010199C /* ajasam2.finalno.txt */; };
+		7C9E0B012C90ACE40010199C /* ajasam2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A8B2C90ACE40010199C /* ajasam2.txt */; };
+		7C9E0B022C90ACE40010199C /* anketa2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A8C2C90ACE40010199C /* anketa2.bukvalno.txt */; };
+		7C9E0B032C90ACE40010199C /* anketa2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A8D2C90ACE40010199C /* anketa2.finalno.txt */; };
+		7C9E0B042C90ACE40010199C /* anketa2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A8E2C90ACE40010199C /* anketa2.txt */; };
+		7C9E0B052C90ACE40010199C /* bubaerdeljan.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A8F2C90ACE40010199C /* bubaerdeljan.bukvalno.txt */; };
+		7C9E0B062C90ACE40010199C /* bubaerdeljan.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A902C90ACE40010199C /* bubaerdeljan.finalno.txt */; };
+		7C9E0B072C90ACE40010199C /* bubaerdeljan.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A912C90ACE40010199C /* bubaerdeljan.txt */; };
+		7C9E0B082C90ACE40010199C /* daj.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A922C90ACE40010199C /* daj.bukvalno.txt */; };
+		7C9E0B092C90ACE40010199C /* daj.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A932C90ACE40010199C /* daj.finalno.txt */; };
+		7C9E0B0A2C90ACE40010199C /* daj.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A942C90ACE40010199C /* daj.txt */; };
+		7C9E0B0B2C90ACE40010199C /* druze.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A952C90ACE40010199C /* druze.bukvalno.txt */; };
+		7C9E0B0C2C90ACE40010199C /* druze.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A962C90ACE40010199C /* druze.finalno.txt */; };
+		7C9E0B0D2C90ACE40010199C /* druze.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A972C90ACE40010199C /* druze.txt */; };
+		7C9E0B0E2C90ACE40010199C /* gru.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A982C90ACE40010199C /* gru.bukvalno.txt */; };
+		7C9E0B0F2C90ACE40010199C /* gru.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A992C90ACE40010199C /* gru.finalno.txt */; };
+		7C9E0B102C90ACE40010199C /* gru.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A9A2C90ACE40010199C /* gru.txt */; };
+		7C9E0B112C90ACE40010199C /* hajde.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A9B2C90ACE40010199C /* hajde.bukvalno.txt */; };
+		7C9E0B122C90ACE40010199C /* hajde.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A9C2C90ACE40010199C /* hajde.finalno.txt */; };
+		7C9E0B132C90ACE40010199C /* hajde.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A9D2C90ACE40010199C /* hajde.txt */; };
+		7C9E0B142C90ACE40010199C /* insomnia.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A9E2C90ACE40010199C /* insomnia.bukvalno.txt */; };
+		7C9E0B152C90ACE40010199C /* insomnia.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0A9F2C90ACE40010199C /* insomnia.finalno.txt */; };
+		7C9E0B162C90ACE40010199C /* insomnia.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA02C90ACE40010199C /* insomnia.txt */; };
+		7C9E0B172C90ACE40010199C /* jedinamoja.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA12C90ACE40010199C /* jedinamoja.bukvalno.txt */; };
+		7C9E0B182C90ACE40010199C /* jedinamoja.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA22C90ACE40010199C /* jedinamoja.finalno.txt */; };
+		7C9E0B192C90ACE40010199C /* jedinamoja.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA32C90ACE40010199C /* jedinamoja.txt */; };
+		7C9E0B1A2C90ACE40010199C /* jorgovani.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA42C90ACE40010199C /* jorgovani.bukvalno.txt */; };
+		7C9E0B1B2C90ACE40010199C /* jorgovani.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA52C90ACE40010199C /* jorgovani.finalno.txt */; };
+		7C9E0B1C2C90ACE40010199C /* jorgovani.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA62C90ACE40010199C /* jorgovani.txt */; };
+		7C9E0B1D2C90ACE40010199C /* kadbi2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA72C90ACE40010199C /* kadbi2.bukvalno.txt */; };
+		7C9E0B1E2C90ACE40010199C /* kadbi2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA82C90ACE40010199C /* kadbi2.finalno.txt */; };
+		7C9E0B1F2C90ACE40010199C /* kadbi2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AA92C90ACE40010199C /* kadbi2.txt */; };
+		7C9E0B202C90ACE40010199C /* kengur2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AAA2C90ACE40010199C /* kengur2.bukvalno.txt */; };
+		7C9E0B212C90ACE40010199C /* kengur2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AAB2C90ACE40010199C /* kengur2.finalno.txt */; };
+		7C9E0B222C90ACE40010199C /* kengur2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AAC2C90ACE40010199C /* kengur2.txt */; };
+		7C9E0B232C90ACE40010199C /* kolena.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AAD2C90ACE40010199C /* kolena.bukvalno.txt */; };
+		7C9E0B242C90ACE40010199C /* kolena.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AAE2C90ACE40010199C /* kolena.finalno.txt */; };
+		7C9E0B252C90ACE40010199C /* kolena.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AAF2C90ACE40010199C /* kolena.txt */; };
+		7C9E0B262C90ACE40010199C /* koljena.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB02C90ACE40010199C /* koljena.bukvalno.txt */; };
+		7C9E0B272C90ACE40010199C /* koljena.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB12C90ACE40010199C /* koljena.finalno.txt */; };
+		7C9E0B282C90ACE40010199C /* koljena.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB22C90ACE40010199C /* koljena.txt */; };
+		7C9E0B292C90ACE40010199C /* kukavica.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB32C90ACE40010199C /* kukavica.bukvalno.txt */; };
+		7C9E0B2A2C90ACE40010199C /* kukavica.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB42C90ACE40010199C /* kukavica.finalno.txt */; };
+		7C9E0B2B2C90ACE40010199C /* kukavica.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB52C90ACE40010199C /* kukavica.txt */; };
+		7C9E0B2C2C90ACE40010199C /* li.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB62C90ACE40010199C /* li.bukvalno.txt */; };
+		7C9E0B2D2C90ACE40010199C /* li.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB72C90ACE40010199C /* li.finalno.txt */; };
+		7C9E0B2E2C90ACE40010199C /* li.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB82C90ACE40010199C /* li.txt */; };
+		7C9E0B2F2C90ACE40010199C /* ljubavje.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AB92C90ACE40010199C /* ljubavje.bukvalno.txt */; };
+		7C9E0B302C90ACE40010199C /* ljubavje.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ABA2C90ACE40010199C /* ljubavje.finalno.txt */; };
+		7C9E0B312C90ACE40010199C /* ljubavje.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ABB2C90ACE40010199C /* ljubavje.txt */; };
+		7C9E0B322C90ACE40010199C /* lutka2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ABC2C90ACE40010199C /* lutka2.bukvalno.txt */; };
+		7C9E0B332C90ACE40010199C /* lutka2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ABD2C90ACE40010199C /* lutka2.finalno.txt */; };
+		7C9E0B342C90ACE40010199C /* lutka2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ABE2C90ACE40010199C /* lutka2.txt */; };
+		7C9E0B352C90ACE40010199C /* mogli.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ABF2C90ACE40010199C /* mogli.bukvalno.txt */; };
+		7C9E0B362C90ACE40010199C /* mogli.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC02C90ACE40010199C /* mogli.finalno.txt */; };
+		7C9E0B372C90ACE40010199C /* mogli.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC12C90ACE40010199C /* mogli.txt */; };
+		7C9E0B382C90ACE40010199C /* necevatra.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC22C90ACE40010199C /* necevatra.bukvalno.txt */; };
+		7C9E0B392C90ACE40010199C /* necevatra.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC32C90ACE40010199C /* necevatra.finalno.txt */; };
+		7C9E0B3A2C90ACE40010199C /* necevatra.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC42C90ACE40010199C /* necevatra.txt */; };
+		7C9E0B3B2C90ACE40010199C /* nevolem.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC52C90ACE40010199C /* nevolem.bukvalno.txt */; };
+		7C9E0B3C2C90ACE40010199C /* nevolem.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC62C90ACE40010199C /* nevolem.finalno.txt */; };
+		7C9E0B3D2C90ACE40010199C /* nevolem.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC72C90ACE40010199C /* nevolem.txt */; };
+		7C9E0B3E2C90ACE40010199C /* nijedna.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC82C90ACE40010199C /* nijedna.bukvalno.txt */; };
+		7C9E0B3F2C90ACE40010199C /* nijedna.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AC92C90ACE40010199C /* nijedna.finalno.txt */; };
+		7C9E0B402C90ACE40010199C /* nijedna.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ACA2C90ACE40010199C /* nijedna.txt */; };
+		7C9E0B412C90ACE40010199C /* nikadniko.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ACB2C90ACE40010199C /* nikadniko.bukvalno.txt */; };
+		7C9E0B422C90ACE40010199C /* nikadniko.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ACC2C90ACE40010199C /* nikadniko.finalno.txt */; };
+		7C9E0B432C90ACE40010199C /* nikadniko.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ACD2C90ACE40010199C /* nikadniko.txt */; };
+		7C9E0B442C90ACE40010199C /* novak.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ACE2C90ACE40010199C /* novak.bukvalno.txt */; };
+		7C9E0B452C90ACE40010199C /* novak.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ACF2C90ACE40010199C /* novak.finalno.txt */; };
+		7C9E0B462C90ACE40010199C /* novak.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD02C90ACE40010199C /* novak.txt */; };
+		7C9E0B472C90ACE40010199C /* opilo.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD12C90ACE40010199C /* opilo.bukvalno.txt */; };
+		7C9E0B482C90ACE40010199C /* opilo.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD22C90ACE40010199C /* opilo.finalno.txt */; };
+		7C9E0B492C90ACE40010199C /* opilo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD32C90ACE40010199C /* opilo.txt */; };
+		7C9E0B4A2C90ACE40010199C /* ostaricu.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD42C90ACE40010199C /* ostaricu.bukvalno.txt */; };
+		7C9E0B4B2C90ACE40010199C /* ostaricu.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD52C90ACE40010199C /* ostaricu.finalno.txt */; };
+		7C9E0B4C2C90ACE40010199C /* ostaricu.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD62C90ACE40010199C /* ostaricu.txt */; };
+		7C9E0B4D2C90ACE40010199C /* pape.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD72C90ACE40010199C /* pape.bukvalno.txt */; };
+		7C9E0B4E2C90ACE40010199C /* pape.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD82C90ACE40010199C /* pape.finalno.txt */; };
+		7C9E0B4F2C90ACE40010199C /* pape.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AD92C90ACE40010199C /* pape.txt */; };
+		7C9E0B502C90ACE40010199C /* pozdravi.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ADA2C90ACE40010199C /* pozdravi.bukvalno.txt */; };
+		7C9E0B512C90ACE40010199C /* pozdravi.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ADB2C90ACE40010199C /* pozdravi.finalno.txt */; };
+		7C9E0B522C90ACE40010199C /* pozdravi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ADC2C90ACE40010199C /* pozdravi.txt */; };
+		7C9E0B532C90ACE40010199C /* pub.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ADD2C90ACE40010199C /* pub.bukvalno.txt */; };
+		7C9E0B542C90ACE40010199C /* pub.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ADE2C90ACE40010199C /* pub.finalno.txt */; };
+		7C9E0B552C90ACE40010199C /* pub.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0ADF2C90ACE40010199C /* pub.txt */; };
+		7C9E0B562C90ACE40010199C /* samorata.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE02C90ACE40010199C /* samorata.bukvalno.txt */; };
+		7C9E0B572C90ACE40010199C /* samorata.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE12C90ACE40010199C /* samorata.finalno.txt */; };
+		7C9E0B582C90ACE40010199C /* samorata.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE22C90ACE40010199C /* samorata.txt */; };
+		7C9E0B592C90ACE40010199C /* studio.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE32C90ACE40010199C /* studio.bukvalno.txt */; };
+		7C9E0B5A2C90ACE40010199C /* studio.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE42C90ACE40010199C /* studio.finalno.txt */; };
+		7C9E0B5B2C90ACE40010199C /* studio.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE52C90ACE40010199C /* studio.txt */; };
+		7C9E0B5C2C90ACE40010199C /* takotreba.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE62C90ACE40010199C /* takotreba.bukvalno.txt */; };
+		7C9E0B5D2C90ACE40010199C /* takotreba.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE72C90ACE40010199C /* takotreba.finalno.txt */; };
+		7C9E0B5E2C90ACE40010199C /* takotreba.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE82C90ACE40010199C /* takotreba.txt */; };
+		7C9E0B5F2C90ACE40010199C /* TjeloHristovo.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AE92C90ACE40010199C /* TjeloHristovo.bukvalno.txt */; };
+		7C9E0B602C90ACE40010199C /* TjeloHristovo.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AEA2C90ACE40010199C /* TjeloHristovo.finalno.txt */; };
+		7C9E0B612C90ACE40010199C /* TjeloHristovo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AEB2C90ACE40010199C /* TjeloHristovo.txt */; };
+		7C9E0B622C90ACE40010199C /* udva.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AEC2C90ACE40010199C /* udva.bukvalno.txt */; };
+		7C9E0B632C90ACE40010199C /* udva.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AED2C90ACE40010199C /* udva.finalno.txt */; };
+		7C9E0B642C90ACE40010199C /* udva.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AEE2C90ACE40010199C /* udva.txt */; };
+		7C9E0B652C90ACE40010199C /* zajedno.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AEF2C90ACE40010199C /* zajedno.bukvalno.txt */; };
+		7C9E0B662C90ACE40010199C /* zajedno.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF02C90ACE40010199C /* zajedno.finalno.txt */; };
+		7C9E0B672C90ACE40010199C /* zajedno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF12C90ACE40010199C /* zajedno.txt */; };
+		7C9E0B682C90ACE40010199C /* zenidba.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF22C90ACE40010199C /* zenidba.bukvalno.txt */; };
+		7C9E0B692C90ACE40010199C /* zenidba.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF32C90ACE40010199C /* zenidba.finalno.txt */; };
+		7C9E0B6A2C90ACE40010199C /* zenidba.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF42C90ACE40010199C /* zenidba.txt */; };
+		7C9E0B6B2C90ACE40010199C /* zlatibore.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF52C90ACE40010199C /* zlatibore.bukvalno.txt */; };
+		7C9E0B6C2C90ACE40010199C /* zlatibore.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF62C90ACE40010199C /* zlatibore.finalno.txt */; };
+		7C9E0B6D2C90ACE40010199C /* zlatibore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF72C90ACE40010199C /* zlatibore.txt */; };
+		7C9E0B6E2C90ACE40010199C /* zohari.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF82C90ACE40010199C /* zohari.bukvalno.txt */; };
+		7C9E0B6F2C90ACE40010199C /* zohari.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF92C90ACE40010199C /* zohari.finalno.txt */; };
+		7C9E0B702C90ACE40010199C /* zohari.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AFA2C90ACE40010199C /* zohari.txt */; };
 		7CB86835288F528A00FB799D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB86834288F528A00FB799D /* Assets.swift */; };
 		7CC1D0C228A22A5E0035107F /* EpisodeDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1D0C128A22A5E0035107F /* EpisodeDownloader.swift */; };
 		7CCDDDAB28D153B300277E38 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E521F831C000CABDD6 /* DetailViewController.swift */; };
@@ -63,6 +180,123 @@
 		7C2FE71728C958C100E24C1F /* AssetsMN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsMN.swift; sourceTree = "<group>"; };
 		7C9DA5C8288C849F0019D7DD /* OnePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePageController.swift; sourceTree = "<group>"; };
 		7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		7C9E0A862C90ACE40010199C /* abvgd.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abvgd.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A872C90ACE40010199C /* abvgd.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abvgd.finalno.txt; sourceTree = "<group>"; };
+		7C9E0A882C90ACE40010199C /* abvgd.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abvgd.txt; sourceTree = "<group>"; };
+		7C9E0A892C90ACE40010199C /* ajasam2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ajasam2.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A8A2C90ACE40010199C /* ajasam2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ajasam2.finalno.txt; sourceTree = "<group>"; };
+		7C9E0A8B2C90ACE40010199C /* ajasam2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ajasam2.txt; sourceTree = "<group>"; };
+		7C9E0A8C2C90ACE40010199C /* anketa2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketa2.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A8D2C90ACE40010199C /* anketa2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketa2.finalno.txt; sourceTree = "<group>"; };
+		7C9E0A8E2C90ACE40010199C /* anketa2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketa2.txt; sourceTree = "<group>"; };
+		7C9E0A8F2C90ACE40010199C /* bubaerdeljan.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bubaerdeljan.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A902C90ACE40010199C /* bubaerdeljan.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bubaerdeljan.finalno.txt; sourceTree = "<group>"; };
+		7C9E0A912C90ACE40010199C /* bubaerdeljan.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bubaerdeljan.txt; sourceTree = "<group>"; };
+		7C9E0A922C90ACE40010199C /* daj.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = daj.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A932C90ACE40010199C /* daj.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = daj.finalno.txt; sourceTree = "<group>"; };
+		7C9E0A942C90ACE40010199C /* daj.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = daj.txt; sourceTree = "<group>"; };
+		7C9E0A952C90ACE40010199C /* druze.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druze.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A962C90ACE40010199C /* druze.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druze.finalno.txt; sourceTree = "<group>"; };
+		7C9E0A972C90ACE40010199C /* druze.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druze.txt; sourceTree = "<group>"; };
+		7C9E0A982C90ACE40010199C /* gru.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gru.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A992C90ACE40010199C /* gru.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gru.finalno.txt; sourceTree = "<group>"; };
+		7C9E0A9A2C90ACE40010199C /* gru.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gru.txt; sourceTree = "<group>"; };
+		7C9E0A9B2C90ACE40010199C /* hajde.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hajde.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A9C2C90ACE40010199C /* hajde.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hajde.finalno.txt; sourceTree = "<group>"; };
+		7C9E0A9D2C90ACE40010199C /* hajde.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hajde.txt; sourceTree = "<group>"; };
+		7C9E0A9E2C90ACE40010199C /* insomnia.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = insomnia.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0A9F2C90ACE40010199C /* insomnia.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = insomnia.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AA02C90ACE40010199C /* insomnia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = insomnia.txt; sourceTree = "<group>"; };
+		7C9E0AA12C90ACE40010199C /* jedinamoja.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jedinamoja.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AA22C90ACE40010199C /* jedinamoja.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jedinamoja.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AA32C90ACE40010199C /* jedinamoja.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jedinamoja.txt; sourceTree = "<group>"; };
+		7C9E0AA42C90ACE40010199C /* jorgovani.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jorgovani.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AA52C90ACE40010199C /* jorgovani.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jorgovani.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AA62C90ACE40010199C /* jorgovani.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jorgovani.txt; sourceTree = "<group>"; };
+		7C9E0AA72C90ACE40010199C /* kadbi2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kadbi2.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AA82C90ACE40010199C /* kadbi2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kadbi2.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AA92C90ACE40010199C /* kadbi2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kadbi2.txt; sourceTree = "<group>"; };
+		7C9E0AAA2C90ACE40010199C /* kengur2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kengur2.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AAB2C90ACE40010199C /* kengur2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kengur2.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AAC2C90ACE40010199C /* kengur2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kengur2.txt; sourceTree = "<group>"; };
+		7C9E0AAD2C90ACE40010199C /* kolena.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kolena.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AAE2C90ACE40010199C /* kolena.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kolena.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AAF2C90ACE40010199C /* kolena.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kolena.txt; sourceTree = "<group>"; };
+		7C9E0AB02C90ACE40010199C /* koljena.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = koljena.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AB12C90ACE40010199C /* koljena.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = koljena.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AB22C90ACE40010199C /* koljena.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = koljena.txt; sourceTree = "<group>"; };
+		7C9E0AB32C90ACE40010199C /* kukavica.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kukavica.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AB42C90ACE40010199C /* kukavica.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kukavica.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AB52C90ACE40010199C /* kukavica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kukavica.txt; sourceTree = "<group>"; };
+		7C9E0AB62C90ACE40010199C /* li.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = li.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AB72C90ACE40010199C /* li.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = li.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AB82C90ACE40010199C /* li.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = li.txt; sourceTree = "<group>"; };
+		7C9E0AB92C90ACE40010199C /* ljubavje.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ljubavje.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0ABA2C90ACE40010199C /* ljubavje.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ljubavje.finalno.txt; sourceTree = "<group>"; };
+		7C9E0ABB2C90ACE40010199C /* ljubavje.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ljubavje.txt; sourceTree = "<group>"; };
+		7C9E0ABC2C90ACE40010199C /* lutka2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lutka2.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0ABD2C90ACE40010199C /* lutka2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lutka2.finalno.txt; sourceTree = "<group>"; };
+		7C9E0ABE2C90ACE40010199C /* lutka2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lutka2.txt; sourceTree = "<group>"; };
+		7C9E0ABF2C90ACE40010199C /* mogli.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mogli.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AC02C90ACE40010199C /* mogli.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mogli.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AC12C90ACE40010199C /* mogli.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mogli.txt; sourceTree = "<group>"; };
+		7C9E0AC22C90ACE40010199C /* necevatra.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = necevatra.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AC32C90ACE40010199C /* necevatra.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = necevatra.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AC42C90ACE40010199C /* necevatra.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = necevatra.txt; sourceTree = "<group>"; };
+		7C9E0AC52C90ACE40010199C /* nevolem.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nevolem.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AC62C90ACE40010199C /* nevolem.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nevolem.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AC72C90ACE40010199C /* nevolem.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nevolem.txt; sourceTree = "<group>"; };
+		7C9E0AC82C90ACE40010199C /* nijedna.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nijedna.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AC92C90ACE40010199C /* nijedna.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nijedna.finalno.txt; sourceTree = "<group>"; };
+		7C9E0ACA2C90ACE40010199C /* nijedna.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nijedna.txt; sourceTree = "<group>"; };
+		7C9E0ACB2C90ACE40010199C /* nikadniko.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nikadniko.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0ACC2C90ACE40010199C /* nikadniko.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nikadniko.finalno.txt; sourceTree = "<group>"; };
+		7C9E0ACD2C90ACE40010199C /* nikadniko.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nikadniko.txt; sourceTree = "<group>"; };
+		7C9E0ACE2C90ACE40010199C /* novak.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = novak.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0ACF2C90ACE40010199C /* novak.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = novak.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AD02C90ACE40010199C /* novak.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = novak.txt; sourceTree = "<group>"; };
+		7C9E0AD12C90ACE40010199C /* opilo.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = opilo.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AD22C90ACE40010199C /* opilo.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = opilo.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AD32C90ACE40010199C /* opilo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = opilo.txt; sourceTree = "<group>"; };
+		7C9E0AD42C90ACE40010199C /* ostaricu.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ostaricu.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AD52C90ACE40010199C /* ostaricu.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ostaricu.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AD62C90ACE40010199C /* ostaricu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ostaricu.txt; sourceTree = "<group>"; };
+		7C9E0AD72C90ACE40010199C /* pape.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pape.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AD82C90ACE40010199C /* pape.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pape.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AD92C90ACE40010199C /* pape.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pape.txt; sourceTree = "<group>"; };
+		7C9E0ADA2C90ACE40010199C /* pozdravi.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pozdravi.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0ADB2C90ACE40010199C /* pozdravi.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pozdravi.finalno.txt; sourceTree = "<group>"; };
+		7C9E0ADC2C90ACE40010199C /* pozdravi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pozdravi.txt; sourceTree = "<group>"; };
+		7C9E0ADD2C90ACE40010199C /* pub.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pub.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0ADE2C90ACE40010199C /* pub.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pub.finalno.txt; sourceTree = "<group>"; };
+		7C9E0ADF2C90ACE40010199C /* pub.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pub.txt; sourceTree = "<group>"; };
+		7C9E0AE02C90ACE40010199C /* samorata.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = samorata.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AE12C90ACE40010199C /* samorata.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = samorata.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AE22C90ACE40010199C /* samorata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = samorata.txt; sourceTree = "<group>"; };
+		7C9E0AE32C90ACE40010199C /* studio.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = studio.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AE42C90ACE40010199C /* studio.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = studio.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AE52C90ACE40010199C /* studio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = studio.txt; sourceTree = "<group>"; };
+		7C9E0AE62C90ACE40010199C /* takotreba.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = takotreba.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AE72C90ACE40010199C /* takotreba.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = takotreba.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AE82C90ACE40010199C /* takotreba.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = takotreba.txt; sourceTree = "<group>"; };
+		7C9E0AE92C90ACE40010199C /* TjeloHristovo.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TjeloHristovo.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AEA2C90ACE40010199C /* TjeloHristovo.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TjeloHristovo.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AEB2C90ACE40010199C /* TjeloHristovo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TjeloHristovo.txt; sourceTree = "<group>"; };
+		7C9E0AEC2C90ACE40010199C /* udva.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = udva.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AED2C90ACE40010199C /* udva.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = udva.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AEE2C90ACE40010199C /* udva.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = udva.txt; sourceTree = "<group>"; };
+		7C9E0AEF2C90ACE40010199C /* zajedno.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zajedno.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AF02C90ACE40010199C /* zajedno.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zajedno.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AF12C90ACE40010199C /* zajedno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zajedno.txt; sourceTree = "<group>"; };
+		7C9E0AF22C90ACE40010199C /* zenidba.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zenidba.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AF32C90ACE40010199C /* zenidba.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zenidba.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AF42C90ACE40010199C /* zenidba.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zenidba.txt; sourceTree = "<group>"; };
+		7C9E0AF52C90ACE40010199C /* zlatibore.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zlatibore.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AF62C90ACE40010199C /* zlatibore.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zlatibore.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AF72C90ACE40010199C /* zlatibore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zlatibore.txt; sourceTree = "<group>"; };
+		7C9E0AF82C90ACE40010199C /* zohari.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zohari.bukvalno.txt; sourceTree = "<group>"; };
+		7C9E0AF92C90ACE40010199C /* zohari.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zohari.finalno.txt; sourceTree = "<group>"; };
+		7C9E0AFA2C90ACE40010199C /* zohari.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zohari.txt; sourceTree = "<group>"; };
 		7CB86834288F528A00FB799D /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		7CC1D0C128A22A5E0035107F /* EpisodeDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDownloader.swift; sourceTree = "<group>"; };
 		7CCDDDA728D1152500277E38 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
@@ -139,6 +373,7 @@
 				7C23B8E521F831C000CABDD6 /* DetailViewController.swift */,
 				7C23B8E721F831C000CABDD6 /* Main.storyboard */,
 				7C23B8EA21F831C000CABDD6 /* Assets.xcassets */,
+				7C9E0AFB2C90ACE40010199C /* Tekstovi */,
 				7C23B8EC21F831C000CABDD6 /* LaunchScreen.storyboard */,
 				7C23B8EF21F831C000CABDD6 /* Info.plist */,
 				7C9DA5C8288C849F0019D7DD /* OnePageController.swift */,
@@ -156,6 +391,130 @@
 				7C2FE71528C9538600E24C1F /* misterNo.plist */,
 			);
 			path = misterNo;
+			sourceTree = "<group>";
+		};
+		7C9E0AFB2C90ACE40010199C /* Tekstovi */ = {
+			isa = PBXGroup;
+			children = (
+				7C9E0A862C90ACE40010199C /* abvgd.bukvalno.txt */,
+				7C9E0A872C90ACE40010199C /* abvgd.finalno.txt */,
+				7C9E0A882C90ACE40010199C /* abvgd.txt */,
+				7C9E0A892C90ACE40010199C /* ajasam2.bukvalno.txt */,
+				7C9E0A8A2C90ACE40010199C /* ajasam2.finalno.txt */,
+				7C9E0A8B2C90ACE40010199C /* ajasam2.txt */,
+				7C9E0A8C2C90ACE40010199C /* anketa2.bukvalno.txt */,
+				7C9E0A8D2C90ACE40010199C /* anketa2.finalno.txt */,
+				7C9E0A8E2C90ACE40010199C /* anketa2.txt */,
+				7C9E0A8F2C90ACE40010199C /* bubaerdeljan.bukvalno.txt */,
+				7C9E0A902C90ACE40010199C /* bubaerdeljan.finalno.txt */,
+				7C9E0A912C90ACE40010199C /* bubaerdeljan.txt */,
+				7C9E0A922C90ACE40010199C /* daj.bukvalno.txt */,
+				7C9E0A932C90ACE40010199C /* daj.finalno.txt */,
+				7C9E0A942C90ACE40010199C /* daj.txt */,
+				7C9E0A952C90ACE40010199C /* druze.bukvalno.txt */,
+				7C9E0A962C90ACE40010199C /* druze.finalno.txt */,
+				7C9E0A972C90ACE40010199C /* druze.txt */,
+				7C9E0A982C90ACE40010199C /* gru.bukvalno.txt */,
+				7C9E0A992C90ACE40010199C /* gru.finalno.txt */,
+				7C9E0A9A2C90ACE40010199C /* gru.txt */,
+				7C9E0A9B2C90ACE40010199C /* hajde.bukvalno.txt */,
+				7C9E0A9C2C90ACE40010199C /* hajde.finalno.txt */,
+				7C9E0A9D2C90ACE40010199C /* hajde.txt */,
+				7C9E0A9E2C90ACE40010199C /* insomnia.bukvalno.txt */,
+				7C9E0A9F2C90ACE40010199C /* insomnia.finalno.txt */,
+				7C9E0AA02C90ACE40010199C /* insomnia.txt */,
+				7C9E0AA12C90ACE40010199C /* jedinamoja.bukvalno.txt */,
+				7C9E0AA22C90ACE40010199C /* jedinamoja.finalno.txt */,
+				7C9E0AA32C90ACE40010199C /* jedinamoja.txt */,
+				7C9E0AA42C90ACE40010199C /* jorgovani.bukvalno.txt */,
+				7C9E0AA52C90ACE40010199C /* jorgovani.finalno.txt */,
+				7C9E0AA62C90ACE40010199C /* jorgovani.txt */,
+				7C9E0AA72C90ACE40010199C /* kadbi2.bukvalno.txt */,
+				7C9E0AA82C90ACE40010199C /* kadbi2.finalno.txt */,
+				7C9E0AA92C90ACE40010199C /* kadbi2.txt */,
+				7C9E0AAA2C90ACE40010199C /* kengur2.bukvalno.txt */,
+				7C9E0AAB2C90ACE40010199C /* kengur2.finalno.txt */,
+				7C9E0AAC2C90ACE40010199C /* kengur2.txt */,
+				7C9E0AAD2C90ACE40010199C /* kolena.bukvalno.txt */,
+				7C9E0AAE2C90ACE40010199C /* kolena.finalno.txt */,
+				7C9E0AAF2C90ACE40010199C /* kolena.txt */,
+				7C9E0AB02C90ACE40010199C /* koljena.bukvalno.txt */,
+				7C9E0AB12C90ACE40010199C /* koljena.finalno.txt */,
+				7C9E0AB22C90ACE40010199C /* koljena.txt */,
+				7C9E0AB32C90ACE40010199C /* kukavica.bukvalno.txt */,
+				7C9E0AB42C90ACE40010199C /* kukavica.finalno.txt */,
+				7C9E0AB52C90ACE40010199C /* kukavica.txt */,
+				7C9E0AB62C90ACE40010199C /* li.bukvalno.txt */,
+				7C9E0AB72C90ACE40010199C /* li.finalno.txt */,
+				7C9E0AB82C90ACE40010199C /* li.txt */,
+				7C9E0AB92C90ACE40010199C /* ljubavje.bukvalno.txt */,
+				7C9E0ABA2C90ACE40010199C /* ljubavje.finalno.txt */,
+				7C9E0ABB2C90ACE40010199C /* ljubavje.txt */,
+				7C9E0ABC2C90ACE40010199C /* lutka2.bukvalno.txt */,
+				7C9E0ABD2C90ACE40010199C /* lutka2.finalno.txt */,
+				7C9E0ABE2C90ACE40010199C /* lutka2.txt */,
+				7C9E0ABF2C90ACE40010199C /* mogli.bukvalno.txt */,
+				7C9E0AC02C90ACE40010199C /* mogli.finalno.txt */,
+				7C9E0AC12C90ACE40010199C /* mogli.txt */,
+				7C9E0AC22C90ACE40010199C /* necevatra.bukvalno.txt */,
+				7C9E0AC32C90ACE40010199C /* necevatra.finalno.txt */,
+				7C9E0AC42C90ACE40010199C /* necevatra.txt */,
+				7C9E0AC52C90ACE40010199C /* nevolem.bukvalno.txt */,
+				7C9E0AC62C90ACE40010199C /* nevolem.finalno.txt */,
+				7C9E0AC72C90ACE40010199C /* nevolem.txt */,
+				7C9E0AC82C90ACE40010199C /* nijedna.bukvalno.txt */,
+				7C9E0AC92C90ACE40010199C /* nijedna.finalno.txt */,
+				7C9E0ACA2C90ACE40010199C /* nijedna.txt */,
+				7C9E0ACB2C90ACE40010199C /* nikadniko.bukvalno.txt */,
+				7C9E0ACC2C90ACE40010199C /* nikadniko.finalno.txt */,
+				7C9E0ACD2C90ACE40010199C /* nikadniko.txt */,
+				7C9E0ACE2C90ACE40010199C /* novak.bukvalno.txt */,
+				7C9E0ACF2C90ACE40010199C /* novak.finalno.txt */,
+				7C9E0AD02C90ACE40010199C /* novak.txt */,
+				7C9E0AD12C90ACE40010199C /* opilo.bukvalno.txt */,
+				7C9E0AD22C90ACE40010199C /* opilo.finalno.txt */,
+				7C9E0AD32C90ACE40010199C /* opilo.txt */,
+				7C9E0AD42C90ACE40010199C /* ostaricu.bukvalno.txt */,
+				7C9E0AD52C90ACE40010199C /* ostaricu.finalno.txt */,
+				7C9E0AD62C90ACE40010199C /* ostaricu.txt */,
+				7C9E0AD72C90ACE40010199C /* pape.bukvalno.txt */,
+				7C9E0AD82C90ACE40010199C /* pape.finalno.txt */,
+				7C9E0AD92C90ACE40010199C /* pape.txt */,
+				7C9E0ADA2C90ACE40010199C /* pozdravi.bukvalno.txt */,
+				7C9E0ADB2C90ACE40010199C /* pozdravi.finalno.txt */,
+				7C9E0ADC2C90ACE40010199C /* pozdravi.txt */,
+				7C9E0ADD2C90ACE40010199C /* pub.bukvalno.txt */,
+				7C9E0ADE2C90ACE40010199C /* pub.finalno.txt */,
+				7C9E0ADF2C90ACE40010199C /* pub.txt */,
+				7C9E0AE02C90ACE40010199C /* samorata.bukvalno.txt */,
+				7C9E0AE12C90ACE40010199C /* samorata.finalno.txt */,
+				7C9E0AE22C90ACE40010199C /* samorata.txt */,
+				7C9E0AE32C90ACE40010199C /* studio.bukvalno.txt */,
+				7C9E0AE42C90ACE40010199C /* studio.finalno.txt */,
+				7C9E0AE52C90ACE40010199C /* studio.txt */,
+				7C9E0AE62C90ACE40010199C /* takotreba.bukvalno.txt */,
+				7C9E0AE72C90ACE40010199C /* takotreba.finalno.txt */,
+				7C9E0AE82C90ACE40010199C /* takotreba.txt */,
+				7C9E0AE92C90ACE40010199C /* TjeloHristovo.bukvalno.txt */,
+				7C9E0AEA2C90ACE40010199C /* TjeloHristovo.finalno.txt */,
+				7C9E0AEB2C90ACE40010199C /* TjeloHristovo.txt */,
+				7C9E0AEC2C90ACE40010199C /* udva.bukvalno.txt */,
+				7C9E0AED2C90ACE40010199C /* udva.finalno.txt */,
+				7C9E0AEE2C90ACE40010199C /* udva.txt */,
+				7C9E0AEF2C90ACE40010199C /* zajedno.bukvalno.txt */,
+				7C9E0AF02C90ACE40010199C /* zajedno.finalno.txt */,
+				7C9E0AF12C90ACE40010199C /* zajedno.txt */,
+				7C9E0AF22C90ACE40010199C /* zenidba.bukvalno.txt */,
+				7C9E0AF32C90ACE40010199C /* zenidba.finalno.txt */,
+				7C9E0AF42C90ACE40010199C /* zenidba.txt */,
+				7C9E0AF52C90ACE40010199C /* zlatibore.bukvalno.txt */,
+				7C9E0AF62C90ACE40010199C /* zlatibore.finalno.txt */,
+				7C9E0AF72C90ACE40010199C /* zlatibore.txt */,
+				7C9E0AF82C90ACE40010199C /* zohari.bukvalno.txt */,
+				7C9E0AF92C90ACE40010199C /* zohari.finalno.txt */,
+				7C9E0AFA2C90ACE40010199C /* zohari.txt */,
+			);
+			path = Tekstovi;
 			sourceTree = "<group>";
 		};
 		7CCDDDBC28D1547E00277E38 /* druzinaOdVjesala */ = {
@@ -300,9 +659,126 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9E0B2D2C90ACE40010199C /* li.finalno.txt in Resources */,
+				7C9E0B122C90ACE40010199C /* hajde.finalno.txt in Resources */,
+				7C9E0AFC2C90ACE40010199C /* abvgd.bukvalno.txt in Resources */,
+				7C9E0B1F2C90ACE40010199C /* kadbi2.txt in Resources */,
+				7C9E0B5B2C90ACE40010199C /* studio.txt in Resources */,
 				7C23B8EE21F831C000CABDD6 /* LaunchScreen.storyboard in Resources */,
+				7C9E0B6B2C90ACE40010199C /* zlatibore.bukvalno.txt in Resources */,
+				7C9E0B672C90ACE40010199C /* zajedno.txt in Resources */,
+				7C9E0B192C90ACE40010199C /* jedinamoja.txt in Resources */,
+				7C9E0B112C90ACE40010199C /* hajde.bukvalno.txt in Resources */,
+				7C9E0B602C90ACE40010199C /* TjeloHristovo.finalno.txt in Resources */,
+				7C9E0B2A2C90ACE40010199C /* kukavica.finalno.txt in Resources */,
+				7C9E0B162C90ACE40010199C /* insomnia.txt in Resources */,
+				7C9E0B232C90ACE40010199C /* kolena.bukvalno.txt in Resources */,
+				7C9E0B322C90ACE40010199C /* lutka2.bukvalno.txt in Resources */,
+				7C9E0B372C90ACE40010199C /* mogli.txt in Resources */,
+				7C9E0B302C90ACE40010199C /* ljubavje.finalno.txt in Resources */,
+				7C9E0B222C90ACE40010199C /* kengur2.txt in Resources */,
 				7C23B8EB21F831C000CABDD6 /* Assets.xcassets in Resources */,
+				7C9E0B142C90ACE40010199C /* insomnia.bukvalno.txt in Resources */,
+				7C9E0B412C90ACE40010199C /* nikadniko.bukvalno.txt in Resources */,
+				7C9E0B1B2C90ACE40010199C /* jorgovani.finalno.txt in Resources */,
+				7C9E0B4D2C90ACE40010199C /* pape.bukvalno.txt in Resources */,
+				7C9E0B252C90ACE40010199C /* kolena.txt in Resources */,
+				7C9E0B102C90ACE40010199C /* gru.txt in Resources */,
+				7C9E0B622C90ACE40010199C /* udva.bukvalno.txt in Resources */,
+				7C9E0B042C90ACE40010199C /* anketa2.txt in Resources */,
+				7C9E0B6A2C90ACE40010199C /* zenidba.txt in Resources */,
+				7C9E0B4A2C90ACE40010199C /* ostaricu.bukvalno.txt in Resources */,
+				7C9E0B702C90ACE40010199C /* zohari.txt in Resources */,
+				7C9E0B562C90ACE40010199C /* samorata.bukvalno.txt in Resources */,
+				7C9E0B4E2C90ACE40010199C /* pape.finalno.txt in Resources */,
+				7C9E0B6D2C90ACE40010199C /* zlatibore.txt in Resources */,
+				7C9E0AFF2C90ACE40010199C /* ajasam2.bukvalno.txt in Resources */,
+				7C9E0B4F2C90ACE40010199C /* pape.txt in Resources */,
+				7C9E0B502C90ACE40010199C /* pozdravi.bukvalno.txt in Resources */,
+				7C9E0B5D2C90ACE40010199C /* takotreba.finalno.txt in Resources */,
+				7C9E0B6E2C90ACE40010199C /* zohari.bukvalno.txt in Resources */,
+				7C9E0B3E2C90ACE40010199C /* nijedna.bukvalno.txt in Resources */,
+				7C9E0B662C90ACE40010199C /* zajedno.finalno.txt in Resources */,
+				7C9E0B212C90ACE40010199C /* kengur2.finalno.txt in Resources */,
+				7C9E0B3A2C90ACE40010199C /* necevatra.txt in Resources */,
+				7C9E0B1A2C90ACE40010199C /* jorgovani.bukvalno.txt in Resources */,
+				7C9E0B012C90ACE40010199C /* ajasam2.txt in Resources */,
+				7C9E0B342C90ACE40010199C /* lutka2.txt in Resources */,
+				7C9E0B182C90ACE40010199C /* jedinamoja.finalno.txt in Resources */,
+				7C9E0B152C90ACE40010199C /* insomnia.finalno.txt in Resources */,
+				7C9E0B2F2C90ACE40010199C /* ljubavje.bukvalno.txt in Resources */,
+				7C9E0B0F2C90ACE40010199C /* gru.finalno.txt in Resources */,
+				7C9E0B0C2C90ACE40010199C /* druze.finalno.txt in Resources */,
+				7C9E0B1E2C90ACE40010199C /* kadbi2.finalno.txt in Resources */,
+				7C9E0B5E2C90ACE40010199C /* takotreba.txt in Resources */,
+				7C9E0B682C90ACE40010199C /* zenidba.bukvalno.txt in Resources */,
+				7C9E0B532C90ACE40010199C /* pub.bukvalno.txt in Resources */,
+				7C9E0B492C90ACE40010199C /* opilo.txt in Resources */,
+				7C9E0AFD2C90ACE40010199C /* abvgd.finalno.txt in Resources */,
+				7C9E0B022C90ACE40010199C /* anketa2.bukvalno.txt in Resources */,
+				7C9E0B462C90ACE40010199C /* novak.txt in Resources */,
+				7C9E0B172C90ACE40010199C /* jedinamoja.bukvalno.txt in Resources */,
+				7C9E0B572C90ACE40010199C /* samorata.finalno.txt in Resources */,
+				7C9E0B002C90ACE40010199C /* ajasam2.finalno.txt in Resources */,
+				7C9E0B482C90ACE40010199C /* opilo.finalno.txt in Resources */,
+				7C9E0B2B2C90ACE40010199C /* kukavica.txt in Resources */,
+				7C9E0B6C2C90ACE40010199C /* zlatibore.finalno.txt in Resources */,
+				7C9E0B552C90ACE40010199C /* pub.txt in Resources */,
+				7C9E0B0D2C90ACE40010199C /* druze.txt in Resources */,
+				7C9E0B292C90ACE40010199C /* kukavica.bukvalno.txt in Resources */,
+				7C9E0B352C90ACE40010199C /* mogli.bukvalno.txt in Resources */,
+				7C9E0B652C90ACE40010199C /* zajedno.bukvalno.txt in Resources */,
+				7C9E0B2E2C90ACE40010199C /* li.txt in Resources */,
+				7C9E0B282C90ACE40010199C /* koljena.txt in Resources */,
+				7C9E0B032C90ACE40010199C /* anketa2.finalno.txt in Resources */,
+				7C9E0B3B2C90ACE40010199C /* nevolem.bukvalno.txt in Resources */,
+				7C9E0B3C2C90ACE40010199C /* nevolem.finalno.txt in Resources */,
+				7C9E0B5F2C90ACE40010199C /* TjeloHristovo.bukvalno.txt in Resources */,
+				7C9E0B522C90ACE40010199C /* pozdravi.txt in Resources */,
+				7C9E0B072C90ACE40010199C /* bubaerdeljan.txt in Resources */,
+				7C9E0B1D2C90ACE40010199C /* kadbi2.bukvalno.txt in Resources */,
+				7C9E0B332C90ACE40010199C /* lutka2.finalno.txt in Resources */,
+				7C9E0B382C90ACE40010199C /* necevatra.bukvalno.txt in Resources */,
+				7C9E0B592C90ACE40010199C /* studio.bukvalno.txt in Resources */,
+				7C9E0B512C90ACE40010199C /* pozdravi.finalno.txt in Resources */,
+				7C9E0B612C90ACE40010199C /* TjeloHristovo.txt in Resources */,
+				7C9E0B632C90ACE40010199C /* udva.finalno.txt in Resources */,
+				7C9E0B242C90ACE40010199C /* kolena.finalno.txt in Resources */,
+				7C9E0B052C90ACE40010199C /* bubaerdeljan.bukvalno.txt in Resources */,
+				7C9E0B362C90ACE40010199C /* mogli.finalno.txt in Resources */,
+				7C9E0B0E2C90ACE40010199C /* gru.bukvalno.txt in Resources */,
+				7C9E0B0A2C90ACE40010199C /* daj.txt in Resources */,
+				7C9E0B432C90ACE40010199C /* nikadniko.txt in Resources */,
+				7C9E0B692C90ACE40010199C /* zenidba.finalno.txt in Resources */,
 				7C23B8E921F831C000CABDD6 /* Main.storyboard in Resources */,
+				7C9E0B392C90ACE40010199C /* necevatra.finalno.txt in Resources */,
+				7C9E0B202C90ACE40010199C /* kengur2.bukvalno.txt in Resources */,
+				7C9E0B4C2C90ACE40010199C /* ostaricu.txt in Resources */,
+				7C9E0B5C2C90ACE40010199C /* takotreba.bukvalno.txt in Resources */,
+				7C9E0B6F2C90ACE40010199C /* zohari.finalno.txt in Resources */,
+				7C9E0B092C90ACE40010199C /* daj.finalno.txt in Resources */,
+				7C9E0B542C90ACE40010199C /* pub.finalno.txt in Resources */,
+				7C9E0B472C90ACE40010199C /* opilo.bukvalno.txt in Resources */,
+				7C9E0B3F2C90ACE40010199C /* nijedna.finalno.txt in Resources */,
+				7C9E0B1C2C90ACE40010199C /* jorgovani.txt in Resources */,
+				7C9E0B082C90ACE40010199C /* daj.bukvalno.txt in Resources */,
+				7C9E0B272C90ACE40010199C /* koljena.finalno.txt in Resources */,
+				7C9E0B582C90ACE40010199C /* samorata.txt in Resources */,
+				7C9E0B0B2C90ACE40010199C /* druze.bukvalno.txt in Resources */,
+				7C9E0B5A2C90ACE40010199C /* studio.finalno.txt in Resources */,
+				7C9E0B262C90ACE40010199C /* koljena.bukvalno.txt in Resources */,
+				7C9E0B062C90ACE40010199C /* bubaerdeljan.finalno.txt in Resources */,
+				7C9E0B402C90ACE40010199C /* nijedna.txt in Resources */,
+				7C9E0B4B2C90ACE40010199C /* ostaricu.finalno.txt in Resources */,
+				7C9E0B3D2C90ACE40010199C /* nevolem.txt in Resources */,
+				7C9E0AFE2C90ACE40010199C /* abvgd.txt in Resources */,
+				7C9E0B312C90ACE40010199C /* ljubavje.txt in Resources */,
+				7C9E0B2C2C90ACE40010199C /* li.bukvalno.txt in Resources */,
+				7C9E0B422C90ACE40010199C /* nikadniko.finalno.txt in Resources */,
+				7C9E0B132C90ACE40010199C /* hajde.txt in Resources */,
+				7C9E0B452C90ACE40010199C /* novak.finalno.txt in Resources */,
+				7C9E0B642C90ACE40010199C /* udva.txt in Resources */,
+				7C9E0B442C90ACE40010199C /* novak.bukvalno.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
