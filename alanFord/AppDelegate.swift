@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         splitViewController.delegate = self
  
         AppDelegate.unseenCrashes = UserDefaults.standard.integer(forKey: AppDelegate.unseenCrashesKey)
-        UserDefaults.standard.set(3, forKey: AppDelegate.unseenCrashesKey)
 
         return true
     }
@@ -37,14 +36,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         AppDelegate.inBackground = true
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        if OnePageController.lastLoadedIndex != -1 {
-            UserDefaults.standard.set(OnePageController.lastLoadedIndex, forKey: "lastPageIndex")
-        }
         if DetailViewController.lastLoadedEpisode != -1 {
             UserDefaults.standard.set(DetailViewController.lastLoadedEpisode, forKey: "lastEpisodeId")
         }
         DetailViewController.previouslyLoaded = nil
-        UserDefaults.standard.set(0, forKey: AppDelegate.unseenCrashesKey)
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {

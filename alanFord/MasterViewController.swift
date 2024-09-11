@@ -62,11 +62,6 @@ class MasterViewController: UITableViewController {
     func findEpisodeMatches() {
         episodeMatches.removeAll()
 
-        if searchedForDownloadedOnes() {
-            episodeMatches = DetailViewController.downloadedEpisodes().sorted()
-            return
-        }
-
         let searchTextLowercased = searchText.lowercased()
         var searchFor = [searchTextLowercased]
         for r in MasterViewController.searchReplacements {
@@ -159,9 +154,6 @@ class MasterViewController: UITableViewController {
                 }
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
-                if searchedForDownloadedOnes() {
-                    controller.offerDeleteDownloaded = true
-                }
                 
                 if let initialPageIndex = initialPageIndex {
                     controller.initialPageIndex = initialPageIndex

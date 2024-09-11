@@ -29,7 +29,7 @@ extension OnePageController: ImageDownloaderDelegate {
         DispatchQueue.main.async {
             self.activityIndicator.hidesWhenStopped = true
             self.activityIndicator.stopAnimating()
-            DetailViewController.downloadedEpisodesAdd(id: id)
+            DetailViewController.onEpisodeDownloaded(id)
             // TODO: Play button after the very first download
         }
     }

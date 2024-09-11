@@ -8,27 +8,19 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UITextFieldDelegate {
-
-    func controllerPageReturned(_ ret: OnePageController?) {
-        guard let ret = ret else {
-            return
-        }
-        if ret.page.0 != -1 {
-            OnePageController.lastLoadedIndex = ret.page.0
-        }
-    }
-
+class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource {
     @IBOutlet weak var pageView: UIView!
 
-    var pages: [String] = []
-    var episodeId: Int = -1
-    // TODO: nepotrebno ovde, ali korisno za UI trikove
-    var initialPageIndex: Int = 0
     static var lastLoadedEpisode: Int = -1
     static var previouslyLoaded: (Int, Int)?
-    var downloadDir: URL?
-    var offerDeleteDownloaded: Bool = false
+
+    var episodeId: Int = -1
+    var initialPageIndex: Int = 0 // TODO: nepotrebno ovde, ali korisno za UI trikove
+    
+    private var pages: [String] = []
+    private var downloadDir: URL?
+    private var offerDeleteDownloaded: Bool = false
+    private var downloadedEpisodes: [Int] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,11 +52,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(doubleTap))
         recognizer.numberOfTapsRequired = 2
         self.view.addGestureRecognizer(recognizer)
-        
-        if DetailViewController.loadStoredArray("visitedEpisodes").count > 4 {
-            postInitDownloadButton()
-        }
-        DetailViewController.updateVisitedEpisodes(byAdding: episodeId)
+        postInitDownloadButton()
     }
 
     func postInitDownloadButton() {
@@ -79,39 +67,36 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    static func updateVisitedEpisodes(byAdding episodeId: Int) {
-        var visitedEpisodes = DetailViewController.loadStoredArray("visitedEpisodes")
-        if let index = visitedEpisodes.firstIndex(of: episodeId) {
-            visitedEpisodes.remove(at: index)
+    static func onEpisodeDownloaded(_ episodeId: Int) {
+        let key = "downloadedEpisodes"
+        var array = DetailViewController.loadStoredArray(key)
+        if let index = array.firstIndex(of: episodeId) {
+            array.remove(at: index)
         }
-        visitedEpisodes.append(episodeId)
-        UserDefaults.standard.set(visitedEpisodes, forKey: "visitedEpisodes")
+        array.append(episodeId)
+        var arrayForSaving: [String] = []
+        for elem in array {
+            arrayForSaving.append("\(Assets.numbers[elem])")
+        }
+        UserDefaults.standard.set(arrayForSaving, forKey: key)
     }
     
     static func loadStoredArray(_ key: String) -> [Int] {
-        if let stored = UserDefaults.standard.array(forKey: key) as? [Int] {
-            return stored
-        } else {
-            return []
+        var ret: [Int] = []
+        if let stored = UserDefaults.standard.array(forKey: key) as? [String] {
+            for elem in stored {
+                if let index = Assets.numbers.firstIndex(of: elem) {
+                    ret.append(index)
+                } else {
+                    // TODO: Log.w
+                }
+            }
         }
+        return ret
     }
     
-    static func downloadedEpisodes() -> [Int] {
-        return loadStoredArray("downloadedEpisodes")
-    }
-
-    static func downloadedEpisodesAdd(id: Int) {
-        var downloaded = downloadedEpisodes()
-        if let index = downloaded.firstIndex(of: id) {
-            // TODO: Log.wtf
-            return
-        }
-        downloaded.append(id)
-        UserDefaults.standard.set(downloaded, forKey: "downloadedEpisodes")
-    }
-
     func initDownloadButton() {
-        if DetailViewController.downloadedEpisodes().isEmpty {
+        if DetailViewController.loadStoredArray("downloadedEpisodes").isEmpty {
             return
         }
         DispatchQueue.main.async {
@@ -119,8 +104,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @objc func startDownloading() {
-        let downloadedEpisodes = DetailViewController.downloadedEpisodes().sorted()
+    @objc func startDownloading0() {
+        let downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
         if downloadedEpisodes.isEmpty {
             return
         }
@@ -136,6 +121,27 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         confirmation.addAction(UIAlertAction(title: "Play", style: .default))
         confirmation.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         self.present(confirmation, animated: true, completion: nil)
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return downloadedEpisodes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayCell", for: indexPath)
+        
+        var title = "\(downloadedEpisodes[indexPath.row] + 1). \(Assets.titles[downloadedEpisodes[indexPath.row]])"
+        cell.textLabel!.text = title
+        
+        return cell
+    }
+    
+    @objc func startDownloading() {
+        downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
+        let playController = storyboard?.instantiateViewController(withIdentifier: "PlayController") as! PlayController
+        self.present(playController, animated: true, completion: nil)
+        playController.tableView.dataSource = self
+        playController.tableView.allowsMultipleSelection = true
     }
 
     @objc func cancelDownload() {
@@ -159,42 +165,6 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "x.square"), style: .plain, target: self, action: #selector(cancelDownload))
         } else {
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Otkaži", style: .plain, target: self, action: #selector(cancelDownload))
-        }
-    }
-
-    func showAppstore() {
-        let appstoreCount = UserDefaults.standard.integer(forKey: "appstoreCount")
-        if appstoreCount >= 3 && AppDelegate.unseenCrashes == 0 {
-            return
-        }
-        if AppDelegate.unseenCrashes > 0 {
-           AppDelegate.unseenCrashes -= 1
-        }
-        if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"), style: .plain, target: self, action: #selector(openAppstore))
-        } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Appstore", style: .plain, target: self, action: #selector(openAppstore))
-        }
-    }
-
-    @objc func openAppstore() {
-        var appstoreCount = UserDefaults.standard.integer(forKey: "appstoreCount")
-        appstoreCount += 1
-        UserDefaults.standard.set(appstoreCount, forKey: "appstoreCount")
-
-        let url: URL?
-        if AppDelegate.unseenCrashes > 0 {
-            url = URL(string: "mailto:yckopo@gmail.com")
-        } else {
-            url = URL(string: "itms-apps://itunes.apple.com/app/id\(Assets.appId)")
-        }
-
-        if let url = url {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
         }
     }
 

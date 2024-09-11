@@ -51,3 +51,5 @@ Distribute/Ad-Hoc za sve varijante; ne koristim app thinning
 Sačuvam distribution output u dist/ kao martiMisterija, alanFord, itd.
 for f in $(cat flavors.txt); do scp dist/$f/manifest.plist mg94c18@tesla.rcub.bg.ac.rs:web-docs/$f/$(cat uuid).plist; scp dist/$f/$f.ipa mg94c18@tesla.rcub.bg.ac.rs:web-docs/$f/$(cat uuid).ipa; done
 for f in $(cat flavors.txt); do for d in 57 512; do /Applications/Inkscape.app/Contents/MacOS/inkscape -o ./Icon$d.png -w $d -h $d /Users/sstevano/Documents/my/src/Workspace/ViewPagerTest/app/src/$f/Icon.svg; scp Icon$d.png mg94c18@tesla.rcub.bg.ac.rs:web-docs/$f/$f-$d.png; done; rm *.png; done
+
+App took too long to run its background task expiration handlers and/or willTerminate handlers.
