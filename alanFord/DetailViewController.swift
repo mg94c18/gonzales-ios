@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITextFieldDelegate {
 
     func controllerPageReturned(_ ret: OnePageController?) {
         guard let ret = ret else {
@@ -23,22 +23,8 @@ class DetailViewController: UIViewController {
 
     var pages: [String] = []
     var episodeId: Int = -1
+    // TODO: nepotrebno ovde, ali korisno za UI trikove
     var initialPageIndex: Int = 0
-    var titleOnly: String = ""
-    var progress: Int = -1 {
-        didSet {
-            if oldValue == -1 && progress != -1 && progress != 100 {
-                showCancelDownload()
-            }
-            if progress == 100 {
-                progress = -1
-            }
-            title = titleOnly + (progress != -1 ? " (\(progress)%)" : "")
-            if progress == -1 {
-                navigationItem.rightBarButtonItem = nil
-            }
-        }
-    }
     static var lastLoadedEpisode: Int = -1
     static var previouslyLoaded: (Int, Int)?
     var downloadDir: URL?
@@ -49,18 +35,14 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         if episodeId == -1 {
             episodeId = UserDefaults.standard.integer(forKey: "lastEpisodeId")
-            initialPageIndex = UserDefaults.standard.integer(forKey: "lastPageIndex")
         }
 
         pages = Assets.pages(forEpisode: episodeId)
-        downloadDir = EpisodeDownloader.getOrCreateDownloadDir(episode: episodeId)
+        downloadDir = ImageDownloader.cacheDir
         let firstController = storyboard?.instantiateViewController(withIdentifier: "OnePageController") as! OnePageController
         firstController.downloadDir = downloadDir
 
-        if initialPageIndex >= pages.count {
-            initialPageIndex = 0
-        }
-        firstController.page = (initialPageIndex, pages)
+        firstController.page = (episodeId, pages)
 
         // TODO: treba da ima samo jedan child, tako da ne "add"
         self.addChildViewController(firstController)
@@ -72,8 +54,7 @@ class DetailViewController: UIViewController {
             DetailViewController.previouslyLoaded = (DetailViewController.lastLoadedEpisode, OnePageController.lastLoadedIndex)
         }
         DetailViewController.lastLoadedEpisode = episodeId
-        titleOnly = Assets.titles[episodeId]
-        progress = AppDelegate.episodeDownloader.progress(forEpisode: episodeId)
+        title = Assets.titles[episodeId]
         navigationController?.isNavigationBarHidden = false
 
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(doubleTap))
@@ -119,97 +100,47 @@ class DetailViewController: UIViewController {
         return loadStoredArray("downloadedEpisodes")
     }
 
-    func initDownloadButton() {
-        let alreadyDownloaded: Bool
-        if let downloadedEpisodes = UserDefaults.standard.array(forKey: "downloadedEpisodes") as? [Int] {
-            alreadyDownloaded = downloadedEpisodes.contains(episodeId)
-        } else {
-            alreadyDownloaded = false
+    static func downloadedEpisodesAdd(id: Int) {
+        var downloaded = downloadedEpisodes()
+        if let index = downloaded.firstIndex(of: id) {
+            // TODO: Log.wtf
+            return
         }
-        if alreadyDownloaded {
-            DispatchQueue.main.async {
-                if self.offerDeleteDownloaded {
-                    self.showDeleteDownload()
-                } else {
-                    self.showAppstore()
-                    //self.navigationItem.rightBarButtonItem = nil
-                }
-            }
-        } else {
-            if progress == -1 && canDownload() {
-                DispatchQueue.main.async {
-                    self.showDownload()
-                }
-            } else if progress != -1 {
-                DispatchQueue.main.async {
-                    self.showCancelDownload()
-                }
-            }
-        }
+        downloaded.append(id)
+        UserDefaults.standard.set(downloaded, forKey: "downloadedEpisodes")
     }
-    
-    func canDownload() -> Bool {
-        return startDownload(dryRun: true)
+
+    func initDownloadButton() {
+        if DetailViewController.downloadedEpisodes().isEmpty {
+            return
+        }
+        DispatchQueue.main.async {
+            self.showDownload()
+        }
     }
     
     @objc func startDownloading() {
-        if startDownload(dryRun: false) {
-            navigationItem.rightBarButtonItem = nil
+        let downloadedEpisodes = DetailViewController.downloadedEpisodes().sorted()
+        if downloadedEpisodes.isEmpty {
+            return
         }
-    }
 
-    func startDownload(dryRun: Bool) -> Bool {
-        guard let downloadDir = downloadDir else {
-            return false
+        let confirmation = UIAlertController(title: "Play", message: "", preferredStyle: .alert)
+        for episode in downloadedEpisodes {
+            confirmation.addTextField(configurationHandler: { textField in
+                textField.text = Assets.titles[episode]
+                textField.isUserInteractionEnabled = false
+                textField.delegate = self
+            })
         }
-        guard let attrs = try? FileManager.default.attributesOfFileSystem(forPath: downloadDir.path),
-           let freeSize = attrs[.systemFreeSize] as? NSNumber else {
-            return false
-        }
-        let buffer = (dryRun ? 350 : 350)
-        if freeSize.int64Value / (1<<20) < Assets.averageEpisodeSizeMB + buffer {
-            guard var downloadedEpisodes = UserDefaults.standard.array(forKey: "downloadedEpisodes") as? [Int], downloadedEpisodes.count > 0 else {
-                return false
-            }
-            if dryRun {
-                return true
-            }
-            let sacrifice = downloadedEpisodes.removeFirst()
-            let confirmation = UIAlertController(title: "Upozorenje", message: "Trenutno image oko \(freeSize.int64Value / (1<<20))MB slobodno, a strip zauzima oko \(Assets.averageEpisodeSizeMB)MB.  Da bi download radio, morate da obrišete staru epizodu '\(Assets.titles[sacrifice])'", preferredStyle: .alert)
-            confirmation.addAction(UIAlertAction(title: "Obriši", style: .destructive, handler: { _ in
-                EpisodeDownloader.removeDownload(forEpisode: sacrifice)
-                UserDefaults.standard.set(downloadedEpisodes, forKey: "downloadedEpisodes")
-                if AppDelegate.episodeDownloader.startDownloading(episode: self.episodeId) {
-                    self.navigationItem.rightBarButtonItem = nil
-                }
-            }))
-            confirmation.addAction(UIAlertAction(title: "Ne hvala", style: .default))
-            self.present(confirmation, animated: true, completion: nil)
-            return false
-        } else if dryRun {
-            return true
-        } else {
-            return AppDelegate.episodeDownloader.startDownloading(episode: episodeId)
-        }
+        confirmation.addAction(UIAlertAction(title: "Play", style: .default))
+        confirmation.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        self.present(confirmation, animated: true, completion: nil)
     }
 
     @objc func cancelDownload() {
         postInitDownloadButton(at: .now() + .seconds(3))
         navigationItem.rightBarButtonItem = nil
-        AppDelegate.episodeDownloader.cancelDownload(forEpisode: episodeId)
-    }
-
-    @objc func deleteDownload() {
-        var downloaded = DetailViewController.downloadedEpisodes()
-        guard let index = downloaded.firstIndex(of: episodeId) else {
-            // TODO: Log.wtf()
-            return
-        }
-        postInitDownloadButton(at: .now() + .seconds(3))
-        navigationItem.rightBarButtonItem = nil
-        EpisodeDownloader.removeDownload(forEpisode: episodeId)
-        downloaded.remove(at: index)
-        UserDefaults.standard.set(downloaded, forKey: "downloadedEpisodes")
     }
 
     // "square.and.arrow.down" iz "SF Symbols" za download
@@ -220,9 +151,6 @@ class DetailViewController: UIViewController {
             navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.down"), style: .plain, target: self, action: #selector(startDownloading))
         } else {
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Download", style: .plain, target: self, action: #selector(startDownloading))
-        }
-        if AppDelegate.episodeDownloader.downloadCount() >= 10 {
-            navigationItem.rightBarButtonItem?.isEnabled = false
         }
     }
     
@@ -246,16 +174,6 @@ class DetailViewController: UIViewController {
             navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"), style: .plain, target: self, action: #selector(openAppstore))
         } else {
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Appstore", style: .plain, target: self, action: #selector(openAppstore))
-        }
-    }
-
-    func showDeleteDownload() {
-        if #available(iOS 14.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark.bin"), style: .plain, target: self, action: #selector(deleteDownload))
-        } else if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bin.xmark"), style: .plain, target: self, action: #selector(deleteDownload))
-        } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Obriši", style: .plain, target: self, action: #selector(deleteDownload))
         }
     }
 

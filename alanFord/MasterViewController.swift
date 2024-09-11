@@ -219,10 +219,6 @@ class MasterViewController: UITableViewController {
             episodeId = episodeMatches[indexPath.row]
         }
         var title = "\(episodeId + 1). \(Assets.titles[episodeId])"
-        let progress = AppDelegate.episodeDownloader.progress(forEpisode: episodeId)
-        if progress != -1 {
-            title += " (\(progress)%)"
-        }
         cell.textLabel!.text = title
         
         return cell

@@ -17,7 +17,6 @@
 		7C2FE70628C9538600E24C1F /* OnePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA5C8288C849F0019D7DD /* OnePageController.swift */; };
 		7C2FE70728C9538600E24C1F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */; };
 		7C2FE70828C9538600E24C1F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E321F831C000CABDD6 /* MasterViewController.swift */; };
-		7C2FE70928C9538600E24C1F /* EpisodeDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1D0C128A22A5E0035107F /* EpisodeDownloader.swift */; };
 		7C2FE70A28C9538600E24C1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E121F831C000CABDD6 /* AppDelegate.swift */; };
 		7C2FE70E28C9538600E24C1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EC21F831C000CABDD6 /* LaunchScreen.storyboard */; };
 		7C2FE70F28C9538600E24C1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EA21F831C000CABDD6 /* Assets.xcassets */; };
@@ -143,12 +142,10 @@
 		7C9E0B6F2C90ACE40010199C /* zohari.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AF92C90ACE40010199C /* zohari.finalno.txt */; };
 		7C9E0B702C90ACE40010199C /* zohari.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E0AFA2C90ACE40010199C /* zohari.txt */; };
 		7CB86835288F528A00FB799D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB86834288F528A00FB799D /* Assets.swift */; };
-		7CC1D0C228A22A5E0035107F /* EpisodeDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1D0C128A22A5E0035107F /* EpisodeDownloader.swift */; };
 		7CCDDDAB28D153B300277E38 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E521F831C000CABDD6 /* DetailViewController.swift */; };
 		7CCDDDAC28D153B300277E38 /* OnePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA5C8288C849F0019D7DD /* OnePageController.swift */; };
 		7CCDDDAD28D153B300277E38 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */; };
 		7CCDDDAE28D153B300277E38 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E321F831C000CABDD6 /* MasterViewController.swift */; };
-		7CCDDDB028D153B300277E38 /* EpisodeDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1D0C128A22A5E0035107F /* EpisodeDownloader.swift */; };
 		7CCDDDB128D153B300277E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E121F831C000CABDD6 /* AppDelegate.swift */; };
 		7CCDDDB428D153B300277E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EC21F831C000CABDD6 /* LaunchScreen.storyboard */; };
 		7CCDDDB528D153B300277E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EA21F831C000CABDD6 /* Assets.xcassets */; };
@@ -158,7 +155,6 @@
 		E210F08B28B6DBAD009A0958 /* OnePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA5C8288C849F0019D7DD /* OnePageController.swift */; };
 		E210F08C28B6DBAD009A0958 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */; };
 		E210F08D28B6DBAD009A0958 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E321F831C000CABDD6 /* MasterViewController.swift */; };
-		E210F08F28B6DBAD009A0958 /* EpisodeDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1D0C128A22A5E0035107F /* EpisodeDownloader.swift */; };
 		E210F09028B6DBAD009A0958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E121F831C000CABDD6 /* AppDelegate.swift */; };
 		E210F09428B6DBAD009A0958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EC21F831C000CABDD6 /* LaunchScreen.storyboard */; };
 		E210F09528B6DBAD009A0958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EA21F831C000CABDD6 /* Assets.xcassets */; };
@@ -298,7 +294,6 @@
 		7C9E0AF92C90ACE40010199C /* zohari.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zohari.finalno.txt; sourceTree = "<group>"; };
 		7C9E0AFA2C90ACE40010199C /* zohari.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zohari.txt; sourceTree = "<group>"; };
 		7CB86834288F528A00FB799D /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
-		7CC1D0C128A22A5E0035107F /* EpisodeDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDownloader.swift; sourceTree = "<group>"; };
 		7CCDDDA728D1152500277E38 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 		7CCDDDA828D1152500277E38 /* README-Flavors */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README-Flavors"; sourceTree = SOURCE_ROOT; };
 		7CCDDDBA28D153B300277E38 /* druzinaOdVjesala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = druzinaOdVjesala.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -378,7 +373,6 @@
 				7C23B8EF21F831C000CABDD6 /* Info.plist */,
 				7C9DA5C8288C849F0019D7DD /* OnePageController.swift */,
 				7CB86834288F528A00FB799D /* Assets.swift */,
-				7CC1D0C128A22A5E0035107F /* EpisodeDownloader.swift */,
 				7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */,
 			);
 			path = alanFord;
@@ -824,7 +818,6 @@
 				7C9DCF4D28A4BAEA00EC6F9D /* ImageDownloader.swift in Sources */,
 				7C23B8E421F831C000CABDD6 /* MasterViewController.swift in Sources */,
 				7CB86835288F528A00FB799D /* Assets.swift in Sources */,
-				7CC1D0C228A22A5E0035107F /* EpisodeDownloader.swift in Sources */,
 				7C23B8E221F831C000CABDD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -838,7 +831,6 @@
 				7C2FE70728C9538600E24C1F /* ImageDownloader.swift in Sources */,
 				7C2FE71828C958C100E24C1F /* AssetsMN.swift in Sources */,
 				7C2FE70828C9538600E24C1F /* MasterViewController.swift in Sources */,
-				7C2FE70928C9538600E24C1F /* EpisodeDownloader.swift in Sources */,
 				7C2FE70A28C9538600E24C1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -851,7 +843,6 @@
 				7CCDDDAC28D153B300277E38 /* OnePageController.swift in Sources */,
 				7CCDDDAD28D153B300277E38 /* ImageDownloader.swift in Sources */,
 				7CCDDDAE28D153B300277E38 /* MasterViewController.swift in Sources */,
-				7CCDDDB028D153B300277E38 /* EpisodeDownloader.swift in Sources */,
 				7CCDDDBE28D154A800277E38 /* AssetsDV.swift in Sources */,
 				7CCDDDB128D153B300277E38 /* AppDelegate.swift in Sources */,
 			);
@@ -866,7 +857,6 @@
 				E210F08B28B6DBAD009A0958 /* OnePageController.swift in Sources */,
 				E210F08C28B6DBAD009A0958 /* ImageDownloader.swift in Sources */,
 				E210F08D28B6DBAD009A0958 /* MasterViewController.swift in Sources */,
-				E210F08F28B6DBAD009A0958 /* EpisodeDownloader.swift in Sources */,
 				E210F09028B6DBAD009A0958 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,11 +25,12 @@ extension OnePageController: ImageDownloaderDelegate {
     }
     
     func dataSuccess(sender: ImageDownloader, id: Int) {
-        // TODO: update-ovati da se zapamti da je taj mp3 skinut
         // TODO: ako fajl ne valja, obrisati (videti stari FileManager.default.removeItem koji sam pomerio)
         DispatchQueue.main.async {
             self.activityIndicator.hidesWhenStopped = true
             self.activityIndicator.stopAnimating()
+            DetailViewController.downloadedEpisodesAdd(id: id)
+            // TODO: Play button after the very first download
         }
     }
     

@@ -33,6 +33,14 @@ class ImageDownloader {
         self.tmpSuffix = tmpSuffix
     }
     
+    static let cacheDir: URL? = {
+        let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        if dir != nil && !FileManager.default.fileExists(atPath: dir!.path) {
+            try? FileManager.default.createDirectory(at: dir!, withIntermediateDirectories: true)
+        }
+        return dir
+    }()
+
     func createTask() -> URLSessionDataTask {
         let urlRequest = URLRequest(url: URL(string: url)!)
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
