@@ -1,0 +1,55 @@
+diff --git a/MasterDetailTest.xcodeproj/project.pbxproj b/MasterDetailTest.xcodeproj/project.pbxproj
+index bff5b7d..6546218 100644
+--- a/MasterDetailTest.xcodeproj/project.pbxproj
++++ b/MasterDetailTest.xcodeproj/project.pbxproj
+@@ -1013,17 +1013,23 @@
+ 			isa = XCBuildConfiguration;
+ 			buildSettings = {
+ 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
++				ARCHS = (
++					"$(ARCHS_STANDARD)",
++					armv7,
++				);
+ 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+ 				CODE_SIGN_IDENTITY = "Apple Development";
+ 				CODE_SIGN_STYLE = Automatic;
+ 				CURRENT_PROJECT_VERSION = 15;
+ 				DEVELOPMENT_TEAM = MD6XE24BAC;
+ 				INFOPLIST_FILE = MasterDetailTest/Info.plist;
++				IPHONEOS_DEPLOYMENT_TARGET = 9.3.5;
+ 				LD_RUNPATH_SEARCH_PATHS = (
+ 					"$(inherited)",
+ 					"@executable_path/Frameworks",
+ 				);
+ 				MARKETING_VERSION = 1.5;
++				ONLY_ACTIVE_ARCH = NO;
+ 				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.yugostripaf;
+ 				PRODUCT_NAME = "$(TARGET_NAME)";
+ 				PROVISIONING_PROFILE_SPECIFIER = "";
+@@ -1042,6 +1048,7 @@
+ 				CURRENT_PROJECT_VERSION = 15;
+ 				DEVELOPMENT_TEAM = MD6XE24BAC;
+ 				INFOPLIST_FILE = MasterDetailTest/Info.plist;
++				IPHONEOS_DEPLOYMENT_TARGET = 9.3.5;
+ 				LD_RUNPATH_SEARCH_PATHS = (
+ 					"$(inherited)",
+ 					"@executable_path/Frameworks",
+diff --git a/MasterDetailTest.xcodeproj/xcuserdata/sstevano.xcuserdatad/xcschemes/xcschememanagement.plist b/MasterDetailTest.xcodeproj/xcuserdata/sstevano.xcuserdatad/xcschemes/xcschememanagement.plist
+index 6f40364..869b57c 100644
+--- a/MasterDetailTest.xcodeproj/xcuserdata/sstevano.xcuserdatad/xcschemes/xcschememanagement.plist
++++ b/MasterDetailTest.xcodeproj/xcuserdata/sstevano.xcuserdatad/xcschemes/xcschememanagement.plist
+@@ -22,12 +22,12 @@
+ 		<key>martiMisterija.xcscheme_^#shared#^_</key>
+ 		<dict>
+ 			<key>orderHint</key>
+-			<integer>3</integer>
++			<integer>1</integer>
+ 		</dict>
+ 		<key>misterNo.xcscheme_^#shared#^_</key>
+ 		<dict>
+ 			<key>orderHint</key>
+-			<integer>1</integer>
++			<integer>3</integer>
+ 		</dict>
+ 	</dict>
+ 	<key>SuppressBuildableAutocreation</key>

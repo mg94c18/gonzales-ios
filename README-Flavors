@@ -1,0 +1,105 @@
+Dupliram MasterDetailTest target.  App Icon assets se preuzimaju iz MasterDetailTest (možda tu ima neko dupliranje)
+Preimenujem .plist fajl
+Dodam novi App Icon set u Master, startujem update-icons i postavim icons kako već treba za XY
+Promenim Bundle Idenifier i App Icons Source, Display Name na YugoStrip
+Dodam AssetsXY.swift i popunim šta već treba
+Dodam novu grupu u project, prebacim AssetsXY.swift i .plist tu (jedan se kopira na disku a drugi ne)
+U Manage Schemes lupim enter i preimenujem
+I to je to, trebalo bi da radi na uređaju i na emulatoru
+
+Za nove flavors, treba pregledati skenirane stranice (tipa par strana na početku i kraju) i pravopisne greške u naslovima
+
+Za update-ovanje html strane:
+Na primer misterNo ide od 001 do 379:
+seq -f "%03g" 1 379 > seq
+cat app/src/misterNo/assets/numbers  | gunzip > brojevi
+diff brojevi seq | grep \> | sed -e 's/> //' | tr '\n' ','
+59 brojeva fali; brojevi ima 321 broja, a ukupno ima 379; hm...
+diff brojevi seq | grep \< pokazuje da 019 se javlja na oba mesta; zbog toga kako radi diff
+Dakle misterNo fali 002,003,016,019,032,041,044,045,052,054,064,071,075,083,090,104,111,122,126,135,142,151,160,166,173,176,180,184,190,196,199,201,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,282,283,284,285,286,287,288,289,290,291,362,363
+Skinem prvih i poslednjih 5 strana od svakog broja za proveru:
+for b in $(cat brojevi); do s3cmd ls s3://yugostripmisterno/$b/ | head -n 5 | grep yugostrip | awk '{print $4}' | xargs -n 1 s3cmd get; s3cmd ls s3://yugostripmisterno/$b/ | tail -n 5 | grep yugostrip | awk '{print $4}' | xargs -n 1 s3cmd get; done
+Ručno proverim strane, stavim sufiks x ako strana nije dobra (brisanje nije dobro jer onda poremeti raspored)
+for p in $(ls *.jpg | grep x.jpg | tr -d 'x'); do export b=$(echo $p | sed -e 's/_.*//'); s3cmd put blank.jpg s3://yugostripmisterno/$b/$p; s3cmd setacl --acl-public s3://yugostripmisterno/$b/$p; done
+sačuvao spisak u ViewPagerTest/blank.MN
+Za stavljanje u Assets.MN, zgodno je da su uklonjene strane na početku ili na kraju, ne u sredini.
+Jedina situacija koja nije na početku ili kraju je 353, gde su 353_001, 353_002, 353_003 su OK, 353_004 treba izbaciti, a ostali su OK.
+Za ovo, iskopiram 353_003 na 353_004, 353_002 na 353_003, 353_001 na 353_002, a stavim blank.jpg na 353_001.  U sledećoj verziji preskočim 001.
+
+8/16/2023
+Spremanje za dodavanje svih flavors u iOS (a potom i u Android) aplikaciju.  Po uputstvu, prebacujem iz app/src/flavor/assets u AssetsXY.swift
+Da bi ovo radilo, treba da assets odgovaraju onom što sam skinuo sa S3 (first_last):
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do echo -n $f\ ; cat app/src/$f/assets/numbers | gunzip - | sed -r 's/$/"/' | sed -r 's/^/"/' | tr -d '\r' | wc -l | tr '\n' ' '; ls first_last/$f/*_000.jpg | wc -l; done;
+otkriceSveta 20 20
+strip82 94 93
+zagor 617 615
+nathanNever 165 163
+komandantMark 278 277
+ninja 155 155
+asterix 34 29
+dylanDog 337 335
+texWiller 578 569
+talicniTom 71 71
+blek 220 218
+
+Uglavnom neki fale.
+otkriceSveta 20 20
+    OK
+strip82 94 93
+    fali 19
+zagor 617 615
+    fali 587, 588
+nathanNever 165 163
+    fali 031, 115
+komandantMark 278 277
+    fali 040
+ninja 155 155
+    OK
+asterix 34 29
+    fali 29, 30, 31, 32, 33
+dylanDog 337 335
+    fali 188, 241
+texWiller 578 569
+    fali 025, 039, 153, 426, 450, 451, 485, 495, 506
+talicniTom 71 71
+    OK
+blek 220 218
+    fali 059, 084
+
+Zapisivanje onih koji fale u fajl, pa da mogu da obrišem njihove brojeve i titles i dates:
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do echo $f:; cat app/src/$f/assets/numbers | gunzip - > numbers.$f; ls first_last/$f/*_000.jpg | sed -e 's|.*/||g' | sed -e 's/_000.jpg//g' > first_last.$f; diff numbers.$f first_last.$f | grep \< | tr -d '\<' | tr -d ' ' > fali.$f; done;
+
+wc -l fali.* | grep total
+24, što se slaže sa ovim gore spiskom
+
+Uklanjanje tih numbers/titles/dates za brojeve koje fale, pažljivo unazad:
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do for a in numbers titles dates; do cat app/src/$f/assets/$a | gunzip - > fale/orig/$a.$f; cp fale/orig/$a.$f fale/new/$a.$f; for l in $(tac fali.$f); do sed -i "${l}d" fale/new/$a.$f; done; done; done
+^ Ovo pak ne radi, jer brojevi nisu po redu pa 188. linija nije isto kao 188. broj!  Ali sed prima i regularni izraz za linije pa onda ovo treba da radi:
+
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do for a in numbers titles dates; do cat app/src/$f/assets/$a | gunzip - > fale/orig/$a.$f; cp fale/orig/$a.$f fale/new/$a.$f; for l in $(tac fali.$f); do sed -i "/^${l}$/d" fale/new/$a.$f; done; done; done
+
+Ista provera kao ranije, sada radi sa novim assets:
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do echo $f:; cat fale/new/numbers.$f > numbers.$f; ls first_last/$f/*_000.jpg | sed -e 's|.*/||g' | sed -e 's/_000.jpg//g' > first_last.$f; diff numbers.$f first_last.$f; done
+^ Ovo radi za numbers, ali dates i titles ostaju isti jer oni nemaju broj unutar fajla, za njih mi baš treba broj linije.
+
+Međutim izgleda da diff daje informacije koje su korisne za sed, na primer "diff -e" je kao stvoreno za to:
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do echo $f:; cat app/src/$f/assets/numbers | gunzip - > numbers.$f; ls first_last/$f/*_000.jpg | sed -e 's|.*/||g' | sed -e 's/_000.jpg//g' > first_last.$f; diff -e numbers.$f first_last.$f > fali.$f.e; done
+Zatim koristim te ".e" fajlove
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do for a in numbers titles dates; do cat app/src/$f/assets/$a | gunzip - > fale/orig/$a.$f; cp fale/orig/$a.$f fale/new/$a.$f; for l in $(cat fali.$f.e); do sed -i "${l}" fale/new/$a.$f; done; done; done
+
+Ista provera kao ranije sad radi za numbers, ali i za dates i titles.
+Ehm, ali asterix zapravo imam brojeve 29-33!  Izgleda da sam gledao samo _000.jpg a ne _000.png!
+
+Konačno radi:
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do echo $f:; cat app/src/$f/assets/numbers | gunzip - > numbers.$f; ls first_last/$f/*_000.??? | sed -e 's|.*/||g' | sed -r 's/_000.(jpg|png)//g' > first_last.$f; diff -e numbers.$f first_last.$f > fali.$f.e; done
+
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do for a in numbers titles dates; do cat app/src/$f/assets/$a | gunzip - > fale/orig/$a.$f; cp fale/orig/$a.$f fale/new/$a.$f; for l in $(cat fali.$f.e); do sed -i "${l}" fale/new/$a.$f; done; done; done
+
+Sad sve u Assets.swift:
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do export p=$(cat $f.prefix); echo // =====$f===== ; echo -n "static let numbers_$f: [String] = ["; cat fale/new/numbers.$f | sed -r 's/$/"/' | sed -r 's/^/"'${p}'_/' | tr -d '\r' | tr '\n' ','; echo "]"; echo -n "static let titles_$f: [String] = ["; cat fale/new/titles.$f | tr '"' "'" | sed -r 's/$/"/' | sed -r 's/^/"/' | tr -d '\r' | tr '\n' ','; echo "]"; echo -n "static let dates_$f: [String] = ["; cat fale/new/dates.$f| sed -r 's/$/"/' | sed -r 's/^/"/' | tr -d '\r' | tr '\n' ','; echo "]"; echo -n "static let nposPage_$f: [String:Int] = [ "; for a in $(cat fale/new/numbers.$f); do echo -n \"${a}\":; cat app/src/$f/assets/$a | gunzip - | wc -l; done | tr '\n' ','; echo "]"; done
+
+Ili pak bez prefiksa a i sa private (možda bez space oko zagrada)
+for f in $(cat flavors | grep -vE "martiMisterija|misterNo|druzinaOdVjesala|alanFord"); do echo // =====$f===== ; echo -n "private static let numbers_$f: [String] = ["; cat fale/new/numbers.$f | sed -r 's/$/"/' | sed -r 's/^/"/' | tr -d '\r' | tr '\n' ','; echo "]"; echo -n "private static let titles_$f: [String] = ["; cat fale/new/titles.$f | tr '"' "'" | sed -r 's/$/"/' | sed -r 's/^/"/' | tr -d '\r' | tr '\n' ','; echo "]"; echo -n "private static let dates_$f: [String] = ["; cat fale/new/dates.$f| sed -r 's/$/"/' | sed -r 's/^/"/' | tr -d '\r' | tr '\n' ','; echo "]"; echo -n "static let nposPage_$f: [String:Int] = [ "; for a in $(cat fale/new/numbers.$f); do echo -n \"${a}\":; cat app/src/$f/assets/$a | gunzip - | wc -l; done | tr '\n' ','; echo "]"; done
+
+Update-ujem na S3 sve reklamne strane, koristeći first_last folder:
+for e in jpg png; do for f in $(ls); do echo $f; cd $f; export b=$(echo $f | tr '[:upper:]' '[:lower:]'); for p in $(find . -name \*.$e | sed -e 's|.*/||' | grep x\. | tr -d 'x'); do export n=$(echo $p | sed -e 's/_.*//'); s3cmd put ~/blank.$e s3://yugostrip${b}/$n/$p; s3cmd setacl --acl-public s3://yugostrip${b}/$n/$p; done; cd -; done; done

@@ -1,0 +1,60 @@
+Za push:
+zip -r Assets.zip $(find . -name Assets*.swift)
+mv Assets.zip Assets
+rm $(find . -name Assets*.swift)
+git mv README TODO
+git add Assets
+
+Ako neko traži na primer "Zagor", treba da može da nađe prvi strip Zagora.  Ovo može ako na primer promenim naslov svakog prvog stripa tako da dodam ime.
+
+Kada stigne do poslednje strane, da automatski pokaže title bar tako da može da se izabere sledeći strip bez double-tap.
+
+Dvostrano, ugas, okret, upal -> dvostrano uspravno !@#$
+
+Nekad se izgubi sidebar pozicija, pa ne znam koji je sledeći strip.  Možda da broj stripa bude sa imenom?
+
+Imao crash u downloader-u, tasks[episode]! ja naišao na nil
+    - verovatno kad nije bilo interneta
+    - potencijalno async tasks treba da imaju weak pointer
+    - crash kada ima interneta, startujem download, ugasim hotspot, vratim se na aplikaciju, pa otvorim sidebar
+
+View magic/weirdness:
+    - MasterViewController.viewDidLoad se javlja na iPad portrait kad se ugasi aplikacija.  Zašto?
+    - Zašto se DetailViewController učitava dvaput?  Na primer u landscape na iPad, viewDidLoad se zove dvaput
+    - Ako otvorim novu epizodu bez interneta, prve dve strane spinner stoji, a na ostalima se vrti, pa kad odem malo napred pa se vratim, onda se i na prvim stranama vrti.  Zašto prestane da se vrti prilikom otvaranja novog stripa?
+    - nekad je master/detail u topViewController a nekad u visibleViewController
+    - layout guide uopšte ne postoji za master scene; kako dodati?
+    - tableView uporno do vrha/dna, čak i ako uključim Safe Area i minimum na 9.0, i ako probam gomilu drugih stvari; odustajem
+
+Retry kad se slika ne učita iz prvog?
+hiddenAssets za iOS i takođe za Android
+
+Za nove flavors, treba pregledati skenirane stranice (tipa par strana na početku i kraju) i pravopisne greške u naslovima
+
+Da koristi numbers[episodeId] umesto episodeId direktno, da bi podržao ubacivanje ili izbacivanje epizoda preko app updates
+
+Cloud updates:
+    - slike bez margina
+    - CBR & HR
+
+Zoom-in? ali da ne ugrozi postojeći stretch, jer trenutno se slika razvuče automatski i ne-proporcionalno (scaleToFill)
+    - probao ali je malo messy
+
+isNavigationBarHidden se prečesto pamti
+Zvuk za okretanje strana (jedan zvuk za početak, drugi za kraj)?  Mada onda mi treba i setting da to upalim/ugasim jer neće svima da se sviđa zvuk.
+Na emulatoru se Safari "javi" kad ugasim aplikaciju: zašto?
+Debug-ovanje na iPad-u bi pomoglo
+Download unapred: ako su svi viewControllers zadovoljeni a korisnik i dalje čita, prosto download-ovati sledeće strane unapred i sačuvati na disk
+Kada je dvostrano čitanje, može da ima nešto zanimljivije od prazne strane na kraju (ako je neparno) možda da ide na sledeći?
+Upozorenje za UITableViewAlertForLayoutOutsideViewHierarchy?  Javlja se i bez da učitavam strip automatski
+Potencijalno da izbacim viewController cache
+preferredPrimaryColumnWidthFraction? ne radi
+
+Publishing:
+Product/Clean Build Folder, Product/Archive za sve varijante
+Distribute/Ad-Hoc za sve varijante; ne koristim app thinning
+    App URL: https://tesla.rcub.bg.ac.rs/~mg94c18/flavor/UUID.ipa
+    Images: https://tesla.rcub.bg.ac.rs/~mg94c18/flavor/flavor-57.png, https://tesla.rcub.bg.ac.rs/~mg94c18/flavor/flavor-512.png
+Sačuvam distribution output u dist/ kao martiMisterija, alanFord, itd.
+for f in $(cat flavors.txt); do scp dist/$f/manifest.plist mg94c18@tesla.rcub.bg.ac.rs:web-docs/$f/$(cat uuid).plist; scp dist/$f/$f.ipa mg94c18@tesla.rcub.bg.ac.rs:web-docs/$f/$(cat uuid).ipa; done
+for f in $(cat flavors.txt); do for d in 57 512; do /Applications/Inkscape.app/Contents/MacOS/inkscape -o ./Icon$d.png -w $d -h $d /Users/sstevano/Documents/my/src/Workspace/ViewPagerTest/app/src/$f/Icon.svg; scp Icon$d.png mg94c18@tesla.rcub.bg.ac.rs:web-docs/$f/$f-$d.png; done; rm *.png; done
