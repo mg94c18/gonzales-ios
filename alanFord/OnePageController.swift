@@ -70,7 +70,14 @@ class OnePageController : UIViewController {
             return
         }
         if let htmlContent = htmlContent {
+            // webView.scalesPageToFit = true
+            // https://developer.apple.com/documentation/uikit/uitextview
+            // It’s recommended that you use a text view—and not a UIWebView object—to display both plain and rich text in your app.
             webView.loadHTMLString(htmlContent, baseURL: nil)
+            webView.allowsLinkPreview = false
+            webView.allowsInlineMediaPlayback = false
+            webView.mediaPlaybackAllowsAirPlay = false
+            webView.allowsPictureInPictureMediaPlayback = false
         }
         postLoad()
     }
@@ -112,7 +119,7 @@ class OnePageController : UIViewController {
     // ../Gonzales/app/src/main/java/org/mg94c18/gonzales/PageAdapter.java
     // private static String createHtml
     static func createHtml(tekst: [String], prevod: [String], removeGroupings: Bool, author: String, a3byka: Bool, inLandscape: Bool, searchedWord: String) -> String {
-        var builder = "<html><head><meta http-equiv=\"content-type\" value=\"UTF-8\"><title></title></head><body>"
+        var builder = "<html><head><meta http-equiv=\"content-type\" value=\"UTF-8\"><title></title><style>p { font-size: 5vw; }</style></head><body>"
         if inLandscape && !prevod.isEmpty {
             // TODO: uskoro
         } else {
