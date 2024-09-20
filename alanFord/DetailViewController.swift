@@ -104,7 +104,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         }
     }
     
-    @objc func startDownloading0() {
+    @objc func configurePlay0() {
         let downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
         if downloadedEpisodes.isEmpty {
             return
@@ -136,7 +136,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         return cell
     }
     
-    @objc func startDownloading() {
+    @objc func configurePlay() {
         downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
         let playController = storyboard?.instantiateViewController(withIdentifier: "PlayController") as! PlayController
         self.present(playController, animated: true, completion: nil)
@@ -154,9 +154,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
     // "rectangle.and.pencil.and.ellipsis" ili prosto "square.and.pencil" za Appstore (jer može da se piše autoru ili da se napiše review)
     func showDownload() {
         if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.down"), style: .plain, target: self, action: #selector(startDownloading))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.down"), style: .plain, target: self, action: #selector(configurePlay))
         } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Download", style: .plain, target: self, action: #selector(startDownloading))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Download", style: .plain, target: self, action: #selector(configurePlay))
         }
     }
     
@@ -166,6 +166,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         } else {
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Otkaži", style: .plain, target: self, action: #selector(cancelDownload))
         }
+    }
+
+    func startPlayback(of tracks: [Int]) {
+        dismiss(animated: true)
     }
 
     @objc func doubleTap() {
