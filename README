@@ -56,3 +56,8 @@ App took too long to run its background task expiration handlers and/or willTerm
 https://developer.apple.com/download/more/
 https://www.innerfence.com/howto/apple-ios-devices-dates-versions-instruction-sets (also worth saving in ~/iOS-Devices-Table.xlsx)
 Catalina (stari laptop) može sa Xcode 12.4
+
+MediaPlayer framework vs. AVPlayer...
+    - AVPlayer: Use an instance of AVPlayer to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
+    - MPMusicPlayerController: An object that plays audio media items from the device’s Music app library.  An application music player plays music locally within your app. It isn’t aware of the Music app’s Now Playing item, nor does it affect the Music app’s state.
+izgleda da je AVPlayer bolji izbor

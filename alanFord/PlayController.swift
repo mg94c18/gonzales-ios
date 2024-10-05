@@ -26,13 +26,13 @@ class PlayController: UIViewController {
         } else {
             // Fallback on earlier versions
         }
-        guard let parent = parent as? DetailViewController else {
+        guard let parent = detailViewController else {
             dismiss(animated: true)
             return
         }
 
         guard let selected = tableView.indexPathsForSelectedRows else {
-            // TODO: if nothing seleced, the button should be disabled
+            // TODO: if nothing selected, the button should be disabled
             // TODO: if nothing selected, the array may be empty; but the doc says "The value of this property is nil if there are no selected rows."
             if #available(iOS 10.0, *) {
                 os_log("Nothing selected; we should not get here")
@@ -49,8 +49,9 @@ class PlayController: UIViewController {
             tracks.append(select.row)
         }
 
-        parent.startPlayback(of: tracks)
+        parent.startPlayback(of: tracks.sorted())
     }
     
     @IBOutlet weak var tableView: UITableView!
+    weak var detailViewController: DetailViewController?
 }

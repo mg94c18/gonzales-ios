@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import os.log
 
 class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource {
     @IBOutlet weak var pageView: UIView!
@@ -21,6 +23,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
     private var downloadDir: URL?
     private var offerDeleteDownloaded: Bool = false
     private var downloadedEpisodes: [Int] = []
+    private var player: AVPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -142,6 +145,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         self.present(playController, animated: true, completion: nil)
         playController.tableView.dataSource = self
         playController.tableView.allowsMultipleSelection = true
+        playController.detailViewController = self
     }
 
     @objc func cancelDownload() {
@@ -169,6 +173,27 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
     }
 
     func startPlayback(of tracks: [Int]) {
+        guard let cacheDir = downloadDir else {
+            if #available(iOS 10.0, *) {
+                os_log("Playback from where?")
+            } else {
+                // Fallback on earlier versions
+            }
+            return
+        }
+        if tracks.count < 1 {
+            if #available(iOS 10.0, *) {
+                os_log("Playback what?")
+            } else {
+                // Fallback on earlier versions
+            }
+            return
+        }
+
+        let trackId = Assets.numbers[tracks[0]]
+        let url = cacheDir.appendingPathComponent(trackId + ".mp3").absoluteURL
+        player = AVPlayer.init(url: url)
+        player!.play()
         dismiss(animated: true)
     }
 
