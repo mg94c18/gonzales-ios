@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation.AVAudioSession
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -45,6 +46,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         AppDelegate.inBackground = false
+        do {
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+        } catch {
+            print("Failed to set the audio session configuration")
+        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

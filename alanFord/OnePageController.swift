@@ -39,10 +39,12 @@ extension OnePageController: ImageDownloaderDelegate {
 }
 
 class OnePageController : UIViewController {
+    static var inLandscape: Bool = false
+
     var page: (Int, [String]) = (-1, [""]) {
         didSet {
             fileNameSuffix = OnePageController.lastChunk(from: page.1[0], startingWith: "/")
-            htmlContent = OnePageController.createHtml(tekst: page.1, prevod: [], removeGroupings: false, author: "author", a3byka: false, inLandscape: false, searchedWord: "")
+            htmlContent = OnePageController.createHtml(tekst: page.1, prevod: [], removeGroupings: false, author: "author", a3byka: false, inLandscape: self.interfaceOrientation == .landscapeLeft || self.interfaceOrientation == .landscapeRight, searchedWord: "")
         }
     }
 
@@ -82,6 +84,11 @@ class OnePageController : UIViewController {
         postLoad()
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
+        OnePageController.inLandscape = size.width > size.height
+        super.viewWillTransition(to: size, with: coordinator)
+    }
+
     func handleError() {
         DispatchQueue.main.async {
             self.activityIndicator.hidesWhenStopped = false
@@ -123,7 +130,7 @@ class OnePageController : UIViewController {
         if inLandscape && !prevod.isEmpty {
             // TODO: uskoro
         } else {
-            builder += "<p>\(author)<br>"
+            builder += "<p>\(author), \(inLandscape)<br>"
             if tekst.count > 1 && !tekst[1].isEmpty {
                 builder += tekst[1]
             }

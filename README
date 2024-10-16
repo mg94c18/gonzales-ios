@@ -61,3 +61,15 @@ MediaPlayer framework vs. AVPlayer...
     - AVPlayer: Use an instance of AVPlayer to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
     - MPMusicPlayerController: An object that plays audio media items from the device’s Music app library.  An application music player plays music locally within your app. It isn’t aware of the Music app’s Now Playing item, nor does it affect the Music app’s state.
 izgleda da je AVPlayer bolji izbor
+
+https://developer.apple.com/documentation/avfaudio/avaudiosession
+"For more information, see Enabling Background Audio."
+    ? (watchkit?) https://developer.apple.com/documentation/watchkit/storyboard_support/playing_background_audio/
+"For more information about preparing your app to play audio, see Configuring the Audio Playback of iOS and tvOS Apps."
+    - https://developer.apple.com/documentation/avfoundation/media_playback/configuring_your_app_for_media_playback/
+    
+AVAudioPlayer->audioPlayerBeginInterruption->deprecated->Handling audio interruptions->AVPlayer
+
+"You can monitor these changes by key-value observing the player’s timeControlStatus property, and update your user interface as necessary when the player pauses and resumes playback."
+    - timeControlStatus: "This property is key-value observable."
+    - NSKeyValueObserving: "An informal protocol that objects adopt to be notified of changes to the specified properties of other objects."
