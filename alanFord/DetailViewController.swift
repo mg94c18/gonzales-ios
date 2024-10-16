@@ -37,7 +37,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         let firstController = storyboard?.instantiateViewController(withIdentifier: "OnePageController") as! OnePageController
         firstController.downloadDir = downloadDir
 
-        firstController.page = (episodeId, pages)
+        firstController.page = (episodeId, pages, Assets.pages(forEpisode: episodeId, withTranslation: ".bukvalno"))
 
         // TODO: treba da ima samo jedan child, tako da ne "add"
         self.addChildViewController(firstController)

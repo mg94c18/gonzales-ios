@@ -39,18 +39,16 @@ extension OnePageController: ImageDownloaderDelegate {
 }
 
 class OnePageController : UIViewController {
-    static var inLandscape: Bool = false
+    var inLandscape: Bool = false
 
-    var page: (Int, [String]) = (-1, [""]) {
+    var page: (Int, [String], [String]) = (-1, [""], [""]) {
         didSet {
             fileNameSuffix = OnePageController.lastChunk(from: page.1[0], startingWith: "/")
-            htmlContent = OnePageController.createHtml(tekst: page.1, prevod: [], removeGroupings: false, author: "author", a3byka: false, inLandscape: self.interfaceOrientation == .landscapeLeft || self.interfaceOrientation == .landscapeRight, searchedWord: "")
         }
     }
 
     static var lastLoadedIndex: Int = -1
     var task: URLSessionDataTask?
-    var htmlContent: String?
     var downloadDir: URL?
     var fileNameSuffix: String = ""
 
@@ -71,22 +69,29 @@ class OnePageController : UIViewController {
             activityIndicator.stopAnimating()
             return
         }
-        if let htmlContent = htmlContent {
-            // webView.scalesPageToFit = true
-            // https://developer.apple.com/documentation/uikit/uitextview
-            // It’s recommended that you use a text view—and not a UIWebView object—to display both plain and rich text in your app.
-            webView.loadHTMLString(htmlContent, baseURL: nil)
-            webView.allowsLinkPreview = false
-            webView.allowsInlineMediaPlayback = false
-            webView.mediaPlaybackAllowsAirPlay = false
-            webView.allowsPictureInPictureMediaPlayback = false
-        }
+        inLandscape = (view.frame.width > view.frame.height)
+        refreshWebView()
         postLoad()
     }
     
+    func refreshWebView() {
+        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: page.2, removeGroupings: false, author: "author", a3byka: false, inLandscape: inLandscape, searchedWord: "", fontSize: inLandscape ? 3 : 5)
+
+        // webView.scalesPageToFit = true
+        // https://developer.apple.com/documentation/uikit/uitextview
+        // It’s recommended that you use a text view—and not a UIWebView object—to display both plain and rich text in your app.
+        webView.loadHTMLString(htmlContent, baseURL: nil)
+        webView.allowsLinkPreview = false
+        webView.allowsInlineMediaPlayback = false
+        webView.mediaPlaybackAllowsAirPlay = false
+        webView.allowsPictureInPictureMediaPlayback = false
+    }
+    
+    // Kažu da ovo treba da radi jer navodno kreiraš u portrait pa se ovo pozove...  Ali ne.
     override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
-        OnePageController.inLandscape = size.width > size.height
         super.viewWillTransition(to: size, with: coordinator)
+        inLandscape = (size.width > size.height)
+        refreshWebView()
     }
 
     func handleError() {
@@ -125,10 +130,25 @@ class OnePageController : UIViewController {
 
     // ../Gonzales/app/src/main/java/org/mg94c18/gonzales/PageAdapter.java
     // private static String createHtml
-    static func createHtml(tekst: [String], prevod: [String], removeGroupings: Bool, author: String, a3byka: Bool, inLandscape: Bool, searchedWord: String) -> String {
-        var builder = "<html><head><meta http-equiv=\"content-type\" value=\"UTF-8\"><title></title><style>p { font-size: 5vw; }</style></head><body>"
+    static func createHtml(tekst: [String], prevod: [String], removeGroupings: Bool, author: String, a3byka: Bool, inLandscape: Bool, searchedWord: String, fontSize: Int) -> String {
+        // TODO: string stream instead of string directly?
+        var builder = "<html><head><meta http-equiv=\"content-type\" value=\"UTF-8\"><title></title><style>* { font-size: \(fontSize)vw; }</style></head><body>"
         if inLandscape && !prevod.isEmpty {
-            // TODO: uskoro
+            builder += "<table width=\"100%\">"
+            for i in stride(from: 2, to: tekst.count, by: 1) {
+                builder += "<tr><td width=\"50%\">"
+                if (tekst[i].isEmpty) {
+                    builder += "&nbsp;"
+                } else {
+                    builder += applyFilters(line: tekst[i], hints: true, a3byka: a3byka, removeGroupings: removeGroupings, searchedWord: searchedWord)
+                }
+                builder += "</td><td width=\"50%\">"
+                if (i < prevod.count) {
+                    builder += applyFilters(line: prevod[i], hints: true, a3byka: a3byka, removeGroupings: false, searchedWord: searchedWord)
+                }
+                builder += "</td></tr>"
+            }
+            builder += "</table>"
         } else {
             builder += "<p>\(author), \(inLandscape)<br>"
             if tekst.count > 1 && !tekst[1].isEmpty {

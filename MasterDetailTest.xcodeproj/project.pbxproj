@@ -155,6 +155,12 @@
 		7CCDDDB528D153B300277E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EA21F831C000CABDD6 /* Assets.xcassets */; };
 		7CCDDDB628D153B300277E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8E721F831C000CABDD6 /* Main.storyboard */; };
 		7CCDDDBE28D154A800277E38 /* AssetsDV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCDDDBD28D154A800277E38 /* AssetsDV.swift */; };
+		7CD068FA2CC03E4B00CAD288 /* igramo2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F42CC03E4A00CAD288 /* igramo2.bukvalno.txt */; };
+		7CD068FB2CC03E4B00CAD288 /* igramo2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F52CC03E4A00CAD288 /* igramo2.finalno.txt */; };
+		7CD068FC2CC03E4B00CAD288 /* inat.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F62CC03E4B00CAD288 /* inat.finalno.txt */; };
+		7CD068FD2CC03E4B00CAD288 /* inat.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F72CC03E4B00CAD288 /* inat.bukvalno.txt */; };
+		7CD068FE2CC03E4B00CAD288 /* inat.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F82CC03E4B00CAD288 /* inat.txt */; };
+		7CD068FF2CC03E4B00CAD288 /* igramo2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F92CC03E4B00CAD288 /* igramo2.txt */; };
 		E210F08A28B6DBAD009A0958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E521F831C000CABDD6 /* DetailViewController.swift */; };
 		E210F08B28B6DBAD009A0958 /* OnePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA5C8288C849F0019D7DD /* OnePageController.swift */; };
 		E210F08C28B6DBAD009A0958 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */; };
@@ -304,6 +310,12 @@
 		7CCDDDBA28D153B300277E38 /* druzinaOdVjesala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = druzinaOdVjesala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCDDDBB28D153B300277E38 /* druzinaOdVjesala.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = druzinaOdVjesala.plist; path = /Users/sstevano/Documents/my/src/Workspace/XCode/MasterDetailTest/druzinaOdVjesala.plist; sourceTree = "<absolute>"; };
 		7CCDDDBD28D154A800277E38 /* AssetsDV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsDV.swift; sourceTree = "<group>"; };
+		7CD068F42CC03E4A00CAD288 /* igramo2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = igramo2.bukvalno.txt; sourceTree = "<group>"; };
+		7CD068F52CC03E4A00CAD288 /* igramo2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = igramo2.finalno.txt; sourceTree = "<group>"; };
+		7CD068F62CC03E4B00CAD288 /* inat.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inat.finalno.txt; sourceTree = "<group>"; };
+		7CD068F72CC03E4B00CAD288 /* inat.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inat.bukvalno.txt; sourceTree = "<group>"; };
+		7CD068F82CC03E4B00CAD288 /* inat.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inat.txt; sourceTree = "<group>"; };
+		7CD068F92CC03E4B00CAD288 /* igramo2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = igramo2.txt; sourceTree = "<group>"; };
 		E210F09A28B6DBAD009A0958 /* martiMisterija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = martiMisterija.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E210F09B28B6DBAD009A0958 /* martiMisterija.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = martiMisterija.plist; sourceTree = SOURCE_ROOT; };
 		E210F09C28B6DCE9009A0958 /* AssetsMM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsMM.swift; sourceTree = "<group>"; };
@@ -396,6 +408,12 @@
 		7C9E0AFB2C90ACE40010199C /* Tekstovi */ = {
 			isa = PBXGroup;
 			children = (
+				7CD068F42CC03E4A00CAD288 /* igramo2.bukvalno.txt */,
+				7CD068F52CC03E4A00CAD288 /* igramo2.finalno.txt */,
+				7CD068F92CC03E4B00CAD288 /* igramo2.txt */,
+				7CD068F72CC03E4B00CAD288 /* inat.bukvalno.txt */,
+				7CD068F62CC03E4B00CAD288 /* inat.finalno.txt */,
+				7CD068F82CC03E4B00CAD288 /* inat.txt */,
 				7C9E0A862C90ACE40010199C /* abvgd.bukvalno.txt */,
 				7C9E0A872C90ACE40010199C /* abvgd.finalno.txt */,
 				7C9E0A882C90ACE40010199C /* abvgd.txt */,
@@ -663,6 +681,7 @@
 				7C9E0B122C90ACE40010199C /* hajde.finalno.txt in Resources */,
 				7C9E0AFC2C90ACE40010199C /* abvgd.bukvalno.txt in Resources */,
 				7C9E0B1F2C90ACE40010199C /* kadbi2.txt in Resources */,
+				7CD068FF2CC03E4B00CAD288 /* igramo2.txt in Resources */,
 				7C9E0B5B2C90ACE40010199C /* studio.txt in Resources */,
 				7C23B8EE21F831C000CABDD6 /* LaunchScreen.storyboard in Resources */,
 				7C9E0B6B2C90ACE40010199C /* zlatibore.bukvalno.txt in Resources */,
@@ -725,12 +744,14 @@
 				7C9E0B6C2C90ACE40010199C /* zlatibore.finalno.txt in Resources */,
 				7C9E0B552C90ACE40010199C /* pub.txt in Resources */,
 				7C9E0B0D2C90ACE40010199C /* druze.txt in Resources */,
+				7CD068FA2CC03E4B00CAD288 /* igramo2.bukvalno.txt in Resources */,
 				7C9E0B292C90ACE40010199C /* kukavica.bukvalno.txt in Resources */,
 				7C9E0B352C90ACE40010199C /* mogli.bukvalno.txt in Resources */,
 				7C9E0B652C90ACE40010199C /* zajedno.bukvalno.txt in Resources */,
 				7C9E0B2E2C90ACE40010199C /* li.txt in Resources */,
 				7C9E0B282C90ACE40010199C /* koljena.txt in Resources */,
 				7C9E0B032C90ACE40010199C /* anketa2.finalno.txt in Resources */,
+				7CD068FC2CC03E4B00CAD288 /* inat.finalno.txt in Resources */,
 				7C9E0B3B2C90ACE40010199C /* nevolem.bukvalno.txt in Resources */,
 				7C9E0B3C2C90ACE40010199C /* nevolem.finalno.txt in Resources */,
 				7C9E0B5F2C90ACE40010199C /* TjeloHristovo.bukvalno.txt in Resources */,
@@ -751,11 +772,13 @@
 				7C9E0B432C90ACE40010199C /* nikadniko.txt in Resources */,
 				7C9E0B692C90ACE40010199C /* zenidba.finalno.txt in Resources */,
 				7C23B8E921F831C000CABDD6 /* Main.storyboard in Resources */,
+				7CD068FE2CC03E4B00CAD288 /* inat.txt in Resources */,
 				7C9E0B392C90ACE40010199C /* necevatra.finalno.txt in Resources */,
 				7C9E0B202C90ACE40010199C /* kengur2.bukvalno.txt in Resources */,
 				7C9E0B4C2C90ACE40010199C /* ostaricu.txt in Resources */,
 				7C9E0B5C2C90ACE40010199C /* takotreba.bukvalno.txt in Resources */,
 				7C9E0B6F2C90ACE40010199C /* zohari.finalno.txt in Resources */,
+				7CD068FD2CC03E4B00CAD288 /* inat.bukvalno.txt in Resources */,
 				7C9E0B092C90ACE40010199C /* daj.finalno.txt in Resources */,
 				7C9E0B542C90ACE40010199C /* pub.finalno.txt in Resources */,
 				7C9E0B472C90ACE40010199C /* opilo.bukvalno.txt in Resources */,
@@ -779,6 +802,7 @@
 				7C9E0B452C90ACE40010199C /* novak.finalno.txt in Resources */,
 				7C9E0B642C90ACE40010199C /* udva.txt in Resources */,
 				7C9E0B442C90ACE40010199C /* novak.bukvalno.txt in Resources */,
+				7CD068FB2CC03E4B00CAD288 /* igramo2.finalno.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

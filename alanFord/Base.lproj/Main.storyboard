@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,10 +29,6 @@
         <scene sceneID="yUG-lL-AsK">
             <objects>
                 <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="alanFord" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uM3-P4-e35"/>
-                        <viewControllerLayoutGuide type="bottom" id="df5-np-TcK"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,12 +37,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="zgv-Ln-brm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1k5-gh-PgS" firstAttribute="top" secondItem="uM3-P4-e35" secondAttribute="bottom" id="CbP-Kx-G1n"/>
-                            <constraint firstItem="1k5-gh-PgS" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="HMq-SQ-lLY"/>
-                            <constraint firstItem="1k5-gh-PgS" firstAttribute="bottom" secondItem="df5-np-TcK" secondAttribute="top" id="hc5-jm-8UP"/>
-                            <constraint firstAttribute="trailing" secondItem="1k5-gh-PgS" secondAttribute="trailing" id="sjk-9c-5g4"/>
+                            <constraint firstItem="1k5-gh-PgS" firstAttribute="top" secondItem="zgv-Ln-brm" secondAttribute="top" id="CbP-Kx-G1n"/>
+                            <constraint firstItem="1k5-gh-PgS" firstAttribute="leading" secondItem="zgv-Ln-brm" secondAttribute="leading" id="HMq-SQ-lLY"/>
+                            <constraint firstItem="1k5-gh-PgS" firstAttribute="bottom" secondItem="zgv-Ln-brm" secondAttribute="bottom" id="hc5-jm-8UP"/>
+                            <constraint firstItem="zgv-Ln-brm" firstAttribute="trailing" secondItem="1k5-gh-PgS" secondAttribute="trailing" id="sjk-9c-5g4"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -89,7 +87,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="8" y="0.0" width="398" height="47.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="386" height="47.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="highlightedColor" systemColor="systemBackgroundColor"/>
@@ -117,6 +115,7 @@
                 <searchBar contentMode="redraw" id="u9y-Mp-AiQ">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="UqS-5v-nfV"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                 </searchBar>
             </objects>
@@ -126,10 +125,6 @@
         <scene sceneID="1Hg-a3-A4F">
             <objects>
                 <viewController storyboardIdentifier="PlayController" id="5md-7C-Ibg" customClass="PlayController" customModule="alanFord" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pCI-zN-qIl"/>
-                        <viewControllerLayoutGuide type="bottom" id="jnA-Qz-ryH"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pxn-f6-RXo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,12 +179,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="BKX-pj-uhE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LXX-Ta-jN4" firstAttribute="leading" secondItem="Pxn-f6-RXo" secondAttribute="leading" id="cdr-PA-4Ui"/>
-                            <constraint firstItem="jnA-Qz-ryH" firstAttribute="top" secondItem="LXX-Ta-jN4" secondAttribute="bottom" id="erh-7l-kdU"/>
+                            <constraint firstItem="LXX-Ta-jN4" firstAttribute="leading" secondItem="BKX-pj-uhE" secondAttribute="leading" id="cdr-PA-4Ui"/>
+                            <constraint firstItem="BKX-pj-uhE" firstAttribute="bottom" secondItem="LXX-Ta-jN4" secondAttribute="bottom" id="erh-7l-kdU"/>
                             <constraint firstItem="LXX-Ta-jN4" firstAttribute="top" secondItem="Pxn-f6-RXo" secondAttribute="top" id="rUx-7X-Vfm"/>
-                            <constraint firstItem="LXX-Ta-jN4" firstAttribute="centerX" secondItem="Pxn-f6-RXo" secondAttribute="centerX" id="ugg-T2-mXV"/>
+                            <constraint firstItem="LXX-Ta-jN4" firstAttribute="centerX" secondItem="BKX-pj-uhE" secondAttribute="centerX" id="ugg-T2-mXV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -220,29 +216,26 @@
         <scene sceneID="3Kh-81-cnF">
             <objects>
                 <viewController storyboardIdentifier="OnePageController" id="6yu-Ik-G4q" customClass="OnePageController" customModule="alanFord" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8D8-Lh-gIA"/>
-                        <viewControllerLayoutGuide type="bottom" id="JNV-8u-dwI"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U8d-Cz-Jmk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-sp-Sof">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <activityIndicatorView contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bEH-5Y-DOp">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <rect key="frame" x="197" y="445" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="JKV-7i-lgi"/>
                         <constraints>
                             <constraint firstItem="bEH-5Y-DOp" firstAttribute="centerX" secondItem="rSx-sp-Sof" secondAttribute="centerX" id="7nR-x8-EsC"/>
-                            <constraint firstAttribute="bottom" secondItem="rSx-sp-Sof" secondAttribute="bottom" id="RGL-nA-5ml"/>
+                            <constraint firstItem="JKV-7i-lgi" firstAttribute="bottom" secondItem="rSx-sp-Sof" secondAttribute="bottom" constant="8" symbolic="YES" id="RGL-nA-5ml"/>
                             <constraint firstItem="bEH-5Y-DOp" firstAttribute="centerY" secondItem="rSx-sp-Sof" secondAttribute="centerY" id="bEn-dm-fWh"/>
-                            <constraint firstItem="rSx-sp-Sof" firstAttribute="top" secondItem="U8d-Cz-Jmk" secondAttribute="top" id="cAN-B8-UNC"/>
-                            <constraint firstItem="rSx-sp-Sof" firstAttribute="leading" secondItem="U8d-Cz-Jmk" secondAttribute="leading" id="kcn-Hq-frY"/>
-                            <constraint firstAttribute="trailing" secondItem="rSx-sp-Sof" secondAttribute="trailing" id="waX-50-jm6"/>
+                            <constraint firstItem="rSx-sp-Sof" firstAttribute="top" secondItem="JKV-7i-lgi" secondAttribute="top" constant="8" symbolic="YES" id="cAN-B8-UNC"/>
+                            <constraint firstItem="rSx-sp-Sof" firstAttribute="leading" secondItem="JKV-7i-lgi" secondAttribute="leading" id="kcn-Hq-frY"/>
+                            <constraint firstItem="JKV-7i-lgi" firstAttribute="trailing" secondItem="rSx-sp-Sof" secondAttribute="trailing" id="waX-50-jm6"/>
                         </constraints>
                     </view>
                     <connections>
