@@ -1,5 +1,5 @@
 https://mg94c18dijaspora.fra1.digitaloceanspaces.com/pozdravi.mp3
-
+orig: Pozdravi je, pozdravi
 Pričaj mi o njoj, pričaj sve što znaš
 Reci dal je boli sad rastanak naš
 Ali nemoj lažnu nadu da mi daš
@@ -12,6 +12,11 @@ suze |bi joj |rekle sve
 Viđaš li je s kim?  Ko je srećnik taj?
 Da li joj na licu blista sreće sjaj
 il [još uvek] [nije prebolela] kraj?
+
+[Pozdravi je], pozdravi
+Volim je ko pre
+Eh, [|da |mogu] poslati joj suze,
+suze |bi joj |rekle sve
 
 [Nisam sreo] još ljubav sličnu njoj,
 a [sreo sam] žena [ne zna im se broj]
