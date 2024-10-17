@@ -53,6 +53,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
         DetailViewController.lastLoadedEpisode = episodeId
         title = Assets.titles[episodeId]
+        // TODO: ovde pogledati da update-uje title ako svira, na primer "▷ 1/3"
         navigationController?.isNavigationBarHidden = false
 
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(doubleTap))
@@ -84,6 +85,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             arrayForSaving.append("\(Assets.numbers[elem])")
         }
         UserDefaults.standard.set(arrayForSaving, forKey: key)
+        // TODO: ovde staviti postInitDownloadButton
     }
     
     static func loadStoredArray(_ key: String) -> [Int] {
@@ -157,25 +159,25 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     // "rectangle.and.pencil.and.ellipsis" ili prosto "square.and.pencil" za Appstore (jer može da se piše autoru ili da se napiše review)
     func showPlay() {
         if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.down"), style: .plain, target: self, action: #selector(configurePlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "play.circle"), style: .plain, target: self, action: #selector(configurePlay))
         } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Download", style: .plain, target: self, action: #selector(configurePlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(configurePlay))
         }
     }
     
     func showCancel() {
         if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "x.square"), style: .plain, target: self, action: #selector(cancelPlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "stop.circle"), style: .plain, target: self, action: #selector(cancelPlay))
         } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Otkaži", style: .plain, target: self, action: #selector(cancelPlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Stop", style: .plain, target: self, action: #selector(cancelPlay))
         }
     }
 
     func showToggle() {
         if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"), style: .plain, target: self, action: #selector(toggleTranslation))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "doc.on.doc"), style: .plain, target: self, action: #selector(toggleTranslation))
         } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Appstore", style: .plain, target: self, action: #selector(toggleTranslation))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Prevod", style: .plain, target: self, action: #selector(toggleTranslation))
         }
     }
     
@@ -193,10 +195,14 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             return
         }
 
-        let trackId = Assets.numbers[tracks[0]]
-        let url = cacheDir.appendingPathComponent(trackId + ".mp3").absoluteURL
+        var playerItems: [AVPlayerItem] = []
+        playerItems.reserveCapacity(tracks.count)
 
-        AppDelegate.player = AVQueuePlayer.init(url: url)
+        for i in stride(from: 0, to: tracks.count, by: 1) {
+            playerItems.append(AVPlayerItem.init(url: cacheDir.appendingPathComponent(Assets.numbers[tracks[i]] + ".mp3").absoluteURL))
+        }
+        AppDelegate.player = AVQueuePlayer.init(items: playerItems)
+        AppDelegate.player.actionAtItemEnd = .advance
         AppDelegate.player.play()
 
         dismiss(animated: true)

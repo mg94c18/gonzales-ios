@@ -157,7 +157,7 @@ class OnePageController : UIViewController {
             }
             builder += "</table>"
         } else {
-            builder += "<p>\(author), \(inLandscape)<br>"
+            builder += "<p>\(author)<br>"
             if tekst.count > 1 && !tekst[1].isEmpty {
                 builder += tekst[1]
             }
