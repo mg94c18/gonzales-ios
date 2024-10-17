@@ -8,9 +8,8 @@
 
 import UIKit
 import AVFoundation
-import os.log
 
-class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource {
+class DetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var pageView: UIView!
 
     static var lastLoadedEpisode: Int = -1
@@ -23,7 +22,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
     private var downloadDir: URL?
     private var offerDeleteDownloaded: Bool = false
     private var downloadedEpisodes: [Int] = []
-    private var player: AVPlayer?
+    private var onePageController: OnePageController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,14 +36,18 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         let firstController = storyboard?.instantiateViewController(withIdentifier: "OnePageController") as! OnePageController
         firstController.downloadDir = downloadDir
 
-        firstController.page = (episodeId, pages, Assets.pages(forEpisode: episodeId, withTranslation: ".bukvalno"))
+        firstController.page = (episodeId,
+                                pages,
+                                Assets.pages(forEpisode: episodeId, withTranslation: ".bukvalno"),
+                                Assets.pages(forEpisode: episodeId, withTranslation: ".finalno"))
 
         // TODO: treba da ima samo jedan child, tako da ne "add"
         self.addChildViewController(firstController)
         self.pageView.addSubview(firstController.view)
         firstController.view.frame = pageView.bounds
         firstController.didMove(toParentViewController: self)
-        
+        onePageController = firstController
+
         if DetailViewController.lastLoadedEpisode != -1 && OnePageController.lastLoadedIndex != -1 {
             DetailViewController.previouslyLoaded = (DetailViewController.lastLoadedEpisode, OnePageController.lastLoadedIndex)
         }
@@ -58,18 +61,17 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         postInitDownloadButton()
     }
 
-    func postInitDownloadButton() {
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.initDownloadButton()
-        }
-    }
-    
-    func postInitDownloadButton(at: DispatchTime) {
-        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: at) {
+    func postInitDownloadButton(at: DispatchTime = .now()) {
+        DispatchQueue.main.asyncAfter(deadline: at) {
             self.initDownloadButton()
         }
     }
 
+    override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
+        postInitDownloadButton()
+        super.viewWillTransition(to: size, with: coordinator)
+    }
+    
     static func onEpisodeDownloaded(_ episodeId: Int) {
         let key = "downloadedEpisodes"
         var array = DetailViewController.loadStoredArray(key)
@@ -102,8 +104,18 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         if DetailViewController.loadStoredArray("downloadedEpisodes").isEmpty {
             return
         }
-        DispatchQueue.main.async {
-            self.showDownload()
+        guard let onePageController = onePageController else {
+            AppDelegate.log("Unexpected, no onePageController")
+            return
+        }
+        if (onePageController.inLandscape) {
+            self.showToggle()
+        } else {
+            if AppDelegate.player.currentItem == nil {
+                self.showPlay()
+            } else {
+                self.showCancel()
+            }
         }
     }
     
@@ -126,37 +138,22 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         self.present(confirmation, animated: true, completion: nil)
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return downloadedEpisodes.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayCell", for: indexPath)
-        
-        var title = "\(downloadedEpisodes[indexPath.row] + 1). \(Assets.titles[downloadedEpisodes[indexPath.row]])"
-        cell.textLabel!.text = title
-        
-        return cell
-    }
-    
     @objc func configurePlay() {
         downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
         let playController = storyboard?.instantiateViewController(withIdentifier: "PlayController") as! PlayController
         self.present(playController, animated: true, completion: nil)
-        playController.tableView.dataSource = self
-        playController.tableView.allowsMultipleSelection = true
-        playController.detailViewController = self
+        playController.configure(downloadedEpisodes, self)
     }
 
-    @objc func cancelDownload() {
-        postInitDownloadButton(at: .now() + .seconds(3))
-        navigationItem.rightBarButtonItem = nil
+    @objc func cancelPlay() {
+        postInitDownloadButton(at: .now() + .seconds(1))
+        AppDelegate.player.removeAllItems()
     }
 
     // "square.and.arrow.down" iz "SF Symbols" za download
     // "wifi.slash" kad nema interneta
     // "rectangle.and.pencil.and.ellipsis" ili prosto "square.and.pencil" za Appstore (jer može da se piše autoru ili da se napiše review)
-    func showDownload() {
+    func showPlay() {
         if #available(iOS 13.0, *) {
             navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.down"), style: .plain, target: self, action: #selector(configurePlay))
         } else {
@@ -164,37 +161,44 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
         }
     }
     
-    func showCancelDownload() {
+    func showCancel() {
         if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "x.square"), style: .plain, target: self, action: #selector(cancelDownload))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "x.square"), style: .plain, target: self, action: #selector(cancelPlay))
         } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Otkaži", style: .plain, target: self, action: #selector(cancelDownload))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Otkaži", style: .plain, target: self, action: #selector(cancelPlay))
         }
+    }
+
+    func showToggle() {
+        if #available(iOS 13.0, *) {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"), style: .plain, target: self, action: #selector(toggleTranslation))
+        } else {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Appstore", style: .plain, target: self, action: #selector(toggleTranslation))
+        }
+    }
+    
+    @objc func toggleTranslation() {
+        onePageController!.toggleTranslation()
     }
 
     func startPlayback(of tracks: [Int]) {
         guard let cacheDir = downloadDir else {
-            if #available(iOS 10.0, *) {
-                os_log("Playback from where?")
-            } else {
-                // Fallback on earlier versions
-            }
+            AppDelegate.log("Playback from where?")
             return
         }
         if tracks.count < 1 {
-            if #available(iOS 10.0, *) {
-                os_log("Playback what?")
-            } else {
-                // Fallback on earlier versions
-            }
+            AppDelegate.log("Playback what?")
             return
         }
 
         let trackId = Assets.numbers[tracks[0]]
         let url = cacheDir.appendingPathComponent(trackId + ".mp3").absoluteURL
-        player = AVPlayer.init(url: url)
-        player!.play()
+
+        AppDelegate.player = AVQueuePlayer.init(url: url)
+        AppDelegate.player.play()
+
         dismiss(animated: true)
+        postInitDownloadButton()
     }
 
     @objc func doubleTap() {
@@ -211,4 +215,3 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UITableViewDa
     }
 
 }
-

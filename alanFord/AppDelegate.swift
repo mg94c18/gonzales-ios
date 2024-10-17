@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation.AVAudioSession
+import os.log
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -15,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     static var inBackground = false
     static var unseenCrashes = 0
     static var unseenCrashesKey = "unseenCrashes"
+    static var player: AVQueuePlayer = AVQueuePlayer.init(items: [])
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -75,5 +77,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         return false
     }
 
+    static func log(_ message: String) {
+        if #available(iOS 10.0, *) {
+            os_log("")
+        } else {
+            // Fallback on earlier versions
+        }
+    }
 }
 

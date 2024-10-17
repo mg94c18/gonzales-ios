@@ -41,7 +41,7 @@ extension OnePageController: ImageDownloaderDelegate {
 class OnePageController : UIViewController {
     var inLandscape: Bool = false
 
-    var page: (Int, [String], [String]) = (-1, [""], [""]) {
+    var page: (Int, [String], [String], [String]) = (-1, [""], [""], [""]) {
         didSet {
             fileNameSuffix = OnePageController.lastChunk(from: page.1[0], startingWith: "/")
         }
@@ -51,6 +51,7 @@ class OnePageController : UIViewController {
     var task: URLSessionDataTask?
     var downloadDir: URL?
     var fileNameSuffix: String = ""
+    var translationFinal: Bool = false
 
     static func lastChunk(from s: String, startingWith c: Character) -> String {
         guard let pos = s.lastIndex(of: c) else {
@@ -75,7 +76,8 @@ class OnePageController : UIViewController {
     }
     
     func refreshWebView() {
-        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: page.2, removeGroupings: false, author: "author", a3byka: false, inLandscape: inLandscape, searchedWord: "", fontSize: inLandscape ? 3 : 5)
+        let translation = translationFinal ? page.3 : page.2
+        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: translation, removeGroupings: false, author: "author", a3byka: false, inLandscape: inLandscape, searchedWord: "", fontSize: inLandscape ? 3 : 5)
 
         // webView.scalesPageToFit = true
         // https://developer.apple.com/documentation/uikit/uitextview
@@ -89,9 +91,9 @@ class OnePageController : UIViewController {
     
     // Kažu da ovo treba da radi jer navodno kreiraš u portrait pa se ovo pozove...  Ali ne.
     override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
         inLandscape = (size.width > size.height)
         refreshWebView()
+        super.viewWillTransition(to: size, with: coordinator)
     }
 
     func handleError() {
@@ -99,6 +101,11 @@ class OnePageController : UIViewController {
             self.activityIndicator.hidesWhenStopped = false
             self.activityIndicator.stopAnimating()
         }
+    }
+
+    func toggleTranslation() {
+        translationFinal = !translationFinal
+        refreshWebView()
     }
 
     func postLoad() {
