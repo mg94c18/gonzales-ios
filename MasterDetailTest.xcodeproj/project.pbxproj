@@ -161,6 +161,105 @@
 		7CD068FD2CC03E4B00CAD288 /* inat.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F72CC03E4B00CAD288 /* inat.bukvalno.txt */; };
 		7CD068FE2CC03E4B00CAD288 /* inat.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F82CC03E4B00CAD288 /* inat.txt */; };
 		7CD068FF2CC03E4B00CAD288 /* igramo2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD068F92CC03E4B00CAD288 /* igramo2.txt */; };
+		7CD0694D2CC0A72700CAD288 /* manuela.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069012CC0A72600CAD288 /* manuela.finalno.txt */; };
+		7CD0694E2CC0A72700CAD288 /* baila2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069022CC0A72600CAD288 /* baila2.bukvalno.txt */; };
+		7CD0694F2CC0A72700CAD288 /* aveces2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069032CC0A72600CAD288 /* aveces2.bukvalno.txt */; };
+		7CD069502CC0A72700CAD288 /* libroviejo.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069042CC0A72600CAD288 /* libroviejo.finalno.txt */; };
+		7CD069512CC0A72700CAD288 /* besame.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069052CC0A72600CAD288 /* besame.finalno.txt */; };
+		7CD069522CC0A72700CAD288 /* cielorojo2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069062CC0A72600CAD288 /* cielorojo2.bukvalno.txt */; };
+		7CD069532CC0A72700CAD288 /* cuerpo.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069072CC0A72600CAD288 /* cuerpo.bukvalno.txt */; };
+		7CD069542CC0A72700CAD288 /* recordaras.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069082CC0A72600CAD288 /* recordaras.bukvalno.txt */; };
+		7CD069552CC0A72700CAD288 /* quizas.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069092CC0A72600CAD288 /* quizas.txt */; };
+		7CD069562CC0A72700CAD288 /* baila2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0690A2CC0A72600CAD288 /* baila2.finalno.txt */; };
+		7CD069572CC0A72700CAD288 /* cuerpo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0690B2CC0A72600CAD288 /* cuerpo.txt */; };
+		7CD069582CC0A72700CAD288 /* recuerdos2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0690C2CC0A72600CAD288 /* recuerdos2.finalno.txt */; };
+		7CD069592CC0A72700CAD288 /* recuerdos2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0690D2CC0A72600CAD288 /* recuerdos2.txt */; };
+		7CD0695A2CC0A72700CAD288 /* basurita.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0690E2CC0A72600CAD288 /* basurita.finalno.txt */; };
+		7CD0695B2CC0A72700CAD288 /* recordaras.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0690F2CC0A72600CAD288 /* recordaras.txt */; };
+		7CD0695C2CC0A72700CAD288 /* chatarra.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069102CC0A72600CAD288 /* chatarra.txt */; };
+		7CD0695D2CC0A72700CAD288 /* chatarra.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069112CC0A72600CAD288 /* chatarra.bukvalno.txt */; };
+		7CD0695E2CC0A72700CAD288 /* hubierasabido.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069122CC0A72600CAD288 /* hubierasabido.bukvalno.txt */; };
+		7CD0695F2CC0A72700CAD288 /* nada.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069132CC0A72600CAD288 /* nada.txt */; };
+		7CD069602CC0A72700CAD288 /* basurita.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069142CC0A72600CAD288 /* basurita.txt */; };
+		7CD069612CC0A72700CAD288 /* libroviejo.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069152CC0A72600CAD288 /* libroviejo.bukvalno.txt */; };
+		7CD069622CC0A72700CAD288 /* manuela.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069162CC0A72600CAD288 /* manuela.txt */; };
+		7CD069632CC0A72700CAD288 /* interesas.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069172CC0A72600CAD288 /* interesas.finalno.txt */; };
+		7CD069642CC0A72700CAD288 /* llorona.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069182CC0A72600CAD288 /* llorona.txt */; };
+		7CD069652CC0A72700CAD288 /* quizas.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069192CC0A72600CAD288 /* quizas.bukvalno.txt */; };
+		7CD069662CC0A72700CAD288 /* besame.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0691A2CC0A72600CAD288 /* besame.txt */; };
+		7CD069672CC0A72700CAD288 /* hey2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0691B2CC0A72600CAD288 /* hey2.finalno.txt */; };
+		7CD069682CC0A72700CAD288 /* hubierasabido.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0691C2CC0A72600CAD288 /* hubierasabido.txt */; };
+		7CD069692CC0A72700CAD288 /* aveces2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0691D2CC0A72600CAD288 /* aveces2.finalno.txt */; };
+		7CD0696A2CC0A72700CAD288 /* llorona.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0691E2CC0A72600CAD288 /* llorona.bukvalno.txt */; };
+		7CD0696B2CC0A72700CAD288 /* carretera.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0691F2CC0A72600CAD288 /* carretera.bukvalno.txt */; };
+		7CD0696C2CC0A72700CAD288 /* llorona.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069202CC0A72600CAD288 /* llorona.finalno.txt */; };
+		7CD0696D2CC0A72700CAD288 /* hermoso.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069212CC0A72600CAD288 /* hermoso.bukvalno.txt */; };
+		7CD0696E2CC0A72700CAD288 /* hastasiempre.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069222CC0A72600CAD288 /* hastasiempre.txt */; };
+		7CD0696F2CC0A72700CAD288 /* lutte.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069232CC0A72600CAD288 /* lutte.finalno.txt */; };
+		7CD069702CC0A72700CAD288 /* nada.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069242CC0A72600CAD288 /* nada.bukvalno.txt */; };
+		7CD069712CC0A72700CAD288 /* carretera.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069252CC0A72600CAD288 /* carretera.txt */; };
+		7CD069722CC0A72700CAD288 /* hermoso.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069262CC0A72600CAD288 /* hermoso.txt */; };
+		7CD069732CC0A72700CAD288 /* besame.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069272CC0A72600CAD288 /* besame.bukvalno.txt */; };
+		7CD069742CC0A72700CAD288 /* basurita.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069282CC0A72600CAD288 /* basurita.bukvalno.txt */; };
+		7CD069752CC0A72700CAD288 /* elrey.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069292CC0A72600CAD288 /* elrey.txt */; };
+		7CD069762CC0A72700CAD288 /* encuestaamor.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0692A2CC0A72700CAD288 /* encuestaamor.finalno.txt */; };
+		7CD069772CC0A72700CAD288 /* cielorojo2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0692B2CC0A72700CAD288 /* cielorojo2.finalno.txt */; };
+		7CD069782CC0A72700CAD288 /* querria.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0692C2CC0A72700CAD288 /* querria.txt */; };
+		7CD069792CC0A72700CAD288 /* perdi.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0692D2CC0A72700CAD288 /* perdi.bukvalno.txt */; };
+		7CD0697A2CC0A72700CAD288 /* carretera.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0692E2CC0A72700CAD288 /* carretera.finalno.txt */; };
+		7CD0697B2CC0A72700CAD288 /* hubierasabido.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0692F2CC0A72700CAD288 /* hubierasabido.finalno.txt */; };
+		7CD0697C2CC0A72700CAD288 /* cuerpo.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069302CC0A72700CAD288 /* cuerpo.finalno.txt */; };
+		7CD0697D2CC0A72700CAD288 /* hey2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069312CC0A72700CAD288 /* hey2.bukvalno.txt */; };
+		7CD0697E2CC0A72700CAD288 /* manuela.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069322CC0A72700CAD288 /* manuela.bukvalno.txt */; };
+		7CD0697F2CC0A72700CAD288 /* querria.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069332CC0A72700CAD288 /* querria.bukvalno.txt */; };
+		7CD069802CC0A72700CAD288 /* seranovia.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069342CC0A72700CAD288 /* seranovia.bukvalno.txt */; };
+		7CD069812CC0A72700CAD288 /* recordaras.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069352CC0A72700CAD288 /* recordaras.finalno.txt */; };
+		7CD069822CC0A72700CAD288 /* libroviejo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069362CC0A72700CAD288 /* libroviejo.txt */; };
+		7CD069832CC0A72700CAD288 /* lutte.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069372CC0A72700CAD288 /* lutte.bukvalno.txt */; };
+		7CD069842CC0A72700CAD288 /* aveces2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069382CC0A72700CAD288 /* aveces2.txt */; };
+		7CD069852CC0A72700CAD288 /* recuerdos2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069392CC0A72700CAD288 /* recuerdos2.bukvalno.txt */; };
+		7CD069862CC0A72700CAD288 /* nada.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0693A2CC0A72700CAD288 /* nada.finalno.txt */; };
+		7CD069872CC0A72700CAD288 /* elrey.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0693B2CC0A72700CAD288 /* elrey.bukvalno.txt */; };
+		7CD069882CC0A72700CAD288 /* hastasiempre.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0693C2CC0A72700CAD288 /* hastasiempre.finalno.txt */; };
+		7CD069892CC0A72700CAD288 /* perdi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0693D2CC0A72700CAD288 /* perdi.txt */; };
+		7CD0698A2CC0A72700CAD288 /* chatarra.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0693E2CC0A72700CAD288 /* chatarra.finalno.txt */; };
+		7CD0698B2CC0A72700CAD288 /* interesas.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0693F2CC0A72700CAD288 /* interesas.txt */; };
+		7CD0698C2CC0A72700CAD288 /* hey2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069402CC0A72700CAD288 /* hey2.txt */; };
+		7CD0698D2CC0A72700CAD288 /* quizas.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069412CC0A72700CAD288 /* quizas.finalno.txt */; };
+		7CD0698E2CC0A72700CAD288 /* elrey.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069422CC0A72700CAD288 /* elrey.finalno.txt */; };
+		7CD0698F2CC0A72700CAD288 /* hastasiempre.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069432CC0A72700CAD288 /* hastasiempre.bukvalno.txt */; };
+		7CD069902CC0A72700CAD288 /* interesas.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069442CC0A72700CAD288 /* interesas.bukvalno.txt */; };
+		7CD069912CC0A72700CAD288 /* perdi.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069452CC0A72700CAD288 /* perdi.finalno.txt */; };
+		7CD069922CC0A72700CAD288 /* querria.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069462CC0A72700CAD288 /* querria.finalno.txt */; };
+		7CD069932CC0A72700CAD288 /* hermoso.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069472CC0A72700CAD288 /* hermoso.finalno.txt */; };
+		7CD069942CC0A72700CAD288 /* encuestaamor.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069482CC0A72700CAD288 /* encuestaamor.bukvalno.txt */; };
+		7CD069952CC0A72700CAD288 /* cielorojo2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069492CC0A72700CAD288 /* cielorojo2.txt */; };
+		7CD069962CC0A72700CAD288 /* baila2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0694A2CC0A72700CAD288 /* baila2.txt */; };
+		7CD069972CC0A72700CAD288 /* encuestaamor.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0694B2CC0A72700CAD288 /* encuestaamor.txt */; };
+		7CD069982CC0A72700CAD288 /* lutte.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0694C2CC0A72700CAD288 /* lutte.txt */; };
+		7CD069B02CC0A7D400CAD288 /* sumujer2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069992CC0A7D300CAD288 /* sumujer2.txt */; };
+		7CD069B12CC0A7D400CAD288 /* tienesabor.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0699A2CC0A7D300CAD288 /* tienesabor.txt */; };
+		7CD069B22CC0A7D400CAD288 /* tienesabor.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0699B2CC0A7D300CAD288 /* tienesabor.bukvalno.txt */; };
+		7CD069B32CC0A7D400CAD288 /* volverb.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0699C2CC0A7D300CAD288 /* volverb.finalno.txt */; };
+		7CD069B42CC0A7D400CAD288 /* sumujer2.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0699D2CC0A7D300CAD288 /* sumujer2.finalno.txt */; };
+		7CD069B52CC0A7D400CAD288 /* sumujer2.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0699E2CC0A7D300CAD288 /* sumujer2.bukvalno.txt */; };
+		7CD069B62CC0A7D400CAD288 /* unomas.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0699F2CC0A7D400CAD288 /* unomas.finalno.txt */; };
+		7CD069B72CC0A7D400CAD288 /* shakira.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A02CC0A7D400CAD288 /* shakira.txt */; };
+		7CD069B82CC0A7D400CAD288 /* seranovia.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A12CC0A7D400CAD288 /* seranovia.finalno.txt */; };
+		7CD069B92CC0A7D400CAD288 /* seranovia.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A22CC0A7D400CAD288 /* seranovia.txt */; };
+		7CD069BA2CC0A7D400CAD288 /* unomas.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A32CC0A7D400CAD288 /* unomas.txt */; };
+		7CD069BB2CC0A7D400CAD288 /* valemucho.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A42CC0A7D400CAD288 /* valemucho.txt */; };
+		7CD069BC2CC0A7D400CAD288 /* unomas.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A52CC0A7D400CAD288 /* unomas.bukvalno.txt */; };
+		7CD069BD2CC0A7D400CAD288 /* volvera.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A62CC0A7D400CAD288 /* volvera.bukvalno.txt */; };
+		7CD069BE2CC0A7D400CAD288 /* volvera.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A72CC0A7D400CAD288 /* volvera.txt */; };
+		7CD069BF2CC0A7D400CAD288 /* volverb.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A82CC0A7D400CAD288 /* volverb.bukvalno.txt */; };
+		7CD069C02CC0A7D400CAD288 /* shakira.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069A92CC0A7D400CAD288 /* shakira.bukvalno.txt */; };
+		7CD069C12CC0A7D400CAD288 /* shakira.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AA2CC0A7D400CAD288 /* shakira.finalno.txt */; };
+		7CD069C22CC0A7D400CAD288 /* tienesabor.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AB2CC0A7D400CAD288 /* tienesabor.finalno.txt */; };
+		7CD069C32CC0A7D400CAD288 /* valemucho.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AC2CC0A7D400CAD288 /* valemucho.bukvalno.txt */; };
+		7CD069C42CC0A7D400CAD288 /* volvera.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AD2CC0A7D400CAD288 /* volvera.finalno.txt */; };
+		7CD069C52CC0A7D400CAD288 /* volverb.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AE2CC0A7D400CAD288 /* volverb.txt */; };
+		7CD069C62CC0A7D400CAD288 /* valemucho.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AF2CC0A7D400CAD288 /* valemucho.finalno.txt */; };
 		E210F08A28B6DBAD009A0958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E521F831C000CABDD6 /* DetailViewController.swift */; };
 		E210F08B28B6DBAD009A0958 /* OnePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA5C8288C849F0019D7DD /* OnePageController.swift */; };
 		E210F08C28B6DBAD009A0958 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */; };
@@ -173,7 +272,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C23B8DE21F831C000CABDD6 /* alanFord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alanFord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C23B8DE21F831C000CABDD6 /* dijaspora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dijaspora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C23B8E121F831C000CABDD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C23B8E321F831C000CABDD6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		7C23B8E521F831C000CABDD6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -307,7 +406,7 @@
 		7CB86834288F528A00FB799D /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		7CCDDDA728D1152500277E38 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 		7CCDDDA828D1152500277E38 /* README-Flavors */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README-Flavors"; sourceTree = SOURCE_ROOT; };
-		7CCDDDBA28D153B300277E38 /* druzinaOdVjesala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = druzinaOdVjesala.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCDDDBA28D153B300277E38 /* gonzales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gonzales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCDDDBB28D153B300277E38 /* druzinaOdVjesala.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = druzinaOdVjesala.plist; path = /Users/sstevano/Documents/my/src/Workspace/XCode/MasterDetailTest/druzinaOdVjesala.plist; sourceTree = "<absolute>"; };
 		7CCDDDBD28D154A800277E38 /* AssetsDV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsDV.swift; sourceTree = "<group>"; };
 		7CD068F42CC03E4A00CAD288 /* igramo2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = igramo2.bukvalno.txt; sourceTree = "<group>"; };
@@ -316,6 +415,105 @@
 		7CD068F72CC03E4B00CAD288 /* inat.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inat.bukvalno.txt; sourceTree = "<group>"; };
 		7CD068F82CC03E4B00CAD288 /* inat.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inat.txt; sourceTree = "<group>"; };
 		7CD068F92CC03E4B00CAD288 /* igramo2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = igramo2.txt; sourceTree = "<group>"; };
+		7CD069012CC0A72600CAD288 /* manuela.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = manuela.finalno.txt; sourceTree = "<group>"; };
+		7CD069022CC0A72600CAD288 /* baila2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baila2.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069032CC0A72600CAD288 /* aveces2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aveces2.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069042CC0A72600CAD288 /* libroviejo.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libroviejo.finalno.txt; sourceTree = "<group>"; };
+		7CD069052CC0A72600CAD288 /* besame.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = besame.finalno.txt; sourceTree = "<group>"; };
+		7CD069062CC0A72600CAD288 /* cielorojo2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cielorojo2.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069072CC0A72600CAD288 /* cuerpo.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cuerpo.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069082CC0A72600CAD288 /* recordaras.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recordaras.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069092CC0A72600CAD288 /* quizas.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quizas.txt; sourceTree = "<group>"; };
+		7CD0690A2CC0A72600CAD288 /* baila2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baila2.finalno.txt; sourceTree = "<group>"; };
+		7CD0690B2CC0A72600CAD288 /* cuerpo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cuerpo.txt; sourceTree = "<group>"; };
+		7CD0690C2CC0A72600CAD288 /* recuerdos2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recuerdos2.finalno.txt; sourceTree = "<group>"; };
+		7CD0690D2CC0A72600CAD288 /* recuerdos2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recuerdos2.txt; sourceTree = "<group>"; };
+		7CD0690E2CC0A72600CAD288 /* basurita.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basurita.finalno.txt; sourceTree = "<group>"; };
+		7CD0690F2CC0A72600CAD288 /* recordaras.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recordaras.txt; sourceTree = "<group>"; };
+		7CD069102CC0A72600CAD288 /* chatarra.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chatarra.txt; sourceTree = "<group>"; };
+		7CD069112CC0A72600CAD288 /* chatarra.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chatarra.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069122CC0A72600CAD288 /* hubierasabido.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hubierasabido.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069132CC0A72600CAD288 /* nada.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nada.txt; sourceTree = "<group>"; };
+		7CD069142CC0A72600CAD288 /* basurita.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basurita.txt; sourceTree = "<group>"; };
+		7CD069152CC0A72600CAD288 /* libroviejo.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libroviejo.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069162CC0A72600CAD288 /* manuela.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = manuela.txt; sourceTree = "<group>"; };
+		7CD069172CC0A72600CAD288 /* interesas.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interesas.finalno.txt; sourceTree = "<group>"; };
+		7CD069182CC0A72600CAD288 /* llorona.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = llorona.txt; sourceTree = "<group>"; };
+		7CD069192CC0A72600CAD288 /* quizas.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quizas.bukvalno.txt; sourceTree = "<group>"; };
+		7CD0691A2CC0A72600CAD288 /* besame.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = besame.txt; sourceTree = "<group>"; };
+		7CD0691B2CC0A72600CAD288 /* hey2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hey2.finalno.txt; sourceTree = "<group>"; };
+		7CD0691C2CC0A72600CAD288 /* hubierasabido.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hubierasabido.txt; sourceTree = "<group>"; };
+		7CD0691D2CC0A72600CAD288 /* aveces2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aveces2.finalno.txt; sourceTree = "<group>"; };
+		7CD0691E2CC0A72600CAD288 /* llorona.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = llorona.bukvalno.txt; sourceTree = "<group>"; };
+		7CD0691F2CC0A72600CAD288 /* carretera.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = carretera.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069202CC0A72600CAD288 /* llorona.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = llorona.finalno.txt; sourceTree = "<group>"; };
+		7CD069212CC0A72600CAD288 /* hermoso.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hermoso.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069222CC0A72600CAD288 /* hastasiempre.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hastasiempre.txt; sourceTree = "<group>"; };
+		7CD069232CC0A72600CAD288 /* lutte.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lutte.finalno.txt; sourceTree = "<group>"; };
+		7CD069242CC0A72600CAD288 /* nada.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nada.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069252CC0A72600CAD288 /* carretera.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = carretera.txt; sourceTree = "<group>"; };
+		7CD069262CC0A72600CAD288 /* hermoso.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hermoso.txt; sourceTree = "<group>"; };
+		7CD069272CC0A72600CAD288 /* besame.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = besame.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069282CC0A72600CAD288 /* basurita.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basurita.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069292CC0A72600CAD288 /* elrey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elrey.txt; sourceTree = "<group>"; };
+		7CD0692A2CC0A72700CAD288 /* encuestaamor.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = encuestaamor.finalno.txt; sourceTree = "<group>"; };
+		7CD0692B2CC0A72700CAD288 /* cielorojo2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cielorojo2.finalno.txt; sourceTree = "<group>"; };
+		7CD0692C2CC0A72700CAD288 /* querria.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = querria.txt; sourceTree = "<group>"; };
+		7CD0692D2CC0A72700CAD288 /* perdi.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perdi.bukvalno.txt; sourceTree = "<group>"; };
+		7CD0692E2CC0A72700CAD288 /* carretera.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = carretera.finalno.txt; sourceTree = "<group>"; };
+		7CD0692F2CC0A72700CAD288 /* hubierasabido.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hubierasabido.finalno.txt; sourceTree = "<group>"; };
+		7CD069302CC0A72700CAD288 /* cuerpo.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cuerpo.finalno.txt; sourceTree = "<group>"; };
+		7CD069312CC0A72700CAD288 /* hey2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hey2.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069322CC0A72700CAD288 /* manuela.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = manuela.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069332CC0A72700CAD288 /* querria.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = querria.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069342CC0A72700CAD288 /* seranovia.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = seranovia.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069352CC0A72700CAD288 /* recordaras.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recordaras.finalno.txt; sourceTree = "<group>"; };
+		7CD069362CC0A72700CAD288 /* libroviejo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libroviejo.txt; sourceTree = "<group>"; };
+		7CD069372CC0A72700CAD288 /* lutte.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lutte.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069382CC0A72700CAD288 /* aveces2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aveces2.txt; sourceTree = "<group>"; };
+		7CD069392CC0A72700CAD288 /* recuerdos2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recuerdos2.bukvalno.txt; sourceTree = "<group>"; };
+		7CD0693A2CC0A72700CAD288 /* nada.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nada.finalno.txt; sourceTree = "<group>"; };
+		7CD0693B2CC0A72700CAD288 /* elrey.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elrey.bukvalno.txt; sourceTree = "<group>"; };
+		7CD0693C2CC0A72700CAD288 /* hastasiempre.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hastasiempre.finalno.txt; sourceTree = "<group>"; };
+		7CD0693D2CC0A72700CAD288 /* perdi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perdi.txt; sourceTree = "<group>"; };
+		7CD0693E2CC0A72700CAD288 /* chatarra.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chatarra.finalno.txt; sourceTree = "<group>"; };
+		7CD0693F2CC0A72700CAD288 /* interesas.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interesas.txt; sourceTree = "<group>"; };
+		7CD069402CC0A72700CAD288 /* hey2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hey2.txt; sourceTree = "<group>"; };
+		7CD069412CC0A72700CAD288 /* quizas.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quizas.finalno.txt; sourceTree = "<group>"; };
+		7CD069422CC0A72700CAD288 /* elrey.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elrey.finalno.txt; sourceTree = "<group>"; };
+		7CD069432CC0A72700CAD288 /* hastasiempre.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hastasiempre.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069442CC0A72700CAD288 /* interesas.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interesas.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069452CC0A72700CAD288 /* perdi.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perdi.finalno.txt; sourceTree = "<group>"; };
+		7CD069462CC0A72700CAD288 /* querria.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = querria.finalno.txt; sourceTree = "<group>"; };
+		7CD069472CC0A72700CAD288 /* hermoso.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hermoso.finalno.txt; sourceTree = "<group>"; };
+		7CD069482CC0A72700CAD288 /* encuestaamor.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = encuestaamor.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069492CC0A72700CAD288 /* cielorojo2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cielorojo2.txt; sourceTree = "<group>"; };
+		7CD0694A2CC0A72700CAD288 /* baila2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baila2.txt; sourceTree = "<group>"; };
+		7CD0694B2CC0A72700CAD288 /* encuestaamor.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = encuestaamor.txt; sourceTree = "<group>"; };
+		7CD0694C2CC0A72700CAD288 /* lutte.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lutte.txt; sourceTree = "<group>"; };
+		7CD069992CC0A7D300CAD288 /* sumujer2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sumujer2.txt; sourceTree = "<group>"; };
+		7CD0699A2CC0A7D300CAD288 /* tienesabor.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tienesabor.txt; sourceTree = "<group>"; };
+		7CD0699B2CC0A7D300CAD288 /* tienesabor.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tienesabor.bukvalno.txt; sourceTree = "<group>"; };
+		7CD0699C2CC0A7D300CAD288 /* volverb.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volverb.finalno.txt; sourceTree = "<group>"; };
+		7CD0699D2CC0A7D300CAD288 /* sumujer2.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sumujer2.finalno.txt; sourceTree = "<group>"; };
+		7CD0699E2CC0A7D300CAD288 /* sumujer2.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sumujer2.bukvalno.txt; sourceTree = "<group>"; };
+		7CD0699F2CC0A7D400CAD288 /* unomas.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unomas.finalno.txt; sourceTree = "<group>"; };
+		7CD069A02CC0A7D400CAD288 /* shakira.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shakira.txt; sourceTree = "<group>"; };
+		7CD069A12CC0A7D400CAD288 /* seranovia.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = seranovia.finalno.txt; sourceTree = "<group>"; };
+		7CD069A22CC0A7D400CAD288 /* seranovia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = seranovia.txt; sourceTree = "<group>"; };
+		7CD069A32CC0A7D400CAD288 /* unomas.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unomas.txt; sourceTree = "<group>"; };
+		7CD069A42CC0A7D400CAD288 /* valemucho.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = valemucho.txt; sourceTree = "<group>"; };
+		7CD069A52CC0A7D400CAD288 /* unomas.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unomas.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069A62CC0A7D400CAD288 /* volvera.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volvera.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069A72CC0A7D400CAD288 /* volvera.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volvera.txt; sourceTree = "<group>"; };
+		7CD069A82CC0A7D400CAD288 /* volverb.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volverb.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069A92CC0A7D400CAD288 /* shakira.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shakira.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069AA2CC0A7D400CAD288 /* shakira.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shakira.finalno.txt; sourceTree = "<group>"; };
+		7CD069AB2CC0A7D400CAD288 /* tienesabor.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tienesabor.finalno.txt; sourceTree = "<group>"; };
+		7CD069AC2CC0A7D400CAD288 /* valemucho.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = valemucho.bukvalno.txt; sourceTree = "<group>"; };
+		7CD069AD2CC0A7D400CAD288 /* volvera.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volvera.finalno.txt; sourceTree = "<group>"; };
+		7CD069AE2CC0A7D400CAD288 /* volverb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volverb.txt; sourceTree = "<group>"; };
+		7CD069AF2CC0A7D400CAD288 /* valemucho.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = valemucho.finalno.txt; sourceTree = "<group>"; };
 		E210F09A28B6DBAD009A0958 /* martiMisterija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = martiMisterija.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E210F09B28B6DBAD009A0958 /* martiMisterija.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = martiMisterija.plist; sourceTree = SOURCE_ROOT; };
 		E210F09C28B6DCE9009A0958 /* AssetsMM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsMM.swift; sourceTree = "<group>"; };
@@ -367,10 +565,10 @@
 		7C23B8DF21F831C000CABDD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C23B8DE21F831C000CABDD6 /* alanFord.app */,
+				7C23B8DE21F831C000CABDD6 /* dijaspora.app */,
 				E210F09A28B6DBAD009A0958 /* martiMisterija.app */,
 				7C2FE71428C9538600E24C1F /* misterNo.app */,
-				7CCDDDBA28D153B300277E38 /* druzinaOdVjesala.app */,
+				7CCDDDBA28D153B300277E38 /* gonzales.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -538,10 +736,117 @@
 		7CCDDDBC28D1547E00277E38 /* druzinaOdVjesala */ = {
 			isa = PBXGroup;
 			children = (
+				7CD069002CC0A6E400CAD288 /* Tekstovi */,
 				7CCDDDBD28D154A800277E38 /* AssetsDV.swift */,
 				7CCDDDBB28D153B300277E38 /* druzinaOdVjesala.plist */,
 			);
 			path = druzinaOdVjesala;
+			sourceTree = "<group>";
+		};
+		7CD069002CC0A6E400CAD288 /* Tekstovi */ = {
+			isa = PBXGroup;
+			children = (
+				7CD069A12CC0A7D400CAD288 /* seranovia.finalno.txt */,
+				7CD069A22CC0A7D400CAD288 /* seranovia.txt */,
+				7CD069A92CC0A7D400CAD288 /* shakira.bukvalno.txt */,
+				7CD069AA2CC0A7D400CAD288 /* shakira.finalno.txt */,
+				7CD069A02CC0A7D400CAD288 /* shakira.txt */,
+				7CD0699E2CC0A7D300CAD288 /* sumujer2.bukvalno.txt */,
+				7CD0699D2CC0A7D300CAD288 /* sumujer2.finalno.txt */,
+				7CD069992CC0A7D300CAD288 /* sumujer2.txt */,
+				7CD0699B2CC0A7D300CAD288 /* tienesabor.bukvalno.txt */,
+				7CD069AB2CC0A7D400CAD288 /* tienesabor.finalno.txt */,
+				7CD0699A2CC0A7D300CAD288 /* tienesabor.txt */,
+				7CD069A52CC0A7D400CAD288 /* unomas.bukvalno.txt */,
+				7CD0699F2CC0A7D400CAD288 /* unomas.finalno.txt */,
+				7CD069A32CC0A7D400CAD288 /* unomas.txt */,
+				7CD069AC2CC0A7D400CAD288 /* valemucho.bukvalno.txt */,
+				7CD069AF2CC0A7D400CAD288 /* valemucho.finalno.txt */,
+				7CD069A42CC0A7D400CAD288 /* valemucho.txt */,
+				7CD069A62CC0A7D400CAD288 /* volvera.bukvalno.txt */,
+				7CD069AD2CC0A7D400CAD288 /* volvera.finalno.txt */,
+				7CD069A72CC0A7D400CAD288 /* volvera.txt */,
+				7CD069A82CC0A7D400CAD288 /* volverb.bukvalno.txt */,
+				7CD0699C2CC0A7D300CAD288 /* volverb.finalno.txt */,
+				7CD069AE2CC0A7D400CAD288 /* volverb.txt */,
+				7CD069032CC0A72600CAD288 /* aveces2.bukvalno.txt */,
+				7CD0691D2CC0A72600CAD288 /* aveces2.finalno.txt */,
+				7CD069382CC0A72700CAD288 /* aveces2.txt */,
+				7CD069022CC0A72600CAD288 /* baila2.bukvalno.txt */,
+				7CD0690A2CC0A72600CAD288 /* baila2.finalno.txt */,
+				7CD0694A2CC0A72700CAD288 /* baila2.txt */,
+				7CD069282CC0A72600CAD288 /* basurita.bukvalno.txt */,
+				7CD0690E2CC0A72600CAD288 /* basurita.finalno.txt */,
+				7CD069142CC0A72600CAD288 /* basurita.txt */,
+				7CD069272CC0A72600CAD288 /* besame.bukvalno.txt */,
+				7CD069052CC0A72600CAD288 /* besame.finalno.txt */,
+				7CD0691A2CC0A72600CAD288 /* besame.txt */,
+				7CD0691F2CC0A72600CAD288 /* carretera.bukvalno.txt */,
+				7CD0692E2CC0A72700CAD288 /* carretera.finalno.txt */,
+				7CD069252CC0A72600CAD288 /* carretera.txt */,
+				7CD069112CC0A72600CAD288 /* chatarra.bukvalno.txt */,
+				7CD0693E2CC0A72700CAD288 /* chatarra.finalno.txt */,
+				7CD069102CC0A72600CAD288 /* chatarra.txt */,
+				7CD069062CC0A72600CAD288 /* cielorojo2.bukvalno.txt */,
+				7CD0692B2CC0A72700CAD288 /* cielorojo2.finalno.txt */,
+				7CD069492CC0A72700CAD288 /* cielorojo2.txt */,
+				7CD069072CC0A72600CAD288 /* cuerpo.bukvalno.txt */,
+				7CD069302CC0A72700CAD288 /* cuerpo.finalno.txt */,
+				7CD0690B2CC0A72600CAD288 /* cuerpo.txt */,
+				7CD0693B2CC0A72700CAD288 /* elrey.bukvalno.txt */,
+				7CD069422CC0A72700CAD288 /* elrey.finalno.txt */,
+				7CD069292CC0A72600CAD288 /* elrey.txt */,
+				7CD069482CC0A72700CAD288 /* encuestaamor.bukvalno.txt */,
+				7CD0692A2CC0A72700CAD288 /* encuestaamor.finalno.txt */,
+				7CD0694B2CC0A72700CAD288 /* encuestaamor.txt */,
+				7CD069432CC0A72700CAD288 /* hastasiempre.bukvalno.txt */,
+				7CD0693C2CC0A72700CAD288 /* hastasiempre.finalno.txt */,
+				7CD069222CC0A72600CAD288 /* hastasiempre.txt */,
+				7CD069212CC0A72600CAD288 /* hermoso.bukvalno.txt */,
+				7CD069472CC0A72700CAD288 /* hermoso.finalno.txt */,
+				7CD069262CC0A72600CAD288 /* hermoso.txt */,
+				7CD069312CC0A72700CAD288 /* hey2.bukvalno.txt */,
+				7CD0691B2CC0A72600CAD288 /* hey2.finalno.txt */,
+				7CD069402CC0A72700CAD288 /* hey2.txt */,
+				7CD069122CC0A72600CAD288 /* hubierasabido.bukvalno.txt */,
+				7CD0692F2CC0A72700CAD288 /* hubierasabido.finalno.txt */,
+				7CD0691C2CC0A72600CAD288 /* hubierasabido.txt */,
+				7CD069442CC0A72700CAD288 /* interesas.bukvalno.txt */,
+				7CD069172CC0A72600CAD288 /* interesas.finalno.txt */,
+				7CD0693F2CC0A72700CAD288 /* interesas.txt */,
+				7CD069152CC0A72600CAD288 /* libroviejo.bukvalno.txt */,
+				7CD069042CC0A72600CAD288 /* libroviejo.finalno.txt */,
+				7CD069362CC0A72700CAD288 /* libroviejo.txt */,
+				7CD0691E2CC0A72600CAD288 /* llorona.bukvalno.txt */,
+				7CD069202CC0A72600CAD288 /* llorona.finalno.txt */,
+				7CD069182CC0A72600CAD288 /* llorona.txt */,
+				7CD069372CC0A72700CAD288 /* lutte.bukvalno.txt */,
+				7CD069232CC0A72600CAD288 /* lutte.finalno.txt */,
+				7CD0694C2CC0A72700CAD288 /* lutte.txt */,
+				7CD069322CC0A72700CAD288 /* manuela.bukvalno.txt */,
+				7CD069012CC0A72600CAD288 /* manuela.finalno.txt */,
+				7CD069162CC0A72600CAD288 /* manuela.txt */,
+				7CD069242CC0A72600CAD288 /* nada.bukvalno.txt */,
+				7CD0693A2CC0A72700CAD288 /* nada.finalno.txt */,
+				7CD069132CC0A72600CAD288 /* nada.txt */,
+				7CD0692D2CC0A72700CAD288 /* perdi.bukvalno.txt */,
+				7CD069452CC0A72700CAD288 /* perdi.finalno.txt */,
+				7CD0693D2CC0A72700CAD288 /* perdi.txt */,
+				7CD069332CC0A72700CAD288 /* querria.bukvalno.txt */,
+				7CD069462CC0A72700CAD288 /* querria.finalno.txt */,
+				7CD0692C2CC0A72700CAD288 /* querria.txt */,
+				7CD069192CC0A72600CAD288 /* quizas.bukvalno.txt */,
+				7CD069412CC0A72700CAD288 /* quizas.finalno.txt */,
+				7CD069092CC0A72600CAD288 /* quizas.txt */,
+				7CD069082CC0A72600CAD288 /* recordaras.bukvalno.txt */,
+				7CD069352CC0A72700CAD288 /* recordaras.finalno.txt */,
+				7CD0690F2CC0A72600CAD288 /* recordaras.txt */,
+				7CD069392CC0A72700CAD288 /* recuerdos2.bukvalno.txt */,
+				7CD0690C2CC0A72600CAD288 /* recuerdos2.finalno.txt */,
+				7CD0690D2CC0A72600CAD288 /* recuerdos2.txt */,
+				7CD069342CC0A72700CAD288 /* seranovia.bukvalno.txt */,
+			);
+			path = Tekstovi;
 			sourceTree = "<group>";
 		};
 		E210F0A028B6E47A009A0958 /* martiMisterija */ = {
@@ -556,9 +861,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C23B8DD21F831C000CABDD6 /* alanFord */ = {
+		7C23B8DD21F831C000CABDD6 /* dijaspora */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C23B8F221F831C000CABDD6 /* Build configuration list for PBXNativeTarget "alanFord" */;
+			buildConfigurationList = 7C23B8F221F831C000CABDD6 /* Build configuration list for PBXNativeTarget "dijaspora" */;
 			buildPhases = (
 				7C23B8DA21F831C000CABDD6 /* Sources */,
 				7C23B8DB21F831C000CABDD6 /* Frameworks */,
@@ -568,9 +873,9 @@
 			);
 			dependencies = (
 			);
-			name = alanFord;
+			name = dijaspora;
 			productName = MasterDetailTest;
-			productReference = 7C23B8DE21F831C000CABDD6 /* alanFord.app */;
+			productReference = 7C23B8DE21F831C000CABDD6 /* dijaspora.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7C2FE70228C9538600E24C1F /* misterNo */ = {
@@ -590,9 +895,9 @@
 			productReference = 7C2FE71428C9538600E24C1F /* misterNo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7CCDDDA928D153B300277E38 /* druzinaOdVjesala */ = {
+		7CCDDDA928D153B300277E38 /* gonzales */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CCDDDB728D153B300277E38 /* Build configuration list for PBXNativeTarget "druzinaOdVjesala" */;
+			buildConfigurationList = 7CCDDDB728D153B300277E38 /* Build configuration list for PBXNativeTarget "gonzales" */;
 			buildPhases = (
 				7CCDDDAA28D153B300277E38 /* Sources */,
 				7CCDDDB228D153B300277E38 /* Frameworks */,
@@ -602,9 +907,9 @@
 			);
 			dependencies = (
 			);
-			name = druzinaOdVjesala;
+			name = gonzales;
 			productName = MasterDetailTest;
-			productReference = 7CCDDDBA28D153B300277E38 /* druzinaOdVjesala.app */;
+			productReference = 7CCDDDBA28D153B300277E38 /* gonzales.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E210F08828B6DBAD009A0958 /* martiMisterija */ = {
@@ -664,10 +969,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C23B8DD21F831C000CABDD6 /* alanFord */,
+				7C23B8DD21F831C000CABDD6 /* dijaspora */,
+				7CCDDDA928D153B300277E38 /* gonzales */,
 				E210F08828B6DBAD009A0958 /* martiMisterija */,
 				7C2FE70228C9538600E24C1F /* misterNo */,
-				7CCDDDA928D153B300277E38 /* druzinaOdVjesala */,
 			);
 		};
 /* End PBXProject section */
@@ -820,9 +1125,108 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD069C12CC0A7D400CAD288 /* shakira.finalno.txt in Resources */,
+				7CD069782CC0A72700CAD288 /* querria.txt in Resources */,
+				7CD0698A2CC0A72700CAD288 /* chatarra.finalno.txt in Resources */,
+				7CD069B62CC0A7D400CAD288 /* unomas.finalno.txt in Resources */,
+				7CD069602CC0A72700CAD288 /* basurita.txt in Resources */,
+				7CD069C42CC0A7D400CAD288 /* volvera.finalno.txt in Resources */,
+				7CD069962CC0A72700CAD288 /* baila2.txt in Resources */,
+				7CD0696C2CC0A72700CAD288 /* llorona.finalno.txt in Resources */,
+				7CD069952CC0A72700CAD288 /* cielorojo2.txt in Resources */,
+				7CD0695B2CC0A72700CAD288 /* recordaras.txt in Resources */,
+				7CD0696D2CC0A72700CAD288 /* hermoso.bukvalno.txt in Resources */,
+				7CD0695D2CC0A72700CAD288 /* chatarra.bukvalno.txt in Resources */,
+				7CD0697B2CC0A72700CAD288 /* hubierasabido.finalno.txt in Resources */,
+				7CD069682CC0A72700CAD288 /* hubierasabido.txt in Resources */,
+				7CD069C22CC0A7D400CAD288 /* tienesabor.finalno.txt in Resources */,
 				7CCDDDB428D153B300277E38 /* LaunchScreen.storyboard in Resources */,
+				7CD069C52CC0A7D400CAD288 /* volverb.txt in Resources */,
+				7CD0697E2CC0A72700CAD288 /* manuela.bukvalno.txt in Resources */,
+				7CD069832CC0A72700CAD288 /* lutte.bukvalno.txt in Resources */,
+				7CD069542CC0A72700CAD288 /* recordaras.bukvalno.txt in Resources */,
+				7CD0697F2CC0A72700CAD288 /* querria.bukvalno.txt in Resources */,
+				7CD069B42CC0A7D400CAD288 /* sumujer2.finalno.txt in Resources */,
+				7CD0696F2CC0A72700CAD288 /* lutte.finalno.txt in Resources */,
+				7CD069572CC0A72700CAD288 /* cuerpo.txt in Resources */,
+				7CD069502CC0A72700CAD288 /* libroviejo.finalno.txt in Resources */,
+				7CD069802CC0A72700CAD288 /* seranovia.bukvalno.txt in Resources */,
+				7CD0695A2CC0A72700CAD288 /* basurita.finalno.txt in Resources */,
+				7CD069972CC0A72700CAD288 /* encuestaamor.txt in Resources */,
+				7CD069B82CC0A7D400CAD288 /* seranovia.finalno.txt in Resources */,
+				7CD069752CC0A72700CAD288 /* elrey.txt in Resources */,
+				7CD069662CC0A72700CAD288 /* besame.txt in Resources */,
+				7CD069512CC0A72700CAD288 /* besame.finalno.txt in Resources */,
+				7CD069732CC0A72700CAD288 /* besame.bukvalno.txt in Resources */,
+				7CD069522CC0A72700CAD288 /* cielorojo2.bukvalno.txt in Resources */,
+				7CD0698E2CC0A72700CAD288 /* elrey.finalno.txt in Resources */,
+				7CD0697D2CC0A72700CAD288 /* hey2.bukvalno.txt in Resources */,
+				7CD069652CC0A72700CAD288 /* quizas.bukvalno.txt in Resources */,
+				7CD0696A2CC0A72700CAD288 /* llorona.bukvalno.txt in Resources */,
+				7CD069882CC0A72700CAD288 /* hastasiempre.finalno.txt in Resources */,
+				7CD069B32CC0A7D400CAD288 /* volverb.finalno.txt in Resources */,
+				7CD069BD2CC0A7D400CAD288 /* volvera.bukvalno.txt in Resources */,
+				7CD069612CC0A72700CAD288 /* libroviejo.bukvalno.txt in Resources */,
+				7CD069562CC0A72700CAD288 /* baila2.finalno.txt in Resources */,
+				7CD069942CC0A72700CAD288 /* encuestaamor.bukvalno.txt in Resources */,
+				7CD0696E2CC0A72700CAD288 /* hastasiempre.txt in Resources */,
+				7CD069BC2CC0A7D400CAD288 /* unomas.bukvalno.txt in Resources */,
+				7CD0695C2CC0A72700CAD288 /* chatarra.txt in Resources */,
+				7CD069BA2CC0A7D400CAD288 /* unomas.txt in Resources */,
+				7CD069742CC0A72700CAD288 /* basurita.bukvalno.txt in Resources */,
+				7CD069582CC0A72700CAD288 /* recuerdos2.finalno.txt in Resources */,
+				7CD0695F2CC0A72700CAD288 /* nada.txt in Resources */,
+				7CD0696B2CC0A72700CAD288 /* carretera.bukvalno.txt in Resources */,
+				7CD069842CC0A72700CAD288 /* aveces2.txt in Resources */,
+				7CD069642CC0A72700CAD288 /* llorona.txt in Resources */,
+				7CD069902CC0A72700CAD288 /* interesas.bukvalno.txt in Resources */,
+				7CD069912CC0A72700CAD288 /* perdi.finalno.txt in Resources */,
+				7CD069B52CC0A7D400CAD288 /* sumujer2.bukvalno.txt in Resources */,
+				7CD069932CC0A72700CAD288 /* hermoso.finalno.txt in Resources */,
+				7CD069702CC0A72700CAD288 /* nada.bukvalno.txt in Resources */,
+				7CD069552CC0A72700CAD288 /* quizas.txt in Resources */,
+				7CD0698F2CC0A72700CAD288 /* hastasiempre.bukvalno.txt in Resources */,
+				7CD069672CC0A72700CAD288 /* hey2.finalno.txt in Resources */,
+				7CD069C32CC0A7D400CAD288 /* valemucho.bukvalno.txt in Resources */,
+				7CD069712CC0A72700CAD288 /* carretera.txt in Resources */,
+				7CD0694D2CC0A72700CAD288 /* manuela.finalno.txt in Resources */,
+				7CD069B72CC0A7D400CAD288 /* shakira.txt in Resources */,
+				7CD069812CC0A72700CAD288 /* recordaras.finalno.txt in Resources */,
+				7CD069922CC0A72700CAD288 /* querria.finalno.txt in Resources */,
+				7CD069C62CC0A7D400CAD288 /* valemucho.finalno.txt in Resources */,
+				7CD069892CC0A72700CAD288 /* perdi.txt in Resources */,
+				7CD069B02CC0A7D400CAD288 /* sumujer2.txt in Resources */,
+				7CD069772CC0A72700CAD288 /* cielorojo2.finalno.txt in Resources */,
+				7CD069982CC0A72700CAD288 /* lutte.txt in Resources */,
+				7CD069622CC0A72700CAD288 /* manuela.txt in Resources */,
+				7CD069792CC0A72700CAD288 /* perdi.bukvalno.txt in Resources */,
+				7CD069592CC0A72700CAD288 /* recuerdos2.txt in Resources */,
+				7CD0697A2CC0A72700CAD288 /* carretera.finalno.txt in Resources */,
+				7CD069532CC0A72700CAD288 /* cuerpo.bukvalno.txt in Resources */,
+				7CD069632CC0A72700CAD288 /* interesas.finalno.txt in Resources */,
+				7CD069862CC0A72700CAD288 /* nada.finalno.txt in Resources */,
+				7CD0698B2CC0A72700CAD288 /* interesas.txt in Resources */,
+				7CD0697C2CC0A72700CAD288 /* cuerpo.finalno.txt in Resources */,
+				7CD0694E2CC0A72700CAD288 /* baila2.bukvalno.txt in Resources */,
 				7CCDDDB528D153B300277E38 /* Assets.xcassets in Resources */,
+				7CD069872CC0A72700CAD288 /* elrey.bukvalno.txt in Resources */,
+				7CD0695E2CC0A72700CAD288 /* hubierasabido.bukvalno.txt in Resources */,
+				7CD069B22CC0A7D400CAD288 /* tienesabor.bukvalno.txt in Resources */,
 				7CCDDDB628D153B300277E38 /* Main.storyboard in Resources */,
+				7CD0694F2CC0A72700CAD288 /* aveces2.bukvalno.txt in Resources */,
+				7CD069822CC0A72700CAD288 /* libroviejo.txt in Resources */,
+				7CD069BF2CC0A7D400CAD288 /* volverb.bukvalno.txt in Resources */,
+				7CD069C02CC0A7D400CAD288 /* shakira.bukvalno.txt in Resources */,
+				7CD069BB2CC0A7D400CAD288 /* valemucho.txt in Resources */,
+				7CD0698D2CC0A72700CAD288 /* quizas.finalno.txt in Resources */,
+				7CD069B12CC0A7D400CAD288 /* tienesabor.txt in Resources */,
+				7CD069722CC0A72700CAD288 /* hermoso.txt in Resources */,
+				7CD069B92CC0A7D400CAD288 /* seranovia.txt in Resources */,
+				7CD0698C2CC0A72700CAD288 /* hey2.txt in Resources */,
+				7CD069BE2CC0A7D400CAD288 /* volvera.txt in Resources */,
+				7CD069692CC0A72700CAD288 /* aveces2.finalno.txt in Resources */,
+				7CD069762CC0A72700CAD288 /* encuestaamor.finalno.txt in Resources */,
+				7CD069852CC0A72700CAD288 /* recuerdos2.bukvalno.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,6 +1447,7 @@
 				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = MD6XE24BAC;
 				INFOPLIST_FILE = MasterDetailTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1066,6 +1471,7 @@
 				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = MD6XE24BAC;
 				INFOPLIST_FILE = MasterDetailTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1135,12 +1541,13 @@
 				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = MD6XE24BAC;
 				INFOPLIST_FILE = "$(SRCROOT)/druzinaOdVjesala.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.yugostripdv;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.gonzales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -1158,12 +1565,13 @@
 				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = MD6XE24BAC;
 				INFOPLIST_FILE = "$(SRCROOT)/druzinaOdVjesala.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.yugostripdv;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.gonzales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -1229,7 +1637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C23B8F221F831C000CABDD6 /* Build configuration list for PBXNativeTarget "alanFord" */ = {
+		7C23B8F221F831C000CABDD6 /* Build configuration list for PBXNativeTarget "dijaspora" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C23B8F321F831C000CABDD6 /* Debug */,
@@ -1247,7 +1655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CCDDDB728D153B300277E38 /* Build configuration list for PBXNativeTarget "druzinaOdVjesala" */ = {
+		7CCDDDB728D153B300277E38 /* Build configuration list for PBXNativeTarget "gonzales" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CCDDDB828D153B300277E38 /* Debug */,

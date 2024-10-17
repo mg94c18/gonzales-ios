@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7C23B8DD21F831C000CABDD6"
-               BuildableName = "alanFord.app"
-               BlueprintName = "alanFord"
+               BuildableName = "dijaspora.app"
+               BlueprintName = "dijaspora"
                ReferencedContainer = "container:MasterDetailTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C23B8DD21F831C000CABDD6"
-            BuildableName = "alanFord.app"
-            BlueprintName = "alanFord"
+            BuildableName = "dijaspora.app"
+            BlueprintName = "dijaspora"
             ReferencedContainer = "container:MasterDetailTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C23B8DD21F831C000CABDD6"
-            BuildableName = "alanFord.app"
-            BlueprintName = "alanFord"
+            BuildableName = "dijaspora.app"
+            BlueprintName = "dijaspora"
             ReferencedContainer = "container:MasterDetailTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

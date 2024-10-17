@@ -101,9 +101,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
     
     func initDownloadButton() {
-        if DetailViewController.loadStoredArray("downloadedEpisodes").isEmpty {
-            return
-        }
+        navigationItem.rightBarButtonItem = nil
+
         guard let onePageController = onePageController else {
             AppDelegate.log("Unexpected, no onePageController")
             return
@@ -112,6 +111,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             self.showToggle()
         } else {
             if AppDelegate.player.currentItem == nil {
+                if DetailViewController.loadStoredArray("downloadedEpisodes").isEmpty {
+                    return
+                }
                 self.showPlay()
             } else {
                 self.showCancel()

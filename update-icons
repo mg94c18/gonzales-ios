@@ -1,3 +1,4 @@
 #!/bin/sh
-#for d in 40 60 58 87 80 120 180 20 29 76 152 167 1024; do /Applications/Inkscape.app/Contents/Resources/bin/inkscape -e /Users/sstevano/Documents/my/src/Workspace/ViewPagerTest/app/src/alanFord/Icon$d.png -w $d -h $d /Users/sstevano/Documents/my/src/Workspace/ViewPagerTest/app/src/alanFord/Icon.svg; done
-for d in 40 60 58 87 80 120 180 20 29 76 152 167 1024; do /Applications/Inkscape.app/Contents/MacOS/inkscape -o ./Icon$d.png -w $d -h $d /Users/sstevano/Documents/my/src/Workspace/ViewPagerTest/app/src/alanFord/Icon.svg; done
+for d in 40 60 58 87 80 120 180 20 29 76 152 167 1024; do /Applications/Inkscape.app//Contents/MacOS/inkscape -o $(pwd)/Icon$d.png -w $d -h $d $(pwd)/../Gonzales/app/src/gonzales/Icon.svg; done
+
+Zatim ručno prebacim u assets, jedan po jedan (29x2=58 i tako).  Imena fajlova nisu baš uniformna, pa ne može skript lako.
