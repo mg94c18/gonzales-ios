@@ -90,7 +90,7 @@ class OnePageController : UIViewController {
     }
     
     // Kažu da ovo treba da radi jer navodno kreiraš u portrait pa se ovo pozove...  Ali ne.
-    override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         inLandscape = (size.width > size.height)
         refreshWebView()
         super.viewWillTransition(to: size, with: coordinator)

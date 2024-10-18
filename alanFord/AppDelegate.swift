@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AVFoundation.AVAudioSession
+import AVFoundation
 import os.log
 
 @UIApplicationMain

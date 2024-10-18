@@ -68,7 +68,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         postInitDownloadButton()
         super.viewWillTransition(to: size, with: coordinator)
     }

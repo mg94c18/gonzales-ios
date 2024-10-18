@@ -160,7 +160,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-db-5Rf">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="34.5"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Cancel"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
                                                 <connections>
                                                     <action selector="negativeButtonPressed:" destination="5md-7C-Ibg" eventType="touchUpInside" id="t1o-Oh-3iz"/>
@@ -168,13 +168,17 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAv-Ba-zfQ">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="34.5"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Play"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Play"/>
                                                 <connections>
                                                     <action selector="positiveButtonPressed:" destination="5md-7C-Ibg" eventType="touchUpInside" id="vL4-BP-bh7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tAv-Ba-zfQ" firstAttribute="width" secondItem="vai-yO-Dzz" secondAttribute="width" multiplier="0.5" id="Omk-oW-Fty"/>
+                                            <constraint firstItem="3Wp-db-5Rf" firstAttribute="width" secondItem="vai-yO-Dzz" secondAttribute="width" multiplier="0.5" id="oWG-af-qNZ"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
