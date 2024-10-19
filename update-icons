@@ -1,4 +1,7 @@
 #!/bin/sh
-for d in 40 60 58 87 80 120 180 20 29 76 152 167 1024; do /Applications/Inkscape.app//Contents/MacOS/inkscape -o $(pwd)/Icon$d.png -w $d -h $d $(pwd)/../Gonzales/app/src/gonzales/Icon.svg; done
 
-Zatim ručno prebacim u assets, jedan po jedan (29x2=58 i tako).  Imena fajlova nisu baš uniformna, pa ne može skript lako.
+for d in 40 60 58 87 80 120 180 20 29 76 152 167 1024; do /Applications/Inkscape.app//Contents/MacOS/inkscape -o $(pwd)/X.png -w $d -h $d $(pwd)/../Gonzales/app/src/dijaspora/Icon.svg && convert X.png -alpha off -set density 29 alanFord/Assets.xcassets/AppIcon.appiconset/Icon$d.png && rm X.png; done
+
+for d in 40 60 58 87 80 120 180 20 29 76 152 167 1024; do /Applications/Inkscape.app//Contents/MacOS/inkscape -o $(pwd)/X.png -w $d -h $d $(pwd)/../Gonzales/app/src/gonzales/Icon.svg && convert X.png -alpha off -set density 29 alanFord/Assets.xcassets/AppIconDV.appiconset/Icon$d.png && rm X.png; done
+
+# Zatim ručno prebacim u assets, jedan po jedan (29x2=58 i tako).  Imena fajlova nisu baš uniformna, pa ne može skript lako.
