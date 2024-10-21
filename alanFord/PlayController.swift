@@ -57,7 +57,7 @@ class PlayController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayCell", for: indexPath)
 
-        var title = "\(idsToShow![indexPath.row] + 1). \(Assets.titles[idsToShow![indexPath.row]])"
+        let title = "\(idsToShow![indexPath.row] + 1). \(Assets.titles[idsToShow![indexPath.row]])"
         cell.textLabel!.text = title
 
         return cell

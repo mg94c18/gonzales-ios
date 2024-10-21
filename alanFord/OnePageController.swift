@@ -41,7 +41,7 @@ extension OnePageController: ImageDownloaderDelegate {
 class OnePageController : UIViewController {
     var inLandscape: Bool = false
 
-    var page: (Int, [String], [String], [String]) = (-1, [""], [""], [""]) {
+    var page: (Int, [String], [String], [String], String) = (-1, [""], [""], [""], "") {
         didSet {
             fileNameSuffix = OnePageController.lastChunk(from: page.1[0], startingWith: "/")
         }
@@ -77,7 +77,7 @@ class OnePageController : UIViewController {
     
     func refreshWebView() {
         let translation = translationFinal ? page.3 : page.2
-        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: translation, removeGroupings: false, author: "author", a3byka: false, inLandscape: inLandscape, searchedWord: "", fontSize: inLandscape ? 3 : 5)
+        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: translation, removeGroupings: translation == page.3, author: page.4, a3byka: false, inLandscape: inLandscape, searchedWord: "", fontSize: inLandscape ? 3 : 5)
 
         // webView.scalesPageToFit = true
         // https://developer.apple.com/documentation/uikit/uitextview
@@ -138,6 +138,10 @@ class OnePageController : UIViewController {
     // ../Gonzales/app/src/main/java/org/mg94c18/gonzales/PageAdapter.java
     // private static String createHtml
     static func createHtml(tekst: [String], prevod: [String], removeGroupings: Bool, author: String, a3byka: Bool, inLandscape: Bool, searchedWord: String, fontSize: Int) -> String {
+        var searchedWordPattern : NSRegularExpression?
+        if (!searchedWord.isEmpty) {
+            searchedWordPattern = try? NSRegularExpression(pattern: "\\b(\(searchedWord))\\b", options: .caseInsensitive)
+        }
         // TODO: string stream instead of string directly?
         var builder = "<html><head><meta http-equiv=\"content-type\" value=\"UTF-8\"><title></title><style>* { font-size: \(fontSize)vw; }</style></head><body>"
         if inLandscape && !prevod.isEmpty {
@@ -147,24 +151,26 @@ class OnePageController : UIViewController {
                 if (tekst[i].isEmpty) {
                     builder += "&nbsp;"
                 } else {
-                    builder += applyFilters(line: tekst[i], hints: true, a3byka: a3byka, removeGroupings: removeGroupings, searchedWord: searchedWord)
+                    builder += applyFilters(tekst[i], true, a3byka, removeGroupings, searchedWordPattern)
                 }
                 builder += "</td><td width=\"50%\">"
                 if (i < prevod.count) {
-                    builder += applyFilters(line: prevod[i], hints: true, a3byka: a3byka, removeGroupings: false, searchedWord: searchedWord)
+                    builder += applyFilters(prevod[i], true, a3byka, false, searchedWordPattern)
                 }
                 builder += "</td></tr>"
             }
             builder += "</table>"
         } else {
-            builder += "<p>\(author)<br>"
-            if tekst.count > 1 && !tekst[1].isEmpty {
-                builder += tekst[1]
+            if (!author.isEmpty) {
+                builder += "<p>(\(author))<br>"
+                if tekst.count > 1 && !tekst[1].isEmpty {
+                    builder += tekst[1] + "<br>"
+                }
+                builder += "<br></p>"
             }
-            builder += "<br>"
-            builder += "</p><p>"
+            builder += "<p>"
             for i in stride(from: 2, to: tekst.count, by: 1) {
-                builder += applyFilters(line: tekst[i], hints: false, a3byka: a3byka, removeGroupings: true, searchedWord: searchedWord)
+                builder += applyFilters(tekst[i], false, a3byka, true, searchedWordPattern)
                 builder += "<br>"
             }
             builder += "</p>"
@@ -175,8 +181,29 @@ class OnePageController : UIViewController {
 
     // ../Gonzales/app/src/main/java/org/mg94c18/gonzales/PageAdapter.java
     // private static String applyFilters
-    static func applyFilters(line: String, hints: Bool, a3byka: Bool, removeGroupings: Bool, searchedWord: String) -> String {
-        return line
+    static let wordEmphasisPattern = try! NSRegularExpression(pattern: "\\|([^ \n,]+)")
+    static let groupingPattern = try! NSRegularExpression(pattern: "[\\[\\]]")
+    static let hintsPattern = try! NSRegularExpression(pattern: "[\\\\|]")
+    static let explicits = [ try? NSRegularExpression(pattern: "((f)uck)", options: .caseInsensitive) : "***" ]
+
+    static func applyFilters(_ line: String, _ hints: Bool, _ a3byka: Bool, _ removeGroupings: Bool, _ searchedWordPattern: NSRegularExpression?) -> String {
+        var newLine: String = line
+        if (hints) {
+            newLine = wordEmphasisPattern.stringByReplacingMatches(in: newLine, range: NSMakeRange(0, newLine.count), withTemplate: "<em>$1</em>")
+        }
+        newLine = hintsPattern.stringByReplacingMatches(in: newLine, range: NSMakeRange(0, newLine.count), withTemplate: "")
+        for fuck in explicits {
+            if (fuck.0 != nil) {
+                newLine = fuck.0!.stringByReplacingMatches(in: newLine, range: NSMakeRange(0, newLine.count), withTemplate: "$2" + fuck.1)
+            }
+        }
+        if (removeGroupings) {
+            newLine = groupingPattern.stringByReplacingMatches(in: newLine, range: NSMakeRange(0, newLine.count), withTemplate: "")
+        }
+        if (searchedWordPattern != nil) {
+            newLine = searchedWordPattern!.stringByReplacingMatches(in: newLine, range: NSMakeRange(0, newLine.count), withTemplate: "<strong>$1</strong>")
+        }
+        return newLine
     }
 
     func cancel() {

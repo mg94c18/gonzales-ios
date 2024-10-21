@@ -210,7 +210,7 @@ class MasterViewController: UITableViewController {
         } else {
             episodeId = episodeMatches[indexPath.row]
         }
-        var title = "\(episodeId + 1). \(Assets.titles[episodeId])"
+        let title = "\(episodeId + 1). \(Assets.titles[episodeId])"
         cell.textLabel!.text = title
         
         return cell

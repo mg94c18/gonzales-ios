@@ -39,7 +39,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         firstController.page = (episodeId,
                                 pages,
                                 Assets.pages(forEpisode: episodeId, withTranslation: ".bukvalno"),
-                                Assets.pages(forEpisode: episodeId, withTranslation: ".finalno"))
+                                Assets.pages(forEpisode: episodeId, withTranslation: ".finalno"),
+                                Assets.dates[episodeId])
 
         // TODO: treba da ima samo jedan child, tako da ne "add"
         self.addChildViewController(firstController)
