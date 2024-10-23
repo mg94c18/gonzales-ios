@@ -29,7 +29,7 @@ class Assets {
             }
             index -= sectionInfo[i].1
         }
-        // TODO: Log.wtf
+        AppDelegate.log("WTF - episode \(episode) can't be found")
         assert(false)
         return (0, 0)
     }
@@ -46,7 +46,7 @@ class Assets {
                 let data = try String(contentsOfFile: path, encoding: .utf8)
                 ret += data.components(separatedBy: .newlines)
             } catch {
-                // TODO: Log.wtf
+                AppDelegate.log("WTF - lines for episode \(episode)/'\(withTranslation)' can't be found")
             }
         }
 
@@ -63,6 +63,5 @@ class Assets {
         ("", titles.count, "gonzales")
     ]
 
-    // TODO: promeniti
-    static let appId = 1643426345
+    static let appId = 6737076067
 }

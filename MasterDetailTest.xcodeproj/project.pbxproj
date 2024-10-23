@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C13E9982CC84EAA00CCD936 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C13E9972CC84EAA00CCD936 /* SearchProvider.swift */; };
+		7C13E9992CC84EAA00CCD936 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C13E9972CC84EAA00CCD936 /* SearchProvider.swift */; };
+		7C13E99A2CC84EAA00CCD936 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C13E9972CC84EAA00CCD936 /* SearchProvider.swift */; };
+		7C13E99B2CC84EAA00CCD936 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C13E9972CC84EAA00CCD936 /* SearchProvider.swift */; };
 		7C23B8E221F831C000CABDD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E121F831C000CABDD6 /* AppDelegate.swift */; };
 		7C23B8E421F831C000CABDD6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E321F831C000CABDD6 /* MasterViewController.swift */; };
 		7C23B8E621F831C000CABDD6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E521F831C000CABDD6 /* DetailViewController.swift */; };
@@ -272,6 +276,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C13E9972CC84EAA00CCD936 /* SearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
 		7C23B8DE21F831C000CABDD6 /* dijaspora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dijaspora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C23B8E121F831C000CABDD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C23B8E321F831C000CABDD6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -590,6 +595,7 @@
 				7CB86834288F528A00FB799D /* Assets.swift */,
 				7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */,
 				7C8D253A2C91387A00934BA5 /* PlayController.swift */,
+				7C13E9972CC84EAA00CCD936 /* SearchProvider.swift */,
 			);
 			path = alanFord;
 			sourceTree = "<group>";
@@ -1247,6 +1253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C13E9982CC84EAA00CCD936 /* SearchProvider.swift in Sources */,
 				7C23B8E621F831C000CABDD6 /* DetailViewController.swift in Sources */,
 				7C9DA5C9288C849F0019D7DD /* OnePageController.swift in Sources */,
 				7C9DCF4D28A4BAEA00EC6F9D /* ImageDownloader.swift in Sources */,
@@ -1261,6 +1268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C13E99B2CC84EAA00CCD936 /* SearchProvider.swift in Sources */,
 				7C2FE70528C9538600E24C1F /* DetailViewController.swift in Sources */,
 				7C2FE70628C9538600E24C1F /* OnePageController.swift in Sources */,
 				7C2FE70728C9538600E24C1F /* ImageDownloader.swift in Sources */,
@@ -1275,6 +1283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C13E9992CC84EAA00CCD936 /* SearchProvider.swift in Sources */,
 				7CCDDDAB28D153B300277E38 /* DetailViewController.swift in Sources */,
 				7CCDDDAC28D153B300277E38 /* OnePageController.swift in Sources */,
 				7CCDDDAD28D153B300277E38 /* ImageDownloader.swift in Sources */,
@@ -1289,6 +1298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C13E99A2CC84EAA00CCD936 /* SearchProvider.swift in Sources */,
 				E210F09D28B6DCE9009A0958 /* AssetsMM.swift in Sources */,
 				E210F08A28B6DBAD009A0958 /* DetailViewController.swift in Sources */,
 				E210F08B28B6DBAD009A0958 /* OnePageController.swift in Sources */,

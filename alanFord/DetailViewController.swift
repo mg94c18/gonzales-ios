@@ -16,13 +16,21 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     static var previouslyLoaded: (Int, Int)?
 
     var episodeId: Int = -1
-    var initialPageIndex: Int = 0 // TODO: nepotrebno ovde, ali korisno za UI trikove
-    
+    var searchedWord: String = ""
+    var initialPageIndex: Int = 0 // nepotrebno ovde, ali korisno za UI trikove
+
     private var pages: [String] = []
     private var downloadDir: URL?
     private var offerDeleteDownloaded: Bool = false
-    private var downloadedEpisodes: [Int] = []
     private var onePageController: OnePageController?
+
+    static let checkmarkStr : String = "✓"
+
+    var firstFlip = ("", false)
+
+    override func viewDidAppear(_ animated: Bool) {
+        MasterViewController.searchProvider.populateTrie(numbers: Assets.numbers, titles: Assets.titles)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +48,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                                 pages,
                                 Assets.pages(forEpisode: episodeId, withTranslation: ".bukvalno"),
                                 Assets.pages(forEpisode: episodeId, withTranslation: ".finalno"),
-                                Assets.dates[episodeId])
+                                Assets.dates[episodeId],
+                                searchedWord)
 
         // TODO: treba da ima samo jedan child, tako da ne "add"
         self.addChildViewController(firstController)
@@ -73,7 +82,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         postInitDownloadButton()
         super.viewWillTransition(to: size, with: coordinator)
     }
-    
+
     static func onEpisodeDownloaded(_ episodeId: Int) {
         let key = "downloadedEpisodes"
         var array = DetailViewController.loadStoredArray(key)
@@ -88,7 +97,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         UserDefaults.standard.set(arrayForSaving, forKey: key)
         // TODO: ovde staviti postInitDownloadButton
     }
-    
+
     static func loadStoredArray(_ key: String) -> [Int] {
         var ret: [Int] = []
         if let stored = UserDefaults.standard.array(forKey: key) as? [String] {
@@ -96,13 +105,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                 if let index = Assets.numbers.firstIndex(of: elem) {
                     ret.append(index)
                 } else {
-                    // TODO: Log.w
+                    AppDelegate.log("Skipping \(elem), probably got removed")
                 }
             }
         }
         return ret
     }
-    
+
     func initDownloadButton() {
         navigationItem.rightBarButtonItem = nil
 
@@ -117,13 +126,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                 if DetailViewController.loadStoredArray("downloadedEpisodes").isEmpty {
                     return
                 }
-                self.showPlay()
+                self.showMenu()
             } else {
                 self.showCancel()
             }
         }
     }
-    
+
     @objc func configurePlay0() {
         let downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
         if downloadedEpisodes.isEmpty {
@@ -131,20 +140,38 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
 
         let confirmation = UIAlertController(title: "Play", message: "", preferredStyle: .alert)
+        firstFlip = ("", false)
         for episode in downloadedEpisodes {
             confirmation.addTextField(configurationHandler: { textField in
-                textField.text = Assets.titles[episode]
-                textField.isUserInteractionEnabled = false
+                let title = "\(episode + 1). " + Assets.titles[episode]
+                textField.text = title // TODO: dodati checkmark na osnovu sačuvanog
+                textField.isUserInteractionEnabled = true
                 textField.delegate = self
+
+                if self.firstFlip.0.isEmpty {
+                    self.firstFlip.0 = title
+                }
             })
         }
-        confirmation.addAction(UIAlertAction(title: "Play", style: .default))
+        confirmation.addAction(UIAlertAction(title: "Play", style: .default, handler: { _ in
+            guard let items = confirmation.textFields else {
+                return
+            }
+            var tracks: [Int] = []
+            tracks.reserveCapacity(items.count)
+            for i in stride(from: 0, to: items.count, by: 1) {
+                if items[i].text!.starts(with: DetailViewController.checkmarkStr) {
+                    tracks.append(downloadedEpisodes[i])
+                }
+            }
+            self.startPlayback(of: tracks)
+        }))
         confirmation.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         self.present(confirmation, animated: true, completion: nil)
     }
 
     @objc func configurePlay() {
-        downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
+        let downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
         let playController = storyboard?.instantiateViewController(withIdentifier: "PlayController") as! PlayController
         self.present(playController, animated: true, completion: nil)
         playController.configure(downloadedEpisodes, self)
@@ -165,7 +192,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(configurePlay))
         }
     }
-    
+
     func showCancel() {
         if #available(iOS 13.0, *) {
             navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "stop.circle"), style: .plain, target: self, action: #selector(cancelPlay))
@@ -181,7 +208,15 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Prevod", style: .plain, target: self, action: #selector(toggleTranslation))
         }
     }
-    
+
+    func showMenu() {
+        if #available(iOS 13.0, *) {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "menucard"), style: .plain, target: self, action: #selector(configurePlay0))
+        } else {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Configure", style: .plain, target: self, action: #selector(configurePlay))
+        }
+    }
+
     @objc func toggleTranslation() {
         onePageController!.toggleTranslation()
     }
@@ -216,11 +251,26 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
         navigationController.isNavigationBarHidden = !navigationController.isNavigationBarHidden
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        // TODO: clear queues
+        // TODO: clear queues, trie
+    }
+
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        guard let text = textField.text else {
+            return false
+        }
+        if firstFlip.1 || firstFlip.0 != textField.text {
+            if text.starts(with: DetailViewController.checkmarkStr) {
+                textField.text = String(text.dropFirst(DetailViewController.checkmarkStr.count))
+            } else {
+                textField.text = DetailViewController.checkmarkStr + textField.text!
+            }
+        }
+        firstFlip.1 = true
+        return false
     }
 
 }

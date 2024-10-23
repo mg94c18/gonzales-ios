@@ -19,6 +19,7 @@ extension UISplitViewController {
 }
 
 class MasterViewController: UITableViewController {
+    static let searchProvider = SearchProvider()
 
     var detailViewController: DetailViewController? = nil
     var initialPageIndex: Int?
@@ -52,7 +53,7 @@ class MasterViewController: UITableViewController {
         ("e", "ije"),
         ("je", "e"),
         ("ije", "e")]
-    var episodeMatches: [Int] = []
+    var episodeMatches: [(Int, String)] = []
     static var titlesLowercased: [String] = []
 
     func searchedForDownloadedOnes() -> Bool {
@@ -60,9 +61,18 @@ class MasterViewController: UITableViewController {
     }
 
     func findEpisodeMatches() {
+        let searchTextLowercased = searchText.lowercased()
         episodeMatches.removeAll()
 
-        let searchTextLowercased = searchText.lowercased()
+        if MasterViewController.searchProvider.ready() {
+            let results = MasterViewController.searchProvider.query(searchTextLowercased)
+            episodeMatches = results
+        } else {
+            findEpisodeMatchesLegacy(searchTextLowercased)
+        }
+    }
+
+    func findEpisodeMatchesLegacy(_ searchTextLowercased: String) {
         var searchFor = [searchTextLowercased]
         for r in MasterViewController.searchReplacements {
             let candidate = searchTextLowercased.replacingOccurrences(of: r.0, with: r.1)
@@ -77,13 +87,10 @@ class MasterViewController: UITableViewController {
             }
         }
 
-        // TODO: dodati ovde da ako je nova reč ista kao stara samo se menja (oduzima ili dodaje) jedno slovo, onda da iskoristi prethodni search.  Ako se dodaje, onda treba tražiti samo kroz prethodni search.  Ako se oduzima, onda prosto se ide nazad na prethodni search koji je već izračunat.
-        // TODO: kad se obriše search, treba da se obrišu i te optimizacije (ako je nešto sačuvano)
-        // TODO: mada, onda treba paziti na primer ako neko traži d a posle doda j, onda postane đ i može da ima nove rezultate...
         for i in 0..<MasterViewController.titlesLowercased.count {
             for j in searchFor {
                 if MasterViewController.titlesLowercased[i].contains(j) || Assets.numbers[i].contains(j) || Assets.dates[i].contains(j) {
-                    episodeMatches.append(i)
+                    episodeMatches.append((i, ""))
                     break
                 }
             }
@@ -92,6 +99,7 @@ class MasterViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.title = ""
         if let split = splitViewController {
             // na starom iPad radi polovično: ugasi otvaranje, ali ne ugasi zatvaranje
@@ -149,8 +157,10 @@ class MasterViewController: UITableViewController {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 if searchText.isEmpty {
                     controller.episodeId = episodeIndex(indexPath)
+                    controller.searchedWord = ""
                 } else {
-                    controller.episodeId = episodeMatches[indexPath.row]
+                    controller.episodeId = episodeMatches[indexPath.row].0
+                    controller.searchedWord = episodeMatches[indexPath.row].1
                 }
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -207,11 +217,17 @@ class MasterViewController: UITableViewController {
         let episodeId: Int
         if searchText.isEmpty {
             episodeId = episodeIndex(indexPath)
+            cell.textLabel!.text = "\(episodeId + 1). \(Assets.titles[episodeId])"
         } else {
-            episodeId = episodeMatches[indexPath.row]
+            if episodeMatches[indexPath.row].1.isEmpty {
+                episodeId = episodeMatches[indexPath.row].0
+                cell.textLabel!.text = "\(episodeId + 1). \(Assets.titles[episodeId])"
+            } else {
+                episodeId = episodeMatches[indexPath.row].0
+                cell.textLabel!.text = episodeMatches[indexPath.row].1
+                cell.detailTextLabel!.text = "\(Assets.titles[episodeId])"
+            }
         }
-        let title = "\(episodeId + 1). \(Assets.titles[episodeId])"
-        cell.textLabel!.text = title
         
         return cell
     }
@@ -236,14 +252,21 @@ extension MasterViewController: UISearchBarDelegate {
             return
         }
         let selectedId = DetailViewController.lastLoadedEpisode
+        var episodeId = 0
         if searchText == "" {
-            tableView.selectRow(at: Assets.indexPath(forEpisode: selectedId), animated: true, scrollPosition: position)
+            episodeId = selectedId
         } else {
             for i in 0..<episodeMatches.count {
-                if episodeMatches[i] == selectedId {
-                    tableView.selectRow(at: Assets.indexPath(forEpisode: i), animated: true, scrollPosition: position)
+                if episodeMatches[i].0 == selectedId {
+                    if episodeMatches[i].1.isEmpty {
+                        episodeId = i
+                    } else {
+                        // TODO: nemam pojma da li je ovo OK, samo zvuči OK; bio sam pospan
+                        episodeId = episodeMatches[i].0
+                    }
                 }
             }
         }
+        tableView.selectRow(at: Assets.indexPath(forEpisode: episodeId), animated: true, scrollPosition: position)
     }
 }

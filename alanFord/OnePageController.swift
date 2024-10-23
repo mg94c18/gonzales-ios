@@ -41,7 +41,7 @@ extension OnePageController: ImageDownloaderDelegate {
 class OnePageController : UIViewController {
     var inLandscape: Bool = false
 
-    var page: (Int, [String], [String], [String], String) = (-1, [""], [""], [""], "") {
+    var page: (Int, [String], [String], [String], String, String) = (-1, [""], [""], [""], "", "") {
         didSet {
             fileNameSuffix = OnePageController.lastChunk(from: page.1[0], startingWith: "/")
         }
@@ -77,7 +77,7 @@ class OnePageController : UIViewController {
     
     func refreshWebView() {
         let translation = translationFinal ? page.3 : page.2
-        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: translation, removeGroupings: translation == page.3, author: page.4, a3byka: false, inLandscape: inLandscape, searchedWord: "", fontSize: inLandscape ? 3 : 5)
+        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: translation, removeGroupings: translation == page.3, author: page.4, a3byka: false, inLandscape: inLandscape, searchedWord: page.5, fontSize: inLandscape ? 3 : 5)
 
         // webView.scalesPageToFit = true
         // https://developer.apple.com/documentation/uikit/uitextview
@@ -142,7 +142,6 @@ class OnePageController : UIViewController {
         if (!searchedWord.isEmpty) {
             searchedWordPattern = try? NSRegularExpression(pattern: "\\b(\(searchedWord))\\b", options: .caseInsensitive)
         }
-        // TODO: string stream instead of string directly?
         var builder = "<html><head><meta http-equiv=\"content-type\" value=\"UTF-8\"><title></title><style>* { font-size: \(fontSize)vw; }</style></head><body>"
         if inLandscape && !prevod.isEmpty {
             builder += "<table width=\"100%\">"
