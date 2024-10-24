@@ -24,7 +24,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     private var offerDeleteDownloaded: Bool = false
     private var onePageController: OnePageController?
 
-    static let checkmarkStr : String = "✓"
+    static let CHECKMARK_STR : String = "✓"
 
     var firstFlip = ("", false)
 
@@ -83,19 +83,26 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         super.viewWillTransition(to: size, with: coordinator)
     }
 
+    static let DOWNLOADED_EPISODES = "downloadedEpisodes"
+    static let PLAYLIST_EPISODES = "playlistEpisodes"
+
     static func onEpisodeDownloaded(_ episodeId: Int) {
-        let key = "downloadedEpisodes"
+        let key = DOWNLOADED_EPISODES
         var array = DetailViewController.loadStoredArray(key)
         if let index = array.firstIndex(of: episodeId) {
             array.remove(at: index)
         }
         array.append(episodeId)
+        // TODO: ovde staviti postInitDownloadButton
+        storeIdArray(array, key)
+    }
+
+    static func storeIdArray(_ array: [Int], _ key: String) {
         var arrayForSaving: [String] = []
         for elem in array {
             arrayForSaving.append("\(Assets.numbers[elem])")
         }
         UserDefaults.standard.set(arrayForSaving, forKey: key)
-        // TODO: ovde staviti postInitDownloadButton
     }
 
     static func loadStoredArray(_ key: String) -> [Int] {
@@ -123,7 +130,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             self.showToggle()
         } else {
             if AppDelegate.player.currentItem == nil {
-                if DetailViewController.loadStoredArray("downloadedEpisodes").isEmpty {
+                if DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).isEmpty {
                     return
                 }
                 self.showMenu()
@@ -134,22 +141,25 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
 
     @objc func configurePlay0() {
-        let downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
+        let downloadedEpisodes = DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).sorted()
         if downloadedEpisodes.isEmpty {
             return
         }
+
+        let playlistEpisodes = DetailViewController.loadStoredArray(DetailViewController.PLAYLIST_EPISODES)
 
         let confirmation = UIAlertController(title: "Play", message: "", preferredStyle: .alert)
         firstFlip = ("", false)
         for episode in downloadedEpisodes {
             confirmation.addTextField(configurationHandler: { textField in
                 let title = "\(episode + 1). " + Assets.titles[episode]
-                textField.text = title // TODO: dodati checkmark na osnovu sačuvanog
+                let inPlaylist = playlistEpisodes.contains(episode)
+                textField.text = inPlaylist ? DetailViewController.CHECKMARK_STR + title : title
                 textField.isUserInteractionEnabled = true
                 textField.delegate = self
 
                 if self.firstFlip.0.isEmpty {
-                    self.firstFlip.0 = title
+                    self.firstFlip.0 = textField.text!
                 }
             })
         }
@@ -160,7 +170,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             var tracks: [Int] = []
             tracks.reserveCapacity(items.count)
             for i in stride(from: 0, to: items.count, by: 1) {
-                if items[i].text!.starts(with: DetailViewController.checkmarkStr) {
+                if items[i].text!.starts(with: DetailViewController.CHECKMARK_STR) {
                     tracks.append(downloadedEpisodes[i])
                 }
             }
@@ -171,7 +181,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
 
     @objc func configurePlay() {
-        let downloadedEpisodes = DetailViewController.loadStoredArray("downloadedEpisodes").sorted()
+        let downloadedEpisodes = DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).sorted()
         let playController = storyboard?.instantiateViewController(withIdentifier: "PlayController") as! PlayController
         self.present(playController, animated: true, completion: nil)
         playController.configure(downloadedEpisodes, self)
@@ -241,6 +251,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         AppDelegate.player.actionAtItemEnd = .advance
         AppDelegate.player.play()
 
+        DetailViewController.storeIdArray(tracks, DetailViewController.PLAYLIST_EPISODES)
+
         dismiss(animated: true)
         postInitDownloadButton()
     }
@@ -263,10 +275,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             return false
         }
         if firstFlip.1 || firstFlip.0 != textField.text {
-            if text.starts(with: DetailViewController.checkmarkStr) {
-                textField.text = String(text.dropFirst(DetailViewController.checkmarkStr.count))
+            if text.starts(with: DetailViewController.CHECKMARK_STR) {
+                textField.text = String(text.dropFirst(DetailViewController.CHECKMARK_STR.count))
             } else {
-                textField.text = DetailViewController.checkmarkStr + textField.text!
+                textField.text = DetailViewController.CHECKMARK_STR + textField.text!
             }
         }
         firstFlip.1 = true
