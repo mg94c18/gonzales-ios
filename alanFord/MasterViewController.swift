@@ -218,10 +218,12 @@ class MasterViewController: UITableViewController {
         if searchText.isEmpty {
             episodeId = episodeIndex(indexPath)
             cell.textLabel!.text = "\(episodeId + 1). \(Assets.titles[episodeId])"
+            cell.detailTextLabel!.text = ""
         } else {
             if episodeMatches[indexPath.row].1.isEmpty {
                 episodeId = episodeMatches[indexPath.row].0
                 cell.textLabel!.text = "\(episodeId + 1). \(Assets.titles[episodeId])"
+                cell.detailTextLabel!.text = ""
             } else {
                 episodeId = episodeMatches[indexPath.row].0
                 cell.textLabel!.text = episodeMatches[indexPath.row].1
@@ -252,21 +254,24 @@ extension MasterViewController: UISearchBarDelegate {
             return
         }
         let selectedId = DetailViewController.lastLoadedEpisode
-        var episodeId = 0
+        var rowIndex = -1
         if searchText == "" {
-            episodeId = selectedId
+            rowIndex = selectedId
+        } else if MasterViewController.searchProvider.ready() {
+            // No highlighting during cross-track search
         } else {
             for i in 0..<episodeMatches.count {
                 if episodeMatches[i].0 == selectedId {
                     if episodeMatches[i].1.isEmpty {
-                        episodeId = i
-                    } else {
-                        // TODO: nemam pojma da li je ovo OK, samo zvuči OK; bio sam pospan
-                        episodeId = episodeMatches[i].0
+                        rowIndex = i
                     }
                 }
             }
         }
-        tableView.selectRow(at: Assets.indexPath(forEpisode: episodeId), animated: true, scrollPosition: position)
+        if rowIndex != -1 {
+            tableView.selectRow(at: Assets.indexPath(forEpisode: rowIndex), animated: true, scrollPosition: position)
+        } else {
+            tableView.scrollToRow(at: IndexPath(indexes: [0, 0]), at: .top, animated: true)
+        }
     }
 }

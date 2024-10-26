@@ -200,6 +200,9 @@ class SearchProvider {
         var lines: [String] = []
         for i in stride(from: 0, to: titles.count, by: 1) {
             lines = Assets.pages(forEpisode: i)
+            if numbers[i] == "abvgd" {
+                continue
+            }
             for j in stride(from: 2, to: lines.count, by: 1) {
                 var line = htmlTags.stringByReplacingMatches(in: lines[j], range: NSMakeRange(0, lines[j].count), withTemplate: "").lowercased()
                 line = hintsPattern.stringByReplacingMatches(in: line, range: NSMakeRange(0, line.count), withTemplate: "")
