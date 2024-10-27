@@ -24,7 +24,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     private var offerDeleteDownloaded: Bool = false
     private var onePageController: OnePageController?
 
-    static let CHECKMARK_STR : String = "✓"
+    static let CHECKMARK_STR : String = "✓ "
 
     var firstFlip = ("", false)
 
@@ -154,6 +154,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+    var playAction: UIAlertAction? = nil
+    var checkedCnt = 0
     @objc func configurePlay0() {
         let downloadedEpisodes = DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).sorted()
         if downloadedEpisodes.isEmpty {
@@ -162,8 +164,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
 
         let playlistEpisodes = DetailViewController.loadStoredArray(DetailViewController.PLAYLIST_EPISODES)
 
-        let confirmation = UIAlertController(title: "Play", message: "", preferredStyle: .alert)
+        let confirmation = UIAlertController(title: "Select tracks", message: "", preferredStyle: .alert)
         firstFlip = ("", false)
+        checkedCnt = 0
         for episode in downloadedEpisodes {
             confirmation.addTextField(configurationHandler: { textField in
                 let title = "\(episode + 1). " + Assets.titles[episode]
@@ -175,9 +178,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                 if self.firstFlip.0.isEmpty {
                     self.firstFlip.0 = textField.text!
                 }
+                if inPlaylist {
+                    self.checkedCnt += 1
+                }
             })
         }
-        confirmation.addAction(UIAlertAction(title: "Play", style: .default, handler: { _ in
+        playAction = UIAlertAction(title: "Play", style: .default, handler: { _ in
             guard let items = confirmation.textFields else {
                 return
             }
@@ -189,7 +195,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                 }
             }
             self.startPlayback(of: tracks)
-        }))
+        })
+        if !downloadedEpisodes.contains(where: { elem in
+            playlistEpisodes.contains(elem)
+        }) {
+            playAction!.isEnabled = false
+        }
+        confirmation.addAction(playAction!)
         confirmation.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         self.present(confirmation, animated: true, completion: nil)
     }
@@ -272,9 +284,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         if firstFlip.1 || firstFlip.0 != textField.text {
             if text.starts(with: DetailViewController.CHECKMARK_STR) {
                 textField.text = String(text.dropFirst(DetailViewController.CHECKMARK_STR.count))
+                self.checkedCnt -= 1
             } else {
                 textField.text = DetailViewController.CHECKMARK_STR + textField.text!
+                self.checkedCnt += 1
             }
+            self.playAction?.isEnabled = (self.checkedCnt > 0)
         }
         firstFlip.1 = true
         return false
