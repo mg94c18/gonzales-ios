@@ -12,13 +12,125 @@ import os.log
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
+    // ../yugostrip-app-ios/alanFord/AppDelegate.swift
+    // func progress(forEpisode: Int, changedTo: Int) {
+    func updateControllers(with nowPlaying: Int) {
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count - 1] as! UINavigationController
+
+        var detail: DetailViewController?
+        if let top = navigationController.topViewController as? DetailViewController {
+            detail = top
+        }
+        if let visible = navigationController.visibleViewController as? DetailViewController {
+            detail = visible
+        }
+        if let detail = detail {
+            detail.update(with: nowPlaying)
+        }
+
+        if let masterNav = splitViewController.viewControllers[0] as? UINavigationController {
+            var master: MasterViewController?
+            if let top = masterNav.topViewController as? MasterViewController {
+                master = top
+            }
+            if let visible = masterNav.visibleViewController as? MasterViewController {
+                master = visible
+            }
+            if let master = master {
+                master.update(with: nowPlaying)
+            }
+        }
+    }
+
     var window: UIWindow?
+    static let PLAY_PREFIX = "(...) "
     static var inBackground = false
     static var unseenCrashes = 0
     static var unseenCrashesKey = "unseenCrashes"
-    static var player: AVQueuePlayer = AVQueuePlayer.init(items: [])
+    private static weak var instance: AppDelegate?
+    var observation: NSKeyValueObservation?
+    @objc var player: AVQueuePlayer = AVQueuePlayer.init(items: []) {
+        didSet {
+            updatePlayerObservation()
+        }
+    }
 
+    static var nowPlaying = -1 {
+        didSet {
+            instance?.updateControllers(with: nowPlaying)
+        }
+    }
+
+    static func play(_ tracks: [Int]) {
+        guard let instance = AppDelegate.instance else {
+            log("WTF - instance is gone")
+            return
+        }
+        if tracks.isEmpty {
+            AppDelegate.log("WTF - Playback what?")
+            return
+        }
+        guard let cacheDir = ImageDownloader.cacheDir else {
+            AppDelegate.log("WTF - Playback from where?")
+            return
+        }
+
+        var playerItems: [AVPlayerItem] = []
+        playerItems.reserveCapacity(tracks.count)
+
+        instance.itemIdMap.removeAll(keepingCapacity: true)
+        for i in stride(from: 0, to: tracks.count, by: 1) {
+            let item = AVPlayerItem.init(url: cacheDir.appendingPathComponent(Assets.numbers[tracks[i]] + ".mp3").absoluteURL)
+            playerItems.append(item)
+            instance.itemIdMap[item] = tracks[i]
+        }
+
+        instance.observation?.invalidate()
+        instance.player = AVQueuePlayer.init(items: playerItems)
+        instance.player.actionAtItemEnd = .advance
+        instance.player.play()
+        
+        // Key-Value Observing fails to inform of the very first track, most likely because it sets it during init and it doesn't change when .play() is called.
+        nowPlaying = tracks[0]
+    }
+
+    static func cancelPlay() {
+        guard let instance = AppDelegate.instance else {
+            log("WTF - instance is gone")
+            return
+        }
+        instance.player.removeAllItems()
+        nowPlaying = -1
+        instance.observation?.invalidate()
+    }
+
+    var itemIdMap: [AVPlayerItem : Int] = [:]
+
+    func updatePlayerObservation() {
+        observation = observe(\.player.currentItem, options: [.old, .new], changeHandler: { object, change in
+            if object.player != self.player {
+                return
+            }
+            guard let newItem = change.newValue else {
+                return
+            }
+            if newItem == nil {
+                AppDelegate.nowPlaying = -1
+            } else {
+                let id = self.itemIdMap[newItem!]
+                if id != nil {
+                    AppDelegate.nowPlaying = id!
+                } else {
+                    AppDelegate.log("WTF - we have a valid ID (\(id!)) but no recollection of it")
+                    AppDelegate.nowPlaying = -1
+                }
+            }
+        })
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        AppDelegate.instance = self
         // Override point for customization after application launch.
         let splitViewController = window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController

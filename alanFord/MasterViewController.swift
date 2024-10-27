@@ -27,7 +27,7 @@ class MasterViewController: UITableViewController {
     var searchText: String = "" {
         didSet {
             if searchText.isEmpty {
-                episodeMatches.removeAll()
+                episodeMatches.removeAll(keepingCapacity: true)
                 return
             }
             if searchText == "strana1" {
@@ -55,6 +55,12 @@ class MasterViewController: UITableViewController {
         ("ije", "e")]
     var episodeMatches: [(Int, String)] = []
     static var titlesLowercased: [String] = []
+    
+    func update(with nowPlaying: Int) {
+        let selection = tableView.indexPathForSelectedRow
+        tableView.reloadData()
+        tableView.selectRow(at: selection, animated: false, scrollPosition: .none)
+    }
 
     func searchedForDownloadedOnes() -> Bool {
         return searchText == "%"
@@ -62,7 +68,7 @@ class MasterViewController: UITableViewController {
 
     func findEpisodeMatches() {
         let searchTextLowercased = searchText.lowercased()
-        episodeMatches.removeAll()
+        episodeMatches.removeAll(keepingCapacity: true)
 
         if MasterViewController.searchProvider.ready() {
             let results = MasterViewController.searchProvider.query(searchTextLowercased)
@@ -137,9 +143,7 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = false
 
-        let selection = tableView.indexPathForSelectedRow
-        tableView.reloadData()
-        tableView.selectRow(at: selection, animated: false, scrollPosition: .none)
+        update(with: AppDelegate.nowPlaying)
 
         super.viewWillAppear(animated)
     }
@@ -217,7 +221,8 @@ class MasterViewController: UITableViewController {
         let episodeId: Int
         if searchText.isEmpty {
             episodeId = episodeIndex(indexPath)
-            cell.textLabel!.text = "\(episodeId + 1). \(Assets.titles[episodeId])"
+            let prefix = AppDelegate.nowPlaying == episodeId ? AppDelegate.PLAY_PREFIX : ""
+            cell.textLabel!.text = "\(prefix)\(episodeId + 1). \(Assets.titles[episodeId])"
             cell.detailTextLabel!.text = ""
         } else {
             if episodeMatches[indexPath.row].1.isEmpty {

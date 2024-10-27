@@ -62,17 +62,26 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             DetailViewController.previouslyLoaded = (DetailViewController.lastLoadedEpisode, OnePageController.lastLoadedIndex)
         }
         DetailViewController.lastLoadedEpisode = episodeId
-        title = Assets.titles[episodeId]
-        // TODO: ovde pogledati da update-uje title ako svira, na primer "▷ 1/3"
         navigationController?.isNavigationBarHidden = false
 
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(doubleTap))
         recognizer.numberOfTapsRequired = 2
         self.view.addGestureRecognizer(recognizer)
+        DetailViewController.lastLoadedController = self
+        update(with: AppDelegate.nowPlaying)
+    }
+
+    func update(with nowPlaying: Int) {
+        updateTitle(nowPlaying)
         postInitDownloadButton()
     }
 
-    func postInitDownloadButton(at: DispatchTime = .now()) {
+    private func updateTitle(_ nowPlaying: Int) {
+        let prefix = nowPlaying == episodeId ? AppDelegate.PLAY_PREFIX : ""
+        title = prefix + Assets.titles[episodeId]
+    }
+
+    private func postInitDownloadButton(at: DispatchTime = .now()) {
         DispatchQueue.main.asyncAfter(deadline: at) {
             self.initDownloadButton()
         }
@@ -86,6 +95,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     static let DOWNLOADED_EPISODES = "downloadedEpisodes"
     static let PLAYLIST_EPISODES = "playlistEpisodes"
 
+    static weak var lastLoadedController: DetailViewController? = nil
     static func onEpisodeDownloaded(_ episodeId: Int) {
         let key = DOWNLOADED_EPISODES
         var array = DetailViewController.loadStoredArray(key)
@@ -93,7 +103,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             array.remove(at: index)
         }
         array.append(episodeId)
-        // TODO: ovde staviti postInitDownloadButton
+        if let lastLoadedController = lastLoadedController {
+            if lastLoadedController.isViewLoaded {
+                lastLoadedController.postInitDownloadButton()
+            }
+        }
         storeIdArray(array, key)
     }
 
@@ -129,7 +143,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         if (onePageController.inLandscape) {
             self.showToggle()
         } else {
-            if AppDelegate.player.currentItem == nil {
+            if AppDelegate.nowPlaying == -1 {
                 if DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).isEmpty {
                     return
                 }
@@ -188,8 +202,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
 
     @objc func cancelPlay() {
-        postInitDownloadButton(at: .now() + .seconds(1))
-        AppDelegate.player.removeAllItems()
+        AppDelegate.cancelPlay()
     }
 
     // "square.and.arrow.down" iz "SF Symbols" za download
@@ -232,29 +245,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
 
     func startPlayback(of tracks: [Int]) {
-        guard let cacheDir = downloadDir else {
-            AppDelegate.log("Playback from where?")
-            return
-        }
-        if tracks.count < 1 {
-            AppDelegate.log("Playback what?")
-            return
-        }
-
-        var playerItems: [AVPlayerItem] = []
-        playerItems.reserveCapacity(tracks.count)
-
-        for i in stride(from: 0, to: tracks.count, by: 1) {
-            playerItems.append(AVPlayerItem.init(url: cacheDir.appendingPathComponent(Assets.numbers[tracks[i]] + ".mp3").absoluteURL))
-        }
-        AppDelegate.player = AVQueuePlayer.init(items: playerItems)
-        AppDelegate.player.actionAtItemEnd = .advance
-        AppDelegate.player.play()
+        AppDelegate.play(tracks)
 
         DetailViewController.storeIdArray(tracks, DetailViewController.PLAYLIST_EPISODES)
 
         dismiss(animated: true)
-        postInitDownloadButton()
     }
 
     @objc func doubleTap() {

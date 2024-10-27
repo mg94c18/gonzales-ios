@@ -48,10 +48,11 @@ class OnePageController : UIViewController {
     }
 
     static var lastLoadedIndex: Int = -1
+    static let TRANSLATION_FINAL = "translationFinal"
     var task: URLSessionDataTask?
     var downloadDir: URL?
     var fileNameSuffix: String = ""
-    var translationFinal: Bool = false
+    var translationFinal: Bool = UserDefaults.standard.bool(forKey: OnePageController.TRANSLATION_FINAL)
 
     static func lastChunk(from s: String, startingWith c: Character) -> String {
         guard let pos = s.lastIndex(of: c) else {
@@ -105,6 +106,7 @@ class OnePageController : UIViewController {
 
     func toggleTranslation() {
         translationFinal = !translationFinal
+        UserDefaults.standard.set(translationFinal, forKey: OnePageController.TRANSLATION_FINAL)
         refreshWebView()
     }
 

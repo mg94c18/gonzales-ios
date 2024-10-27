@@ -84,7 +84,7 @@ class SearchProvider {
                 searchWhat = query
                 lastNode = nil
                 lastMatchedQuery = ""
-                nodeStack.removeAll()
+                nodeStack.removeAll(keepingCapacity: true)
             } else {
                 let lastMatch = nodeStack[0]
                 lastNode = lastMatch.0
@@ -97,7 +97,7 @@ class SearchProvider {
             searchWhat = query
             lastNode = nil
             lastMatchedQuery = ""
-            nodeStack.removeAll()
+            nodeStack.removeAll(keepingCapacity: true)
         }
         var positionsAdded = Set<Position>()
         trieQuery(query, searchWhat!, &searchFrom, &cursor, &positionsAdded)
