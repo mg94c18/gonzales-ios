@@ -68,27 +68,27 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         recognizer.numberOfTapsRequired = 2
         self.view.addGestureRecognizer(recognizer)
         DetailViewController.lastLoadedController = self
-        update(with: AppDelegate.nowPlaying)
+        uiRefresh(AppDelegate.nowPlaying, AppDelegate.paused)
     }
 
-    func update(with nowPlaying: Int) {
-        updateTitle(nowPlaying)
-        postInitDownloadButton()
+    func uiRefresh(_ nowPlaying: Int, _ paused: Bool) {
+        updateTitle(nowPlaying, paused)
+        postInitDownloadButton(nowPlaying, paused)
     }
 
-    private func updateTitle(_ nowPlaying: Int) {
+    private func updateTitle(_ nowPlaying: Int, _ paused: Bool) {
         let prefix = nowPlaying == episodeId ? AppDelegate.PLAY_PREFIX : ""
         title = prefix + Assets.titles[episodeId]
     }
 
-    private func postInitDownloadButton(at: DispatchTime = .now()) {
+    private func postInitDownloadButton(_ nowPlaying: Int, _ paused: Bool, at: DispatchTime = .now()) {
         DispatchQueue.main.asyncAfter(deadline: at) {
-            self.initDownloadButton()
+            self.updateDownloadButton(nowPlaying, paused)
         }
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        postInitDownloadButton()
+        postInitDownloadButton(AppDelegate.nowPlaying, AppDelegate.paused)
         super.viewWillTransition(to: size, with: coordinator)
     }
 
@@ -105,7 +105,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         array.append(episodeId)
         if let lastLoadedController = lastLoadedController {
             if lastLoadedController.isViewLoaded {
-                lastLoadedController.postInitDownloadButton()
+                lastLoadedController.postInitDownloadButton(AppDelegate.nowPlaying, AppDelegate.paused)
             }
         }
         storeIdArray(array, key)
@@ -133,7 +133,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         return ret
     }
 
-    func initDownloadButton() {
+    func updateDownloadButton(_ nowPlaying: Int, _ paused: Bool) {
         navigationItem.rightBarButtonItem = nil
 
         guard let onePageController = onePageController else {
@@ -143,18 +143,21 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         if (onePageController.inLandscape) {
             self.showToggle()
         } else {
-            if AppDelegate.nowPlaying == -1 {
+            if nowPlaying == -1 {
                 if DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).isEmpty {
                     return
                 }
                 self.showMenu()
+            } else if paused {
+                self.showResume()
             } else {
-                self.showCancel()
+                self.showStop()
             }
         }
     }
 
     var playAction: UIAlertAction? = nil
+    var playlistTouched = false
     var checkedCnt = 0
     @objc func configurePlay0() {
         let downloadedEpisodes = DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).sorted()
@@ -183,6 +186,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                 }
             })
         }
+        playlistTouched = false
         playAction = UIAlertAction(title: "Play", style: .default, handler: { _ in
             guard let items = confirmation.textFields else {
                 return
@@ -206,33 +210,26 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         self.present(confirmation, animated: true, completion: nil)
     }
 
-    @objc func configurePlay() {
-        let downloadedEpisodes = DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).sorted()
-        let playController = storyboard?.instantiateViewController(withIdentifier: "PlayController") as! PlayController
-        self.present(playController, animated: true, completion: nil)
-        playController.configure(downloadedEpisodes, self)
-    }
-
-    @objc func cancelPlay() {
+    @objc func stopPlayback() {
         AppDelegate.cancelPlay()
     }
 
     // "square.and.arrow.down" iz "SF Symbols" za download
     // "wifi.slash" kad nema interneta
     // "rectangle.and.pencil.and.ellipsis" ili prosto "square.and.pencil" za Appstore (jer može da se piše autoru ili da se napiše review)
-    func showPlay() {
+    func showResume() {
         if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "play.circle"), style: .plain, target: self, action: #selector(configurePlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "play.circle"), style: .plain, target: self, action: #selector(resumePlayback))
         } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(configurePlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(resumePlayback))
         }
     }
 
-    func showCancel() {
+    func showStop() {
         if #available(iOS 13.0, *) {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "stop.circle"), style: .plain, target: self, action: #selector(cancelPlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "stop.circle"), style: .plain, target: self, action: #selector(stopPlayback))
         } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Stop", style: .plain, target: self, action: #selector(cancelPlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Stop", style: .plain, target: self, action: #selector(stopPlayback))
         }
     }
 
@@ -248,7 +245,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         if #available(iOS 13.0, *) {
             navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "menucard"), style: .plain, target: self, action: #selector(configurePlay0))
         } else {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Configure", style: .plain, target: self, action: #selector(configurePlay))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Configure", style: .plain, target: self, action: #selector(configurePlay0))
         }
     }
 
@@ -257,11 +254,24 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
 
     func startPlayback(of tracks: [Int]) {
-        AppDelegate.play(tracks)
+        if tracks.isEmpty {
+            AppDelegate.log("WTF - Playback what?")
+            return
+        }
 
-        DetailViewController.storeIdArray(tracks, DetailViewController.PLAYLIST_EPISODES)
+        if AppDelegate.paused && !playlistTouched {
+            resumePlayback()
+        } else {
+            AppDelegate.play(tracks)
+            DetailViewController.storeIdArray(tracks, DetailViewController.PLAYLIST_EPISODES)
+        }
 
+        // TODO: probably no longer needed since we use UIAlertController
         dismiss(animated: true)
+    }
+
+    @objc func resumePlayback() {
+        AppDelegate.resume()
     }
 
     @objc func doubleTap() {
@@ -290,6 +300,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                 self.checkedCnt += 1
             }
             self.playAction?.isEnabled = (self.checkedCnt > 0)
+            self.playlistTouched = true
         }
         firstFlip.1 = true
         return false

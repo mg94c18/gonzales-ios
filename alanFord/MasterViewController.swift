@@ -56,8 +56,9 @@ class MasterViewController: UITableViewController {
     var episodeMatches: [(Int, String)] = []
     static var titlesLowercased: [String] = []
     
-    func update(with nowPlaying: Int) {
+    func uiRefresh(_ nowPlaying: Int, _ paused: Bool) {
         let selection = tableView.indexPathForSelectedRow
+        // TODO: here we don't use what we pass in, that's kind of OK, but can be better
         tableView.reloadData()
         tableView.selectRow(at: selection, animated: false, scrollPosition: .none)
     }
@@ -143,7 +144,7 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = false
 
-        update(with: AppDelegate.nowPlaying)
+        uiRefresh(AppDelegate.nowPlaying, AppDelegate.paused)
 
         super.viewWillAppear(animated)
     }

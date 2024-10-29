@@ -14,7 +14,7 @@ import os.log
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
     // ../yugostrip-app-ios/alanFord/AppDelegate.swift
     // func progress(forEpisode: Int, changedTo: Int) {
-    func updateControllers(with nowPlaying: Int) {
+    func updateControllers(_ nowPlaying: Int, _ paused: Bool) {
         let splitViewController = self.window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count - 1] as! UINavigationController
 
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             detail = visible
         }
         if let detail = detail {
-            detail.update(with: nowPlaying)
+            detail.uiRefresh(nowPlaying, paused)
         }
 
         if let masterNav = splitViewController.viewControllers[0] as? UINavigationController {
@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                 master = visible
             }
             if let master = master {
-                master.update(with: nowPlaying)
+                master.uiRefresh(nowPlaying, paused)
             }
         }
     }
@@ -49,26 +49,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     static var unseenCrashes = 0
     static var unseenCrashesKey = "unseenCrashes"
     private static weak var instance: AppDelegate?
-    var observation: NSKeyValueObservation?
+    var itemObservation: NSKeyValueObservation?
+    var rateObservation: NSKeyValueObservation?
     @objc var player: AVQueuePlayer = AVQueuePlayer.init(items: []) {
         didSet {
             updatePlayerObservation()
         }
     }
 
+    static var pausedNowPlaying = -1
+
     static var nowPlaying = -1 {
         didSet {
-            instance?.updateControllers(with: nowPlaying)
+            instance?.updateControllers(nowPlaying, paused)
+        }
+    }
+
+    static var paused = false {
+        didSet {
+            instance?.updateControllers(nowPlaying, paused)
+        }
+    }
+
+    static func resume() {
+        guard let instance = AppDelegate.instance else {
+            log("WTF - instance is gone")
+            return
+        }
+        instance.player.play()
+        if nowPlaying == -1 && pausedNowPlaying != -1 {
+            nowPlaying = pausedNowPlaying
+            pausedNowPlaying = -1
         }
     }
 
     static func play(_ tracks: [Int]) {
         guard let instance = AppDelegate.instance else {
             log("WTF - instance is gone")
-            return
-        }
-        if tracks.isEmpty {
-            AppDelegate.log("WTF - Playback what?")
             return
         }
         guard let cacheDir = ImageDownloader.cacheDir else {
@@ -86,7 +103,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             instance.itemIdMap[item] = tracks[i]
         }
 
-        instance.observation?.invalidate()
+        instance.itemObservation?.invalidate()
+        instance.rateObservation?.invalidate()
         instance.player = AVQueuePlayer.init(items: playerItems)
         instance.player.actionAtItemEnd = .advance
         instance.player.play()
@@ -100,15 +118,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             log("WTF - instance is gone")
             return
         }
-        instance.player.removeAllItems()
+        instance.player.pause()
+        pausedNowPlaying = nowPlaying
         nowPlaying = -1
-        instance.observation?.invalidate()
     }
 
     var itemIdMap: [AVPlayerItem : Int] = [:]
 
     func updatePlayerObservation() {
-        observation = observe(\.player.currentItem, options: [.old, .new], changeHandler: { object, change in
+        itemObservation = observe(\.player.currentItem, options: [.old, .new], changeHandler: { object, change in
             if object.player != self.player {
                 return
             }
@@ -127,8 +145,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                 }
             }
         })
+        rateObservation = observe(\.player.rate, options: [.old, .new], changeHandler: { object, change in
+            if object.player != self.player {
+                return
+            }
+            guard let newItem = change.newValue else {
+                return
+            }
+            AppDelegate.paused = newItem == 0.0
+        })
     }
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         AppDelegate.instance = self
         // Override point for customization after application launch.
