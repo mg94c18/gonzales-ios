@@ -1,5 +1,9 @@
 Ako neko traži na primer "Zagor", treba da može da nađe prvi strip Zagora.  Ovo može ako na primer promenim naslov svakog prvog stripa tako da dodam ime.
 
+Za YugoStrip AF za iOS, "Čovjek bez prošlosti" vodi na "Strava u sillver bellu" a prva strana ima http linkove
+
+Ako se vraća iz background, možda može o istom trošku da prikaže nowPlaying pesmu, umesto one do koje se stalo.
+
 Kada stigne do poslednje strane, da automatski pokaže title bar tako da može da se izabere sledeći strip bez double-tap.
 
 Dvostrano, ugas, okret, upal -> dvostrano uspravno !@#$

@@ -182,7 +182,7 @@ class OnePageController : UIViewController {
 
     // ../Gonzales/app/src/main/java/org/mg94c18/gonzales/PageAdapter.java
     // private static String applyFilters
-    static let wordEmphasisPattern = try! NSRegularExpression(pattern: "\\|([^ \n,]+)")
+    static let wordEmphasisPattern = try! NSRegularExpression(pattern: "\\|([^ \n\\],]+)")
     static let groupingPattern = try! NSRegularExpression(pattern: "[\\[\\]]")
     static let hintsPattern = try! NSRegularExpression(pattern: "[\\\\|]")
     static let explicits = [ try? NSRegularExpression(pattern: "((f)uck)", options: .caseInsensitive) : "***" ]

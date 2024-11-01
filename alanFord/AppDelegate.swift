@@ -71,19 +71,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
     }
 
-    static func resume() {
+    func activateAndPlay(from controller: UIViewController) -> Bool {
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+            player.play()
+            return true
+        } catch let error {
+            let errorReport = UIAlertController(title: "Error", message: "Can't start playback.  Error message: \(error)", preferredStyle: .alert)
+            errorReport.addAction(UIAlertAction(title: "OK", style: .default))
+            controller.present(errorReport, animated: true, completion: nil)
+            return false
+        }
+    }
+
+    static func resume(from controller: UIViewController) {
         guard let instance = AppDelegate.instance else {
             log("WTF - instance is gone")
             return
         }
-        instance.player.play()
-        if nowPlaying == -1 && pausedNowPlaying != -1 {
-            nowPlaying = pausedNowPlaying
-            pausedNowPlaying = -1
+        if instance.activateAndPlay(from: controller) {
+            if nowPlaying == -1 && pausedNowPlaying != -1 {
+                nowPlaying = pausedNowPlaying
+                pausedNowPlaying = -1
+            }
         }
     }
 
-    static func play(_ tracks: [Int]) {
+    static func play(_ tracks: [Int], from controller: UIViewController) {
         guard let instance = AppDelegate.instance else {
             log("WTF - instance is gone")
             return
@@ -107,10 +121,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         instance.rateObservation?.invalidate()
         instance.player = AVQueuePlayer.init(items: playerItems)
         instance.player.actionAtItemEnd = .advance
-        instance.player.play()
-        
-        // Key-Value Observing fails to inform of the very first track, most likely because it sets it during init and it doesn't change when .play() is called.
-        nowPlaying = tracks[0]
+        if instance.activateAndPlay(from: controller) {
+            // Key-Value Observing fails to inform of the very first track, most likely because it sets it during init and it doesn't change when .play() is called.
+            // To know when the player item is ready for playback, observe the value of its status property. Add this observation before you call the player’s replaceCurrentItem(with:) method, because associating the player item with a player is the system’s cue to load the item’s media
+            nowPlaying = tracks[0]
+        }
     }
 
     static func cancelPlay() {
@@ -119,6 +134,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             return
         }
         instance.player.pause()
+        try? AVAudioSession.sharedInstance().setActive(false)
         pausedNowPlaying = nowPlaying
         nowPlaying = -1
     }
@@ -135,6 +151,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             }
             if newItem == nil {
                 AppDelegate.nowPlaying = -1
+                AppDelegate.pausedNowPlaying = -1
             } else {
                 let id = self.itemIdMap[newItem!]
                 if id != nil {
@@ -189,7 +206,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         AppDelegate.inBackground = false
         do {
             let audioSession = AVAudioSession.sharedInstance()
-            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            if #available(iOS 11.0, *) {
+                try audioSession.setCategory(AVAudioSessionCategoryPlayback, mode: AVAudioSessionModeDefault, routeSharingPolicy: AVAudioSession.RouteSharingPolicy.longFormAudio)
+            } else if #available(iOS 10.0, *) {
+                try audioSession.setCategory(AVAudioSessionCategoryPlayback, mode: AVAudioSessionModeDefault)
+            } else {
+                try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            }
         } catch {
             print("Failed to set the audio session configuration")
         }

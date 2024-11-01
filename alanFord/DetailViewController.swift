@@ -259,19 +259,16 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             return
         }
 
-        if AppDelegate.paused && !playlistTouched {
+        if AppDelegate.paused && !playlistTouched && AppDelegate.pausedNowPlaying != -1 {
             resumePlayback()
         } else {
-            AppDelegate.play(tracks)
+            AppDelegate.play(tracks, from: self)
             DetailViewController.storeIdArray(tracks, DetailViewController.PLAYLIST_EPISODES)
         }
-
-        // TODO: probably no longer needed since we use UIAlertController
-        dismiss(animated: true)
     }
 
     @objc func resumePlayback() {
-        AppDelegate.resume()
+        AppDelegate.resume(from: self)
     }
 
     @objc func doubleTap() {
