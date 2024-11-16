@@ -13,7 +13,7 @@ O _ ljubavi i _ želji
 
 I ne meni važi ništa
 Ništa
-Šta smeješ ili šta sanjaš
+Da smeješ ili šta sanjaš
 Šta pričaš ili šta radiš
 I ne meni važi ništa
 Za mnogo da me potrudim
@@ -31,12 +31,12 @@ Znam [ponašati me] u _ daljinama kratkim
 
 I ne meni važi ništa
 Ništa
-Šta smeješ ili šta sanjaš
+Da smeješ ili šta sanjaš
 ...
 
-Da uzimaš ili da ostavljaš
+Šta uzimaš ili šta ostavljaš
 Da dolaziš ili da odlaziš
 I ne meni važi ništa
-Da penješ ili da silaziš
+Šta penješ ili šta silaziš
 Da ulaziš ili da izlaziš
 I ne meni važi ništa

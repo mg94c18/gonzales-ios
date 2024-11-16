@@ -185,7 +185,11 @@ class OnePageController : UIViewController {
     static let wordEmphasisPattern = try! NSRegularExpression(pattern: "\\|([^ \n\\],]+)")
     static let groupingPattern = try! NSRegularExpression(pattern: "[\\[\\]]")
     static let hintsPattern = try! NSRegularExpression(pattern: "[\\\\|]")
-    static let explicits = [ try? NSRegularExpression(pattern: "((f)uck)", options: .caseInsensitive) : "***" ]
+    static let explicits = [
+        try? NSRegularExpression(pattern: "((f)uck)", options: .caseInsensitive) : "***",
+        try? NSRegularExpression(pattern: "((d)ick)", options: .caseInsensitive) : "***",
+        try? NSRegularExpression(pattern: "((c)unt)", options: .caseInsensitive) : "***",
+    ]
 
     static func applyFilters(_ line: String, _ hints: Bool, _ a3byka: Bool, _ removeGroupings: Bool, _ searchedWordPattern: NSRegularExpression?) -> String {
         var newLine: String = line

@@ -9,7 +9,7 @@
 import Foundation
 
 class Assets {
-    // cat ../Gonzales/app/src/dijaspora/assets/numbers | sed -r 's/$/"/' | sed -r 's/^/"/' | tr -d '\r' | tr '\n' ','
+    // cat ../Gonzales/app/src/gonzales/assets/numbers | sed -r 's/$/"/' | sed -r 's/^/"/' | tr -d '\r' | tr '\n' ','
     public static let numbers: [String] = ["valemucho","interesas","manuela","nada","elrey","llorona","recordaras","libroviejo","quizas","baila2","tienesabor","basurita","sumujer2","aveces2","besame","perdi","cielorojo2","hastasiempre","cuerpo","hermoso","recuerdos2","hey2","chatarra","lutte","carretera","querria","hubierasabido","seranovia","unomas","volvera","volverb","encuestaamor","shakira"]
 
     public static let titles: [String] = ["Para siempre","Ya no me interesas","Manuela","No me importa nada","El rey","La llorona","Un ano de amor","Pedacito de papel","Quizás, quizás, quizás","Baila morena","Tiene sabor","La basurita","Quién es ese hombre","A veces tú, a veces yo","Besame mucho","Estos celos","Cielo rojo","Hasta siempre, comandante","Tu sangra en mi cuerpo","Hermoso cariño","Entre mis recuerdos","Hey","Chatarra","Lutte","Carretera","Querria","Si hubiera sabido ayer","Los Serrano 1","Uno más uno son siete","Volver 1","Volver 2","Encuesta - Bilbao","Entrevista - Las mujeres ya no lloran"]
@@ -40,7 +40,7 @@ class Assets {
         let bucketSuffix = sectionInfo[index.0].2
         var ret: [String] = []
 
-        // for f in $(cat ../Gonzales/app/src/dijaspora/assets/numbers); do for p in "" ".bukvalno" ".finalno"; do cp ../Gonzales/app/src/dijaspora/assets/${f}${p} alanFord/Tekstovi/${f}${p}.txt; done; done
+        // for f in $(cat ../Gonzales/app/src/gonzales/assets/numbers); do for p in "" ".bukvalno" ".finalno"; do cp ../Gonzales/app/src/gonzales/assets/${f}${p} druzinaOdVjesala/Tekstovi/${f}${p}.txt; done; done
         if let path = Bundle.main.path(forResource: number + withTranslation, ofType: "txt") {
             do {
                 let data = try String(contentsOfFile: path, encoding: .utf8)
