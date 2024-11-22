@@ -6,10 +6,10 @@
 - I couldn't.
 - It will fall on someone's head.
 - I don't care.
-- It surely bothers this gentleman; sir...
+- This gentleman is surely bothered by it; sir...
 - Whoa whoa whoa!  Don't you wake up my grandpa!  I'll unscrew your head {off}.
 - Forgive us, my brother is somewhat young and an impulsive man, he was referring to the fact that our grandpa has a very rare illness and if he suddenly wakes {up}, his heart could stop and he could die.  And you wouldn't want that to happen, would you?
-- Is it free here? ...  Hello, people?  Did someone die, what happened?
+- Is it free here? ...  Hey, people?  Did someone die, what happened?
 - Yes, it's free, please, have a seat.  Wow, what a sweet little girl, what's up sweetie, goo-goo, what's your name?
 - I will not tell you, you baldy!
 - Whose is this bulky thing?
@@ -59,7 +59,7 @@
 - Well for starters, what's your name?  I am Maja.
 - Hello Maja.  You are one polite kid indeed.  From across?
 - No, I'm from Belgrade.
-- I am guessing that you attended Ribnik {elementary} and then Eighth {high school}, huh?
+- I am guessing that you attended Ribnik {elementary} and then Eighth {high school}, right?
 - Well something like that.
 - And probably you also attended a music school.
 - No no, I attended ballet.
@@ -117,7 +117,7 @@
 - Ah, I can't anymore.  Where are we?
 - I have no idea, it's all flat, all the same, boring.  What do you do, Maja?
 - I study linguistics.  You?
-- Nothing.  Actually, trade.  You wanna go for a coffee?  I will not get on to you, really, I hate drinking coffee alone.
+- Nothing.  Actually, trade.  You wanna go for a coffee?  I will not flirt with you, really, I hate drinking coffee alone.
 - OK.
 - Let's go.
 ...
@@ -134,7 +134,7 @@
 - Cheers bro!
 - Sure, just to order.
 {train enters into a tunnel...}
-- How to knock {glasses} now when nothing can be seen?
+- How to knock {glasses} now when one can't see anything?
 - Wait a little, you stupid.
 {train brakes a little...}
 - Mother fucker!  What did he do?
@@ -147,7 +147,7 @@
 - So what, it hasn't killed anybody.
 - Actually it has!  It killed grandpa!  Here, he's as cold as ice.
 - Indeed.  He seems dead.  Well what do we do now?  Well kids, I hope you will not say that I am guilty, will you?
-- And who the heck is!  Have I told you five times to move the suitcase?
+- And who the heck is!  Have I {not} told you five times to move the suitcase?
 - Well, oh, I didn't know that...
 - I knew it!  Was I saying?  Wasn't I saying?  Everyone knew it!  Only you play a smart ass: "I don't care, I don't give a damn".  What will you do now, you stupid granny, huh?
 - Really kids, what will we do?
@@ -157,7 +157,7 @@
 - That, that, that we say that, that he, suddenly awoke when the train stopped, and immediately his heart stopped.
 - Heh, very smart, yeah...  And when they find him with a dented scull, then what?  They will think that we banged him with something.
 - That's right, correct, that's stupid.  That's very stupid.  Let me think, I want silence.
-- Only, we must do everything quickly because those two can, they can return amy moment.
+- Only, we must do everything quickly because those two can, they can return any moment.
 - Shut up!  Listen what we'll {do}.  We will simply throw him out of the compartment.  Through the window.  What the heck you're staring at?  We'll throw him out through the window and we'll tell them that he went to the restroom.  He's old, senile, he can easily get lost.
 - Ah, and fall out.
 - So, sonny, you are a genius.
@@ -167,7 +167,8 @@
 - Nevermind; are you ready?
 - On three.  One, two, three!
 - Granny, you move the suitcase right now!
-- Sure, sure, why don't you say...
+{more empty glasses...}
+- Sure, sure, why don't you say so...
 - Bro; wanna have another round, huh?
 - Why?
 - Because it feels good.
@@ -207,7 +208,7 @@
 - What, already?  Now?
 - Yep, already.  Come on!
 - Aren't you going to Vršac?
-- Ah, well no, I mean, actually, I have some errands to run in Mrtvaja.  See you in Belgrade sometimes, ok?  Buy.
+- Ah, well no, I mean, actually, I have some errands to run in Mrtvaja.  See you in Belgrade sometimes, ok?  Bye.
 ...
 - Look {at} these two, aren't they in a hurry.
 - Lemi bro, I have a bad feeling about this!  Let's go to the compartment!
@@ -243,7 +244,7 @@
 - In a purple suit?
 - Yes.
 - Like a fag.
-- Hey man, what the heck you're writing down, our grandpa was not a fag.
+- Hey man, what the heck you're jotting down, our grandpa was not a fag.
 - Yeah, I saw him a moment ago.  I spotted him right away.  He's very funny.
 - Yep, yep.  {My} colleague and I have just been to the restroom, he's not there, so, he disappeared.
 - It seems so.
@@ -259,7 +260,7 @@
 - Inform Mića to make a pass by the railroad.  And all of you, IDs!
 - Mister policeman, please, why?  We have nothing to do with it.
 - Because, because.
-- Hey, Poirot, what the heck is wrong?
+- Hey you, Poirot, what the heck is wrong?
 - If you really want to know my name is Sava.  Your IDs.
 ...
 - Ouch, that little girl!  It looks like they mistakenly took my backpack!
@@ -269,4 +270,4 @@
 - Mića, pick up.  Roger.
 - You're in a hurry?
 - Well, you know friend, it's not that we don't trust the police, but we would still {like} to find grandpa on our own.  After all, he's our blood.
-- Right, right.  As far as I am concerned, I don't have a problem with that.  Only, outside is a barren land.
+- Yep, yep.  As far as I am concerned, I don't have a problem with that.  Only, outside is a barren land.
