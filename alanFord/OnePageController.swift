@@ -38,7 +38,7 @@ extension OnePageController: ImageDownloaderDelegate {
     }
 }
 
-class OnePageController : UIViewController {
+class OnePageController : UIViewController, UIScrollViewDelegate {
     var inLandscape: Bool = false
 
     var page: (Int, [String], [String], [String], String, String) = (-1, [""], [""], [""], "", "") {
@@ -73,23 +73,60 @@ class OnePageController : UIViewController {
         }
         inLandscape = (view.frame.width > view.frame.height)
         refreshWebView()
+        webView.allowsLinkPreview = false
+        webView.allowsInlineMediaPlayback = false
+        webView.mediaPlaybackAllowsAirPlay = false
+        webView.allowsPictureInPictureMediaPlayback = false
         postLoad()
     }
     
-    func refreshWebView() {
+    func refreshWebView(_ restoreScroll: Bool = false) {
         let translation = translationFinal ? page.3 : page.2
         let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: translation, removeGroupings: translation == page.3, author: page.4, a3byka: false, inLandscape: inLandscape, searchedWord: page.5, fontSize: inLandscape ? 3 : 5)
 
         // webView.scalesPageToFit = true
         // https://developer.apple.com/documentation/uikit/uitextview
         // It’s recommended that you use a text view—and not a UIWebView object—to display both plain and rich text in your app.
+
+        oldScrollY = webView.scrollView.contentOffset.y
+        oldHeight = webView.scrollView.contentSize.height
+        if restoreScroll && !round(oldScrollY).isEqual(to: 0) {
+            webView.scrollView.delegate = self
+        }
         webView.loadHTMLString(htmlContent, baseURL: nil)
-        webView.allowsLinkPreview = false
-        webView.allowsInlineMediaPlayback = false
-        webView.mediaPlaybackAllowsAirPlay = false
-        webView.allowsPictureInPictureMediaPlayback = false
     }
     
+    var oldScrollY: CGFloat = -1
+    var oldHeight: CGFloat = -1
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        AppDelegate.log("oldScrollY=\(oldScrollY),contentOffset.y=\(scrollView.contentOffset.y)")
+        if scrollView.contentSize.height.isEqual(to: oldHeight) && round(scrollView.contentOffset.y).isEqual(to: round(oldScrollY)) {
+            AppDelegate.log("Spurious scroll; ignoring and waiting for the real one")
+            return
+        }
+        scrollView.delegate = nil
+        guard oldScrollY >= 0 && oldHeight > 0 else {
+            AppDelegate.log("WTF - oldScrollY=\(oldScrollY), oldHeight=\(oldHeight)")
+            return
+        }
+        let newHeight = scrollView.contentSize.height
+        var newScrollY = floor(oldScrollY * newHeight / oldHeight)
+
+        // https://janeshswift.com/ios/swift/how-to-scroll-to-a-position-programmatically-in-uiscrollview/
+        let maxScrollY = max(scrollView.contentSize.height - scrollView.bounds.size.height + scrollView.contentInset.bottom, 0)
+        if newScrollY > maxScrollY {
+            AppDelegate.log("New Y is too close, trimming it to scroll to the end")
+            newScrollY = maxScrollY
+        }
+
+        AppDelegate.log("oldHeight=\(oldHeight),oldScrollY=\(oldScrollY),newHeight=\(newHeight),newY=\(newScrollY)")
+        if newScrollY > 0 && newScrollY < 1234567 {
+            DispatchQueue.main.async {
+                self.webView.scrollView.setContentOffset(CGPointMake(self.webView.scrollView.contentOffset.x, newScrollY), animated: false)
+            }
+        }
+    }
+
     // Kažu da ovo treba da radi jer navodno kreiraš u portrait pa se ovo pozove...  Ali ne.
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         inLandscape = (size.width > size.height)
@@ -107,7 +144,7 @@ class OnePageController : UIViewController {
     func toggleTranslation() {
         translationFinal = !translationFinal
         UserDefaults.standard.set(translationFinal, forKey: OnePageController.TRANSLATION_FINAL)
-        refreshWebView()
+        refreshWebView(true)
     }
 
     func postLoad() {
@@ -130,7 +167,7 @@ class OnePageController : UIViewController {
         activityIndicator.hidesWhenStopped = true
         activityIndicator.stopAnimating()
     }
-    
+
     func startDownloading(_ file: String) {
         let downloader = ImageDownloader(id: page.0, url: page.1[0], fileName: file, delegate: self, tmpSuffix: ".tmp.ui")
         task = downloader.createTask()

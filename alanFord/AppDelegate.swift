@@ -241,7 +241,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     static func log(_ message: String) {
         if #available(iOS 10.0, *) {
-            os_log("")
+            os_log("%s", message)
         } else {
             // Fallback on earlier versions
         }
