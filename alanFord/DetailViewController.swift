@@ -36,7 +36,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         if episodeId == -1 {
-            episodeId = UserDefaults.standard.integer(forKey: "lastEpisodeId")
+            episodeId = AppDelegate.getLastEpisodeId()
         }
 
         pages = Assets.pages(forEpisode: episodeId)

@@ -48,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     static var inBackground = false
     static var unseenCrashes = 0
     static var unseenCrashesKey = "unseenCrashes"
+    static let lastEpisodeIdKey = "lastEpisodeId"
     private static weak var instance: AppDelegate?
     var itemObservation: NSKeyValueObservation?
     var rateObservation: NSKeyValueObservation?
@@ -196,7 +197,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         if DetailViewController.lastLoadedEpisode != -1 {
-            UserDefaults.standard.set(DetailViewController.lastLoadedEpisode, forKey: "lastEpisodeId")
+            UserDefaults.standard.set(DetailViewController.lastLoadedEpisode, forKey: AppDelegate.lastEpisodeIdKey)
         }
         DetailViewController.previouslyLoaded = nil
     }
@@ -245,6 +246,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         } else {
             // Fallback on earlier versions
         }
+    }
+
+    static func getLastEpisodeId() -> Int {
+        guard let id = UserDefaults.standard.object(forKey: AppDelegate.lastEpisodeIdKey) as? Int else {
+            return Assets.defaultEpisodeId
+        }
+        return id
     }
 }
 

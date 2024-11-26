@@ -16,6 +16,8 @@ class Assets {
     
     public static let dates: [String] = ["Vicente Fernández","Lucha Villa","Julio Iglesias","Luz Casal","Vicente Fernández","Chavela Vargas","Luz Casal","Buena Vista Social Club","Trio Los Panchos","Julio Iglesias","Omara Portuondo","Flor Silvestre","Zharick León","La Apuesta","Consuelo Velázquez","Vicente Fernández","Flor Silvestre","Carlos Puebla y sus Tradicionales","Ana Bertha Castellanos, Jesús Castellanos","Vicente Fernández","Luz Casal","Julio Iglesias","Waor, El Jincho, Brawler","Ayax y Prok, Fernandocosta","Natos, Waor, Recycled J","El Kanka","Joan Sebastian","Jorge Jurado, Antonio Resines, Víctor Elías, Fran Perea, Belén Rueda","Fran Perea","Carmen Maura, Lola Dueñas, Penélope Cruz, Leandro Rivera","Leandro Rivera, Penélope Cruz, Yohana Cobo, Lola Dueñas","Encuesta sobre el amor 2.0","Shakira, Lili Estefan"]
 
+    public static let defaultEpisodeId: Int = 0
+
     static func indexPath(forEpisode episode: Int) -> IndexPath {
         let index = flavorIndex(forEpisode: episode)
         return IndexPath(indexes: [index.0, index.1])

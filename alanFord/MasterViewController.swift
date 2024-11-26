@@ -123,7 +123,7 @@ class MasterViewController: UITableViewController {
         }
 
         if DetailViewController.lastLoadedEpisode == -1 {
-            let episodeId = UserDefaults.standard.integer(forKey: "lastEpisodeId")
+            let episodeId = AppDelegate.getLastEpisodeId()
             initialPageIndex = UserDefaults.standard.integer(forKey: "lastPageIndex")
             tableView.selectRow(at: Assets.indexPath(forEpisode: episodeId), animated: false, scrollPosition: .middle)
             performSegue(withIdentifier: "showDetail", sender: navigationController)

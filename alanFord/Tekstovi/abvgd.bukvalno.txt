@@ -1,3 +1,32 @@
 
 
-N/A
+a / A : fun, bar
+b / B : big, robbery
+v / V : vocal, vivid
+g / G : great, gig
+d / D : dig, ditch
+đ / Đ : ~Django, ~Beijing, ~Giorgio
+e / E : wet, pear
+ž / Ž : beige, dejavu
+z / Z : basil, zombie
+i / I : pick, peek
+j / J : yellow, yolk
+k / K : king, queen
+l / L : love, oily
+lj / Lj : Lyuba, Tartaglia
+m / M : mix, match
+n / N : never, no
+nj / Nj : niña, Dunyasha
+o / O : top, floor
+p / P : property, puppet
+r / R : Roberto, Verdi
+s / S : six, place
+t / T : top, plate
+ć / Ć : ~ocho, ~ciao
+u / U : put, food
+f / F : fig, phone
+h / H : hip, hop
+c / C : pretzel, Fitz
+č / Č : chip, fetch
+dž / Dž : jumbo, jet
+š / Š : ship, marsh
