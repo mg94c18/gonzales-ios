@@ -17,11 +17,11 @@ možda jednom žali|ćemo to
 
 Igramo se mi
 Igramo se mi
-Igramo se, igramo sa sreć|om
+Igramo se, igramo {se} sa sreć|om
 
 Igramo se mi
 Igramo se mi
-Igramo i ne misli|mo o t|om
+Igramo {se} i ne misli|mo o t|om
 
 Malo griješim ja
 malo više griješiš ti
@@ -40,7 +40,7 @@ Da si momak
 dvadesetog vjeka
 a ne [bilo tkog]
 
-Ali ti zaboravljaš
+Ali ti zaboravlja|š
 i ja sam tu
 s tob|om u t|om stoljeću
 
