@@ -267,6 +267,46 @@
 		7CD069C42CC0A7D400CAD288 /* volvera.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AD2CC0A7D400CAD288 /* volvera.finalno.txt */; };
 		7CD069C52CC0A7D400CAD288 /* volverb.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AE2CC0A7D400CAD288 /* volverb.txt */; };
 		7CD069C62CC0A7D400CAD288 /* valemucho.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CD069AF2CC0A7D400CAD288 /* valemucho.finalno.txt */; };
+		E20D45712D34763A0021E641 /* nikadniko.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45492D3476380021E641 /* nikadniko.cirilica.txt */; };
+		E20D45722D34763A0021E641 /* inat.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D454A2D3476390021E641 /* inat.cirilica.txt */; };
+		E20D45732D34763A0021E641 /* gru.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D454B2D3476390021E641 /* gru.cirilica.txt */; };
+		E20D45742D34763A0021E641 /* kolena.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D454C2D3476390021E641 /* kolena.cirilica.txt */; };
+		E20D45752D34763A0021E641 /* zohari.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D454D2D3476390021E641 /* zohari.cirilica.txt */; };
+		E20D45762D34763A0021E641 /* kadbi2.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D454E2D3476390021E641 /* kadbi2.cirilica.txt */; };
+		E20D45772D34763A0021E641 /* igramo2.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D454F2D3476390021E641 /* igramo2.cirilica.txt */; };
+		E20D45782D34763A0021E641 /* necevatra.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45502D3476390021E641 /* necevatra.cirilica.txt */; };
+		E20D45792D34763A0021E641 /* takotreba.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45512D3476390021E641 /* takotreba.cirilica.txt */; };
+		E20D457A2D34763A0021E641 /* TjeloHristovo.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45522D3476390021E641 /* TjeloHristovo.cirilica.txt */; };
+		E20D457B2D34763A0021E641 /* anketav.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45532D3476390021E641 /* anketav.cirilica.txt */; };
+		E20D457C2D34763A0021E641 /* anketag.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45542D3476390021E641 /* anketag.cirilica.txt */; };
+		E20D457D2D34763A0021E641 /* kukavica.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45552D3476390021E641 /* kukavica.cirilica.txt */; };
+		E20D457E2D34763A0021E641 /* li.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45562D3476390021E641 /* li.cirilica.txt */; };
+		E20D457F2D34763A0021E641 /* samorata.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45572D3476390021E641 /* samorata.cirilica.txt */; };
+		E20D45802D34763A0021E641 /* pape.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45582D3476390021E641 /* pape.cirilica.txt */; };
+		E20D45812D34763A0021E641 /* hajde.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45592D3476390021E641 /* hajde.cirilica.txt */; };
+		E20D45822D34763A0021E641 /* ostaricu.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D455A2D3476390021E641 /* ostaricu.cirilica.txt */; };
+		E20D45832D34763A0021E641 /* mogli.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D455B2D3476390021E641 /* mogli.cirilica.txt */; };
+		E20D45842D34763A0021E641 /* pub.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D455C2D3476390021E641 /* pub.cirilica.txt */; };
+		E20D45852D34763A0021E641 /* lutka2.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D455D2D3476390021E641 /* lutka2.cirilica.txt */; };
+		E20D45862D34763A0021E641 /* jorgovani.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D455E2D3476390021E641 /* jorgovani.cirilica.txt */; };
+		E20D45872D34763A0021E641 /* pozdravi.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D455F2D3476390021E641 /* pozdravi.cirilica.txt */; };
+		E20D45882D34763A0021E641 /* koljena.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45602D3476390021E641 /* koljena.cirilica.txt */; };
+		E20D45892D34763A0021E641 /* anketaa.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45612D34763A0021E641 /* anketaa.cirilica.txt */; };
+		E20D458A2D34763A0021E641 /* druze.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45622D34763A0021E641 /* druze.cirilica.txt */; };
+		E20D458B2D34763A0021E641 /* mrtavladan.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45632D34763A0021E641 /* mrtavladan.cirilica.txt */; };
+		E20D458C2D34763A0021E641 /* daj.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45642D34763A0021E641 /* daj.cirilica.txt */; };
+		E20D458D2D34763A0021E641 /* studios.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45652D34763A0021E641 /* studios.cirilica.txt */; };
+		E20D458E2D34763A0021E641 /* udva.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45662D34763A0021E641 /* udva.cirilica.txt */; };
+		E20D458F2D34763A0021E641 /* anketab.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45672D34763A0021E641 /* anketab.cirilica.txt */; };
+		E20D45902D34763A0021E641 /* bubaerdeljan.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45682D34763A0021E641 /* bubaerdeljan.cirilica.txt */; };
+		E20D45912D34763A0021E641 /* nevolem.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45692D34763A0021E641 /* nevolem.cirilica.txt */; };
+		E20D45922D34763A0021E641 /* zenidba.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D456A2D34763A0021E641 /* zenidba.cirilica.txt */; };
+		E20D45932D34763A0021E641 /* zlatibore.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D456B2D34763A0021E641 /* zlatibore.cirilica.txt */; };
+		E20D45942D34763A0021E641 /* insomnia.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D456C2D34763A0021E641 /* insomnia.cirilica.txt */; };
+		E20D45952D34763A0021E641 /* ljubavje.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D456D2D34763A0021E641 /* ljubavje.cirilica.txt */; };
+		E20D45962D34763A0021E641 /* ajasam2.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D456E2D34763A0021E641 /* ajasam2.cirilica.txt */; };
+		E20D45972D34763A0021E641 /* novak.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D456F2D34763A0021E641 /* novak.cirilica.txt */; };
+		E20D45982D34763A0021E641 /* opilo.cirilica.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20D45702D34763A0021E641 /* opilo.cirilica.txt */; };
 		E210F08A28B6DBAD009A0958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C23B8E521F831C000CABDD6 /* DetailViewController.swift */; };
 		E210F08B28B6DBAD009A0958 /* OnePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA5C8288C849F0019D7DD /* OnePageController.swift */; };
 		E210F08C28B6DBAD009A0958 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DCF4C28A4BAEA00EC6F9D /* ImageDownloader.swift */; };
@@ -276,6 +316,21 @@
 		E210F09528B6DBAD009A0958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EA21F831C000CABDD6 /* Assets.xcassets */; };
 		E210F09628B6DBAD009A0958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8E721F831C000CABDD6 /* Main.storyboard */; };
 		E210F09D28B6DCE9009A0958 /* AssetsMM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210F09C28B6DCE9009A0958 /* AssetsMM.swift */; };
+		E2B5897E2D33AA9F006E5F88 /* anketaa.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B5896F2D33AA9F006E5F88 /* anketaa.bukvalno.txt */; };
+		E2B5897F2D33AA9F006E5F88 /* anketab.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589702D33AA9F006E5F88 /* anketab.bukvalno.txt */; };
+		E2B589802D33AA9F006E5F88 /* studios.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589712D33AA9F006E5F88 /* studios.finalno.txt */; };
+		E2B589812D33AA9F006E5F88 /* anketav.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589722D33AA9F006E5F88 /* anketav.finalno.txt */; };
+		E2B589822D33AA9F006E5F88 /* anketab.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589732D33AA9F006E5F88 /* anketab.txt */; };
+		E2B589832D33AA9F006E5F88 /* anketab.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589742D33AA9F006E5F88 /* anketab.finalno.txt */; };
+		E2B589842D33AA9F006E5F88 /* anketag.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589752D33AA9F006E5F88 /* anketag.txt */; };
+		E2B589852D33AA9F006E5F88 /* anketaa.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589762D33AA9F006E5F88 /* anketaa.txt */; };
+		E2B589862D33AA9F006E5F88 /* anketaa.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589772D33AA9F006E5F88 /* anketaa.finalno.txt */; };
+		E2B589872D33AA9F006E5F88 /* anketag.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589782D33AA9F006E5F88 /* anketag.bukvalno.txt */; };
+		E2B589882D33AA9F006E5F88 /* anketav.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589792D33AA9F006E5F88 /* anketav.txt */; };
+		E2B589892D33AA9F006E5F88 /* anketav.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B5897A2D33AA9F006E5F88 /* anketav.bukvalno.txt */; };
+		E2B5898A2D33AA9F006E5F88 /* studios.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B5897B2D33AA9F006E5F88 /* studios.bukvalno.txt */; };
+		E2B5898B2D33AA9F006E5F88 /* studios.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B5897C2D33AA9F006E5F88 /* studios.txt */; };
+		E2B5898C2D33AA9F006E5F88 /* anketag.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B5897D2D33AA9F006E5F88 /* anketag.finalno.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -525,9 +580,64 @@
 		7CD069AD2CC0A7D400CAD288 /* volvera.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volvera.finalno.txt; sourceTree = "<group>"; };
 		7CD069AE2CC0A7D400CAD288 /* volverb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = volverb.txt; sourceTree = "<group>"; };
 		7CD069AF2CC0A7D400CAD288 /* valemucho.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = valemucho.finalno.txt; sourceTree = "<group>"; };
+		E20D45492D3476380021E641 /* nikadniko.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nikadniko.cirilica.txt; sourceTree = "<group>"; };
+		E20D454A2D3476390021E641 /* inat.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inat.cirilica.txt; sourceTree = "<group>"; };
+		E20D454B2D3476390021E641 /* gru.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gru.cirilica.txt; sourceTree = "<group>"; };
+		E20D454C2D3476390021E641 /* kolena.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kolena.cirilica.txt; sourceTree = "<group>"; };
+		E20D454D2D3476390021E641 /* zohari.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zohari.cirilica.txt; sourceTree = "<group>"; };
+		E20D454E2D3476390021E641 /* kadbi2.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kadbi2.cirilica.txt; sourceTree = "<group>"; };
+		E20D454F2D3476390021E641 /* igramo2.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = igramo2.cirilica.txt; sourceTree = "<group>"; };
+		E20D45502D3476390021E641 /* necevatra.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = necevatra.cirilica.txt; sourceTree = "<group>"; };
+		E20D45512D3476390021E641 /* takotreba.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = takotreba.cirilica.txt; sourceTree = "<group>"; };
+		E20D45522D3476390021E641 /* TjeloHristovo.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TjeloHristovo.cirilica.txt; sourceTree = "<group>"; };
+		E20D45532D3476390021E641 /* anketav.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketav.cirilica.txt; sourceTree = "<group>"; };
+		E20D45542D3476390021E641 /* anketag.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketag.cirilica.txt; sourceTree = "<group>"; };
+		E20D45552D3476390021E641 /* kukavica.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kukavica.cirilica.txt; sourceTree = "<group>"; };
+		E20D45562D3476390021E641 /* li.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = li.cirilica.txt; sourceTree = "<group>"; };
+		E20D45572D3476390021E641 /* samorata.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = samorata.cirilica.txt; sourceTree = "<group>"; };
+		E20D45582D3476390021E641 /* pape.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pape.cirilica.txt; sourceTree = "<group>"; };
+		E20D45592D3476390021E641 /* hajde.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hajde.cirilica.txt; sourceTree = "<group>"; };
+		E20D455A2D3476390021E641 /* ostaricu.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ostaricu.cirilica.txt; sourceTree = "<group>"; };
+		E20D455B2D3476390021E641 /* mogli.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mogli.cirilica.txt; sourceTree = "<group>"; };
+		E20D455C2D3476390021E641 /* pub.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pub.cirilica.txt; sourceTree = "<group>"; };
+		E20D455D2D3476390021E641 /* lutka2.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lutka2.cirilica.txt; sourceTree = "<group>"; };
+		E20D455E2D3476390021E641 /* jorgovani.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jorgovani.cirilica.txt; sourceTree = "<group>"; };
+		E20D455F2D3476390021E641 /* pozdravi.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pozdravi.cirilica.txt; sourceTree = "<group>"; };
+		E20D45602D3476390021E641 /* koljena.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = koljena.cirilica.txt; sourceTree = "<group>"; };
+		E20D45612D34763A0021E641 /* anketaa.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketaa.cirilica.txt; sourceTree = "<group>"; };
+		E20D45622D34763A0021E641 /* druze.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = druze.cirilica.txt; sourceTree = "<group>"; };
+		E20D45632D34763A0021E641 /* mrtavladan.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mrtavladan.cirilica.txt; sourceTree = "<group>"; };
+		E20D45642D34763A0021E641 /* daj.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = daj.cirilica.txt; sourceTree = "<group>"; };
+		E20D45652D34763A0021E641 /* studios.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = studios.cirilica.txt; sourceTree = "<group>"; };
+		E20D45662D34763A0021E641 /* udva.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = udva.cirilica.txt; sourceTree = "<group>"; };
+		E20D45672D34763A0021E641 /* anketab.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketab.cirilica.txt; sourceTree = "<group>"; };
+		E20D45682D34763A0021E641 /* bubaerdeljan.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bubaerdeljan.cirilica.txt; sourceTree = "<group>"; };
+		E20D45692D34763A0021E641 /* nevolem.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nevolem.cirilica.txt; sourceTree = "<group>"; };
+		E20D456A2D34763A0021E641 /* zenidba.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zenidba.cirilica.txt; sourceTree = "<group>"; };
+		E20D456B2D34763A0021E641 /* zlatibore.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zlatibore.cirilica.txt; sourceTree = "<group>"; };
+		E20D456C2D34763A0021E641 /* insomnia.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = insomnia.cirilica.txt; sourceTree = "<group>"; };
+		E20D456D2D34763A0021E641 /* ljubavje.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ljubavje.cirilica.txt; sourceTree = "<group>"; };
+		E20D456E2D34763A0021E641 /* ajasam2.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ajasam2.cirilica.txt; sourceTree = "<group>"; };
+		E20D456F2D34763A0021E641 /* novak.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = novak.cirilica.txt; sourceTree = "<group>"; };
+		E20D45702D34763A0021E641 /* opilo.cirilica.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = opilo.cirilica.txt; sourceTree = "<group>"; };
 		E210F09A28B6DBAD009A0958 /* martiMisterija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = martiMisterija.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E210F09B28B6DBAD009A0958 /* martiMisterija.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = martiMisterija.plist; sourceTree = SOURCE_ROOT; };
 		E210F09C28B6DCE9009A0958 /* AssetsMM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsMM.swift; sourceTree = "<group>"; };
+		E2B5896F2D33AA9F006E5F88 /* anketaa.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketaa.bukvalno.txt; sourceTree = "<group>"; };
+		E2B589702D33AA9F006E5F88 /* anketab.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketab.bukvalno.txt; sourceTree = "<group>"; };
+		E2B589712D33AA9F006E5F88 /* studios.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = studios.finalno.txt; sourceTree = "<group>"; };
+		E2B589722D33AA9F006E5F88 /* anketav.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketav.finalno.txt; sourceTree = "<group>"; };
+		E2B589732D33AA9F006E5F88 /* anketab.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketab.txt; sourceTree = "<group>"; };
+		E2B589742D33AA9F006E5F88 /* anketab.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketab.finalno.txt; sourceTree = "<group>"; };
+		E2B589752D33AA9F006E5F88 /* anketag.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketag.txt; sourceTree = "<group>"; };
+		E2B589762D33AA9F006E5F88 /* anketaa.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketaa.txt; sourceTree = "<group>"; };
+		E2B589772D33AA9F006E5F88 /* anketaa.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketaa.finalno.txt; sourceTree = "<group>"; };
+		E2B589782D33AA9F006E5F88 /* anketag.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketag.bukvalno.txt; sourceTree = "<group>"; };
+		E2B589792D33AA9F006E5F88 /* anketav.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketav.txt; sourceTree = "<group>"; };
+		E2B5897A2D33AA9F006E5F88 /* anketav.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketav.bukvalno.txt; sourceTree = "<group>"; };
+		E2B5897B2D33AA9F006E5F88 /* studios.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = studios.bukvalno.txt; sourceTree = "<group>"; };
+		E2B5897C2D33AA9F006E5F88 /* studios.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = studios.txt; sourceTree = "<group>"; };
+		E2B5897D2D33AA9F006E5F88 /* anketag.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketag.finalno.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -618,6 +728,61 @@
 		7C9E0AFB2C90ACE40010199C /* Tekstovi */ = {
 			isa = PBXGroup;
 			children = (
+				E20D456E2D34763A0021E641 /* ajasam2.cirilica.txt */,
+				E20D45612D34763A0021E641 /* anketaa.cirilica.txt */,
+				E20D45672D34763A0021E641 /* anketab.cirilica.txt */,
+				E20D45542D3476390021E641 /* anketag.cirilica.txt */,
+				E20D45532D3476390021E641 /* anketav.cirilica.txt */,
+				E20D45682D34763A0021E641 /* bubaerdeljan.cirilica.txt */,
+				E20D45642D34763A0021E641 /* daj.cirilica.txt */,
+				E20D45622D34763A0021E641 /* druze.cirilica.txt */,
+				E20D454B2D3476390021E641 /* gru.cirilica.txt */,
+				E20D45592D3476390021E641 /* hajde.cirilica.txt */,
+				E20D454F2D3476390021E641 /* igramo2.cirilica.txt */,
+				E20D454A2D3476390021E641 /* inat.cirilica.txt */,
+				E20D456C2D34763A0021E641 /* insomnia.cirilica.txt */,
+				E20D455E2D3476390021E641 /* jorgovani.cirilica.txt */,
+				E20D454E2D3476390021E641 /* kadbi2.cirilica.txt */,
+				E20D454C2D3476390021E641 /* kolena.cirilica.txt */,
+				E20D45602D3476390021E641 /* koljena.cirilica.txt */,
+				E20D45552D3476390021E641 /* kukavica.cirilica.txt */,
+				E20D45562D3476390021E641 /* li.cirilica.txt */,
+				E20D456D2D34763A0021E641 /* ljubavje.cirilica.txt */,
+				E20D455D2D3476390021E641 /* lutka2.cirilica.txt */,
+				E20D455B2D3476390021E641 /* mogli.cirilica.txt */,
+				E20D45632D34763A0021E641 /* mrtavladan.cirilica.txt */,
+				E20D45502D3476390021E641 /* necevatra.cirilica.txt */,
+				E20D45692D34763A0021E641 /* nevolem.cirilica.txt */,
+				E20D45492D3476380021E641 /* nikadniko.cirilica.txt */,
+				E20D456F2D34763A0021E641 /* novak.cirilica.txt */,
+				E20D45702D34763A0021E641 /* opilo.cirilica.txt */,
+				E20D455A2D3476390021E641 /* ostaricu.cirilica.txt */,
+				E20D45582D3476390021E641 /* pape.cirilica.txt */,
+				E20D455F2D3476390021E641 /* pozdravi.cirilica.txt */,
+				E20D455C2D3476390021E641 /* pub.cirilica.txt */,
+				E20D45572D3476390021E641 /* samorata.cirilica.txt */,
+				E20D45652D34763A0021E641 /* studios.cirilica.txt */,
+				E20D45512D3476390021E641 /* takotreba.cirilica.txt */,
+				E20D45522D3476390021E641 /* TjeloHristovo.cirilica.txt */,
+				E20D45662D34763A0021E641 /* udva.cirilica.txt */,
+				E20D456A2D34763A0021E641 /* zenidba.cirilica.txt */,
+				E20D456B2D34763A0021E641 /* zlatibore.cirilica.txt */,
+				E20D454D2D3476390021E641 /* zohari.cirilica.txt */,
+				E2B5896F2D33AA9F006E5F88 /* anketaa.bukvalno.txt */,
+				E2B589772D33AA9F006E5F88 /* anketaa.finalno.txt */,
+				E2B589762D33AA9F006E5F88 /* anketaa.txt */,
+				E2B589702D33AA9F006E5F88 /* anketab.bukvalno.txt */,
+				E2B589742D33AA9F006E5F88 /* anketab.finalno.txt */,
+				E2B589732D33AA9F006E5F88 /* anketab.txt */,
+				E2B589782D33AA9F006E5F88 /* anketag.bukvalno.txt */,
+				E2B5897D2D33AA9F006E5F88 /* anketag.finalno.txt */,
+				E2B589752D33AA9F006E5F88 /* anketag.txt */,
+				E2B5897A2D33AA9F006E5F88 /* anketav.bukvalno.txt */,
+				E2B589722D33AA9F006E5F88 /* anketav.finalno.txt */,
+				E2B589792D33AA9F006E5F88 /* anketav.txt */,
+				E2B5897B2D33AA9F006E5F88 /* studios.bukvalno.txt */,
+				E2B589712D33AA9F006E5F88 /* studios.finalno.txt */,
+				E2B5897C2D33AA9F006E5F88 /* studios.txt */,
 				7C52D05E2CDD8C6600E998DB /* mrtavladan.txt */,
 				7C52D05F2CDD8C6600E998DB /* mrtavladan.bukvalno.txt */,
 				7C52D0602CDD8C6600E998DB /* mrtavladan.finalno.txt */,
@@ -1000,30 +1165,42 @@
 				7C9E0B2D2C90ACE40010199C /* li.finalno.txt in Resources */,
 				7C9E0B122C90ACE40010199C /* hajde.finalno.txt in Resources */,
 				7C9E0AFC2C90ACE40010199C /* abvgd.bukvalno.txt in Resources */,
+				E20D458C2D34763A0021E641 /* daj.cirilica.txt in Resources */,
 				7C9E0B1F2C90ACE40010199C /* kadbi2.txt in Resources */,
+				E20D45792D34763A0021E641 /* takotreba.cirilica.txt in Resources */,
 				7CD068FF2CC03E4B00CAD288 /* igramo2.txt in Resources */,
 				7C9E0B5B2C90ACE40010199C /* studio.txt in Resources */,
 				7C23B8EE21F831C000CABDD6 /* LaunchScreen.storyboard in Resources */,
 				7C9E0B6B2C90ACE40010199C /* zlatibore.bukvalno.txt in Resources */,
 				7C9E0B672C90ACE40010199C /* zajedno.txt in Resources */,
+				E20D45722D34763A0021E641 /* inat.cirilica.txt in Resources */,
 				7C9E0B192C90ACE40010199C /* jedinamoja.txt in Resources */,
 				7C9E0B112C90ACE40010199C /* hajde.bukvalno.txt in Resources */,
 				7C9E0B602C90ACE40010199C /* TjeloHristovo.finalno.txt in Resources */,
+				E20D45812D34763A0021E641 /* hajde.cirilica.txt in Resources */,
+				E20D45742D34763A0021E641 /* kolena.cirilica.txt in Resources */,
 				7C9E0B2A2C90ACE40010199C /* kukavica.finalno.txt in Resources */,
+				E20D458B2D34763A0021E641 /* mrtavladan.cirilica.txt in Resources */,
 				7C9E0B162C90ACE40010199C /* insomnia.txt in Resources */,
 				7C9E0B232C90ACE40010199C /* kolena.bukvalno.txt in Resources */,
+				E20D45732D34763A0021E641 /* gru.cirilica.txt in Resources */,
+				E20D45802D34763A0021E641 /* pape.cirilica.txt in Resources */,
+				E20D458F2D34763A0021E641 /* anketab.cirilica.txt in Resources */,
 				7C9E0B322C90ACE40010199C /* lutka2.bukvalno.txt in Resources */,
 				7C9E0B372C90ACE40010199C /* mogli.txt in Resources */,
 				7C9E0B302C90ACE40010199C /* ljubavje.finalno.txt in Resources */,
 				7C9E0B222C90ACE40010199C /* kengur2.txt in Resources */,
 				7C23B8EB21F831C000CABDD6 /* Assets.xcassets in Resources */,
 				7C9E0B142C90ACE40010199C /* insomnia.bukvalno.txt in Resources */,
+				E20D45752D34763A0021E641 /* zohari.cirilica.txt in Resources */,
+				E2B589872D33AA9F006E5F88 /* anketag.bukvalno.txt in Resources */,
 				7C9E0B412C90ACE40010199C /* nikadniko.bukvalno.txt in Resources */,
 				7C9E0B1B2C90ACE40010199C /* jorgovani.finalno.txt in Resources */,
 				7C9E0B4D2C90ACE40010199C /* pape.bukvalno.txt in Resources */,
 				7C9E0B252C90ACE40010199C /* kolena.txt in Resources */,
 				7C9E0B102C90ACE40010199C /* gru.txt in Resources */,
 				7C9E0B622C90ACE40010199C /* udva.bukvalno.txt in Resources */,
+				E20D45852D34763A0021E641 /* lutka2.cirilica.txt in Resources */,
 				7C9E0B042C90ACE40010199C /* anketa2.txt in Resources */,
 				7C9E0B6A2C90ACE40010199C /* zenidba.txt in Resources */,
 				7C9E0B4A2C90ACE40010199C /* ostaricu.bukvalno.txt in Resources */,
@@ -1032,46 +1209,72 @@
 				7C9E0B4E2C90ACE40010199C /* pape.finalno.txt in Resources */,
 				7C9E0B6D2C90ACE40010199C /* zlatibore.txt in Resources */,
 				7C9E0AFF2C90ACE40010199C /* ajasam2.bukvalno.txt in Resources */,
+				E20D45882D34763A0021E641 /* koljena.cirilica.txt in Resources */,
 				7C9E0B4F2C90ACE40010199C /* pape.txt in Resources */,
+				E20D458D2D34763A0021E641 /* studios.cirilica.txt in Resources */,
+				E2B589852D33AA9F006E5F88 /* anketaa.txt in Resources */,
 				7C9E0B502C90ACE40010199C /* pozdravi.bukvalno.txt in Resources */,
+				E20D45832D34763A0021E641 /* mogli.cirilica.txt in Resources */,
 				7C9E0B5D2C90ACE40010199C /* takotreba.finalno.txt in Resources */,
 				7C9E0B6E2C90ACE40010199C /* zohari.bukvalno.txt in Resources */,
+				E20D45942D34763A0021E641 /* insomnia.cirilica.txt in Resources */,
 				7C9E0B3E2C90ACE40010199C /* nijedna.bukvalno.txt in Resources */,
+				E20D45982D34763A0021E641 /* opilo.cirilica.txt in Resources */,
 				7C9E0B662C90ACE40010199C /* zajedno.finalno.txt in Resources */,
 				7C9E0B212C90ACE40010199C /* kengur2.finalno.txt in Resources */,
 				7C9E0B3A2C90ACE40010199C /* necevatra.txt in Resources */,
+				E20D457A2D34763A0021E641 /* TjeloHristovo.cirilica.txt in Resources */,
 				7C9E0B1A2C90ACE40010199C /* jorgovani.bukvalno.txt in Resources */,
+				E20D45762D34763A0021E641 /* kadbi2.cirilica.txt in Resources */,
+				E20D45712D34763A0021E641 /* nikadniko.cirilica.txt in Resources */,
 				7C9E0B012C90ACE40010199C /* ajasam2.txt in Resources */,
 				7C9E0B342C90ACE40010199C /* lutka2.txt in Resources */,
+				E2B589832D33AA9F006E5F88 /* anketab.finalno.txt in Resources */,
+				E20D45772D34763A0021E641 /* igramo2.cirilica.txt in Resources */,
 				7C9E0B182C90ACE40010199C /* jedinamoja.finalno.txt in Resources */,
 				7C9E0B152C90ACE40010199C /* insomnia.finalno.txt in Resources */,
 				7C9E0B2F2C90ACE40010199C /* ljubavje.bukvalno.txt in Resources */,
+				E20D45822D34763A0021E641 /* ostaricu.cirilica.txt in Resources */,
+				E2B589802D33AA9F006E5F88 /* studios.finalno.txt in Resources */,
 				7C9E0B0F2C90ACE40010199C /* gru.finalno.txt in Resources */,
 				7C9E0B0C2C90ACE40010199C /* druze.finalno.txt in Resources */,
+				E2B5898A2D33AA9F006E5F88 /* studios.bukvalno.txt in Resources */,
 				7C9E0B1E2C90ACE40010199C /* kadbi2.finalno.txt in Resources */,
 				7C9E0B5E2C90ACE40010199C /* takotreba.txt in Resources */,
 				7C9E0B682C90ACE40010199C /* zenidba.bukvalno.txt in Resources */,
+				E2B5898B2D33AA9F006E5F88 /* studios.txt in Resources */,
 				7C9E0B532C90ACE40010199C /* pub.bukvalno.txt in Resources */,
+				E20D457B2D34763A0021E641 /* anketav.cirilica.txt in Resources */,
 				7C9E0B492C90ACE40010199C /* opilo.txt in Resources */,
+				E20D45952D34763A0021E641 /* ljubavje.cirilica.txt in Resources */,
 				7C9E0AFD2C90ACE40010199C /* abvgd.finalno.txt in Resources */,
 				7C9E0B022C90ACE40010199C /* anketa2.bukvalno.txt in Resources */,
 				7C9E0B462C90ACE40010199C /* novak.txt in Resources */,
 				7C9E0B172C90ACE40010199C /* jedinamoja.bukvalno.txt in Resources */,
 				7C52D0612CDD8C6600E998DB /* mrtavladan.bukvalno.txt in Resources */,
 				7C52D0622CDD8C6600E998DB /* mrtavladan.txt in Resources */,
+				E20D458A2D34763A0021E641 /* druze.cirilica.txt in Resources */,
 				7C52D0632CDD8C6600E998DB /* mrtavladan.finalno.txt in Resources */,
+				E20D45842D34763A0021E641 /* pub.cirilica.txt in Resources */,
 				7C9E0B572C90ACE40010199C /* samorata.finalno.txt in Resources */,
 				7C9E0B002C90ACE40010199C /* ajasam2.finalno.txt in Resources */,
+				E20D45972D34763A0021E641 /* novak.cirilica.txt in Resources */,
 				7C9E0B482C90ACE40010199C /* opilo.finalno.txt in Resources */,
 				7C9E0B2B2C90ACE40010199C /* kukavica.txt in Resources */,
 				7C9E0B6C2C90ACE40010199C /* zlatibore.finalno.txt in Resources */,
 				7C9E0B552C90ACE40010199C /* pub.txt in Resources */,
 				7C9E0B0D2C90ACE40010199C /* druze.txt in Resources */,
 				7CD068FA2CC03E4B00CAD288 /* igramo2.bukvalno.txt in Resources */,
+				E2B5897E2D33AA9F006E5F88 /* anketaa.bukvalno.txt in Resources */,
+				E20D45902D34763A0021E641 /* bubaerdeljan.cirilica.txt in Resources */,
+				E20D45892D34763A0021E641 /* anketaa.cirilica.txt in Resources */,
 				7C9E0B292C90ACE40010199C /* kukavica.bukvalno.txt in Resources */,
 				7C9E0B352C90ACE40010199C /* mogli.bukvalno.txt in Resources */,
 				7C9E0B652C90ACE40010199C /* zajedno.bukvalno.txt in Resources */,
+				E2B589882D33AA9F006E5F88 /* anketav.txt in Resources */,
 				7C9E0B2E2C90ACE40010199C /* li.txt in Resources */,
+				E2B589862D33AA9F006E5F88 /* anketaa.finalno.txt in Resources */,
+				E20D45782D34763A0021E641 /* necevatra.cirilica.txt in Resources */,
 				7C9E0B282C90ACE40010199C /* koljena.txt in Resources */,
 				7C9E0B032C90ACE40010199C /* anketa2.finalno.txt in Resources */,
 				7CD068FC2CC03E4B00CAD288 /* inat.finalno.txt in Resources */,
@@ -1079,6 +1282,7 @@
 				7C9E0B3C2C90ACE40010199C /* nevolem.finalno.txt in Resources */,
 				7C9E0B5F2C90ACE40010199C /* TjeloHristovo.bukvalno.txt in Resources */,
 				7C9E0B522C90ACE40010199C /* pozdravi.txt in Resources */,
+				E20D45932D34763A0021E641 /* zlatibore.cirilica.txt in Resources */,
 				7C9E0B072C90ACE40010199C /* bubaerdeljan.txt in Resources */,
 				7C9E0B1D2C90ACE40010199C /* kadbi2.bukvalno.txt in Resources */,
 				7C9E0B332C90ACE40010199C /* lutka2.finalno.txt in Resources */,
@@ -1097,10 +1301,22 @@
 				7C23B8E921F831C000CABDD6 /* Main.storyboard in Resources */,
 				7CD068FE2CC03E4B00CAD288 /* inat.txt in Resources */,
 				7C9E0B392C90ACE40010199C /* necevatra.finalno.txt in Resources */,
+				E2B5897F2D33AA9F006E5F88 /* anketab.bukvalno.txt in Resources */,
+				E2B589822D33AA9F006E5F88 /* anketab.txt in Resources */,
 				7C9E0B202C90ACE40010199C /* kengur2.bukvalno.txt in Resources */,
+				E2B589892D33AA9F006E5F88 /* anketav.bukvalno.txt in Resources */,
+				E2B5898C2D33AA9F006E5F88 /* anketag.finalno.txt in Resources */,
+				E20D45862D34763A0021E641 /* jorgovani.cirilica.txt in Resources */,
+				E2B589812D33AA9F006E5F88 /* anketav.finalno.txt in Resources */,
 				7C9E0B4C2C90ACE40010199C /* ostaricu.txt in Resources */,
+				E2B589842D33AA9F006E5F88 /* anketag.txt in Resources */,
+				E20D457D2D34763A0021E641 /* kukavica.cirilica.txt in Resources */,
 				7C9E0B5C2C90ACE40010199C /* takotreba.bukvalno.txt in Resources */,
+				E20D458E2D34763A0021E641 /* udva.cirilica.txt in Resources */,
+				E20D45912D34763A0021E641 /* nevolem.cirilica.txt in Resources */,
+				E20D457F2D34763A0021E641 /* samorata.cirilica.txt in Resources */,
 				7C9E0B6F2C90ACE40010199C /* zohari.finalno.txt in Resources */,
+				E20D45872D34763A0021E641 /* pozdravi.cirilica.txt in Resources */,
 				7CD068FD2CC03E4B00CAD288 /* inat.bukvalno.txt in Resources */,
 				7C9E0B092C90ACE40010199C /* daj.finalno.txt in Resources */,
 				7C9E0B542C90ACE40010199C /* pub.finalno.txt in Resources */,
@@ -1110,10 +1326,12 @@
 				7C9E0B082C90ACE40010199C /* daj.bukvalno.txt in Resources */,
 				7C9E0B272C90ACE40010199C /* koljena.finalno.txt in Resources */,
 				7C9E0B582C90ACE40010199C /* samorata.txt in Resources */,
+				E20D45922D34763A0021E641 /* zenidba.cirilica.txt in Resources */,
 				7C9E0B0B2C90ACE40010199C /* druze.bukvalno.txt in Resources */,
 				7C9E0B5A2C90ACE40010199C /* studio.finalno.txt in Resources */,
 				7C9E0B262C90ACE40010199C /* koljena.bukvalno.txt in Resources */,
 				7C9E0B062C90ACE40010199C /* bubaerdeljan.finalno.txt in Resources */,
+				E20D45962D34763A0021E641 /* ajasam2.cirilica.txt in Resources */,
 				7C9E0B402C90ACE40010199C /* nijedna.txt in Resources */,
 				7C9E0B4B2C90ACE40010199C /* ostaricu.finalno.txt in Resources */,
 				7C9E0B3D2C90ACE40010199C /* nevolem.txt in Resources */,
@@ -1122,9 +1340,11 @@
 				7C9E0B2C2C90ACE40010199C /* li.bukvalno.txt in Resources */,
 				7C9E0B422C90ACE40010199C /* nikadniko.finalno.txt in Resources */,
 				7C9E0B132C90ACE40010199C /* hajde.txt in Resources */,
+				E20D457C2D34763A0021E641 /* anketag.cirilica.txt in Resources */,
 				7C9E0B452C90ACE40010199C /* novak.finalno.txt in Resources */,
 				7C9E0B642C90ACE40010199C /* udva.txt in Resources */,
 				7C9E0B442C90ACE40010199C /* novak.bukvalno.txt in Resources */,
+				E20D457E2D34763A0021E641 /* li.cirilica.txt in Resources */,
 				7CD068FB2CC03E4B00CAD288 /* igramo2.finalno.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
