@@ -30,8 +30,11 @@ class MasterViewController: UITableViewController {
                 episodeMatches.removeAll(keepingCapacity: true)
                 return
             }
-            if searchText == "strana1" {
-                UserDefaults.standard.set(true, forKey: "shouldShowCover")
+            if searchText == "a3byka" {
+                Assets.toggleCyrillic()
+                MasterViewController.searchProvider.invalidateTrie()
+                MasterViewController.titlesLowercased.removeAll(keepingCapacity: true)
+                MasterViewController.searchProvider.populateTrie(numbers: Assets.numbers, titles: Assets.titles)
                 DispatchQueue.main.async {
                     self.searchBar.text = ""
                 }

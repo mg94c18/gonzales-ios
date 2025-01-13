@@ -44,6 +44,11 @@ class SearchProvider {
     private var htmlTags = try! NSRegularExpression(pattern: "(<[^>]+>)|(\\{[^\\{\\}]+\\})")
     private var hintsPattern = OnePageController.hintsPattern
 
+    func invalidateTrie() {
+        trie = nil
+        threadKickedOff = false
+    }
+
     func populateTrie(numbers: [String], titles: [String]) {
         if trie != nil {
             AppDelegate.log("Already populated")

@@ -82,7 +82,7 @@ class OnePageController : UIViewController, UIScrollViewDelegate {
     
     func refreshWebView(_ restoreScroll: Bool = false) {
         let translation = translationFinal ? page.3 : page.2
-        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: translation, removeGroupings: translation == page.3, author: page.4, a3byka: false, inLandscape: inLandscape, searchedWord: page.5, fontSize: inLandscape ? 3 : 5)
+        let htmlContent = OnePageController.createHtml(tekst: page.1, prevod: translation, removeGroupings: translation == page.3, author: page.4, inLandscape: inLandscape, searchedWord: page.5, fontSize: inLandscape ? 3 : 5)
 
         // webView.scalesPageToFit = true
         // https://developer.apple.com/documentation/uikit/uitextview
@@ -122,7 +122,7 @@ class OnePageController : UIViewController, UIScrollViewDelegate {
         AppDelegate.log("oldHeight=\(oldHeight),oldScrollY=\(oldScrollY),newHeight=\(newHeight),newY=\(newScrollY)")
         if newScrollY > 0 && newScrollY < 1234567 {
             DispatchQueue.main.async {
-                self.webView.scrollView.setContentOffset(CGPointMake(self.webView.scrollView.contentOffset.x, newScrollY), animated: false)
+                self.webView.scrollView.setContentOffset(CGPoint(x: self.webView.scrollView.contentOffset.x, y: newScrollY), animated: false)
             }
         }
     }
@@ -176,7 +176,7 @@ class OnePageController : UIViewController, UIScrollViewDelegate {
 
     // ../Gonzales/app/src/main/java/org/mg94c18/gonzales/PageAdapter.java
     // private static String createHtml
-    static func createHtml(tekst: [String], prevod: [String], removeGroupings: Bool, author: String, a3byka: Bool, inLandscape: Bool, searchedWord: String, fontSize: Int) -> String {
+    static func createHtml(tekst: [String], prevod: [String], removeGroupings: Bool, author: String, inLandscape: Bool, searchedWord: String, fontSize: Int) -> String {
         var searchedWordPattern : NSRegularExpression?
         if (!searchedWord.isEmpty) {
             searchedWordPattern = try? NSRegularExpression(pattern: "\\b(\(searchedWord))\\b", options: .caseInsensitive)
@@ -189,11 +189,11 @@ class OnePageController : UIViewController, UIScrollViewDelegate {
                 if (tekst[i].isEmpty) {
                     builder += "&nbsp;"
                 } else {
-                    builder += applyFilters(tekst[i], true, a3byka, removeGroupings, searchedWordPattern)
+                    builder += applyFilters(tekst[i], true, removeGroupings, searchedWordPattern)
                 }
                 builder += "</td><td width=\"50%\">"
                 if (i < prevod.count) {
-                    builder += applyFilters(prevod[i], true, a3byka, false, searchedWordPattern)
+                    builder += applyFilters(prevod[i], true, false, searchedWordPattern)
                 }
                 builder += "</td></tr>"
             }
@@ -208,7 +208,11 @@ class OnePageController : UIViewController, UIScrollViewDelegate {
             }
             builder += "<p>"
             for i in stride(from: 2, to: tekst.count, by: 1) {
-                builder += applyFilters(tekst[i], false, a3byka, true, searchedWordPattern)
+                let line = tekst[i]
+                if line.starts(with: "§") {
+                    break
+                }
+                builder += applyFilters(line, false, true, searchedWordPattern)
                 builder += "<br>"
             }
             builder += "</p>"
@@ -228,7 +232,7 @@ class OnePageController : UIViewController, UIScrollViewDelegate {
         try? NSRegularExpression(pattern: "((c)unt)", options: .caseInsensitive) : "***",
     ]
 
-    static func applyFilters(_ line: String, _ hints: Bool, _ a3byka: Bool, _ removeGroupings: Bool, _ searchedWordPattern: NSRegularExpression?) -> String {
+    static func applyFilters(_ line: String, _ hints: Bool, _ removeGroupings: Bool, _ searchedWordPattern: NSRegularExpression?) -> String {
         var newLine: String = line
         if (hints) {
             newLine = wordEmphasisPattern.stringByReplacingMatches(in: newLine, range: NSMakeRange(0, newLine.count), withTemplate: "<em>$1</em>")
