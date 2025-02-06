@@ -55,7 +55,7 @@ Mrtav ladan
 - Ne, samo Vi sedite.
 - [Jel ti] to meni persiraš, a?  Pa nisam ja tolko mator valjda.
 - A izvinite, tako sam vaspitana.
-- Dobro, aj pazi ovako se dogovorimo, ti meni ne možeš da persiraš, a od mene možeš da tražiš šta god oćeš.
+- Dobro, aj pazi ovako se dogovorimo, ti meni ne možeš da persiraš, a od mene možeš da tražiš [šta god] oćeš.
 - Pa evo za početak, kako se zoveš?  Ja sam Maja.
 - Zdravo Majo.  Si ti neko bre fino dete.  Prečanka?
 - Ne, iz Beograda sam.

@@ -1,8 +1,8 @@
 https://mg94c18dijaspora.fra1.digitaloceanspaces.com/anketag.mp3
-orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7CyM, dkpcxMGvdY8, h2GWB4ndExs, j8Zh1Vp7mmQ, Y2yvxWjB8eU, piiouEVXi3A
+orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7CyM, dkpcxMGvdY8, h2GWB4ndExs, j8Zh1Vp7mmQ, piiouEVXi3A
 - Da li ste u restoranu nekad probali palentu ili poparu?
 - U restoranu ne.
-- Nikad?  A pošto koštaju po petsto dinara u restoranu, da li mislite da je skupo za palentu i poparu ili je ok cena?
+- Nikad?  A pošto koštaju po petsto dinara u restoranu, da li mislite da je to skupo za palentu i poparu ili je ok cena?
 - Nisam.  Kolko?
 - Petsto dinara.
 - Ja mislim da je.
@@ -16,7 +16,7 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Pa ne.  Skupo.
 - Ne.  Ne, ne.
 - Poparu jesam, al palentu, nije, ne znam šta je to.  Mislim da jesam za poparu, da.
-- Pa ne bi trebalo.  Ja sam kao student u, ovome, kod Moskve u onom, restoranu, kako se zvaše ne sećam se, obavezno smo išli studenti na večeru i bilo je najjeftinije.  Oćeš s mlekom, oćeš s jogurtom, oćeš sa sirom?  Što je normalno, a to je jako i zdravo ako ćemo...
+- Pa ne [bi trebalo].  Ja sam kao student u, ovome, kod Moskve u onom, restoranu, kako se zvaše ne sećam se, obavezno [smo išli] studenti na večeru i [bilo je] najjeftinije.  Oćeš s mlekom, oćeš s jogurtom, oćeš sa sirom?  Što je normalno, a to je jako i zdravo ako ćemo...
 - Koliko je recimo ta palenta koštala?
 - Jeftino nešto bilo ali u ono vreme, u dvadesetom veku, negde bilo oko pedeset šezdeset dinara možda.  Što svaki student može sebi da priušti.  I da ne oseti.
 - Ne.
@@ -26,7 +26,7 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Ne.
 - U životu.
 - Nikad?
-- To se jede kod kuće isključivo.  Zato što je zdravo.  A u restoranu jedem one druge stvari.
+- To se jede kod kuće isključivo.  [Zato što] je zdravo.  A u restoranu jedem one druge stvari.
 - Isuviše skupo.  S obzirom koliko košta materijal za pravljenje jedne popare, sigurno je preskupo.  A to je verovatno zbog toga da pokažu da je to zdravo.  I možda je to razlog, ne znam, ne mešam se u politiku nijednog restorana.
 - Ne.
 - Niste?  Pošto popara i palenta u restoranu koštaju do petsto dinara, da li mislite da je to preskupo?
@@ -34,7 +34,7 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - I mislite da to je ok onda da to košta petsto dinara?
 - Pa otkud znam, restoranske cene, to, restoran je restoran.
 - Ne.
-- Ne biste naručili?
+- Ne [biste naručili]?
 - Pa ne, nikako.
 - Ne.
 - Pošto u restoranu koštaju po petsto dinara i više, da li mislite da je to možda malo preskupo?
@@ -49,64 +49,63 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Kući.  Kući, da.
 - Kako ćete provesti novogodišnje i Božićne praznike?
 - Najverovanije kod kuće.  Uz televizor.
-- Kao nikad do sada.
-- Praktično, onako u kući i...
-- Kako ćete provesti ove novogodišnje i Božićne praznike?
-- Kako će bude za sve i za mȅne.  Ako ima više turȉsti, više malo promet ȉma.  Ako nema malo manje će da prolȁzi situacija i dobro.  Prvo zdrȁvlje.
+- Kao nikad do sada.  Praktično, onako u kući i...
+- Kako [ćete provesti] ove novogodišnje i Božićne praznike?
+- {stranac: } Kako "će bude" za sve i za mȅne.  Ako ima više "turȉsti", više malo "promet" ȉma.  Ako nema malo manje će da "prolȁzi situacija" i dobro.  Prvo zdrȁvlje.
 - Ja sam slučajno ovde.
 - Dobro dobro.
 - Kako ćete provesti novogodišnje i Božićne praznike?
-- Jao, ja živim u šumi, u prosvećenoj izolovanosti, i provešću verovatno sa šest do deset divnih ljudi, negirajući da Korona uopšte postoji.  U šumi nema virusa, da znate to, ne morate da sečete, bez montaže, tako da provešću s radošću i očekivajući novo vreme nove dane, novo praskozorje kome svima treba u svetu.
+- Jao, ja živim u šumi, u prosvećenoj izolovanosti, i provešću verovatno sa šest do deset divnih ljudi, negirajući da Korona uopšte postoji.  U šumi nema virusa, da znate to, ne morate da sečete, bez montaže, [tako da] provešću s radošću i očekivajući novo vreme nove dane, novo praskozorje kome svima treba u svetu.
 - Kako ćete provesti ove novogodišnje i Božićne praznike?
 - A, kući sa porodicom.
 - ... ja u kući provedem uvek.
 - Sa devojkom u stanu.  Zatvoreni.
 ...
-- Mnogi naši sugrađani imaju dilemu: kako se koristi pešački taster?  Da li je to pritiskom na gore, ili na dole?  Mi smo ovu dilemu rešili.  A da li su i naši sugrađani, proverićemo upravo sada.
-- Trebalo bi da služi da bi ubrzali da pređemo, ovaj, zeleno svetlo.
+- Mnogi naši sugrađani imaju dilemu: kako se koristi pešački taster?  [Da li] je to pritiskom na gore, ili na dole?  Mi? smo ovu dilemu rešili.  A [da li] su i naši sugrađani, proverićemo upravo sada.
+- [Trebalo bi] da služi da [bi ubrzali] da pređemo, ovaj, zeleno svetlo.
 - E, to se i ja stalno pitam.  To je dobro pitanje.  Ovaj, ja to pipkam svuda, odozgore do dole, čini mi se nekad da radi ali ne znam tačno šta radim.
-- Taj aparat služi za stopiranje vremena, mislim da bi, kako bi objasnio, da bi stao, da bi stala, da bi stala automobilska vozila, da bi mogli pešaci posle da pređu.
+- Taj aparat služi za stopiranje vremena, mislim da bi, kako [bi objasnio], da [bi stao], da [bi stala], da [bi stala] automobilska vozila, da [bi mogli] pešaci posle da pređu.
 - Jel možeš da mi pokažeš samo gde pritisneš kada želiš da pređeš ulicu?
 - Ovde.  Tu.
 - Jel uvek pritisneš to dugme?
-- Znam da ima nešto i ispod negde, da se, al nemam pojma zašto.
+- Znam da ima nešto i ispod negde, da se..., al nemam pojma zašto.
 - Jel ga upotrebljavaš, i kada to činiš, na koji način pritisneš ovaj aparat?
-- Pa, ako poneki put, se ne oseti senzor, ono malo, treba malo jače da se pritisne.  Mislim da se takne, ne?
-- Pa činilo mi se da je jako prljavo, tako da mi je, onako baš nezgodno da ga diram rukama.
+- Pa, ako [poneki put], se ne oseti senzor, ono malo, treba malo jače da se pritisne.  Mislim da se takne, ne?
+- Pa činilo mi se da je jako prljavo, [tako da] mi je, onako baš nezgodno da ga diram rukama.
 - Mislim ima tamo onaj prst.  Evo ova gospođa je sad pritisnula vidite prst, ali ništa se ne čuje.
-- Pa, ćerka mi je objasnila da bi trebalo odozdo da pritisnemo, ali ja neki put dole, ili gore.  Ali čin..., neki put se ništa ne dešava.
+- Pa, ćerka mi [je objasnila] da [bi trebalo] odozdo da pritisnemo, ali ja [neki put] dole, ili gore.  Ali čin..., [neki put] se ništa ne dešava.
 - Pa, ništa precizno, ali pretpostavljam da pritiskom na dugme, da, tajmer koji se nalazi unutra obaveštava sistem da treba da promeni svetlo.
 - Koje dugme bi ti sada pritisnuo?  Evo želiš da pređeš...
 - Postoji oznaka ovde, pretpostavljam ovo, ali, ne daje nikakav povratnu informaciju.
-- Pa, u nekim slučajevima rade oba ali taster ispod bi trebao češće da radi.
+- Pa, u nekim slučajevima rade oba ali taster ispod [bi trebao] češće da radi.
 - A čemu služi onda ovaj gore?
 - E pa sad to nemam pojma iskreno.
 - Ja uvek stisnem i donje i ovo ovde.
 - Zašto?
 - Sigurnost, ne znam.
-- Ili tu, neki put, ili ispod, neki put, ili gore.
+- Ili tu, [neki put], ili ispod, [neki put], ili gore.
 - Jel imaš dilemu, koji je to zapravo taster?
 - Valjda ovde, i tu.  Ne znam, stvarno.
-- Nisam čuo nikakav povratan signal, ni informaciju ako se ne varam.
+- [Nisam čuo] nikakav povratan signal, ni informaciju ako se ne varam.
 - Možda radi a mi ne znamo.  To je misterija.
-- Si probao da ga stisneš tasterom odozdo?  Već je upaljen.  Evo.
+- [Si probao] da ga stisneš tasterom odozdo?  Već je upaljen.  Evo.
 - Sada radi, a?
 - To je sada zvuk koji... da možemo da pređemo.
 - Zanimljivo.
-- Jel ste imali nekada dilemu gde je zapravo to dugme koje treba da pritisnete?
-- Pa u principu nisam.  Evo ga, počeo je da radi.
-- Ovaj, taj zvuk će ići brže, to znači da je, da je zeleno i može da se pređe.  Kad je crveno, tako da je, ide polako taj zvuk.
+- Jel [ste imali] nekada dilemu gde je zapravo to dugme koje treba da pritisnete?
+- Pa u principu nisam.  [Evo ga], [počeo je] da radi.
+- Ovaj, taj zvuk će ići brže, to znači da je, da je zeleno i može da se pređe.  Kad je crveno, [tako da] je, ide polako taj zvuk.
 - Gde bi recimo sada pritisnula taj taster ukoliko...
 - Pa, verovatno dole, ali ne bih ga dirala.
 - Mislim nije user friendly.  Moram reći.
 ...
 - Da li se sećate svoje prve ljubavi?
 - Kako da ne...
-- U, sve sam zaboravio.
+- U, sve [sam zaboravio].
 - Kako da se ne sećam, ko se ne seća?
-- ... ostala je, prva simpatija zaborava nema.
+- ... [ostala je], prva simpatija zaborava nema.
 - Pa, sa Vračara se sećam.
-- Bilo je davno.
+- [Bilo je] davno.
 - Jao, to davno bilo.
 - Itekako.
 - Jel biste ga prepoznali?
@@ -115,46 +114,46 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Ne.
 - Ma ne sećam se ni šta je juče bilo, a prve ljubavi...  Ja sam matora drtina, vidi sam prava olupina, de ja mogu da se setim?
 - Kako su se nekad zavodile devojke?
-- Nisi smeo da priđeš, samo možda pričaš...  Kakvi, da je uhvatiš za ruku to je već...
-- Ja sam bio žrtva nameštene situacije.  Njen brat me pozvao na njen rođendan, i tako je počelo.  Posle je postala moja supruga i tako.
+- [Nisi smeo] da priđeš, samo možda pričaš...  Kakvi, da je uhvatiš za ruku to je već...
+- Ja [sam bio] žrtva nameštene situacije.  Njen brat me pozvao na njen rođendan, i tako [je počelo].  Posle [je postala] moja supruga i tako.
 - Pa sad je to davno prošlo, više neke velike uspomene nema sada.
-- Pa ne u potpunosti, ali nešto je ostalo još u mojim ovim godinama.
+- Pa ne u potpunosti, ali nešto [je ostalo] još u mojim ovim godinama.
 - To se nikad ne zaboravi.
-- Da li biste ga možda prepoznali kada biste ga videli negde.
+- Da li biste ga možda prepoznali kada biste ga videli negde?
 - Ma ne, verovatno ima sto dvadeset godina sada.  Možda je u drugoj planeti, ne znam.
 - Ima dosta prvih ljubavi koje traju dan danas.  Ali naravno.
-- Bilo je poštovanja.  Pa normalno iz koje familije, šta je, kako, to se isto gledalo...  Ako su se sankali, onda uuu, ako je sela sa mnom to je baš neka simpatija bila i lepa vremena su bila.  Danas ja mislim toga više nema.
+- [Bilo je] poštovanja.  Pa normalno iz koje familije, šta je, kako, to se isto gledalo...  Ako su se sankali, onda uuu, ako [je sela] sa mnom to je baš neka simpatija bila i lepa vremena [su bila].  Danas ja mislim toga više nema.
 - Prije je to bilo sasvim drukčije.  Puno bolje.
 - Ali, to tako ne ide.  U današnje vreme, katastrofa.
 - Joj, on je kul, on je ovo, on je ono...  Sve neke prazne priče.
 - Sad omladina kreće, kreće naopačke, mi smo prije krenuli od gledanja, od srca, od svega, a oni sada prvo idu ono poslednje što smo mi, možda čak u braku to imali.
 - Kako je sve ono, idi mi dođi mi.
 - Mislite da se to zavođenje nekada i sada promenilo, u smislu, da li muškarci danas imaju manje hrabrosti da priđu ženama?
-- Ne, oni su uvek hrabriji.  Ali mi smo hrabrije u odnosu na ono mi smo bile.  Mislim, kao Vi, verovatno.  Jel?  Vidim osmeh, to, ono se slaže.
+- Ne, oni su uvek hrabriji.  Ali mi smo hrabrije u odnosu na ono mi [smo bile].  Mislim, kao Vi, verovatno.  Jel?  Vidim osmeh, to, ono se slaže.
 - Jeste, promenilo se mnogo, a kako danas to zavode?  Zavode samo preko interneta...
 - ... najveća zvezda.  A sada je ulični pevač, a fukare su zvezde.
-- Nema ništa lepo, sve što je lepo to je prošlo, i ja se toga ne sećam.
+- Nema ništa lepo, sve što je lepo to [je prošlo], i ja se toga ne sećam.
 ...
 - A da li su Vam epidemiološke mere olakšale život s obzirom da više nema gužvi po restoranima, kafićima, bioskopima, pa šta mislite o tome?
-- Pa ne, ja u principu i nisam osetio neku promenu, mislim moj stil života je takav da u principu i nisam osetio neke promene.  Mislim, ne izlazim često, po restoranima i kafićima, ponekad, tako da mi je, u principu...  Ali razumem druge kojima to predstavlja problem, definitivno.
-- Ja sam student, tako da to doživljavam na potpuno drugačiji način, kako je lepše da su mi predavanja online, jer mogu da se koncentrišem i da ih slušam svojim tempom, toliko mi, iskreno nedostaje život koji smo imali pre Korone tako da se zaista nadam da će to da prođe, a za mere, nisam kompetentna da ih komentarišem.
+- Pa ne, ja u principu i [nisam osetio] neku promenu, mislim moj stil života je takav da [u principu] i [nisam osetio] neke promene.  Mislim, ne izlazim često, po restoranima i kafićima, ponekad, [tako da] mi je, u principu...  Ali razumem druge kojima to predstavlja problem, definitivno.
+- [Ja sam] student, [tako da] to doživljavam na potpuno drugačiji način; kako je lepše da su mi predavanja online, jer mogu da se koncentrišem i da ih slušam svojim tempom, toliko mi, iskreno nedostaje život koji [smo imali] pre Korone [tako da] se zaista nadam da će to da prođe, a za mere, nisam kompetentna da ih komentarišem.
 - Ne, isto je.
 - Isto ti je?
 - Da.
 - Dobro znači nemaš problem s tim što je...
 - Nemam.
-- Da li su vam epidemiološke mere olakšale život zato što više nemaju..., nema gužve u restoranima, kafićima, bioskopima?
-- Joj ... ne.
+- Da li su vam epidemiološke mere olakšale život [zato što] više nemaju..., nema gužve u restoranima, kafićima, bioskopima?
+- {dva glasa} Joj ... ne.
 - Jel posećujete bioskope, da li su manje gužve?
 - Da.  Pa jesu manje gužve, ali...
 - Jel vam to prija, ili?
 - Pa, meni gužve manje prijaju, al sad da je život kao pre, nije.  Mislim, eto.
-- Ne baš, jer mi se više s društvom kod mene okupljamo kući tako da, ne izlazimo toliko često.  Tako da...
+- Ne baš, jer mi se više s društvom kod mene okupljamo kući [tako da], ne izlazimo toliko često.  [Tako da]...
 - Da li su Vam epidemiološke mere olakšale život, u smislu da nema gužve po kafićima, stolovi su razdvojeni, bios..., u bioskopima takođe nema gužve?  Šta misliš o tome?
-- Pa rekao bi da nisu.  Inače nisam odavde, iz Zagreba sam, ali, pa, mislim da je samo... drugačije, ako su udaljeni stolovi udaljeni su i ljudi, mislim da je to sve skupa malo neprirodno ipak, što se toga tiče.  Ali neki convenience, da, mislim da se samo manje, i samim time manje života.  To bih rekao.
-- Pa, iskreno, ne znam, nemam neko mišljenje, ima svojih prednosti i ima mana.
-- Pa šta da kažem, ja sam se vakcinisao tako da, nema problema za to.
-- Znači, vakcinisali ste se i mislite da više nema brige?
+- Pa [rekao bi] da nisu.  Inače nisam odavde, iz Zagreba sam, ali, pa, mislim da je samo... drugačije, ako su udaljeni stolovi udaljeni su i ljudi, mislim da je to sve skupa malo neprirodno ipak, [što se toga tiče].  Ali neki convenience, da, mislim da se samo manje..., i samim time manje života.  To [bih rekao].
+- Pa, iskreno, [ne znam], nemam neko mišljenje, ima svojih prednosti i ima mana.
+- Pa šta da kažem, ja sam se vakcinisao [tako da], nema problema za to.
+- Znači, [vakcinisali ste] se i mislite da više nema brige?
 - Pa mislim da nema.
 - A da li Vam prija ovako što je malo svet povučeniji, što nema toliko gužvi?
 - Svejedno mi je.
@@ -167,149 +166,149 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - A imaš neko mišljenje, sada, ovaj život za vreme epidemioloških mera, kako ti se čini?
 - Pa, drugačije.
 - Drugačije.
-- Da li su ti epidemiološke mere olakšale život, s obzirom da više nema toliko gužvi po kafićima, restoranima, bioskopima, i šta misliš o tome?
-- Pa donekle jesu, zato što je manje gužve, ali na primer u autobusima nikoga nije baš briga za epidemiološke, te, stvari.  Niko ne nosi maske u autobusu, što meni mnogo smeta, ali, ne dolaze..., policija da ih izbacuje kao iz drugih, što je isto dobro, jer ja ne razumem baš toliko da rade, ali da, ja mislim da je malo olakšalo život zato što su svi sada pažljiviji sa time šta rade i gde idu i kolko ih je.
-- I dalje ima gužvi, tako da mislim da nisu ništa promenile.
+- Da li su ti epidemiološke mere olakšale život, [s obzirom da] više nema toliko gužvi po kafićima, restoranima, bioskopima, i šta misliš o tome?
+- Pa donekle jesu, [zato što] je manje gužve, ali na primer u autobusima nikoga nije baš briga za epidemiološke, te, stvari.  Niko ne nosi maske u autobusu, što meni mnogo smeta, ali, ne dolaze..., policija da ih izbacuje kao iz drugih, što je isto dobro, jer ja ne razumem baš toliko da rade, ali da, [ja mislim] da je malo olakšalo život [zato što] su svi sada pažljiviji sa time šta rade i gde idu i kolko ih je.
+- I dalje ima gužvi, [tako da] mislim da nisu ništa promenile.
 - A kako je tebi bolje, kad ima više ljudi u restoranima ili kad ima manje?
 - Pa iskreno svejedno, al ono, kad je manja gužva, manje se čeka da se jede, jel tako?  Pa...
 - Znači bolje je.  Po tebi.
 - Pa, može.
-- Pa jesu.  Jesu olakšale.  Čim nema gužve, mnogo je lakše nego da ima gužve.  To je jednostavna stvar.  Druga stvar je što ljudi su sad manje više, ovaj, opredeljeni..., moraju da se opredele kako će da, taj svoj socijalni život da svede.  I na koji način će da zamene svoje ... aktivnosti sa nekim drugim aktivnostima.  To jeste.
+- Pa jesu.  [Jesu olakšale].  Čim nema gužve, mnogo je lakše nego da ima gužve.  To je jednostavna stvar.  Druga stvar je što ljudi su sad manje više, ovaj, opredeljeni..., moraju da se opredele kako će da, taj svoj socijalni život da srede.  I na koji način će da zamene svoje ... aktivnosti sa nekim drugim aktivnostima.  To jeste.
 - Hvala Vam.
 ...
-- Kako je izgledao Vaš prvi poljubac?
-- Ne sećam se, bio je davno.
-- Pa izgledao je bajkovito, zato što, ja sam njega priželjkivala dugo, nisam znala kako to treba, više sam se interesovala kako će to da izgleda ali, bilo je jedno veče, bio je jedan momak i mislim da je on mene naučio kako se to ljubi.
-- Moj prvi poljubac je izgledao potpuno smotano i slatko.
+- Kako [je izgledao] Vaš prvi poljubac?
+- Ne sećam se, [bio je] davno.
+- Pa [izgledao je] bajkovito, [zato što], ja sam njega priželjkivala dugo, [nisam znala] kako to treba, više sam se interesovala kako će to da izgleda ali, [bilo je] jedno veče, [bio je] jedan momak i mislim da je on mene naučio kako se to ljubi.
+- Moj prvi poljubac [je izgledao] potpuno smotano i slatko.
 - Davno je to bilo.
-- Desio se u bazenu, odnosno na bazenu na Banjici, davno, davno.  I to nikad neću zaboraviti, sad sam se setila.  Davno je to bilo.  Bili smo deca, mislim da sam imala nekih petnest godina.
-- Kako je izgledao Vaš prvi poljubac?
-- Na vrhu Beograđanke, pitao sam je "Mogu da te poljubim?", ona kaže "Možeš."
-- Kako je izgledao Vaš prvi poljubac?
+- Desio se u bazenu, odnosno na bazenu na Banjici, davno, davno.  I to nikad neću zaboraviti, sad sam se setila.  Davno je to bilo.  [Bili smo] deca, mislim da [sam imala] nekih petnest godina.
+- Kako [je izgledao] Vaš prvi poljubac?
+- Na vrhu Beograđanke, [pitao sam] je "Mogu da te poljubim?", ona kaže ... "Možeš."
+- Kako [je izgledao] Vaš prvi poljubac?
 - Ne sećam se.
-- Baš mi je bilo bezveze.  Skroz.  To se desilo kao u pe..., čini mi se u petom razredu osnovne škole, nešto smo kao bili radoznali, i bilo je sa nekim dečkom koji mi se uopšte ništa specijalno nije svideo i baš mi je bilo grozno.
-- Šta je pitanje u stvari?
-- Kako je izgledao Vaš prvi poljubac?
+- Baš mi [je bilo] bezveze.  Skroz.  To se desilo kao u pe..., čini mi se u petom razredu osnovne škole, nešto smo kao bili radoznali, i [bilo je] sa nekim dečkom koji mi se uopšte ništa specijalno [nije svideo] i baš mi [je bilo] grozno.
+- Šta je pitanje [u stvari]?
+- Kako [je izgledao] Vaš prvi poljubac?
 - {Misleći da nije persiranje} Pa nismo mi u vezi uopšte!
 - Ne ne ne!
 - Uh.  Zbunjujuće.
 - Pa super.
-- ... Vašem prvom poljupcu?  Kad se desio, kakav je bio?
-- Šezdeset pet godina kad sam bio.
+- ... Vašem prvom poljupcu?  Kad se desio, kakav [je bio]?
+- Šezdeset pet godina kad [sam bio].
 - ... desio?
-- Pa sav sam drhtao.
+- Pa sav [sam drhtao].
 - Ko je ona bila, gde ste se upoznali?
 - Pa mama me poljubila bre prvi put bre.  Kad sam beba bio.
 - ... kako se desilo?
-- Zato što si mlad i ne znaš šta radiš, znaš šta želiš a ne znaš šta će se desiti.  Znači, mnogo toga.
-- To se ne zaboravlja.  Bilo je lepo.  U Kotežu bilo prvi put, da.  Pa, bila je, bila je mnogo...  Mnogo lepa.  Ali, to je bilo, prvi poljubac i nije bilo ništa drugo, mislim ako ne mislite, ovaj...  Da ne ulazimo u detalje.  Ne, bilo je fino, stvarno.
-- Izgledao je stvarno neobično.  Pa, zato što to, mislim to je bilo u parku, u nekim popodnevnim satima, i sedeli smo moj dečko i ja, i, sedeo je moj šarplaninac s nama koji je sedeo, znači, ležao je tu pored klupe.  I kad je mene dečko prvi put poljubio, znači šarplaninac je skočio na klupu, i strpao se između nas dvoje.
-- Ja sam se folirala da znam već kako se to radi.  I jako sam vešto to izglumila.  I niko me nije provaljivao; niko, mislim, osoba o kojoj pričamo me nije provalila.  A osoba je bila iz Švedske, de..., mislim dečak, momčić iz Švedske.  ... su oni napredni mnogo bili, ja sam htela da dokažem da i mi znamo kako se to radi.  Tako da je bilo stvarno uspešno, ako mogu da kažem.  I pamtim još uvek, naravno, prvi poljubac, nikad zaboravljen.
+- [Zato što] si mlad i ne znaš šta radiš, znaš šta želiš a ne znaš šta će se desiti.  Znači, mnogo toga.
+- To se ne zaboravlja.  [Bilo je] lepo.  U Kotežu bilo prvi put, da.  Pa, [bila je], [bila je] mnogo...  Mnogo lepa.  Ali, to [je bilo], prvi poljubac i [nije bilo] ništa drugo, mislim ako ne mislite, ovaj...  Da ne ulazimo u detalje.  Ne, [bilo je] fino, stvarno.
+- [Izgledao je] stvarno neobično.  Pa, [zato što] to, mislim to [je bilo] u parku, u nekim popodnevnim satima, i [sedeli smo] moj dečko i ja, i, [sedeo je] moj šarplaninac s nama koji [je sedeo], znači, [ležao je] tu pored klupe.  I kad je mene dečko prvi put poljubio, znači šarplaninac [je skočio] na klupu, i strpao se između nas dvoje.
+- Ja sam se folirala da znam već kako se to radi.  I jako sam vešto to izglumila.  I niko me [nije provalio]; niko, mislim, osoba o kojoj pričamo me [nije provalila].  A osoba [je bila] iz Švedske, de..., mislim dečak, momčić iz Švedske.  ... su oni napredni mnogo bili, ja [sam htela] da dokažem da i mi znamo kako se to radi.  [Tako da] [je bilo] stvarno uspešno, ako mogu da kažem.  I pamtim [još uvek], naravno, prvi poljubac, nikad zaboravljen.
 - Hvala.
 ...
-- Da li ste pratili izbore u Americi, i da li ste imali svog favorita?
-- Pa jesam, i, i ja mislim, Tramp je moj favorit, i, Tramp, Putin i Bog ja mislim da mogu da promene nešto.
-- Da, pratila sam, naravno, i favorit mi je bio Tramp.  Zna se razlog, ja mislim da to svi ovde u Srbiji jako dobro znaju.
+- Da li [ste pratili] izbore u Americi, i da li [ste imali] svog favorita?
+- Pa jesam, i, i [ja mislim], Tramp je moj favorit, i, Tramp, Putin i Bog [ja mislim] da mogu da promene nešto.
+- Da, [pratila sam], naravno, i favorit mi [je bio] Tramp.  Zna se razlog, [ja mislim] da to svi ovde u Srbiji jako dobro znaju.
 - Koji je to razlog, ako smemo da znamo?
-- Zna se, ovaj, Bajden, šta je pričao, šta je radio, ko je bombardovao, mislim, ko je bio u, u to vreme u Americi, ovaj, na vlasti, i to je to.  Jasno.
-- Pratio sam, i moj favorit je bio Tramp.  Ništa više.
+- Zna se, ovaj, Bajden, šta [je pričao], šta [je radio], ko [je bombardovao], mislim, ko [je bio] u, u to vreme u Americi, ovaj, na vlasti, i to je to.  Jasno.
+- [Pratio sam], i moj favorit [je bio] Tramp.  Ništa više.
 - Da li mislite da je on eventualno pokraden na tim glasovima?
-- Pa, s obzirom da je, apsolutno cela ova, ta mainstream struja u Americi bila, ovaj, protiv njega, postoji mogućnost, ali to, to je teško dokazati.
-- Recite mi, da li ste pratili američke izbore, i da li ste imali favorita?
-- Pratila, i imala sam Brand..., ovoga, jao Bože, sad..., ne Bajden nego ovaj drugi.  Trampa, razume se.  Trampa, razume se.
-- Pratili ste dakle?
-- Da, da, pratila sam, svo vreme.
+- Pa, [s obzirom da] je, apsolutno cela ova, ta mainstream struja u Americi bila, ovaj, protiv njega, postoji mogućnost, ali to, to je teško dokazati.
+- Recite mi, da li [ste pratili] američke izbore, i da li [ste imali] favorita?
+- Pratila, i [imala sam] Brand..., ovoga, jao Bože, sad..., ne Bajden nego ovaj drugi.  Trampa, razume se.  Trampa, razume se.
+- [Pratili ste] dakle?
+- Da, da, [pratila sam], svo vreme.
 - Da li mislite da su eventualno izbori namešteni?
-- Pa sigurno da su namešteni.  I pokradeni.  Pa, baš je neukusno kako je to izgledalo da... pardon; poštom se glasa, ovaj, Tramp je rekao svojim glasačima da ne šalju poštom te svoje glasove, i razume se da je pokraden.
-- Pa, neko moje lično osećanje, nekako, Tramp mi je dosta ovako, dobar kao predsednik, pokazao se kao dobar predsednik, do sada mislim da, da nije započeo nijedan rat u svetu i dosta mi je delovao miroljubivo, da ne kažem mirotvorac je.  Za mene, za moje mišljenje.
+- Pa sigurno da su namešteni.  I pokradeni.  Pa, baš je neukusno kako je to izgledalo da... pardon; poštom se glasa, ovaj, Tramp [je rekao] svojim glasačima da ne šalju poštom te svoje glasove, i razume se da je pokraden.
+- Pa, neko moje lično osećanje, nekako, Tramp mi je dosta ovako, dobar kao predsednik, pokazao se kao dobar predsednik, do sada mislim da, da [nije započeo] nijedan rat u svetu i dosta mi [je delovao] miroljubivo, da ne kažem mirotvorac je.  Za mene, za moje mišljenje.
 - Da li mislite da su izbori namešteni, da je on eventualno pokraden na tim izborima?
-- Ne bih znao da Vam kažem, ustanoviće to verovatno njegova administracija, oni sad rade na tome i pokazaće se ako su namešteni poništiće se izbori, i, videćemo šta će dalje biti.
-- Da li si pratila izbore u Americi, da li si imala svog favorita?
-- Nisam pratila izbore u Americi.
-- U principu me ne interesuje, jer ovaj, predsednik ne odlučuje kod njih, odlučuje Senat.  Tako da...  Malo su me i udavili preko televizije s tim izborima njihovim, što u krajnjem slučaju mal te ne me ne interesuje.
-- Jesam, ali, definitivno ovaj nije bio on proglašen na kraju, tako da...  Nadam se da će nešto, nešto da iskoči iz svega toga.  Da se preokrene.
-- Naravno, pratio sam, i imao sam favorita Bajdena.
+- Ne [bih znao] da Vam kažem, ustanoviće to verovatno njegova administracija, oni sad rade na tome i pokazaće se ako su namešteni poništiće se izbori, i, videćemo šta će dalje biti.
+- Da li [si pratila] izbore u Americi, da li [si imala] svog favorita?
+- [Nisam pratila] izbore u Americi.
+- U principu me ne interesuje, jer ovaj, predsednik ne odlučuje kod njih, odlučuje Senat.  [Tako da]...  Malo su me i udavili preko televizije s tim izborima njihovim, što u krajnjem slučaju [mal te ne] me ne interesuje.
+- Jesam, ali, definitivno ovaj [nije bio] on proglašen na kraju, [tako da]...  Nadam se da će nešto, nešto da iskoči iz svega toga.  Da se preokrene.
+- Naravno, [pratio sam], i [imao sam] favorita Bajdena.
 - Bajdena.
-- Tako je.  Zato što mislim da se ništa neće promeniti, bez obzira ko bude izabran, njih uopšte ne interesuje ovaj deo, mi smo suviše mali za njih, prema tome, to su samo iluzije da, da će nešto da promene izbor, svejedno je, a ipak je malo Bajden izgledao drugačije, bez obzira na te ludačke godine koje ima, i tako dalje.
-- Pa u Americi nemam favorita, ali ono što je dobro, verovatno su Amerikanci to izabrali.  A, što je sad Trampu to nije bilo lepo, to je njegova stvar.  Mada se tu ništa ne zna.  Sve dolazi, jedno između sebe, oni su onakvi kakvi su.  Da li će to narod prihvatiti ili neće prihvatiti videćemo kako će ovaj da vodi, to je jedino...  Ne razumem se u politiku pa onda...  Evo samo sam toliko prihvatila da Vam to kažem.
+- Tako je.  [Zato što] mislim da se ništa neće promeniti, bez obzira ko bude izabran, njih uopšte ne interesuje ovaj deo, mi smo suviše mali za njih, prema tome, to su samo iluzije da, da će nešto da promene izbori, svejedno je, a ipak je malo Bajden izgledao drugačije, bez obzira na te ludačke godine koje ima, [i tako dalje].
+- Pa u Americi nemam favorita, ali ono što je dobro, verovatno su Amerikanci to izabrali.  A, što je sad Trampu to [nije bilo] lepo, to je njegova stvar.  Mada se tu ništa ne zna.  Sve dolazi, jedno između sebe, oni su onakvi kakvi su.  [Da li] će to narod prihvatiti ili neće prihvatiti videćemo kako će ovaj da vodi, to je jedino...  Ne razumem se u politiku pa onda...  Evo samo sam toliko prihvatila da Vam to kažem.
 - Da, moj favorit je Tramp, i on će da pobedi.
-- Da, pratili smo izbore u Americi i moj favorit je Donald Tramp.  A ovo što se dešava u Americi je vrhunska prevara, ovaj,
+- Da, [pratili smo] izbore u Americi i moj favorit je Donald Tramp.  A ovo što se dešava u Americi je vrhunska prevara, ovaj,
 - Pobediće bre, šta ima tu...
-- pr..., vrhunska prevara koja se proverava sada, i najverovatnije da su to uradile neke sile koje hoće Trampa da sklone.  Znači to je jednostavna priča i to je jasno ko dan.  Znači, pobediće Tramp, kada budu pročešljali ovo što treba da pročešljaju de se ta prevara dogodila.
+- pr..., vrhunska prevara koja se proverava sada, i najverovatnije da su to uradile neke sile koje hoće Trampa da sklone.  Znači to je jednostavna priča i to je jasno ko dan.  Znači, pobediće Tramp, kada [budu pročešljali] ovo što treba da pročešljaju de se ta prevara dogodila.
 - ... Bajden će proći kao Al Gor.  Znači, Al Gor.
-- Nisam, iskreno, pratila šta se dešava, ali nisam imala favorita.
-- A, pratila sam izbore, i da, imala sam favorita, i on će da pobedi.
+- Nisam, iskreno, [pratila sam] šta se dešava, ali [nisam imala] favorita.
+- A, [pratila sam] izbore, i da, [imala sam] favorita, i on će da pobedi.
 - Hvala Vam.
 - Prijatno.
 ...
-- Nakon što su se pojedini estradni umetnici prethodnih dana oglasili kako nemaju od čega da žive zbog toga što trenutno ne nastupaju, ekipa portala Alo.rs rešila je da pita Beograđane, kakvo je njihovo mišljenje o svemu tome.
-- ... estradni umetnici oglašavali, kako nemaju trenutno novca jer ne nastupaju.
-- To je očigledno posledica dugogodišnje neke krize u društvu.  Prosto, prosto, nema istine, nema, nema ovoga, mogućnosti ni ljudi da se iskažu a vrlo često prikrivaju ono što bi, praktično trebali da kažu.  A, oni su problematični prilično.
-- Da li mislite da bi trebalo da im se pomogne, i na koji način?
-- Da im se pomogne?  Ne, mislim da ne bi trebalo da im se pomogne.  Mislim da dovoljno imaju novca, a dokaz je to kako, kako, vozila koja koriste, rasipaju se novcem i tako dalje, mislim da država mora da ih oporezuje mnogo više i mnogo bolje da bi to funkcionisalo, eto to je to.
-- Pa, mislim da je teško generalno svima u ovom trenutku, bilo da je to kultura, šou biz, ili šta god, svima je užasno teško, i žao mi je zbog toga, ali šta da se radi, tako je, takvo je vreme, takav je trenutak.
-- Da li bi moglo da im se pomogne i na koji način?
+- [Nakon što] su se pojedini [estradni umetnici] prethodnih dana oglasili kako nemaju od čega da žive [zbog toga što] trenutno ne nastupaju, ekipa portala Alo.rs [rešila je] da pita Beograđane, kakvo je njihovo mišljenje o svemu tome.
+- ... [estradni umetnici] oglašavali, kako nemaju trenutno novca jer ne nastupaju.
+- To je očigledno posledica dugogodišnje neke krize u društvu.  Prosto, prosto, nema istine, nema, nema ovoga, mogućnosti ni ljudi da se iskažu a vrlo često prikrivaju ono što [bi, praktično trebali] da kažu.  A, [oni su] problematični prilično.
+- Da li mislite da [bi trebalo] da im se pomogne, i na koji način?
+- Da im se pomogne?  Ne, mislim da ne [bi trebalo] da im se pomogne.  Mislim da dovoljno imaju novca, a dokaz je to kako, kako, vozila koja koriste, rasipaju se novcem [i tako dalje], mislim da država mora da ih oporezuje mnogo više i mnogo bolje da [bi to funkcionisalo], eto to je to.
+- Pa, mislim da je teško generalno svima u ovom trenutku, bilo da je to kultura, šou biz, ili [šta god], svima je užasno teško, i žao mi je zbog toga, ali šta da se radi, takvo je..., takvo je vreme, takav je trenutak.
+- Da li [bi moglo] da im se pomogne i na koji način?
 - Mislim da njima najmanje treba pomoć.  Ima ljudi kojima je mnogo više potrebno pomoći nego njima.  Bar ja tako mislim.
-- Mislim da su jako bezobrazni, i, i, mislim da ismevaju ovaj narod, koji je već dovoljno u problemima, a, oni nisu navikli na to da nemaju, i sad je malo problem.  Trebali su da štede novac koji su zarađivali a zarađivali su ozbiljan novac.
+- Mislim da su jako bezobrazni, i, i, mislim da ismevaju ovaj narod, koji je već dovoljno u problemima, a, oni [nisu navikli] na to da nemaju, i sad je malo problem.  [Trebali su] da štede novac koji [su zarađivali] a [zarađivali su] ozbiljan novac.
 - A da li nedostaju ti njihovi nastupi i koncerti?
-- Pa, znate kako, svako ima YouTube, uključi i sluša muziku.  Tako da mi ne u principu ne puno, ali, koga nema bez njega se može, to nije neko zanimanje koje je neophodno za društvo.
-- Pa pravo da Vam kažem nisam o tome još ni razmišljala.  Mislim u principu, ima u tome istine jer ne bi verovatno pričali da nije tačno.  Jer svi rade praktično ono što znaju da rade i za šta su sposobni da rade, jel?  E sada što se tiče, ovaj, baš ove epidemiološke situacije, to sad baš i nije preporučljivo da se održavaju neki skupovi, tako da, kako rešiti taj njihov problem, stvano ne znam.
-- Prethodnih nekoliko dana estradni umetnici su se oglašavali o tome kako nemaju od čega da žive jer nemaju nastupe.  Kakvo je tvoje mišljenje o svemu tome?
-- Pa šta znam, ne znam šta da kažem.  Majke mi.
-- Jel misliš da bi trebalo da im se pomogne?
+- Pa, znate kako, svako ima YouTube, uključi i sluša muziku.  [Tako da] mi ne u principu ne puno, ali, koga nema bez njega se može, to nije neko zanimanje koje je neophodno za društvo.
+- Pa pravo da Vam kažem nisam o tome još ni razmišljala.  Mislim u principu, ima u tome istine jer ne bi verovatno pričali da nije tačno.  Jer svi rade praktično ono što znaju da rade i za šta su sposobni da rade, jel?  E sada [što se tiče], ovaj, baš ove epidemiološke situacije, to sad baš i nije preporučljivo da se održavaju neki skupovi, [tako da], kako rešiti taj njihov problem, stvarno [ne znam].
+- Prethodnih nekoliko dana [estradni umetnici] su se oglašavali o tome kako nemaju od čega da žive jer nemaju nastupe.  Kakvo je tvoje mišljenje o svemu tome?
+- Pa šta znam, [ne znam] šta da kažem.  [Majke mi].
+- Jel misliš da [bi trebalo] da im se pomogne?
 - Pa njima ne.  Svakako.  Možda čak i nama.  Nama pre nego njima.
 - A jel ti nedostaju njihovi nastupi i koncerti?
-- Pa dobro malo da.  Malo da.  Iskreno.  Mi smo takav grad, navikli smo da, ovaj, da, da živimo tako.  Tako da, mislim da jeste.  Mislim da nedostaju malo.
-- Pa ne znam zaista šta bih Vam rekla.  Nije ni nama nešto mnogo bolje, evo na primer ja čak, ovaj, radim dva posla da bih opstala.  Pa tako, šta da Vam kažem.
+- Pa dobro malo da.  Malo da.  Iskreno.  [Mi smo] takav grad, [navikli smo] da, ovaj, da, da živimo tako.  [Tako da], mislim da jeste.  Mislim da nedostaju malo.
+- Pa [ne znam] zaista šta bih Vam rekla.  Nije ni nama nešto mnogo bolje, evo na primer ja čak, ovaj, radim dva posla da [bih opstala].  Pa tako, šta da Vam kažem.
 - A da li mislite da treba ipak da im se pomogne?
-- Pa, ne znam, verovatno svakom treba da se pomogne u ovakvim situacijama ali na koji način, zaista ne znam.
+- Pa, [ne znam], verovatno svakom treba da se pomogne u ovakvim situacijama ali na koji način, zaista [ne znam].
 - Pa, nemam komentar, mislim da oni ipak imaju od čega da žive.
-- Hvala Vam.
+- [Hvala Vam].
 ...
-- Snažan zemljotres osetio se danas na teritoriji cele Srbije, a podrhtavanje tla i u Beogradu.  Izašli smo na ulice našeg glavnog grada, da pitamo sugrađane da li su osetili zemljotres.
-- Da da naravno, baš je bio jak.
-- Nisam.  Bila sam na ulici, ali sam čula posle pet minuta da je bio zapravo.  Pa sam onda saznala da je u Hrvatskoj i tako dalje, jel?  Ne znam da li ima u Srbiji posledica nekih ili nešto.  Ne, moji su osetili koji su bili na šestom i nekom spratu, ja pošto sam bila na ulici nisam, na sreću možda, eto.
-- Odlično, hvala Vam.
+- Snažan zemljotres osetio se danas na teritoriji cele Srbije, a podrhtavanje tla i u Beogradu.  [Izašli smo] na ulice našeg glavnog grada, da pitamo sugrađane [da li] [su osetili] zemljotres.
+- Da da naravno, baš [je bio] jak.
+- Nisam.  [Bila sam] na ulici, ali [sam čula] posle pet minuta da [je bio] zapravo.  Pa sam onda saznala da je u Hrvatskoj [i tako dalje], jel?  [Ne znam] [da li] ima u Srbiji posledica nekih ili nešto.  Ne, moji [su osetili] koji [su bili] na šestom i nekom spratu, ja pošto [sam bila] na ulici nisam, na sreću možda, eto.
+- Odlično, [hvala Vam].
 - Ne, ne.
-- Dobar dan, da li ste osetili zemljotres u Beogradu?
+- Dobar dan, da li [ste osetili] zemljotres u Beogradu?
 - Ništa, zaista ništa.
-- Hvala Vam puno.
-- ... osetila sam...
-- Da li ste osetili zemljotres u Beogradu?
-- Ne, ne.  Čula sam i žao mi je što se sve to dešava u Hrvatskoj ali eto.  Šta da kažem.
+- [Hvala Vam] puno.
+- ... [osetila sam]...
+- Da li ste [osetili zemljotres] u Beogradu?
+- Ne, ne.  [Čula sam] i žao mi je što se sve to dešava u Hrvatskoj ali eto.  Šta da kažem.
 - Hvala Vam puno.
 - ... jesmo ...
 - Hvala.
-- Jesam, slučajno, znači kad sam ulazio u kola, znači osetio sam nešto da me drma.  Mislio sam nešto da sa mnom nije u redu, 'nači, nači, počelo da me drma.  Znači da mi drma auto.  Trajalo je jedno deset sekundi.
+- Jesam, slučajno, znači kad [sam ulazio] u kola, znači [osetio sam] nešto da me drma.  [Mislio sam] nešto da sa mnom nije u redu, 'nači, nači, počelo da me drma.  Znači da mi drma auto.  [Trajalo je] jedno deset sekundi.
 - Hvala Vam puno.
 - Ne ne ne.  Jesi ti?
 - Mm.
 - Ja lično nisam.  Ali se osetio.  Tako kažu.
-- Hvala Vam puno.
-- Hala Vama, prijatno.
-- Jesmo ali nije bilo nešto strašno, samo se malo prozori protresli kod nas u stanu, jednom samo i to je to.  A ja sam mislila da je možda komšija možda nešto lupio odozgo pa se zato i protresli i onda me brat kao zvao: "E, jel se desio, jesi osetila?  Mi smo na poslu osetili."  I ja kao: "Pa jesam, znači to je to što se kao protresli prozori."  Tako da...  To je što smo osetili.
+- [Hvala Vàm] puno.
+- [Hvala Vȁma], prijatno.
+- Jesmo ali [nije bilo] nešto strašno, samo se malo prozori protresli kod nas u stanu, jednom samo i to je to.  A ja [sam mislila] da je možda komšija možda nešto lupio odozgo pa se zato i protresli i onda me brat kao zvao: "E, jel se desio, [jesi osetila]?  Mi smo na poslu osetili."  I ja kao: "Pa jesam, znači to je to što se kao protresli prozori."  [Tako da]...  To je što [smo osetili].
 - Hvala Vam puno.
 - Nema na čemu.
-- Bio je bogami, u zgradi gde sam, ovaj, gde radim, "boga mi", trajao jedno tri minuta.  Dva tri minuta je trajalo i nije bilo uopšte naivno.
-- Nisam.  Nisam, pošto mi je zemljotres u životu tako da nisam osetila ni da je pukla zemlja ispred mene.
-- Hvala Vam puno.
+- [Bio je] bogami, u zgradi gde sam, ovaj, gde radim, bogami, trajao jedno tri minuta.  Dva tri minuta [je trajalo] i [nije bilo] uopšte naivno.
+- Nisam.  Nisam, pošto mi je zemljotres u životu [tako da] [nisam osetila] ni da [je pukla] zemlja ispred mene.
+- Hvala Vam puno {TM}.
 ...
 - Da li ste ikada zamišljali da se probudite kao neka druga osoba?  U nekom drugom tjelu, da se probudite ako ste žena kao muškarac, ili ako ste muškarac kao žena?
-- Ja sam i ovako, sve radim muške poslove, tako da ne bi me iznenadilo.
-- Verovatno ne bih ni razmišljala ni o čemu.  Onako hladnokrvno, otišla i ponašala se.
-- Zapalila cigaru i legla da spavam.  Još jednom.
-- Šta biste urad'li da se probudite kao žena?
-- Šta bih uradio?  Pa našo bih pravog muškarca.
+- [Ja sam] [i ovako], sve radim muške poslove, [tako da] ne bi me iznenadilo.
+- Verovatno [ne bih] ni razmišljala ni o čemu.  Onako hladnokrvno, [otišla {bih}] i ponašala se.
+- [Zapalila {bih}] cigaru i legla da spavam.  Još jednom.
+- Šta [biste urad'li] da se probudite kao žena?
+- Šta [bih uradio]?  Pa [našo bih] pravog muškarca.
 - Pa prvo bi se umio.  Umio bih se prvo.
-- Šta biste urad'li da se probudite kao muškarac?
+- Šta [biste urad'li] da se probudite kao muškarac?
 - Nauživala.
-- Bila bi najjači muškarac na ovom svetu.
-- Izašla bih u grad i možda bi pokušala da nađem ženu.  Da se isprobam kao muškarac.
-- Bio bih siguran da će mi život biti lep.
-- Pa uradila bih one stvari, šta sad.
-- Ne znam.  Verovatno bih se našminkao prvo.
+- [Bila bi] najjači muškarac na ovom svetu.
+- [Izašla bih] u grad i možda [bi pokušala] da nađem ženu.  Da se isprobam kao muškarac.
+- [Bio bih] siguran da će mi život biti lep.
+- Pa [uradila bih] one stvari, šta sad.
+- [Ne znam].  Verovatno bih se našminkao prvo.
 - Uf.  Iskreno, možda bih se samo dobro udo.  I rešio sve probleme u životu.  Definitivno.  Za nekog, Rokfelera, sa jahtom, i to je to.  Ne moraš da radiš, uživaš, živiš kako hoćeš i to je to.
 - Kao?  Da se probudim kao žena?  Mislim, ne zamišljam tako nešto.  Nikako.  Znam šta žene rade, ali ovaj, ja da zamislim sebe u toj poziciji malo teže.
-- Morao bih da tražim neku stručnu pomoć da mi pomogne, šta da uradim, kako da se vratim u muško.  Al bio bih srećan sigurno.  Al ne bih se sad menjao u žensko.  To svakako.
-- A iskreno da Vam kažem ne bih voleo da se probudim kao žena, odgovara mi ovako što sam muškarac.  A da se to desi, ne znam kako bih reagovao.  Verovatno ne bih bio, ne bih bio zadovoljan baš, iskreno.
-- A, nikad se ne bih probudio kao žena.  Sviđa mi se da budem muško.
+- [Morao bih] da tražim neku stručnu pomoć da mi pomogne, šta da uradim, kako da se vratim u muško.  Al [bio bih] srećan sigurno.  Al ne bih se sad menjao u žensko.  To svakako.
+- A iskreno da Vam kažem ne [bih voleo] da se probudim kao žena, odgovara mi ovako što sam muškarac.  A da se to desi, [ne znam] kako [bih reagovao].  Verovatno ne [bih bio], ne [bih bio] zadovoljan baš, iskreno.
+- A, nikad se ne [bih probudio] kao žena.  Sviđa mi se da budem muško.

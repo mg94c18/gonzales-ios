@@ -1,6 +1,6 @@
 
 
-...
+{...}
 [You give] that you [they love]
 actors, directors,
 reporters, men
@@ -21,6 +21,7 @@ Maybe [you will] advertisement
 Behind your back
 [they will tell] jokes
 
+{...}
 You [you are] perfection without flaw
 You [you are] part [of soldiers'] [of dreams]
 You [you are] doll from [of cover] [of page]
