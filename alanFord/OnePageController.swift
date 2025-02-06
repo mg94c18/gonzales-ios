@@ -109,6 +109,10 @@ class OnePageController : UIViewController, UIScrollViewDelegate {
             AppDelegate.log("WTF - oldScrollY=\(oldScrollY), oldHeight=\(oldHeight)")
             return
         }
+        updateScrool(scrollView)
+    }
+
+    func updateScrool(_ scrollView: UIScrollView) {
         let newHeight = scrollView.contentSize.height
         var newScrollY = floor(oldScrollY * newHeight / oldHeight)
 
@@ -131,6 +135,11 @@ class OnePageController : UIViewController, UIScrollViewDelegate {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         inLandscape = (size.width > size.height)
         refreshWebView()
+        if page.1.count > 100 { // zenidba,nevolem,druze,studios,mrtavladan,anketaa,anketag,anketab,anketav
+            coordinator.animate(alongsideTransition: nil) { (_) in
+                self.updateScrool(self.webView.scrollView)
+            }
+        }
         super.viewWillTransition(to: size, with: coordinator)
     }
 
