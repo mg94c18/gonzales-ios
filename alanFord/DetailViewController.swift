@@ -52,10 +52,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
                                 searchedWord)
 
         // TODO: treba da ima samo jedan child, tako da ne "add"
-        self.addChildViewController(firstController)
+        self.addChild(firstController)
         self.pageView.addSubview(firstController.view)
         firstController.view.frame = pageView.bounds
-        firstController.didMove(toParentViewController: self)
+        firstController.didMove(toParent: self)
         onePageController = firstController
 
         if DetailViewController.lastLoadedEpisode != -1 && OnePageController.lastLoadedIndex != -1 {

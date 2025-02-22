@@ -174,7 +174,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         })
     }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         AppDelegate.instance = self
         // Override point for customization after application launch.
         let splitViewController = window!.rootViewController as! UISplitViewController
@@ -207,13 +207,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         AppDelegate.inBackground = false
         do {
             let audioSession = AVAudioSession.sharedInstance()
-            if #available(iOS 11.0, *) {
-                try audioSession.setCategory(AVAudioSessionCategoryPlayback, mode: AVAudioSessionModeDefault, routeSharingPolicy: AVAudioSession.RouteSharingPolicy.longFormAudio)
-            } else if #available(iOS 10.0, *) {
-                try audioSession.setCategory(AVAudioSessionCategoryPlayback, mode: AVAudioSessionModeDefault)
-            } else {
-                try audioSession.setCategory(AVAudioSessionCategoryPlayback)
-            }
+            try audioSession.setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode(rawValue: convertFromAVAudioSessionMode(AVAudioSession.Mode.default)), policy: AVAudioSession.RouteSharingPolicy.longFormAudio)
         } catch {
             print("Failed to set the audio session configuration")
         }
@@ -256,3 +250,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionMode(_ input: AVAudioSession.Mode) -> String {
+	return input.rawValue
+}
