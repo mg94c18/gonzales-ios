@@ -316,6 +316,30 @@
 		E210F09528B6DBAD009A0958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8EA21F831C000CABDD6 /* Assets.xcassets */; };
 		E210F09628B6DBAD009A0958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C23B8E721F831C000CABDD6 /* Main.storyboard */; };
 		E210F09D28B6DCE9009A0958 /* AssetsMM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210F09C28B6DCE9009A0958 /* AssetsMM.swift */; };
+		E23B70232D69786A00B6253A /* IOSNowPlayableBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B701E2D69786A00B6253A /* IOSNowPlayableBehavior.swift */; };
+		E23B70242D69786A00B6253A /* IOSNowPlayableBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B701E2D69786A00B6253A /* IOSNowPlayableBehavior.swift */; };
+		E23B70252D69786A00B6253A /* IOSNowPlayableBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B701E2D69786A00B6253A /* IOSNowPlayableBehavior.swift */; };
+		E23B70262D69786A00B6253A /* IOSNowPlayableBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B701E2D69786A00B6253A /* IOSNowPlayableBehavior.swift */; };
+		E23B70272D69786A00B6253A /* NowPlayableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B701F2D69786A00B6253A /* NowPlayableCommand.swift */; };
+		E23B70282D69786A00B6253A /* NowPlayableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B701F2D69786A00B6253A /* NowPlayableCommand.swift */; };
+		E23B70292D69786A00B6253A /* NowPlayableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B701F2D69786A00B6253A /* NowPlayableCommand.swift */; };
+		E23B702A2D69786A00B6253A /* NowPlayableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B701F2D69786A00B6253A /* NowPlayableCommand.swift */; };
+		E23B702B2D69786A00B6253A /* NowPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70202D69786A00B6253A /* NowPlayable.swift */; };
+		E23B702C2D69786A00B6253A /* NowPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70202D69786A00B6253A /* NowPlayable.swift */; };
+		E23B702D2D69786A00B6253A /* NowPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70202D69786A00B6253A /* NowPlayable.swift */; };
+		E23B702E2D69786A00B6253A /* NowPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70202D69786A00B6253A /* NowPlayable.swift */; };
+		E23B702F2D69786A00B6253A /* NowPlayableMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70212D69786A00B6253A /* NowPlayableMetadata.swift */; };
+		E23B70302D69786A00B6253A /* NowPlayableMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70212D69786A00B6253A /* NowPlayableMetadata.swift */; };
+		E23B70312D69786A00B6253A /* NowPlayableMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70212D69786A00B6253A /* NowPlayableMetadata.swift */; };
+		E23B70322D69786A00B6253A /* NowPlayableMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70212D69786A00B6253A /* NowPlayableMetadata.swift */; };
+		E23B70332D69786A00B6253A /* NowPlayableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70222D69786A00B6253A /* NowPlayableError.swift */; };
+		E23B70342D69786A00B6253A /* NowPlayableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70222D69786A00B6253A /* NowPlayableError.swift */; };
+		E23B70352D69786A00B6253A /* NowPlayableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70222D69786A00B6253A /* NowPlayableError.swift */; };
+		E23B70362D69786A00B6253A /* NowPlayableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B70222D69786A00B6253A /* NowPlayableError.swift */; };
+		E23B703F2D6C7A4400B6253A /* AssetPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B703E2D6C7A4300B6253A /* AssetPlayer.swift */; };
+		E23B70402D6C7A4400B6253A /* AssetPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B703E2D6C7A4300B6253A /* AssetPlayer.swift */; };
+		E23B70412D6C7A4400B6253A /* AssetPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B703E2D6C7A4300B6253A /* AssetPlayer.swift */; };
+		E23B70422D6C7A4400B6253A /* AssetPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B703E2D6C7A4300B6253A /* AssetPlayer.swift */; };
 		E2B5897E2D33AA9F006E5F88 /* anketaa.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B5896F2D33AA9F006E5F88 /* anketaa.bukvalno.txt */; };
 		E2B5897F2D33AA9F006E5F88 /* anketab.bukvalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589702D33AA9F006E5F88 /* anketab.bukvalno.txt */; };
 		E2B589802D33AA9F006E5F88 /* studios.finalno.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2B589712D33AA9F006E5F88 /* studios.finalno.txt */; };
@@ -623,6 +647,12 @@
 		E210F09A28B6DBAD009A0958 /* martiMisterija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = martiMisterija.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E210F09B28B6DBAD009A0958 /* martiMisterija.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = martiMisterija.plist; sourceTree = SOURCE_ROOT; };
 		E210F09C28B6DCE9009A0958 /* AssetsMM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsMM.swift; sourceTree = "<group>"; };
+		E23B701E2D69786A00B6253A /* IOSNowPlayableBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSNowPlayableBehavior.swift; sourceTree = "<group>"; };
+		E23B701F2D69786A00B6253A /* NowPlayableCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableCommand.swift; sourceTree = "<group>"; };
+		E23B70202D69786A00B6253A /* NowPlayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayable.swift; sourceTree = "<group>"; };
+		E23B70212D69786A00B6253A /* NowPlayableMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableMetadata.swift; sourceTree = "<group>"; };
+		E23B70222D69786A00B6253A /* NowPlayableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayableError.swift; sourceTree = "<group>"; };
+		E23B703E2D6C7A4300B6253A /* AssetPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetPlayer.swift; sourceTree = "<group>"; };
 		E2B5896F2D33AA9F006E5F88 /* anketaa.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketaa.bukvalno.txt; sourceTree = "<group>"; };
 		E2B589702D33AA9F006E5F88 /* anketab.bukvalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anketab.bukvalno.txt; sourceTree = "<group>"; };
 		E2B589712D33AA9F006E5F88 /* studios.finalno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = studios.finalno.txt; sourceTree = "<group>"; };
@@ -697,6 +727,12 @@
 		7C23B8E021F831C000CABDD6 /* alanFord */ = {
 			isa = PBXGroup;
 			children = (
+				E23B703E2D6C7A4300B6253A /* AssetPlayer.swift */,
+				E23B701E2D69786A00B6253A /* IOSNowPlayableBehavior.swift */,
+				E23B70202D69786A00B6253A /* NowPlayable.swift */,
+				E23B701F2D69786A00B6253A /* NowPlayableCommand.swift */,
+				E23B70222D69786A00B6253A /* NowPlayableError.swift */,
+				E23B70212D69786A00B6253A /* NowPlayableMetadata.swift */,
 				7CCDDDA728D1152500277E38 /* README */,
 				7CCDDDA828D1152500277E38 /* README-Flavors */,
 				7C23B8E121F831C000CABDD6 /* AppDelegate.swift */,
@@ -1486,14 +1522,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23B70332D69786A00B6253A /* NowPlayableError.swift in Sources */,
+				E23B702B2D69786A00B6253A /* NowPlayable.swift in Sources */,
 				7C13E9982CC84EAA00CCD936 /* SearchProvider.swift in Sources */,
+				E23B70232D69786A00B6253A /* IOSNowPlayableBehavior.swift in Sources */,
+				E23B70272D69786A00B6253A /* NowPlayableCommand.swift in Sources */,
 				7C23B8E621F831C000CABDD6 /* DetailViewController.swift in Sources */,
 				7C9DA5C9288C849F0019D7DD /* OnePageController.swift in Sources */,
 				7C9DCF4D28A4BAEA00EC6F9D /* ImageDownloader.swift in Sources */,
 				7C8D253B2C91387A00934BA5 /* PlayController.swift in Sources */,
+				E23B703F2D6C7A4400B6253A /* AssetPlayer.swift in Sources */,
 				7C23B8E421F831C000CABDD6 /* MasterViewController.swift in Sources */,
 				7CB86835288F528A00FB799D /* Assets.swift in Sources */,
 				7C23B8E221F831C000CABDD6 /* AppDelegate.swift in Sources */,
+				E23B702F2D69786A00B6253A /* NowPlayableMetadata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1501,14 +1543,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23B70362D69786A00B6253A /* NowPlayableError.swift in Sources */,
+				E23B702E2D69786A00B6253A /* NowPlayable.swift in Sources */,
 				7C13E99B2CC84EAA00CCD936 /* SearchProvider.swift in Sources */,
+				E23B70262D69786A00B6253A /* IOSNowPlayableBehavior.swift in Sources */,
+				E23B702A2D69786A00B6253A /* NowPlayableCommand.swift in Sources */,
 				7C2FE70528C9538600E24C1F /* DetailViewController.swift in Sources */,
 				7C2FE70628C9538600E24C1F /* OnePageController.swift in Sources */,
 				7C2FE70728C9538600E24C1F /* ImageDownloader.swift in Sources */,
 				7C8D253D2C91387A00934BA5 /* PlayController.swift in Sources */,
+				E23B70422D6C7A4400B6253A /* AssetPlayer.swift in Sources */,
 				7C2FE71828C958C100E24C1F /* AssetsMN.swift in Sources */,
 				7C2FE70828C9538600E24C1F /* MasterViewController.swift in Sources */,
 				7C2FE70A28C9538600E24C1F /* AppDelegate.swift in Sources */,
+				E23B70322D69786A00B6253A /* NowPlayableMetadata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1516,14 +1564,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23B70342D69786A00B6253A /* NowPlayableError.swift in Sources */,
+				E23B702C2D69786A00B6253A /* NowPlayable.swift in Sources */,
 				7C13E9992CC84EAA00CCD936 /* SearchProvider.swift in Sources */,
+				E23B70242D69786A00B6253A /* IOSNowPlayableBehavior.swift in Sources */,
+				E23B70282D69786A00B6253A /* NowPlayableCommand.swift in Sources */,
 				7CCDDDAB28D153B300277E38 /* DetailViewController.swift in Sources */,
 				7CCDDDAC28D153B300277E38 /* OnePageController.swift in Sources */,
 				7CCDDDAD28D153B300277E38 /* ImageDownloader.swift in Sources */,
 				7C8D253E2C91387A00934BA5 /* PlayController.swift in Sources */,
+				E23B70402D6C7A4400B6253A /* AssetPlayer.swift in Sources */,
 				7CCDDDAE28D153B300277E38 /* MasterViewController.swift in Sources */,
 				7CCDDDBE28D154A800277E38 /* AssetsDV.swift in Sources */,
 				7CCDDDB128D153B300277E38 /* AppDelegate.swift in Sources */,
+				E23B70302D69786A00B6253A /* NowPlayableMetadata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1531,14 +1585,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23B70352D69786A00B6253A /* NowPlayableError.swift in Sources */,
+				E23B702D2D69786A00B6253A /* NowPlayable.swift in Sources */,
 				7C13E99A2CC84EAA00CCD936 /* SearchProvider.swift in Sources */,
+				E23B70252D69786A00B6253A /* IOSNowPlayableBehavior.swift in Sources */,
+				E23B70292D69786A00B6253A /* NowPlayableCommand.swift in Sources */,
 				E210F09D28B6DCE9009A0958 /* AssetsMM.swift in Sources */,
 				E210F08A28B6DBAD009A0958 /* DetailViewController.swift in Sources */,
 				E210F08B28B6DBAD009A0958 /* OnePageController.swift in Sources */,
 				7C8D253C2C91387A00934BA5 /* PlayController.swift in Sources */,
+				E23B70412D6C7A4400B6253A /* AssetPlayer.swift in Sources */,
 				E210F08C28B6DBAD009A0958 /* ImageDownloader.swift in Sources */,
 				E210F08D28B6DBAD009A0958 /* MasterViewController.swift in Sources */,
 				E210F09028B6DBAD009A0958 /* AppDelegate.swift in Sources */,
+				E23B70312D69786A00B6253A /* NowPlayableMetadata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
