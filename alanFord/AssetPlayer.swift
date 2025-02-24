@@ -21,7 +21,7 @@ class AssetPlayer {
     
     // The app-supplied object that provides `NowPlayable`-conformant behavior.
     
-    unowned let nowPlayableBehavior: NowPlayable
+    var nowPlayableBehavior: NowPlayable
     
     // The player actually being used for playback. An app may use any system-provided
     // player, or may play content in any way that is wishes, provided that it uses
@@ -32,10 +32,6 @@ class AssetPlayer {
     // A playlist of items to play.
     
     private let playerItems: [AVPlayerItem]
-    
-    // Metadata for each item.
-    
-    private let staticMetadatas: [NowPlayableStaticMetadata]
     
     // The internal state of this AssetPlayer separate from the state
     // of its AVQueuePlayer.
@@ -55,51 +51,40 @@ class AssetPlayer {
     private var isInterrupted: Bool = false
     
     // Private observers of notifications and property changes.
-    
     private var itemObserver: NSKeyValueObservation!
     private var rateObserver: NSKeyValueObservation!
     private var statusObserver: NSObjectProtocol!
     
+    // The map to discover the track ID in observation callbacks
+    private let itemIdMap: [AVPlayerItem : Int]
+
     // A shorter name for a very long property name.
-    
     private static let mediaSelectionKey = "availableMediaCharacteristicsWithMediaSelectionOptions"
     
     // Initialize a new `AssetPlayer` object.
     
-    init() throws {
+    init(items: [AVPlayerItem], itemIdMap: [AVPlayerItem : Int]) throws {
         
-        self.nowPlayableBehavior = ConfigModel.shared.nowPlayableBehavior
+        self.nowPlayableBehavior = IOSNowPlayableBehavior()
         
         // Get the subset of assets that the configuration actually wants to play,
         // and use it to construct the playlist.
         
-        let playableAssets = ConfigModel.shared.assets.compactMap { $0.shouldPlay ? $0 : nil }
-        
-        self.staticMetadatas = playableAssets.map { $0.metadata }
-        self.playerItems = playableAssets.map {
-            AVPlayerItem(asset: $0.urlAsset, automaticallyLoadedAssetKeys: [AssetPlayer.mediaSelectionKey])
-        }
-        
-        // Create a player, and configure it for external playback, if the
-        // configuration requires.
-        
+        self.itemIdMap = itemIdMap
+        self.playerItems = items
         self.player = AVQueuePlayer(items: playerItems)
-        player.allowsExternalPlayback = ConfigModel.shared.allowsExternalPlayback
+        self.player.allowsExternalPlayback = false
+        self.player.actionAtItemEnd = .advance
         
         // Construct lists of commands to be registered or disabled.
         
-        var registeredCommands = [] as [NowPlayableCommand]
-        var enabledCommands = [] as [NowPlayableCommand]
-        
-        for group in ConfigModel.shared.commandCollections {
-            registeredCommands.append(contentsOf: group.commands.compactMap { $0.shouldRegister ? $0.command : nil })
-            enabledCommands.append(contentsOf: group.commands.compactMap { $0.shouldDisable ? $0.command : nil })
-        }
+        let registeredCommands = nowPlayableBehavior.defaultRegisteredCommands
+        let disabledCommands = nowPlayableBehavior.defaultDisabledCommands
         
         // Configure the app for Now Playing Info and Remote Command Center behaviors.
         
         try nowPlayableBehavior.handleNowPlayableConfiguration(commands: registeredCommands,
-                                                               disabledCommands: enabledCommands,
+                                                               disabledCommands: disabledCommands,
                                                                commandHandler: handleCommand(command:event:),
                                                                interruptionHandler: handleInterrupt(with:))
         
@@ -150,6 +135,9 @@ class AssetPlayer {
         playerState = .stopped
         
         nowPlayableBehavior.handleNowPlayableSessionEnd()
+
+        AppDelegate.nowPlaying = -1
+        AppDelegate.pausedNowPlaying = -1
     }
     
     // MARK: Now Playing Info
@@ -161,13 +149,17 @@ class AssetPlayer {
         guard playerState != .stopped else { return }
         
         // Find the current item.
-        
+        // Hm, we neglect the item from the change and instead use our own; it's an authoritative example so I will follow
         guard let currentItem = player.currentItem else { optOut(); return }
-        guard let currentIndex = playerItems.firstIndex(where: { $0 == currentItem }) else { return }
+        guard let trackId = itemIdMap[currentItem] else {
+            AppDelegate.log("WTF - we have a valid track but no recollection of it")
+            AppDelegate.nowPlaying = -1
+            return
+        }
         
         // Set the Now Playing Info from static item metadata.
-        
-        let metadata = staticMetadatas[currentIndex]
+        AppDelegate.nowPlaying = trackId
+        let metadata = NowPlayableStaticMetadata(mediaType: .audio, isLiveStream: false, title: Assets.titles[trackId], artist: Assets.dates[trackId], artwork: nil, albumArtist: nil, albumTitle: nil)
         
         nowPlayableBehavior.handleNowPlayableItemChange(metadata: metadata)
     }
@@ -231,13 +223,14 @@ class AssetPlayer {
                                                   availableLanguageOptionGroups: languageOptionGroups)
         
         nowPlayableBehavior.handleNowPlayablePlaybackChange(playing: isPlaying, metadata: metadata)
+        AppDelegate.paused = player.rate == 0.0
     }
     
     // MARK: Playback Control
     
     // The following methods handle various playback conditions triggered by remote commands.
     
-    private func play() {
+    func play() {
         
         switch playerState {
             
@@ -259,7 +252,7 @@ class AssetPlayer {
         }
     }
     
-    private func pause() {
+    func pause() {
         
         switch playerState {
             

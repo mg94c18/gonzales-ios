@@ -50,13 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     static var unseenCrashesKey = "unseenCrashes"
     static let lastEpisodeIdKey = "lastEpisodeId"
     private static weak var instance: AppDelegate?
-    var itemObservation: NSKeyValueObservation?
-    var rateObservation: NSKeyValueObservation?
-    @objc var player: AVQueuePlayer = AVQueuePlayer.init(items: []) {
-        didSet {
-            updatePlayerObservation()
-        }
-    }
+    var player: AssetPlayer? = nil
 
     static var pausedNowPlaying = -1
 
@@ -74,8 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func activateAndPlay(from controller: UIViewController) -> Bool {
         do {
-            try AVAudioSession.sharedInstance().setActive(true)
-            player.play()
+            player?.play()
             return true
         } catch let error {
             let errorReport = UIAlertController(title: "Error", message: "Can't start playback.  Error message: \(error)", preferredStyle: .alert)
@@ -111,18 +104,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         var playerItems: [AVPlayerItem] = []
         playerItems.reserveCapacity(tracks.count)
 
-        instance.itemIdMap.removeAll(keepingCapacity: true)
+        var itemIdMap: [AVPlayerItem : Int] = [:]
+        itemIdMap.removeAll(keepingCapacity: true)
         for i in stride(from: 0, to: tracks.count, by: 1) {
             let item = AVPlayerItem.init(url: cacheDir.appendingPathComponent(Assets.numbers[tracks[i]] + ".mp3").absoluteURL)
             playerItems.append(item)
-            instance.itemIdMap[item] = tracks[i]
+            itemIdMap[item] = tracks[i]
         }
 
-        instance.itemObservation?.invalidate()
-        instance.rateObservation?.invalidate()
-        instance.player = AVQueuePlayer.init(items: playerItems)
-        instance.player.actionAtItemEnd = .advance
-        if instance.activateAndPlay(from: controller) {
+        instance.player = try? AssetPlayer.init(items: playerItems, itemIdMap: itemIdMap)
+        if instance.player != nil {
             // Key-Value Observing fails to inform of the very first track, most likely because it sets it during init and it doesn't change when .play() is called.
             // To know when the player item is ready for playback, observe the value of its status property. Add this observation before you call the player’s replaceCurrentItem(with:) method, because associating the player item with a player is the system’s cue to load the item’s media
             nowPlaying = tracks[0]
@@ -130,48 +121,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
 
     static func cancelPlay() {
-        guard let instance = AppDelegate.instance else {
+        guard let player = AppDelegate.instance?.player else {
             log("WTF - instance is gone")
             return
         }
-        instance.player.pause()
-        try? AVAudioSession.sharedInstance().setActive(false)
+        player.pause()
         pausedNowPlaying = nowPlaying
         nowPlaying = -1
-    }
-
-    var itemIdMap: [AVPlayerItem : Int] = [:]
-
-    func updatePlayerObservation() {
-        itemObservation = observe(\.player.currentItem, options: [.old, .new], changeHandler: { object, change in
-            if object.player != self.player {
-                return
-            }
-            guard let newItem = change.newValue else {
-                return
-            }
-            if newItem == nil {
-                AppDelegate.nowPlaying = -1
-                AppDelegate.pausedNowPlaying = -1
-            } else {
-                let id = self.itemIdMap[newItem!]
-                if id != nil {
-                    AppDelegate.nowPlaying = id!
-                } else {
-                    AppDelegate.log("WTF - we have a valid ID (\(id!)) but no recollection of it")
-                    AppDelegate.nowPlaying = -1
-                }
-            }
-        })
-        rateObservation = observe(\.player.rate, options: [.old, .new], changeHandler: { object, change in
-            if object.player != self.player {
-                return
-            }
-            guard let newItem = change.newValue else {
-                return
-            }
-            AppDelegate.paused = newItem == 0.0
-        })
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

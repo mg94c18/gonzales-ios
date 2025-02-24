@@ -116,7 +116,6 @@ extension NowPlayable {
         var nowPlayingInfo = [String: Any]()
         
         NSLog("%@", "**** Set track metadata: title \(metadata.title)")
-        nowPlayingInfo[MPNowPlayingInfoPropertyAssetURL] = metadata.assetURL
         nowPlayingInfo[MPNowPlayingInfoPropertyMediaType] = metadata.mediaType.rawValue
         nowPlayingInfo[MPNowPlayingInfoPropertyIsLiveStream] = metadata.isLiveStream
         nowPlayingInfo[MPMediaItemPropertyTitle] = metadata.title

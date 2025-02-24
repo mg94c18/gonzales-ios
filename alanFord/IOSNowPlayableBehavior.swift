@@ -18,12 +18,8 @@ class IOSNowPlayableBehavior: NowPlayable {
                 .pause,
                 .nextTrack,
                 .previousTrack,
-                .skipBackward,
-                .skipForward,
                 .changePlaybackPosition,
-                .changePlaybackRate,
-                .enableLanguageOption,
-                .disableLanguageOption
+                .stop,
         ]
     }
     

@@ -1,7 +1,17 @@
 Ako se vraća iz background, možda može o istom trošku da prikaže nowPlaying pesmu, umesto one do koje se stalo?
 
 Treba pogledati da li integracija sa Now Playing ima smisla.  Dugme za slušalice radi kako treba pa ne izgleda preterano potrebno.
+Mada, dugme je radilo na najnovijem telefonu.  Na starijem telefonu i sa drugim slušalicama, dugme ne radi (na primer iPhone 7 iOS 15.8, ili iPad Air)
 
 Svi ostali TODO i slično, su u Android verziji.
 
 Warning once only: UITableView was told to layout its visible cells and other contents without being in the view hierarchy (the table view or one of its superviews has not been added to a window). This may cause bugs by forcing views inside the table view to load and perform layout without accurate information (e.g. table view bounds, trait collection, layout margins, safe area insets, etc), and will also cause unnecessary performance overhead due to extra layout passes. Make a symbolic breakpoint at UITableViewAlertForLayoutOutsideViewHierarchy to catch this in the debugger and see what caused this to occur, so you can avoid this action altogether if possible, or defer it until the table view has been added to a window.
+
+Šta mi treba za iOS 15.8?
+	https://developer.apple.com/support/xcode/
+	Treba deployment targets da se slaže (iOS 11-16.2)
+	Odabrao sam Xcode 14.2
+	Zato takođe idem na macOS Monterey 12.5
+	XCode nema 15.8 u /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/ :)
+	https://github.com/filsv/iOSDeviceSupport/issues/182 "15.7 -> 15.8 not work; 15.5 -> 15.8 works" :)
+	Na kraju radi na telefonu kako treba

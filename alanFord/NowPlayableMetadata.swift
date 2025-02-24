@@ -10,7 +10,6 @@ import MediaPlayer
 
 struct NowPlayableStaticMetadata {
     
-    let assetURL: URL                   // MPNowPlayingInfoPropertyAssetURL
     let mediaType: MPNowPlayingInfoMediaType
                                         // MPNowPlayingInfoPropertyMediaType
     let isLiveStream: Bool              // MPNowPlayingInfoPropertyIsLiveStream
