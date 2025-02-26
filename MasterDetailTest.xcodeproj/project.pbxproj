@@ -2149,7 +2149,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 173205;
 				DEVELOPMENT_TEAM = MD6XE24BAC;
 				INFOPLIST_FILE = MasterDetailTest/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -2157,7 +2157,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.41426;
+				MARKETING_VERSION = 1.73205;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.englez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2173,7 +2173,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 173205;
 				DEVELOPMENT_TEAM = MD6XE24BAC;
 				INFOPLIST_FILE = MasterDetailTest/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -2181,7 +2181,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.41426;
+				MARKETING_VERSION = 1.73205;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.englez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2243,7 +2243,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDV;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 173205;
 				DEVELOPMENT_TEAM = MD6XE24BAC;
 				INFOPLIST_FILE = "$(SRCROOT)/druzinaOdVjesala.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -2251,7 +2251,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.41426;
+				MARKETING_VERSION = 1.73205;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.gonzales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2267,7 +2267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDV;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 173205;
 				DEVELOPMENT_TEAM = MD6XE24BAC;
 				INFOPLIST_FILE = "$(SRCROOT)/druzinaOdVjesala.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -2275,7 +2275,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.41426;
+				MARKETING_VERSION = 1.73205;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mg94c18.gonzales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
