@@ -14,7 +14,7 @@ import os.log
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
     // ../yugostrip-app-ios/alanFord/AppDelegate.swift
     // func progress(forEpisode: Int, changedTo: Int) {
-    func updateControllers(_ nowPlaying: Int, _ paused: Bool) {
+    private func updateControllers(_ nowPlaying: Int, _ paused: Bool) {
         let splitViewController = self.window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count - 1] as! UINavigationController
 
@@ -41,6 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                 master.uiRefresh(nowPlaying, paused)
             }
         }
+        self.nowPlaying.uiRefresh(nowPlaying, paused, self.timingsFor(trackId: nowPlaying))
     }
 
     var window: UIWindow?
@@ -57,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             updatePlayerObservation()
         }
     }
+    let nowPlaying = NowPlayingStuff()
 
     static var pausedNowPlaying = -1
 
@@ -72,15 +74,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
     }
 
-    func activateAndPlay(from controller: UIViewController) -> Bool {
+    private func activateAndPlay(from controller: UIViewController?) -> Bool {
         do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
             player.play()
             return true
         } catch let error {
-            let errorReport = UIAlertController(title: "Error", message: "Can't start playback.  Error message: \(error)", preferredStyle: .alert)
-            errorReport.addAction(UIAlertAction(title: "OK", style: .default))
-            controller.present(errorReport, animated: true, completion: nil)
+            if let controller = controller {
+                let errorReport = UIAlertController(title: "Error", message: "Can't start playback.  Error message: \(error)", preferredStyle: .alert)
+                errorReport.addAction(UIAlertAction(title: "OK", style: .default))
+                controller.present(errorReport, animated: true, completion: nil)
+            } else {
+                AppDelegate.log("WTF - can't start playback: \(error)")
+            }
             return false
         }
     }
@@ -121,15 +128,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         instance.itemObservation?.invalidate()
         instance.rateObservation?.invalidate()
         instance.player = AVQueuePlayer.init(items: playerItems)
+        instance.player.allowsExternalPlayback = false
         instance.player.actionAtItemEnd = .advance
         if instance.activateAndPlay(from: controller) {
             // Key-Value Observing fails to inform of the very first track, most likely because it sets it during init and it doesn't change when .play() is called.
             // To know when the player item is ready for playback, observe the value of its status property. Add this observation before you call the player’s replaceCurrentItem(with:) method, because associating the player item with a player is the system’s cue to load the item’s media
+            // TODO: ovo može da se poboljša, ali pošto je sve lokalno, možda nema veze.  Uglavnom, na prvoj pesmi se ne vide vremena (dokle je stiglo i kolko traje), i možda mogu da slušam .currentItem.status a ne .currentItem
+            // When a player item is created, its status is AVPlayerItem.Status.unknown, meaning its media hasn’t been loaded and has not yet been enqueued for playback. Associating a player item with an AVPlayer immediately begins enqueuing the item’s media and preparing it for playback. When the player item’s media has been loaded and is ready for use, its status will change to AVPlayerItem.Status.readyToPlay. You can observe this change using key-value observing.
             nowPlaying = tracks[0]
         }
     }
 
-    static func cancelPlay() {
+    static func stop() {
         guard let instance = AppDelegate.instance else {
             log("WTF - instance is gone")
             return
@@ -138,6 +148,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         try? AVAudioSession.sharedInstance().setActive(false)
         pausedNowPlaying = nowPlaying
         nowPlaying = -1
+    }
+
+    static func externalPause() -> Bool {
+        guard let instance = AppDelegate.instance else {
+            log("WTF - instance is gone")
+            return false
+        }
+        instance.player.pause()
+        try? AVAudioSession.sharedInstance().setActive(false)
+        return true
+    }
+
+    static func externalResume() -> Bool {
+        guard let instance = AppDelegate.instance else {
+            log("WTF - instance is gone")
+            return false
+        }
+        return instance.activateAndPlay(from: nil)
+    }
+
+    func timingsFor(trackId: Int) -> (Float, Float)? {
+        if trackId == -1 {
+            return nil
+        }
+        guard let currentItem = player.currentItem else {
+            AppDelegate.log("WTF - can't find current item")
+            return nil
+        }
+        guard let currentId = itemIdMap[currentItem] else {
+            AppDelegate.log("WTF - can't find ID for the current item")
+            return nil
+        }
+        if currentId != trackId {
+            AppDelegate.log("WTF - current ID \(currentId) doesn't match expected ID \(trackId)")
+            return nil
+        }
+        if (currentItem.status != .readyToPlay) {
+            return nil
+        }
+        return (Float(currentItem.currentTime().seconds), Float(currentItem.duration.seconds))
     }
 
     var itemIdMap: [AVPlayerItem : Int] = [:]
@@ -205,12 +255,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         AppDelegate.inBackground = false
-        do {
-            let audioSession = AVAudioSession.sharedInstance()
-            try audioSession.setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode(rawValue: convertFromAVAudioSessionMode(AVAudioSession.Mode.default)), policy: AVAudioSession.RouteSharingPolicy.longFormAudio)
-        } catch {
-            print("Failed to set the audio session configuration")
-        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -248,10 +292,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
         return id
     }
-}
-
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertFromAVAudioSessionMode(_ input: AVAudioSession.Mode) -> String {
-	return input.rawValue
 }

@@ -211,7 +211,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     }
 
     @objc func stopPlayback() {
-        AppDelegate.cancelPlay()
+        AppDelegate.stop()
     }
 
     // "square.and.arrow.down" iz "SF Symbols" za download
