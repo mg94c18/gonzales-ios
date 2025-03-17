@@ -5,10 +5,10 @@ Ima ukus, ukus, ukus
 i ništa više
 i ništa više
 
-Prešavši jednu pitomu reku (Río Canasí)
+Prešavši jednu pitomu reku {Kanasi}
 među predivnim palmarima
 se čuju nežne pesme
-što su izašle iz tvog vagona
+koje izlaze iz tvog vagona
 
 ...
 
@@ -21,16 +21,16 @@ jedan drugom su rekli:
 I ja što se nikad {ne} krijem
 sam im otvoreno rekla:
 "Ja sam Omara Portuondo
-iz Callo Hueso, Havana"
+iz Kajo Ueso, Havana"
 
 ...
 
 Naslikala sam Matanzas nerazgovetno,
-Bellamar pećinu,
+Bejamar pećinu,
 ali mi je falilo da naslikam
 sovino gnezdo
 Nju sam naslikala kako preleće
-jedan lep (Hershey) voz,
+jedan lep voz {Herši železnice},
 jednu mačetu, jednu cevku,
 jedan morski brodić,
 I nisam naslikala zastavu
