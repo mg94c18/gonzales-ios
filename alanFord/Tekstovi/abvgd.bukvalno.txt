@@ -1,15 +1,15 @@
 
 
-a / A : fun, bar
+a / A : â~far, á~farming, ȁ~fun, à~ȁ↓
 b / B : big, robbery
 v / V : vocal, vivid
 g / G : great, gig
 d / D : dig, ditch
 đ / Đ : ~Django, ~Beijing, ~Giorgio
-e / E : wet, pear
+e / E : ê~pear, é~pairing, ȅ~pet, è~ȅ↓
 ž / Ž : beige, dejavu
 z / Z : basil, zombie
-i / I : pick, peek
+i / I : î~real, í~reason, ȉ~rich, ì~ȉ↓
 j / J : yellow, yolk
 k / K : king, queen
 l / L : love, oily
@@ -17,13 +17,13 @@ lj / Lj : Lyuba, Tartaglia
 m / M : mix, match
 n / N : never, no
 nj / Nj : niña, Dunyasha
-o / O : top, floor
+o / O : ô~pork, ó~forking, ȍ~Poppins, ò~ȍ↓
 p / P : property, puppet
 r / R : Roberto, Verdi
 s / S : six, place
 t / T : top, plate
 ć / Ć : ~ocho, ~ciao
-u / U : put, food
+u / U : û~fool, ú~cooling, ȕ~full, ù~ȕ↓
 f / F : fig, phone
 h / H : hip, hop
 c / C : pretzel, Fitz

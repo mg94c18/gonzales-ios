@@ -1,4 +1,4 @@
-https://mg94c18dijaspora.fra1.digitaloceanspaces.com/anketab.mp3
+
 orig: mvIVCDZN3NM, b5EIZ9AwGtM, C2ASXg1-vag, Mf6ro62GHY4, 0ZoNCyQmQzs, MjuHyV554IY, snRC42SLmAs, sBN17xbp-qY, Vf1HpUGGGZ4, DueeNx4Jd1E, 72vENpqf_C4, Cn9uJbhLWJY
 - Postoji li u današnje vreme veran muškarac?
 - Postoji.
@@ -12,8 +12,8 @@ orig: mvIVCDZN3NM, b5EIZ9AwGtM, C2ASXg1-vag, Mf6ro62GHY4, 0ZoNCyQmQzs, MjuHyV554
 - Pa, okruženje, verovatno.  Sami sebe varaju, ne varaju druge.  [Tako da], to je najveći odgovor.
 - Ima li onda, u današnjem..., pa brak, neka emotivna duža veza smisla?
 - Apsolutno ima, brak je svetinja, [tako da]...  Ima, samo ako se veruje i ako se radi na braku.  Tad ima, a ako se ne radi, tad...  Ako je stvoren brak iz nekih drugih razloga, on nije brak.  To je lažna slika braka, a u Srbiji veruju u brak, i oduvek [su verovali] Beograđani i nikad, u Srbiji nikad [nisu varali], to im [je došlo] iz nekih drugih podneblja, [tako da]...  Srbi su uvek bili verni.
-- A sad, kad se desi taj, neki, eto da kažemo, iskorak iz braka i ta prevara, [zbog čega] je to, šta mislite, jel to zbog mlađih žena, zbog nekih možda zabavnijih žena, ili je to možda dosada u braku, šta se tu dogodi?
-- To su nestabilne ličnosti.  Nezadovoljne samim sobom, pa onda traže izlaz negde.  [Nije to] zbog žena, to je zbog njih samih.
+- A sad, kad se desi taj, neki, eto da kažemo, iskorak iz braka i ta prevara, [zbog čega] je to, šta mislite, jel to zbog mlađih žéna, zbog nekih možda zabavnijih žéna, ili je to možda dosada u braku, šta se tu dogodi?
+- To su nestabilne ličnosti.  Nezadovoljne samim sobom, pa onda traže izlaz negde.  [Nije to] zbog žéna, to je zbog njih samih.
 - A ko više vara, žene ili muškarci, šta mislite?
 - Pa ne znam.
 - ... Vaša procena?
@@ -25,7 +25,7 @@ orig: mvIVCDZN3NM, b5EIZ9AwGtM, C2ASXg1-vag, Mf6ro62GHY4, 0ZoNCyQmQzs, MjuHyV554
 - A, da li možda znaš koji su najčešći razlozi da prevari neko partnerku?  U današnje vreme.
 - Pa, verovatno neko nerazumevanje ili neka monotonija, koja godinama nastaje, pa...  Ako se ne...
 - A ne misliš možda da je to čisto eto iz zabave ili [zato što] je to postalo moderno?
-- Verovatno iz zabave.  Verovatno iz zabave, može i zbog, zbog neke popularnosti da [bi pričali] sa strane da imaju više devojaka ili devojke momaka ali uglavnom iz zabave.
+- Verovatno iz zabave.  Verovatno iz zabave, može i zbog, zbog neke popularnosti da [bi pričali] sa stráne da imaju više devojaka ili devojke momaka ali uglavnom iz zabave.
 - Jesi li ti uvek bio veran muškarac?
 - {pauza} Manje više jesam.
 - Sada [si odlučio] da budeš veran.
@@ -40,7 +40,7 @@ orig: mvIVCDZN3NM, b5EIZ9AwGtM, C2ASXg1-vag, Mf6ro62GHY4, 0ZoNCyQmQzs, MjuHyV554
 - ... u poslednje vreme se čini da ga uopšte nema, da [su izumrli].
 - Ne znam stvarno, ja mislim da postoje, sad...
 - A, [zbog čega] muškarci po Vašem mišljenju najviše varaju?
-- Pa dosadi im da stalno imaju, da stalno imaju, mislim odnose intimne sa jednom ženom i onda malo bi da promene.  Mislim, promene radi.
+- Pa dosadi im da stalno imaju, da stalno imaju, mislim odnose intimne sa jednom ženom i onda malo bi da pròmene.  Mislim, prȍmene radi.
 - A ima li smisla onda uopšte biti u nekoj vezi koja je dugoročna ili u braku?  U današnje vreme.  Koliko je brak zaista važan muškarcima?
 - Pa da li ima smîsla?  Pa îma smisla, ako je u pitanju prava ljubav.  Ako je brak iz računa ili nešto, onda nema smisla.
 - Da li ste Vi možda nekada prevarili nekoga?
@@ -77,7 +77,7 @@ orig: mvIVCDZN3NM, b5EIZ9AwGtM, C2ASXg1-vag, Mf6ro62GHY4, 0ZoNCyQmQzs, MjuHyV554
 - Da.  Sigurno.
 - A koliko često se ne razvedu?
 - Pa ima i toga.  Ali ja kolko sam ovde, video, više onih koji su to, ovaj, učinili.  Iako [su bili], ali nađu neku novu ljubav i onda zaborave i na decu i na ž... suprugu i sve.  I zapostave skroz brak.
-- A koliko je to do ljubavi a koliko možda do nekih drugih stvari?
+- A koliko je to do ljubavi a koliko možda do nekih drugih stvári?
 - Pa u početku krene iz nekih, emocija, [čega već], međutim kasnije to preraste u zaljubljivanje i onda...  Gotovo, puca brak.
 - Pa da li uopšte onda brak ima smisao u današnje vreme?
 - Pa za pametne ima.  I za one koji odluče da vode taj bračni život, stvaraju porodicu, ima smisla.
@@ -101,7 +101,7 @@ orig: mvIVCDZN3NM, b5EIZ9AwGtM, C2ASXg1-vag, Mf6ro62GHY4, 0ZoNCyQmQzs, MjuHyV554
 - Mislim da je nisko.  Stvarno.  Za ono šta s..., [bi trebalo] [u stvari] jedan profesor da pruži tim studentima ili toj deci.
 ...
 - Kako komentarišeš to da se droga pojavila među srednjoškolcima, da li [si čula] za to?
-- Pa s obzirom da sam po zanimanju profesor engleskog jezika i [radila sam] već u srednjoj školi, [tako da], to mi nije neka da kažem strana tema, toga je sve više i više, kod današnje omladine, ne znam šta [bih rekla] sem da roditelji trebaju više da se posvete deci u današnje vreme, i da [vode računa] sa kim se deca druže, i ako je potrebno čak i da ih testiraju na drogu.  Deca, što je najgore, time se hvale i ponose se ako [su probali] nešto [što se tiče] droge.  Dostupna je među omladinom, sve je više omladine koji se time da kažem bave i hvale se time.  Što je najgore, deca se time hvale uživo na društvenim mrežama, po Tviteru, po Instagramu, njima je to nekako kako da kažem to je ponos.
+- Pa s obzirom da sam po zanimanju profesor engleskog jezika i [radila sam] već u srednjoj školi, [tako da], to mi nije neka da kažem strâna tema, toga je sve više i više, kod današnje omladine, ne znam šta [bih rekla] sem da roditelji trebaju više da se posvete deci u današnje vreme, i da [vode računa] sa kim se deca druže, i ako je potrebno čak i da ih testiraju na drogu.  Deca, što je najgore, time se hvale i ponose se ako [su probali] nešto [što se tiče] droge.  Dostupna je među omladinom, sve je više omladine koji se time da kažem bave i hvale se time.  Što je najgore, deca se time hvale uživo na društvenim mrežama, po Tviteru, po Instagramu, njima je to nekako kako da kažem to je ponos.
 - To je oduvek bilo, [tako da] ovaj u suštini mislim da to nije ništa novo, ali, generalno nemam ništa konkretno da kažem za to, iskreno mislim da to nije dobro i da..., to je tako oduvek bilo.
 - A da li, a da li misliš da je droga lako dostupna omladini?
 - [Na žalost], [na žalost] jeste.  Pogotovu danas u ovom svetu.
@@ -232,7 +232,7 @@ orig: mvIVCDZN3NM, b5EIZ9AwGtM, C2ASXg1-vag, Mf6ro62GHY4, 0ZoNCyQmQzs, MjuHyV554
 - Studentski protesti...
 - A, da, studentski protesti...
 - [Zato što] je ubijen, ovaj, valjda student koji [je bio] član Komunističke partije Jugoslavije.
-- Pa verovatno neki pr..., studentski protest koji [je bio] za zalaganje studentskih prava, i njihovih sloboda.  Pretpostavljam.
+- Pa verovatno neki pr..., studentski protest koji [je bio] za zalaganje studentskih prava, i njihovih slobóda.  Pretpostavljam.
 - Nisam siguran, znam da je događaj vezan za jednog studenta, verovatno neka revolucija ili nešto tog tipa.
 - Ako se ne varam [bilo je], da li smrt studenata određena i onda iz tog razloga se slavi, važnost ovog dana.
 - Neki protesti mislim, uvek su studenti bili ti koji [su dizali] narod i koji [su hteli] promenu, [tako da], verovatno nešto što se tiče toga, mada zaista nisam sigurna šta tačno.
@@ -245,9 +245,9 @@ orig: mvIVCDZN3NM, b5EIZ9AwGtM, C2ASXg1-vag, Mf6ro62GHY4, 0ZoNCyQmQzs, MjuHyV554
 - Pa tek [smo čuli] o tome sad kad [je počelo] da se priča, pre toga [nismo znali] stvarno ništa.
 - Nisam se nužno puno informisao o tome, ali svakako nije lepo što se dešavalo i ne [bi trebalo] da se uopšte dešavalo na takvoj ustanovi.
 - Moje mišljenje o tome je da treba rigorozno da se kazni, najgora moguća kazna, doživotno u zatvoru, to je iskreno moje mišljenje, za takve osobe, to su jednostavno bolesnici po mene, po meni, izvinite, jer, ne razumem.  Čemu to?
-- Da, [čuo sam], preko društvenih mreža [sam saznao] za ovaj događaj, nemam komentar stvarno, mislim da je to, za osudu javnosti, i to je to što imam da kažem u vezi tog događaja.
+- Da, [čuo sam], preko društvenih mrêža [sam saznao] za ovaj događaj, nemam komentar stvarno, mislim da je to, za osudu javnosti, i to je to što imam da kažem u vezi tog događaja.
 - A, jesam, [čula sam] zapravo na Tviteru, i ovaj, i naravno, mislim ne podržavam i mislim da se treba..., da se borimo protiv ovoga, i, da ne treba tako nešto da bude na ovakvim institucijama, fakultetima, [pa dâ].
-- Dâ ja [sam čuo], isto preko društvenih mreža i mislim da profesora treba najstrože kazniti [zato što], i nemoguće da je toliko..., devojaka da se javi a da to bude nešto, neprovereno i treba ga odma..., ono, zabraniti mu da radi do daljnjeg.
+- Dâ ja [sam čuo], isto preko društvenih mrêža i mislim da profesora treba najstrože kazniti [zato što], i nemoguće da je toliko..., devojaka da se javi a da to bude nešto, neprovereno i treba ga odma..., ono, zabraniti mu da radi do daljnjeg.
 - [Čuo sam] za to, i, svi smo zaprepašćeni, mi kolege sa Građevine, ovi sa ETF-a, svi bi da preduzmemo nešto, ne znamo šta, jer [sam čuo] i od sestre svoje da se dešavaju takve stvari, i nije mi prijatno uopšte jer, ovaj, nemam reči za to.  Ne znam kako to uopšte može da prođe na, na ovakvoj instituciji kao što je naš fakultet, i generalno Univerzitet u Beogradu.
 - A, [nisam čuo] za taj događaj.
 - Imaš mišljenje o tome?

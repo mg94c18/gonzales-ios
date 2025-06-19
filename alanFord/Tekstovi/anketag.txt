@@ -1,4 +1,4 @@
-https://mg94c18dijaspora.fra1.digitaloceanspaces.com/anketag.mp3
+
 orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7CyM, dkpcxMGvdY8, h2GWB4ndExs, j8Zh1Vp7mmQ, piiouEVXi3A
 - Da li ste u restoranu nekad probali palentu ili poparu?
 - U restoranu ne.
@@ -55,7 +55,7 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Ja sam slučajno ovde.
 - Dobro dobro.
 - Kako ćete provesti novogodišnje i Božićne praznike?
-- Jao, ja živim u šumi, u prosvećenoj izolovanosti, i provešću verovatno sa šest do deset divnih ljudi, negirajući da Korona uopšte postoji.  U šumi nema virusa, da znate to, ne morate da sečete, bez montaže, [tako da] provešću s radošću i očekivajući novo vreme nove dane, novo praskozorje kome svima treba u svetu.
+- Jao, ja živim u šumi, u prosvećenoj izolovanosti, i provešću verovatno sa šest do deset divnih ljúdi, negirajući da Korona uopšte postoji.  U šumi nema virusa, da znate to, ne morate da sečete, bez montaže, [tako da] provešću s radošću i očekivajući novo vreme nove dane, novo praskozorje kome svima treba u svetu.
 - Kako ćete provesti ove novogodišnje i Božićne praznike?
 - A, kući sa porodicom.
 - ... ja u kući provedem uvek.
@@ -150,7 +150,7 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Pa, meni gužve manje prijaju, al sad da je život kao pre, nije.  Mislim, eto.
 - Ne baš, jer mi se više s društvom kod mene okupljamo kući [tako da], ne izlazimo toliko često.  [Tako da]...
 - Da li su Vam epidemiološke mere olakšale život, u smislu da nema gužve po kafićima, stolovi su razdvojeni, bios..., u bioskopima takođe nema gužve?  Šta misliš o tome?
-- Pa [rekao bi] da nisu.  Inače nisam odavde, iz Zagreba sam, ali, pa, mislim da je samo... drugačije, ako su udaljeni stolovi udaljeni su i ljudi, mislim da je to sve skupa malo neprirodno ipak, [što se toga tiče].  Ali neki convenience, da, mislim da se samo manje..., i samim time manje života.  To [bih rekao].
+- Pa [rekao bi] da nisu.  Inače nisam odavde, iz Zagreba sam, ali, pa, mislim da je samo... drugačije, ako su udaljeni stolovi udaljeni su i ljûdi, mislim da je to sve skupa malo neprirodno ipak, [što se toga tiče].  Ali neki convenience, da, mislim da se samo manje..., i samim time manje života.  To [bih rekao].
 - Pa, iskreno, [ne znam], nemam neko mišljenje, ima svojih prednosti i ima mana.
 - Pa šta da kažem, ja sam se vakcinisao [tako da], nema problema za to.
 - Znači, [vakcinisali ste] se i mislite da više nema brige?
@@ -169,11 +169,11 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Da li su ti epidemiološke mere olakšale život, [s obzirom da] više nema toliko gužvi po kafićima, restoranima, bioskopima, i šta misliš o tome?
 - Pa donekle jesu, [zato što] je manje gužve, ali na primer u autobusima nikoga nije baš briga za epidemiološke, te, stvari.  Niko ne nosi maske u autobusu, što meni mnogo smeta, ali, ne dolaze..., policija da ih izbacuje kao iz drugih, što je isto dobro, jer ja ne razumem baš toliko da rade, ali da, [ja mislim] da je malo olakšalo život [zato što] su svi sada pažljiviji sa time šta rade i gde idu i kolko ih je.
 - I dalje ima gužvi, [tako da] mislim da nisu ništa promenile.
-- A kako je tebi bolje, kad ima više ljudi u restoranima ili kad ima manje?
+- A kako je tebi bolje, kad ima više ljúdi u restoranima ili kad ima manje?
 - Pa iskreno svejedno, al ono, kad je manja gužva, manje se čeka da se jede, jel tako?  Pa...
 - Znači bolje je.  Po tebi.
 - Pa, može.
-- Pa jesu.  [Jesu olakšale].  Čim nema gužve, mnogo je lakše nego da ima gužve.  To je jednostavna stvar.  Druga stvar je što ljudi su sad manje više, ovaj, opredeljeni..., moraju da se opredele kako će da, taj svoj socijalni život da srede.  I na koji način će da zamene svoje ... aktivnosti sa nekim drugim aktivnostima.  To jeste.
+- Pa jesu.  [Jesu olakšale].  Čim nema gužve, mnogo je lakše nego da ima gužve.  To je jednostavna stvar.  Druga stvar je što ljûdi su sad manje više, ovaj, opredeljeni..., moraju da se opredele kako će da, taj svoj socijalni život da srede.  I na koji način će da zamene svoje ... aktivnosti sa nekim drugim aktivnostima.  To jeste.
 - Hvala Vam.
 ...
 - Kako [je izgledao] Vaš prvi poljubac?
@@ -243,12 +243,12 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 ...
 - [Nakon što] su se pojedini [estradni umetnici] prethodnih dana oglasili kako nemaju od čega da žive [zbog toga što] trenutno ne nastupaju, ekipa portala Alo.rs [rešila je] da pita Beograđane, kakvo je njihovo mišljenje o svemu tome.
 - ... [estradni umetnici] oglašavali, kako nemaju trenutno novca jer ne nastupaju.
-- To je očigledno posledica dugogodišnje neke krize u društvu.  Prosto, prosto, nema istine, nema, nema ovoga, mogućnosti ni ljudi da se iskažu a vrlo često prikrivaju ono što [bi, praktično trebali] da kažu.  A, [oni su] problematični prilično.
+- To je očigledno posledica dugogodišnje neke krize u društvu.  Prosto, prosto, nema istine, nema, nema ovoga, mogućnosti ni ljûdi da se iskažu a vrlo često prikrivaju ono što [bi, praktično trebali] da kažu.  A, [oni su] problematični prilično.
 - Da li mislite da [bi trebalo] da im se pomogne, i na koji način?
 - Da im se pomogne?  Ne, mislim da ne [bi trebalo] da im se pomogne.  Mislim da dovoljno imaju novca, a dokaz je to kako, kako, vozila koja koriste, rasipaju se novcem [i tako dalje], mislim da država mora da ih oporezuje mnogo više i mnogo bolje da [bi to funkcionisalo], eto to je to.
 - Pa, mislim da je teško generalno svima u ovom trenutku, bilo da je to kultura, šou biz, ili [šta god], svima je užasno teško, i žao mi je zbog toga, ali šta da se radi, takvo je..., takvo je vreme, takav je trenutak.
 - Da li [bi moglo] da im se pomogne i na koji način?
-- Mislim da njima najmanje treba pomoć.  Ima ljudi kojima je mnogo više potrebno pomoći nego njima.  Bar ja tako mislim.
+- Mislim da njima najmanje treba pomoć.  Ima ljúdi kojima je mnogo više potrebno pomoći nego njima.  Bar ja tako mislim.
 - Mislim da su jako bezobrazni, i, i, mislim da ismevaju ovaj narod, koji je već dovoljno u problemima, a, oni [nisu navikli] na to da nemaju, i sad je malo problem.  [Trebali su] da štede novac koji [su zarađivali] a [zarađivali su] ozbiljan novac.
 - A da li nedostaju ti njihovi nastupi i koncerti?
 - Pa, znate kako, svako ima YouTube, uključi i sluša muziku.  [Tako da] mi ne u principu ne puno, ali, koga nema bez njega se može, to nije neko zanimanje koje je neophodno za društvo.
@@ -293,11 +293,11 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Nisam.  Nisam, pošto mi je zemljotres u životu [tako da] [nisam osetila] ni da [je pukla] zemlja ispred mene.
 - Hvala Vam puno {TM}.
 ...
-- Da li ste ikada zamišljali da se probudite kao neka druga osoba?  U nekom drugom tjelu, da se probudite ako ste žena kao muškarac, ili ako ste muškarac kao žena?
+- Da li ste ikada zamišljali da se probudite kao neka druga osoba?  U nekom drugom tjelu, da se probudite ako ste žȅna kao muškarac, ili ako ste muškarac kao žȅna?
 - [Ja sam] [i ovako], sve radim muške poslove, [tako da] ne bi me iznenadilo.
 - Verovatno [ne bih] ni razmišljala ni o čemu.  Onako hladnokrvno, [otišla {bih}] i ponašala se.
 - [Zapalila {bih}] cigaru i legla da spavam.  Još jednom.
-- Šta [biste urad'li] da se probudite kao žena?
+- Šta [biste urad'li] da se probudite kao žȅna?
 - Šta [bih uradio]?  Pa [našo bih] pravog muškarca.
 - Pa prvo bi se umio.  Umio bih se prvo.
 - Šta [biste urad'li] da se probudite kao muškarac?
@@ -308,7 +308,7 @@ orig: Rmw9cVW6fsQ, gp9KbzouPc0, LaxDolG7Rxg, IuoOhHa8Ds0, evy-W-fByj8, zsFeRjp7C
 - Pa [uradila bih] one stvari, šta sad.
 - [Ne znam].  Verovatno bih se našminkao prvo.
 - Uf.  Iskreno, možda bih se samo dobro udo.  I rešio sve probleme u životu.  Definitivno.  Za nekog, Rokfelera, sa jahtom, i to je to.  Ne moraš da radiš, uživaš, živiš kako hoćeš i to je to.
-- Kao?  Da se probudim kao žena?  Mislim, ne zamišljam tako nešto.  Nikako.  Znam šta žene rade, ali ovaj, ja da zamislim sebe u toj poziciji malo teže.
+- Kao?  Da se probudim kao žȅna?  Mislim, ne zamišljam tako nešto.  Nikako.  Znam šta žene rade, ali ovaj, ja da zamislim sebe u toj poziciji malo teže.
 - [Morao bih] da tražim neku stručnu pomoć da mi pomogne, šta da uradim, kako da se vratim u muško.  Al [bio bih] srećan sigurno.  Al ne bih se sad menjao u žensko.  To svakako.
-- A iskreno da Vam kažem ne [bih voleo] da se probudim kao žena, odgovara mi ovako što sam muškarac.  A da se to desi, [ne znam] kako [bih reagovao].  Verovatno ne [bih bio], ne [bih bio] zadovoljan baš, iskreno.
-- A, nikad se ne [bih probudio] kao žena.  Sviđa mi se da budem muško.
+- A iskreno da Vam kažem ne [bih voleo] da se probudim kao žȅna, odgovara mi ovako što sam muškarac.  A da se to desi, [ne znam] kako [bih reagovao].  Verovatno ne [bih bio], ne [bih bio] zadovoljan baš, iskreno.
+- A, nikad se ne [bih probudio] kao žȅna.  Sviđa mi se da budem muško.

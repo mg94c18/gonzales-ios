@@ -72,8 +72,8 @@ class Assets {
             }
         }
         
-        if ret.isEmpty {
-            ret = ["https://mg94c18\(bucketSuffix).fra1.digitaloceanspaces.com/\(number).mp3"]
+        if withTranslation.isEmpty {
+            ret[0] = "https://mg94c18\(bucketSuffix).fra1.digitaloceanspaces.com/\(number).mp3"
         }
         
         return ret

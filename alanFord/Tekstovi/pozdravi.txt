@@ -1,4 +1,4 @@
-https://mg94c18dijaspora.fra1.digitaloceanspaces.com/pozdravi.mp3
+
 orig: Pozdravi je, pozdravi
 Pričaj mi o njoj, pričaj sve što znaš
 Reci dal je boli sad rastanak naš
@@ -19,5 +19,5 @@ Eh, [da mogu] poslati joj suze,
 suze bi joj rekle sve
 
 [Nisam sreo] još ljubav sličnu njoj,
-a [sreo sam] žena [ne zna im se broj]
+a [sreo sam] žéna, ne zna im se broj
 Samo ona srećnim čini život moj
