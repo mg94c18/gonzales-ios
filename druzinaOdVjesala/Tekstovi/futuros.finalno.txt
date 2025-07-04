@@ -278,7 +278,7 @@
 - Geografiju.
 - ...
 - Vetrokaz, zar ne?
-- Tačno vrlo dobro!  Pa ništa, oduševljen od [upoznati te].  Kako se zoveš?
+- Tačno vrlo dobro!  Pa ništa, baš mi je drago sam što sam te upoznao.  Kako se zoveš?
 {rukovanje}
 - Ibai.
 - Ibai, ćao.  Ima muškost za uspeh u životu.
@@ -310,9 +310,9 @@
 - Zato što je mnogo lepo studirati medicinu.
 - Ali koliko dugo studiraš?
 - Pa jednu nedelju.
-- ... i takođe.
+- ... i ja.
 - A, važi...
-- ... da takođe.
+- ... da i ja.
 - Ali mnogo... kao da se muvaju mnogo?
 - I ovde.
 - Jel?
@@ -401,7 +401,7 @@
 - Ne, vidi danas sam ovde u kafiću, ne na času.
 - Imaš li nešto da poručiš svoj tim ljudima koji idu na sve časove?
 - Da ne greše idući na čas, da ne gubite svoje vreme i svoj život.
-- Šta si relka zašto ove studije, fakultet, negovateljstvo, ne?
+- Šta si rekla zašto ove studije, fakultet, negovateljstvo, ne?
 - Vidi, otišla sam jer na medicini, i iznenada, eto negovateljstvo pa ono kao što da ne, kasnije mi se svidelo, a?
 - Možda bi pre na medicinu ali nisi imala prosek i otišla si da učiš za medicinsku sestru?
 - Da.

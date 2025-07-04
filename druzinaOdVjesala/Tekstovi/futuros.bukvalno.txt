@@ -310,16 +310,16 @@
 - [Zato što] je mnogo lepo studirati medicinu.
 - Ali koliko vremena nosiš u _ studijama?
 - Pa jednu nedelju.
-- ... i takođe.
-- A, važi...
-- ... da takođe.
-- Ali mnogo... kao da se povezuje mnogo?
+- Anatomija od razreda, da takođe.
+- {A, važi, ...}
+- Da takođe.
+- {Ali u anatomiji od razreda mnogo... kao da se povezuje unutar...}
 - Unutar od ovde takođe.
 - Jel?
 - Imamo kupatila "jednakopolna".
-- Tvoje jedna nedelja ovde već tebi si zapazila to?
+- Već ti nosiš jednu nedelju ovde već tebi si zapazila to?
 - Ne, pošto to [su rekli] u _ prvom danu.
-- Kako ... Ste odlučile dobro _ studije; ima kupatila jednakopolna.
+- Kako nešto blistavo.  Ste odlučile dobro _ studije; ima kupatila jednakopolna.
 - ... pitanja iz osnovne budućim doktorima, ali dobro farmacija, medicina, zdravlje, šta studiraš?
 - Važi; farmaciju.
 - Ima ljudi sa farmacije koji se naprave doktor može biti?
@@ -337,7 +337,7 @@
 - _ Kompas.
 - A, dobro, jasno.
 - _ Doktori _ doktori!  Prve pomoći.  Šta, šta mislite o ovim ljudima koji, postavši doktori vama kažu mene boli ovde?
-- Da ne imam ni ideju ... prvo.
+- Da ne imam ni ideju bez [prvog pregleda].
 - I pitati, stvari, ne?
 - Jasno, _ plan.  E, pa ja imam jedan bol ovde?
 - Ne pa ja mu kažem pošto znati
