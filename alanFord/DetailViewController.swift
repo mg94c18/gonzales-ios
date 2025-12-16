@@ -144,7 +144,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             self.showToggle()
         } else {
             if nowPlaying == -1 {
-                if DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).isEmpty {
+                if Assets.numbers.isEmpty {
                     return
                 }
                 self.showMenu()
@@ -160,7 +160,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     var playlistTouched = false
     var checkedCnt = 0
     @objc func configurePlay0() {
-        let downloadedEpisodes = DetailViewController.loadStoredArray(DetailViewController.DOWNLOADED_EPISODES).sorted()
+        var downloadedEpisodes: [Int] = []
+        var index: Int = 0
+        for number in Assets.numbers {
+            downloadedEpisodes.append(index)
+            index += 1
+        }
         if downloadedEpisodes.isEmpty {
             return
         }
